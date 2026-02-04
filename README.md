@@ -11,6 +11,7 @@
 - تحليل الـ Protocols الأساسية واكتشاف الـ Anomalies.
 - استخدام الـ Filters المتقدمة للوصول للبيانات المشبوهة.
 
+
 ---
 
 ## 🐽 Intrusion Detection with Snort
@@ -22,6 +23,7 @@
 - كتابة الـ Snort Rules لاكتشاف الهجمات.
 - تحليل الـ Alert logs والتعامل مع الـ PCAP files.
 
+
 ---
 
 ## 🛡️ Malware Analysis: FlareVM
@@ -32,6 +34,7 @@
 ### 🔍 Key Learning:
 - تجهيز بيئة معزولة لتحليل الفيروسات (Sandboxing).
 - التعرف على الأدوات الأساسية في FlareVM لتحليل الـ Malware.
+
 
 ---
 
@@ -49,3 +52,16 @@
 - **System Commands:** Using `find`, `grep`, and shell operators (`>`, `>>`, `|`).
 - **Permissions:** Understanding `chmod` and managing file access.
 - **System Admin:** Managing processes, services, and automation via Cron.
+
+
+---
+
+## 🐝 OWASP Top 10
+**Description:** Deep dive into the top 10 most critical web application security risks. Understand how to identify and mitigate common vulnerabilities.
+
+![OWASP Badge](images/owasp-badge.png)
+
+### 🔍 Key Learning:
+- **Injection & XSS:** Understanding how malicious scripts are executed.
+- **Broken Access Control:** How attackers bypass authorization.
+- **Sensitive Data Exposure:** Protecting user data and encryption basics.
