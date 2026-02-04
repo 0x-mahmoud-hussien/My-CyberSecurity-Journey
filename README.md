@@ -21,3 +21,14 @@
 ### 🔍 Key Learning:
 - كتابة الـ Snort Rules لاكتشاف الهجمات.
 - تحليل الـ Alert logs والتعامل مع الـ PCAP files.
+
+---
+
+## 🛡️ Malware Analysis: FlareVM
+**Description:** Successfully completed the FlareVM room, gaining hands-on experience in setting up a malware analysis laboratory environment.
+
+![FlareVM Badge](images/flarevm-badge.png)
+
+### 🔍 Key Learning:
+- تجهيز بيئة معزولة لتحليل الفيروسات (Sandboxing).
+- التعرف على الأدوات الأساسية في FlareVM لتحليل الـ Malware.
