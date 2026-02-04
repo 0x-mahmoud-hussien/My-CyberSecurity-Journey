@@ -1,27 +1,23 @@
-## 🦈 Network Analysis with Wireshark
-**Description:** Completed a comprehensive series on Wireshark covering basic protocol analysis, packet operations, and advanced traffic analysis to identify network anomalies.
+# 🛡️ My Cybersecurity Journey - Writeups
 
-### 🛠️ Tools Used:
-- Wireshark
-- Statistics & Filters (Display/Capture)
-- Protocol Hierarchy Analysis
+## 🦈 Network Analysis with Wireshark
+**Description:** Completed the Wireshark series covering basics, packet operations, and traffic analysis.
+
+![Wireshark Status](images/wireshark-cert.png)
+![Wireshark Status](images/wireshark-cert1.png)
+![Wireshark Status](images/wireshark-cert2.png)
 
 ### 🔍 Key Learning:
-- كيفية تحليل الـ Protocols الأساسية واكتشاف الـ Anomalies في الـ Traffic.
-- استخدام الـ Filters المتقدمة للوصول لـ "الإبرة في كومة قش" جوه الـ PCAP files.
-- تحليل الـ HTTP/DNS traffic لاكتشاف أي نشاط مشبوه.
+- تحليل الـ Protocols الأساسية واكتشاف الـ Anomalies.
+- استخدام الـ Filters المتقدمة للوصول للبيانات المشبوهة.
 
-- ---
+---
 
 ## 🐽 Intrusion Detection with Snort
-**Description:** Hands-on experience using Snort to detect real-time threats, analyze recorded traffic, and identify security anomalies through custom rules.
+**Description:** Hands-on experience using Snort to detect real-time threats and write custom rules.
 
-### 🛠️ Tools Used:
-- Snort (IDS Mode)
-- Linux Terminal
-- Custom Rule Writing
+![Snort Status](images/snort-cert.png)
 
 ### 🔍 Key Learning:
-- كتابة الـ Snort Rules لاكتشاف هجمات الـ Nmap والـ Ping sweeps.
-- تحليل الـ Alert logs وفهم أنواع التهديدات المسجلة.
-- التعامل مع الـ PCAP files وتشغيل Snort عليها لاكتشاف الهجمات القديمة.
+- كتابة الـ Snort Rules لاكتشاف الهجمات.
+- تحليل الـ Alert logs والتعامل مع الـ PCAP files.
