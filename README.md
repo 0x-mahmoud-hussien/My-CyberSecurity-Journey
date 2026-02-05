@@ -65,3 +65,16 @@
 - **Injection & XSS:** Understanding how malicious scripts are executed.
 - **Broken Access Control:** How attackers bypass authorization.
 - **Sensitive Data Exposure:** Protecting user data and encryption basics.
+
+
+---
+
+## 🛡️ Security Operations Center (SOC) - Blue Team Introduction
+**Description:** Started the SOC Level 1 path by understanding the fundamental role of a Junior Security Analyst and how defensive teams operate.
+
+![SOC Badge](images/soc-step-badge.png)
+
+### 🔍 Key Learning:
+- **SOC Roles:** فهم مهام الـ Junior Security Analyst والدور اللي بيقوم بيه فريق الـ Blue Team.
+- **Attack Vectors:** التعرف على مداخل الهجمات المختلفة سواء عن طريق الأخطاء البشرية (Humans) أو الثغرات التقنية في الأنظمة (Systems).
+- **Defensive Mindset:** التفكير بعقلية المدافع لصد التهديدات قبل وقوعها.
