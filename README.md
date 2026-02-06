@@ -95,3 +95,19 @@
 - **EDR vs Antivirus:** الفرق بين الحماية التقليدية والـ EDR في اكتشاف الهجمات المعقدة.
 - **EDR Telemetry:** كيفية جمع البيانات من الأجهزة وتحليل السلوكيات المشبوهة.
 - **Practical Investigation:** التحقيق في تنبيه (Alert) حقيقي داخل بيئة EDR.
+
+
+---
+
+## 🛠️ Security Information and Event Management (SIEM)
+**Description:** Learning how to centralize, search, and analyze logs using industry-standard tools like Splunk.
+
+<p align="center">
+  <img src="images/splunk-badge.png" width="45%" />
+  <img src="images/splunk-tasks.png" width="45%" />
+</p>
+
+### 🔍 Splunk Proficiency:
+- **Splunk Components:** فهم الـ Indexer, Search Head, والـ Forwarder.
+- **Data Ingestion:** تعلم كيفية إضافة البيانات (Add Data) والبحث فيها باستخدام الـ SPL.
+- **Log Investigation:** ممارسة التحقيق في السجلات لاكتشاف النشاطات المشبوهة داخل الشبكة.
