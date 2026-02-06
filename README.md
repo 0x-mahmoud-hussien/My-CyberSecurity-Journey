@@ -78,3 +78,20 @@
 - **SOC Roles:** فهم مهام الـ Junior Security Analyst والدور اللي بيقوم بيه فريق الـ Blue Team.
 - **Attack Vectors:** التعرف على مداخل الهجمات المختلفة سواء عن طريق الأخطاء البشرية (Humans) أو الثغرات التقنية في الأنظمة (Systems).
 - **Defensive Mindset:** التفكير بعقلية المدافع لصد التهديدات قبل وقوعها.
+
+
+
+---
+
+## 🛡️ Endpoint Detection and Response (EDR)
+**Description:** Understanding how EDR solutions monitor endpoints and provide visibility into malicious activities.
+
+<p align="center">
+  <img src="images/edr-intro.png" width="45%" />
+  <img src="images/edr-tasks.png" width="45%" />
+</p>
+
+### 🛠️ What I Learned:
+- **EDR vs Antivirus:** الفرق بين الحماية التقليدية والـ EDR في اكتشاف الهجمات المعقدة.
+- **EDR Telemetry:** كيفية جمع البيانات من الأجهزة وتحليل السلوكيات المشبوهة.
+- **Practical Investigation:** التحقيق في تنبيه (Alert) حقيقي داخل بيئة EDR.
