@@ -111,3 +111,20 @@
 - **Splunk Components:** فهم الـ Indexer, Search Head, والـ Forwarder.
 - **Data Ingestion:** تعلم كيفية إضافة البيانات (Add Data) والبحث فيها باستخدام الـ SPL.
 - **Log Investigation:** ممارسة التحقيق في السجلات لاكتشاف النشاطات المشبوهة داخل الشبكة.
+
+
+
+  ---
+
+## 📊 SIEM Mastery: Splunk & Elastic Stack (ELK)
+**Description:** Hands-on experience with industry-leading SIEM platforms for log centralization and threat hunting.
+
+<p align="center">
+  <img src="images/elk-badge.png" width="45%" />
+  <img src="images/elk-tasks.png" width="45%" />
+</p>
+
+### 🛠️ Elastic Stack Key Learning Outcomes:
+- **ELK Architecture:** فهم كيفية عمل Elasticsearch و Logstash و Kibana معاً.
+- **KQL Proficiency:** كتابة استعلامات معقدة باستخدام Kibana Query Language للبحث في السجلات.
+- **Visualizing Data:** بناء Dashboards احترافية لمراقبة التهديدات الأمنية لحظياً.
