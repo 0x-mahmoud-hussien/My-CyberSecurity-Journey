@@ -128,3 +128,20 @@
 - **ELK Architecture:** فهم كيفية عمل Elasticsearch و Logstash و Kibana معاً.
 - **KQL Proficiency:** كتابة استعلامات معقدة باستخدام Kibana Query Language للبحث في السجلات.
 - **Visualizing Data:** بناء Dashboards احترافية لمراقبة التهديدات الأمنية لحظياً.
+
+
+
+---
+
+## ⚙️ Security Orchestration, Automation, and Response (SOAR)
+**Description:** Learning how to automate repetitive tasks and orchestrate incident response workflows to improve SOC efficiency.
+
+<p align="center">
+  <img src="images/soar-badge.png" width="45%" />
+  <img src="images/soar-tasks.png" width="45%" />
+</p>
+
+### 🛠️ Key Learning Outcomes:
+- **Automation Playbooks:** فهم كيفية بناء الـ Playbooks لأتمتة الرد على التنبيهات المتكررة.
+- **Tool Integration:** تعلم كيفية ربط أدوات الـ SIEM والـ EDR بمنصة SOAR واحدة.
+- **Efficiency Boost:** كيفية تقليل الـ Mean Time to Respond (MTTR) من خلال العمليات الآلية.
