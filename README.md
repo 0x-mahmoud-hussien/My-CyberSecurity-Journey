@@ -145,3 +145,20 @@
 - **Automation Playbooks:** فهم كيفية بناء الـ Playbooks لأتمتة الرد على التنبيهات المتكررة.
 - **Tool Integration:** تعلم كيفية ربط أدوات الـ SIEM والـ EDR بمنصة SOAR واحدة.
 - **Efficiency Boost:** كيفية تقليل الـ Mean Time to Respond (MTTR) من خلال العمليات الآلية.
+
+
+
+---
+
+## 🔍 Network Intelligence: Zeek (Bro) Exploration
+**Description:** Completed extensive training on Zeek, covering core concepts and solving complex network traffic challenges.
+
+| Zeek: The Basics | Zeek: Challenges |
+| :---: | :---: |
+| <img src="images/zeek-basics-badge.png" width="200"/> | <img src="images/zeek-challenges-badge.png" width="200"/> |
+| <img src="images/zeek-basics-tasks.png" width="200"/> | <img src="images/zeek-challenges-tasks.png" width="200"/> |
+
+### 🛠️ Technical Expertise Gained:
+- **Packet Analysis:** تحليل الـ PCAP Files واستخراج الأدلة الجنائية الرقمية منها.
+- **Protocol Deep-Dive:** فهم وتحليل سجلات بروتوكولات الـ HTTP, DNS, و FTP لاكتشاف التهديدات.
+- **Advanced Threat Hunting:** حل تحديات واقعية لاكتشاف الهجمات المعقدة داخل الشبكة باستخدام Zeek.
