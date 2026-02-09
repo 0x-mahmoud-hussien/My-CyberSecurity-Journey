@@ -162,3 +162,20 @@
 - **Packet Analysis:** تحليل الـ PCAP Files واستخراج الأدلة الجنائية الرقمية منها.
 - **Protocol Deep-Dive:** فهم وتحليل سجلات بروتوكولات الـ HTTP, DNS, و FTP لاكتشاف التهديدات.
 - **Advanced Threat Hunting:** حل تحديات واقعية لاكتشاف الهجمات المعقدة داخل الشبكة باستخدام Zeek.
+
+
+
+---
+
+## 🔺 Threat Hunting: The Pyramid Of Pain
+**Description:** Understanding the relationship between indicators of compromise (IOCs) and the level of "pain" they cause an adversary when denied.
+
+<p align="center">
+  <img src="images/pyramid-of-pain.png" width="45%" />
+  <img src="images/pyramid-tasks.png" width="45%" />
+</p>
+
+### 🧠 Key Learning Outcomes:
+- **IOCs Hierarchy:** التمييز بين الـ Hash Values والـ IP Addresses وصولاً للـ TTPs.
+- **Detection Strategy:** كيفية بناء استراتيجيات كشف (Detection) تركز على سلوك المهاجم وليس فقط أدواته.
+- **Incident Analysis:** تعلم كيفية رفع تكلفة الهجوم على المخترق من خلال استهداف المستويات العليا في الهرم.
