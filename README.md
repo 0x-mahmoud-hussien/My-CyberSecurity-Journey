@@ -179,3 +179,18 @@
 - **IOCs Hierarchy:** التمييز بين الـ Hash Values والـ IP Addresses وصولاً للـ TTPs.
 - **Detection Strategy:** كيفية بناء استراتيجيات كشف (Detection) تركز على سلوك المهاجم وليس فقط أدواته.
 - **Incident Analysis:** تعلم كيفية رفع تكلفة الهجوم على المخترق من خلال استهداف المستويات العليا في الهرم.
+
+
+
+## ⛓️ Strategic Defense: Unified Kill Chain
+**Description:** Mastering the end-to-end framework that describes the phases of a cyberattack, combining multiple models into a single unified chain.
+
+<p align="center">
+  <img src="images/unified-kill-chain.png" width="45%" />
+  <img src="images/ukc-tasks.png" width="45%" />
+</p>
+
+### 🛠️ Key Learning Outcomes:
+- **Framework Integration:** فهم كيفية دمج الـ Kill Chain التقليدي مع مصفوفة الـ MITRE ATT&CK.
+- **Attack Phases:** دراسة الـ 18 مرحلة للهجوم من الـ Reconnaissance وحتى الـ Objectives.
+- **Defensive Mapping:** تعلم كيفية تحديد نقاط الضعف في الشبكة ورسم خطط الدفاع بناءً على كل مرحلة من مراحل الهجوم.
