@@ -194,3 +194,20 @@
 - **Framework Integration:** فهم كيفية دمج الـ Kill Chain التقليدي مع مصفوفة الـ MITRE ATT&CK.
 - **Attack Phases:** دراسة الـ 18 مرحلة للهجوم من الـ Reconnaissance وحتى الـ Objectives.
 - **Defensive Mapping:** تعلم كيفية تحديد نقاط الضعف في الشبكة ورسم خطط الدفاع بناءً على كل مرحلة من مراحل الهجوم.
+
+
+
+---
+
+## 🛡️ Frameworks: MITRE ATT&CK Mastery
+**Description:** Deep understanding of the globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
+
+<p align="center">
+  <img src="images/mitre-badge.png" width="45%" />
+  <img src="images/mitre-tasks.png" width="45%" />
+</p>
+
+### 🛠️ Key Learning Outcomes:
+- **Tactics vs. Techniques:** فهم الفرق بين "ماذا" يحاول المهاجم تحقيقه و"كيف" يقوم بذلك فعلياً.
+- **Matrix Navigation:** تعلم كيفية استخدام مصفوفة MITRE لتحليل الهجمات وتحديد الفجوات الدفاعية.
+- **Detection & Mitigation:** كيفية استخدام المعارف الموجودة في الإطار لتحسين قدرات الكشف والرد على التهديدات.
