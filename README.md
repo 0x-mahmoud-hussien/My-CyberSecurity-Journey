@@ -181,6 +181,7 @@
 - **Incident Analysis:** تعلم كيفية رفع تكلفة الهجوم على المخترق من خلال استهداف المستويات العليا في الهرم.
 
 
+---
 
 ## ⛓️ Strategic Defense: Unified Kill Chain
 **Description:** Mastering the end-to-end framework that describes the phases of a cyberattack, combining multiple models into a single unified chain.
@@ -211,3 +212,19 @@
 - **Tactics vs. Techniques:** فهم الفرق بين "ماذا" يحاول المهاجم تحقيقه و"كيف" يقوم بذلك فعلياً.
 - **Matrix Navigation:** تعلم كيفية استخدام مصفوفة MITRE لتحليل الهجمات وتحديد الفجوات الدفاعية.
 - **Detection & Mitigation:** كيفية استخدام المعارف الموجودة في الإطار لتحسين قدرات الكشف والرد على التهديدات.
+
+
+---
+
+## 🛡️ Practical Investigation: MITRE ATT&CK Navigator
+**Scenario:** Adversary Mapping & Defensive Analysis (APT28 Case Study)
+
+<p align="center">
+  <img src="images/mitre-navigator-badge.png" width="45%" />
+  <img src="images/apt28-scenario-task.png" width="45%" />
+</p>
+
+### 🛠️ Hands-on Skills Applied:
+- **APT Profiling:** تحليل سلوك مجموعة **APT28** وتحديد الـ Techniques اللي بيستخدموها.
+- **Navigator Mapping:** استخدام أداة **MITRE Navigator** لعمل Visualization للفجوات الدفاعية (Defensive Gaps).
+- **Detection Engineering:** تحديد الـ TTPs اللي محتاجة مراقبة مكثفة في الـ SIEM بناءً على السيناريو العملي.
