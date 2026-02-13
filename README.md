@@ -1,5 +1,29 @@
 # 🛡️ My Cybersecurity Journey - Writeups
 
+# 🛡️ My Cybersecurity Path & Certifications
+
+## 🎓 Completed Path: Cyber Security 101
+**Platform:** TryHackMe | **Issue Date:** Feb 13, 2026 | **Credential ID:** THM-SW96MFJBOJ
+
+<p align="center">
+  <img src="CS101-Certificate.png" width="800">
+</p>
+
+### 🛠️ Skills Covered & Labs Completed:
+* **Networking:** OSI Model, TCP/IP, DNS, and HTTP.
+* **Web Security:** Web Vulnerabilities & Web Exploit Basics.
+* **Operating Systems:** Windows & Linux Foundations.
+* **Security Tools:** Wireshark, Burp Suite, and Gobuster.
+
+---
+
+## 🏗️ Ongoing Work: SOC Level 1 Path
+* **Progress:** 41%
+* **Latest Labs:** Email Analysis (Phishing), MITRE ATT&CK Framework.
+
+
+---
+
 ## 🦈 Network Analysis with Wireshark
 **Description:** Completed the Wireshark series covering basics, packet operations, and traffic analysis.
 
