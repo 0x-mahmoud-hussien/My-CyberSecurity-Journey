@@ -6,7 +6,7 @@
 **Platform:** TryHackMe | **Issue Date:** Feb 13, 2026 | **Credential ID:** THM-SW96MFJBOJ
 
 <p align="center">
-  <img src="CS101-Certificate.png" width="800">
+  <img src="images/CS101-Certificate.png" width="800">
 </p>
 
 ### 🛠️ Skills Covered & Labs Completed:
