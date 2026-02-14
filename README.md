@@ -265,11 +265,21 @@
   <img src="./images/phishing_fundamentals_tasks.png" width="45%" />
 </p>
 
+* **Key Learning Outcomes:**
+    * فهم مكونات الإيميل والفرق بين الـ **SMTP envelope** والـ **Email header**.
+    * تحليل الـ **IP addresses** للمرسل وتتبع مسار الإيميل.
+    * التعرف على أنواع الـ **Attachments** المشبوهة وكيفية التعامل معها.
+
 #### 2. Phishing Emails in Action
 <p align="center">
   <img src="./images/phishing_emails_action_badge.png" width="45%" />
   <img src="./images/phishing_emails_action_tasks.png" width="45%" />
 </p>
+
+* **Key Learning Outcomes:**
+    * تحليل سيناريوهات حقيقية لهجمات تحاكي **PayPal** و **DHL**.
+    * اكتشاف الـ **Malicious URLs** المستخبية وراء أزرار وهمية.
+    * التدريب على كشف الـ **Social Engineering** وتكتيكات إيهام الضحية.
 
 #### 3. Phishing Analysis Tools
 <p align="center">
@@ -277,4 +287,8 @@
   <img src="./images/phishing_tools_tasks.png" width="45%" />
 </p>
 
+* **Key Learning Outcomes:**
+    * احتراف استخدام أداة **PhishTool** لتحليل الـ Headers بشكل آلي.
+    * استخدام الـ **Malware Sandboxes** لفحص الملفات والروابط بأمان.
+    * إجراء تتبع كامل (Investigation) لثلاث حالات حقيقية (Phishing Cases).
 ---
