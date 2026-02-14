@@ -252,3 +252,29 @@
 - **APT Profiling:** تحليل سلوك مجموعة **APT28** وتحديد الـ Techniques اللي بيستخدموها.
 - **Navigator Mapping:** استخدام أداة **MITRE Navigator** لعمل Visualization للفجوات الدفاعية (Defensive Gaps).
 - **Detection Engineering:** تحديد الـ TTPs اللي محتاجة مراقبة مكثفة في الـ SIEM بناءً على السيناريو العملي.
+
+
+---
+
+### 📧 Email Security & Phishing Analysis (Part 1)
+*Completed 3/7 rooms of the module. Focusing on header analysis and malicious lures.*
+
+#### 1. Phishing Analysis Fundamentals
+<p align="center">
+  <img src="./images/phishing_fundamentals_badge.png" width="45%" />
+  <img src="./images/phishing_fundamentals_tasks.png" width="45%" />
+</p>
+
+#### 2. Phishing Emails in Action
+<p align="center">
+  <img src="./images/phishing_emails_action_badge.png" width="45%" />
+  <img src="./images/phishing_emails_action_tasks.png" width="45%" />
+</p>
+
+#### 3. Phishing Analysis Tools
+<p align="center">
+  <img src="./images/phishing_tools_badge.png" width="45%" />
+  <img src="./images/phishing_tools_tasks.png" width="45%" />
+</p>
+
+---
