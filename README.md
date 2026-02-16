@@ -292,3 +292,38 @@
     * استخدام الـ **Malware Sandboxes** لفحص الملفات والروابط بأمان.
     * إجراء تتبع كامل (Investigation) لثلاث حالات حقيقية (Phishing Cases).
 ---
+
+
+
+### 📧 Email Security & Phishing Analysis (Part 1)
+*Completed 3 core rooms in the Email Security module.*
+
+#### 1. Introduction to Email Security (SPF, DKIM, DMARC)
+<p align="center">
+  <img src="./images/email_sec_badge.png" width="45%" />
+  <img src="./images/email_sec_tasks.png" width="45%" />
+</p>
+
+* **اللي اتعلمته:**
+    * فهم بروتوكولات التحقق **SPF, DKIM, DMARC** وإزاي بنستخدمهم لمنع الـ Spoofing.
+    * تحليل الـ **Email Headers** يدويًا وفهم الـ **Hop-by-hop** تتبع للمرسل.
+
+#### 2. Phishing Emails 1
+<p align="center">
+  <img src="./images/phishing1_badge.png" width="45%" />
+  <img src="./images/phishing1_tasks.png" width="45%" />
+</p>
+
+* **اللي اتعلمته:**
+    * فحص الـ **Visual Indicators** في الإيميلات المشبوهة.
+    * تحليل الـ **Embedded Links** وفهم تكتيكات الـ Social Engineering البدائية.
+
+#### 3. Phishing Emails 2
+<p align="center">
+  <img src="./images/phishing2_badge.png" width="45%" />
+  <img src="./images/phishing2_tasks.png" width="45%" />
+</p>
+
+* **اللي اتعلمته:**
+    * التعمق في تحليل الـ **Attachments** المشبوهة.
+    * التعامل مع حالات Phishing أكثر تعقيداً واستخراج الـ **IOCs** (مؤشرات الاختراق) من محتوى الإيميل.
