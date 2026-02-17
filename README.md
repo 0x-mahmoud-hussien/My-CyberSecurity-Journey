@@ -327,3 +327,17 @@
 * **اللي اتعلمته:**
     * التعمق في تحليل الـ **Attachments** المشبوهة.
     * التعامل مع حالات Phishing أكثر تعقيداً واستخراج الـ **IOCs** (مؤشرات الاختراق) من محتوى الإيميل.
+
+
+---
+
+#### 4. NetworkMiner (Network Forensics)
+<p align="center">
+  <img src="./images/networkminer_badge.png" width="45%" />
+  <img src="./images/networkminer_tasks.png" width="45%" />
+</p>
+
+* **اللي اتعلمته:**
+    * استخدام **NetworkMiner** كـ NFAT (Network Forensic Analysis Tool) لاستخراج الملفات تلقائياً من الـ Traffic.
+    * استخراج الـ **Credentials** والصور والملفات المتبادلة عبر بروتوكولات غير مشفرة مثل HTTP و FTP.
+    * تحليل الـ **OS Fingerprinting** لمعرفة أنظمة التشغيل للأجهزة الموجودة في الشبكة بدون إرسال أي حزم (Passive Sniffing).
