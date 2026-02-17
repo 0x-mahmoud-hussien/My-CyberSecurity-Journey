@@ -1,5 +1,23 @@
 # 🛡️ My Cybersecurity Journey - Writeups
 
+
+## 🎓 Professional Certifications
+
+### 🏆 Pre-Security Pathway - TryHackMe
+<p align="center">
+  <img src="./images/pre_security_certificate.png" width="80%" />
+</p>
+
+* **المهارات المكتسبة من المسار:**
+    * **Cyber Security Introduction:** فهم أساسيات المجال والوظائف المتاحة.
+    * **Network Fundamentals:** دراسة الـ OSI Model، والـ IP addresses، وكيفية عمل الـ Routing والـ Switching.
+    * **How the Web Works:** فهم بروتوكولات الـ HTTP/HTTPS، والـ DNS، والـ Cookies.
+    * **Linux Fundamentals:** إتقان التعامل مع الـ Terminal والـ Permissions ونظام الملفات في لينكس.
+    * **Windows Fundamentals:** فهم نظام التشغيل ويندوز من منظور أمني والتعامل مع الـ Command Line.
+
+---
+
+
 # 🛡️ My Cybersecurity Path & Certifications
 
 ## 🎓 Completed Path: Cyber Security 101
