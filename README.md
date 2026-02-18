@@ -375,3 +375,18 @@
     * استكشاف مفهوم "محيط الشبكة" (Network Perimeter) وأهميته في حماية البيانات.
     * التعرف على التهديدات الرئيسية التي تستهدف محيط الشبكة (Perimeter Threats).
     * تحليل وفحص سجلات جدار الحماية (Firewall Logs) للتمييز بين الأنشطة الطبيعية والمشبوهة.
+
+
+---
+
+#### 6. Network Discovery Detection
+<p align="center">
+  <img src="./images/net_discovery_badge.png" width="45%" />
+  <img src="./images/net_discovery_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم ماهية الـ **Network Discovery** ودورها في كشف الأجهزة والخدمات النشطة.
+    * التعرف على أسباب قيام المهاجمين بعمليات الاكتشاف (Reconnaissance) قبل الهجوم.
+    * التمييز بين أنواع الـ Network Discovery المختلفة (External vs Internal Scanning).
+    * فهم آليات عمل تقنيات الاكتشاف (Horizontal vs Vertical Scanning) وكيفية رصدها واكتشافها.
