@@ -359,3 +359,19 @@
     * استخدام **NetworkMiner** كـ NFAT (Network Forensic Analysis Tool) لاستخراج الملفات تلقائياً من الـ Traffic.
     * استخراج الـ **Credentials** والصور والملفات المتبادلة عبر بروتوكولات غير مشفرة مثل HTTP و FTP.
     * تحليل الـ **OS Fingerprinting** لمعرفة أنظمة التشغيل للأجهزة الموجودة في الشبكة بدون إرسال أي حزم (Passive Sniffing).
+
+
+
+---
+
+#### 5. Network Security Essentials
+<p align="center">
+  <img src="./images/net_security_essentials_badge.png" width="45%" />
+  <img src="./images/net_security_essentials_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم ماهية الشبكات وتحديد المكونات الرئيسية المكونة لها (Key Components).
+    * استكشاف مفهوم "محيط الشبكة" (Network Perimeter) وأهميته في حماية البيانات.
+    * التعرف على التهديدات الرئيسية التي تستهدف محيط الشبكة (Perimeter Threats).
+    * تحليل وفحص سجلات جدار الحماية (Firewall Logs) للتمييز بين الأنشطة الطبيعية والمشبوهة.
