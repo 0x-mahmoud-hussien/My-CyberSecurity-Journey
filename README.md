@@ -390,3 +390,19 @@
     * التعرف على أسباب قيام المهاجمين بعمليات الاكتشاف (Reconnaissance) قبل الهجوم.
     * التمييز بين أنواع الـ Network Discovery المختلفة (External vs Internal Scanning).
     * فهم آليات عمل تقنيات الاكتشاف (Horizontal vs Vertical Scanning) وكيفية رصدها واكتشافها.
+
+
+
+---
+
+#### 7. Data Exfiltration Detection
+<p align="center">
+  <img src="./images/data_exfil_badge.png" width="45%" />
+  <img src="./images/data_exfil_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم الطرق الشائعة التي يستخدمها المهاجمون لتسريب البيانات (Data Exfiltration).
+    * تعلم كيفية اكتشاف محاولات التسريب من خلال تحليل حركة مرور الشبكة (Network Traffic Analysis).
+    * تحديد علامات تسريب البيانات على الأجهزة النهائية (Endpoint Devices).
+    * ربط السجلات (Log Correlation) داخل نظام الـ **SIEM** للكشف عن قنوات التسريب المخفية.
