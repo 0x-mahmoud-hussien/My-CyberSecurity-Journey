@@ -406,3 +406,20 @@
     * تعلم كيفية اكتشاف محاولات التسريب من خلال تحليل حركة مرور الشبكة (Network Traffic Analysis).
     * تحديد علامات تسريب البيانات على الأجهزة النهائية (Endpoint Devices).
     * ربط السجلات (Log Correlation) داخل نظام الـ **SIEM** للكشف عن قنوات التسريب المخفية.
+
+
+
+
+---
+
+#### 8. Man-in-the-Middle (MITM) Detection
+<p align="center">
+  <img src="./images/mitm_detection_badge.png" width="45%" />
+  <img src="./images/mitm_detection_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم نواقل وتقنيات هجمات الـ **MITM** الشائعة وكيفية تنفيذها في الشبكات.
+    * تعلم كيفية تحديد "مؤشرات الاختراق" (IoCs) المرتبطة بهجمات الرجل في المنتصف.
+    * إتقان استخدام أدوات مراقبة الشبكة لرصد أنماط حركة المرور المشبوهة (Suspicious Traffic).
+    * ممارسة إجراءات الاستجابة للحوادث (Incident Response) المخصصة لسيناريوهات الـ MITM.
