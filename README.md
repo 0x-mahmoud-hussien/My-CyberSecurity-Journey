@@ -423,3 +423,21 @@
     * تعلم كيفية تحديد "مؤشرات الاختراق" (IoCs) المرتبطة بهجمات الرجل في المنتصف.
     * إتقان استخدام أدوات مراقبة الشبكة لرصد أنماط حركة المرور المشبوهة (Suspicious Traffic).
     * ممارسة إجراءات الاستجابة للحوادث (Incident Response) المخصصة لسيناريوهات الـ MITM.
+
+
+
+
+---
+
+
+#### 9. Web Security Essentials
+<p align="center">
+  <img src="./images/web_security_essentials_badge.png" width="45%" />
+  <img src="./images/web_security_essentials_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم التحول من تطبيقات سطح المكتب إلى تطبيقات الويب (Web Applications) وأثره الأمني.
+    * تحليل الأسباب التي تجعل تطبيقات الويب هدفاً شائعاً ومفضلاً للمهاجمين.
+    * استكشاف البنية التحتية للويب (Web Infrastructure) والأدوات المستخدمة لتأمينها.
+    * التدريب العملي على تطبيق التدابير الأمنية لتقوية وتأمين تطبيقات الويب الجديدة (Hardening).
