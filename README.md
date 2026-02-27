@@ -643,3 +643,19 @@
 </p>
 
 > **تم الحصول على هذه البادج بعد إتمام سلسلة غرف Linux Security Monitoring، وإثبات القدرة على رصد التهديدات المتقدمة، وتحليل الـ Reverse Shells، وكشف محاولات رفع الصلاحيات داخل بيئات اللينكس.**
+
+
+
+---
+
+#### 21. Malware Classification
+<p align="center">
+  <img src="./images/malware_classification_badge.png" width="45%" />
+  <img src="./images/malware_classification_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * تعلم تصنيف أنواع البرمجيات الخبيثة الشائعة بناءً على سلوكها والغرض منها.
+    * فهم كيفية عمل البرمجيات الخبيثة (Malware) في السيناريوهات الواقعية.
+    * تحديد الفروقات الجوهرية بين البرمجيات الخبيثة التنفيذية (Executable) والقائمة على السكريبتات (Script-based).
+    * الممارسة العملية على تصنيف وتحليل أنواع مختلفة من الملفات الضارة.
