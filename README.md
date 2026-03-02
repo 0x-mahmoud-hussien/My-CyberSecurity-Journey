@@ -717,3 +717,20 @@
 </p>
 
 > **تم الحصول على هذه البادج بعد إتمام مسار Malware Concepts، وإتقان مهارات تصنيف البرمجيات الخبيثة، تحليلها (Static & Dynamic)، وكشف هجمات الـ Living Off the Land وربط الـ IOCs بالنشاطات التخريبية.**
+
+
+
+
+---
+
+
+#### 25. Intro to Cyber Threat Intel
+<p align="center">
+  <img src="./images/cti_intro_badge.png" width="45%" />
+  <img src="./images/cti_intro_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم ماهية الاستخبارات المتعلقة بالتهديدات السيبرانية (CTI) وأهميتها القصوى لمحللي الـ SOC.
+    * دراسة دورة حياة استخبارات التهديدات (**Threat Intelligence Lifecycle**) والمؤشرات التي يجب البحث عنها.
+    * التعرف على كيفية مشاركة المعلومات الاستخباراتية باستخدام الـ Feeds والمنصات المتخصصة (Platforms).
