@@ -723,7 +723,6 @@
 
 ---
 
-
 #### 25. Intro to Cyber Threat Intel
 <p align="center">
   <img src="./images/cti_intro_badge.png" width="45%" />
@@ -734,3 +733,19 @@
     * فهم ماهية الاستخبارات المتعلقة بالتهديدات السيبرانية (CTI) وأهميتها القصوى لمحللي الـ SOC.
     * دراسة دورة حياة استخبارات التهديدات (**Threat Intelligence Lifecycle**) والمؤشرات التي يجب البحث عنها.
     * التعرف على كيفية مشاركة المعلومات الاستخباراتية باستخدام الـ Feeds والمنصات المتخصصة (Platforms).
+
+
+
+---
+
+#### 26. File and Hash Threat Intel
+<p align="center">
+  <img src="./images/file_hash_intel_badge.png" width="45%" />
+  <img src="./images/file_hash_intel_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * تفسير مسارات وأسماء الملفات المشبوهة باستخدام القواعد الاستدلالية (**Heuristics**).
+    * إنشاء والتحقق من بصمات الملفات (**File Hashes**) لضمان سلامتها وتحديد هويتها.
+    * الاستفادة من منصات **VirusTotal** و **MalwareBazaar** لإثراء المعلومات حول الملفات المكتشفة حديثاً.
+    * استخراج وتحليل سلوك الملفات من تقارير الـ **Sandbox** وربطها بإطار عمل **MITRE ATT&CK**.
