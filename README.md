@@ -749,3 +749,20 @@
     * إنشاء والتحقق من بصمات الملفات (**File Hashes**) لضمان سلامتها وتحديد هويتها.
     * الاستفادة من منصات **VirusTotal** و **MalwareBazaar** لإثراء المعلومات حول الملفات المكتشفة حديثاً.
     * استخراج وتحليل سلوك الملفات من تقارير الـ **Sandbox** وربطها بإطار عمل **MITRE ATT&CK**.
+
+
+
+---
+
+#### 27. IP and Domain Threat Intel
+<p align="center">
+  <img src="./images/ip_domain_intel_badge.png" width="45%" />
+  <img src="./images/ip_domain_intel_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم أهمية استخبارات التهديدات المتعلقة بالعناوين (IPs) والنطاقات (Domains) لعمل الـ SOC.
+    * تحديد الموقع الجغرافي للـ IPs وتفسير أرقام الأنظمة المستقلة (**ASNs**) التابعة لها.
+    * اكتشاف البنية التحتية المشبوهة باستخدام محركات **Shodan** و **Censys** وتحليل الـ Service Banners.
+    * تقييم سمعة العناوين والنطاقات (Reputation Assessment) باستخدام أدوات متنوعة.
+    * إثراء بيانات النطاقات (Domain Enrichment) عبر فحص عمر الـ WHOIS، سجلات الـ DNS، وشفافية الشهادات الرقمية (Certificates).
