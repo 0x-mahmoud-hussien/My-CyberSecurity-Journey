@@ -782,3 +782,15 @@
     * استخدام تقنيات البحث والتقصي الرقمي للوصول إلى المعلومات المطلوبة (Flags).
     * تطبيق أدوات الـ OSINT والتحليل الفني لفك شفرة التحدي والوصول للحل النهائي.
     * تعزيز مهارات حل المشكلات (Problem Solving) تحت ظروف تحاكي بيئة عمل الـ SOC.
+
+
+
+
+---
+
+### 🏆 Special Achievement: Threat Intel Defender
+<p align="center">
+  <img src="./images/threat_intel_defender_path_badge.png" width="30%" />
+</p>
+
+> **تم الحصول على هذه البادج بعد إتمام مسار Cyber Threat Intelligence، وإتقان مهارات تتبع التهديدات عبر الـ IPs والـ Domains، وتحليل الـ Malware Bazaar، وربط الأنشطة المشبوهة بإطار عمل MITRE ATT&CK لتوقع ومنع الهجمات قبل حدوثها.**
