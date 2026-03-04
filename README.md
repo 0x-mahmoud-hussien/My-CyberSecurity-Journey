@@ -766,3 +766,19 @@
     * اكتشاف البنية التحتية المشبوهة باستخدام محركات **Shodan** و **Censys** وتحليل الـ Service Banners.
     * تقييم سمعة العناوين والنطاقات (Reputation Assessment) باستخدام أدوات متنوعة.
     * إثراء بيانات النطاقات (Domain Enrichment) عبر فحص عمر الـ WHOIS، سجلات الـ DNS، وشفافية الشهادات الرقمية (Certificates).
+
+
+
+---
+
+#### 28. Invite Only (Challenge Room)
+<p align="center">
+  <img src="./images/invite_only_badge.png" width="45%" />
+  <img src="./images/invite_only_tasks.png" width="45%" />
+</p>
+
+* **ما تم إنجازه (Accomplishments):**
+    * حل تحدي عملي يحاكي سيناريوهات اختراق واقعية تتطلب مهارات تحليلية متقدمة.
+    * استخدام تقنيات البحث والتقصي الرقمي للوصول إلى المعلومات المطلوبة (Flags).
+    * تطبيق أدوات الـ OSINT والتحليل الفني لفك شفرة التحدي والوصول للحل النهائي.
+    * تعزيز مهارات حل المشكلات (Problem Solving) تحت ظروف تحاكي بيئة عمل الـ SOC.
