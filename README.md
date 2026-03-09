@@ -892,3 +892,20 @@
     * ربط ورسم خريطة لأنشطة المهاجم بمراحل سلسلة القتل السيبراني (**Cyber Kill Chain Phases**).
     * إتقان استخدام استعلامات **Splunk** الفعالة للبحث في السجلات (Logs) وتتبع التهديدات.
     * فهم الأهمية التكاملية لمصادر السجلات المرتكزة على المضيف (**Host-centric**) والمرتكزة على الشبكة (**Network-centric**).
+
+
+
+---
+
+#### 35. Benign (Scenario-Based Investigation)
+<p align="center">
+  <img src="./images/benign_badge.png" width="30%" />
+  <img src="./images/benign_tasks.png" width="32%" />
+  <img src="./images/benign_progress.png" width="32%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * تحليل سجلات الـ **Splunk** للتمييز بين العمليات النظامية والأنشطة المشبوهة.
+    * التحقيق في سيناريوهات واقعية تتضمن استخدام أدوات ويندوز (LOLBins) في سياق سليم وخبيث.
+    * إتقان مهارات البحث المتقدمة لتحديد الـ **Root Cause** لأي تنبيه أمني.
+    * تقليل الـ False Positives عبر فهم السلوك الطبيعي للمستخدمين والأنظمة داخل الشبكة.
