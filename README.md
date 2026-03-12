@@ -974,3 +974,18 @@
     * تحليل سلاسل البيانات (**Follow Streams**) لاستعادة المحادثات والبيانات المتبادلة في البروتوكولات المختلفة (TCP/UDP/HTTP).
     * إتقان التعامل مع الـ **Time Styles** والتحكم في عرض الحقول بدقة متناهية.
     * دمج الـ TShark في عمليات الـ Automation لتحليل كميات ضخمة من الـ Traffic بسرعة وكفاءة.
+
+
+
+---
+
+#### 40. TShark Challenge I: Teamwork
+<p align="center">
+  <img src="./images/tshark_challenge_badge.png" width="45%" />
+  <img src="./images/tshark_challenge_tasks.png" width="45%" />
+</p>
+
+* **ما تم إنجازه (Accomplishments):**
+    * حل تحدي عملي يعتمد بالكامل على استخدام **TShark** في بيئة سطر الأوامر.
+    * تحليل ملف لاستخراج مؤشرات الاختراق (IOCs) وتتبع مسار الهجوم.
+    * استخدام مهارات الـ **Packet Filtering** المتقدمة للإجابة على أسئلة التحقيق.
