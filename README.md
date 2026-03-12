@@ -957,3 +957,20 @@
     * تطبيق فلاتر الـ **Wireshark** المعروفة داخل بيئة الـ Terminal بكفاءة عالية.
     * التوسع في عمليات تصفية الحزم (Packet Filtering) وأتمتتها (**Automation**) باستخدام الخيارات المتقدمة في TShark.
     * استخراج حقول محددة من الـ Packets وتحويلها إلى تقارير نصية سهلة القراءة والتحليل. 
+
+
+
+---
+
+#### 39. TShark: CLI Wireshark Features
+<p align="center">
+  <img src="./images/tshark_features_badge.png" width="45%" />
+  <img src="./images/tshark_features_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * استكشاف واستخدام مهارات Wireshark المتقدمة مباشرة من سطر الأوامر (CLI).
+    * استخراج الإحصائيات (Statistics) وتحليل البروتوكولات والـ Endpoints باستخدام خيارات `-z`.
+    * تحليل سلاسل البيانات (**Follow Streams**) لاستعادة المحادثات والبيانات المتبادلة في البروتوكولات المختلفة (TCP/UDP/HTTP).
+    * إتقان التعامل مع الـ **Time Styles** والتحكم في عرض الحقول بدقة متناهية.
+    * دمج الـ TShark في عمليات الـ Automation لتحليل كميات ضخمة من الـ Traffic بسرعة وكفاءة.
