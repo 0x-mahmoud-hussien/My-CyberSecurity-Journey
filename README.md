@@ -1,5 +1,17 @@
 # 🛡️ My Cybersecurity Journey - Writeups
 
+## 🔧 Tools & Technologies
+
+* **SIEM:** Splunk, ELK Stack (Kibana).
+* **Network Analysis:** Wireshark, TShark, NetworkMiner.
+* **Intrusion Detection (IDS):** Snort.
+* **Digital Forensics:** Volatility 3, Autopsy.
+* **Endpoint Security:** Sysmon, Windows Event Logs analysis.
+* **OS:** Ubuntu Linux (Primary), Windows.
+
+
+---
+
 
 ## 🎓 Professional Certifications
 
