@@ -1084,14 +1084,7 @@ Capstone Challenges
   <img src="./images/boogeyman1_tasks.png" width="45%" />
 </p>
 
-* **التحقيق العملي (Investigation Details):**
-    * محاكاة دور محقق جنائي رقمي لتحليل هجوم يبدأ برسالة بريد إلكتروني احتيالية (**Phishing Email**).
-    * تحليل ملفات الـ **Artifacts** المشبوهة مثل ملفات الـ **ISO** وملفات الـ **LNK** (Shortcuts) لكشف محتواها الخفي.
-    * تتبع سلسلة تنفيذ الأوامر عبر الـ **PowerShell** واكتشاف محاولات تحميل ملفات خبيثة من الخارج.
-    * استخراج الـ **IOCs** وتحديد عناوين الـ IPs والـ Domains الخاصة بالمهاجم من خلال تحليل السجلات.
-* **المهارات المكتسبة (Skills Applied):**
-    * فهم تقنيات الـ **Initial Access** والـ **Execution** في إطار عمل MITRE ATT&CK.
-    * ممارسة مهارات الـ **Email Analysis** وفحص المرفقات بشكل آمن ومنهجي.
+*#### 43. Boogeyman 1 (Case Study) - [📖 View Detailed Technical Investigation Report](./investigations/Boogeyman1.md).
 
 
 ---
