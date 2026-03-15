@@ -33,6 +33,24 @@
 * **Operating Systems:** Windows & Linux Foundations.
 * **Security Tools:** Wireshark, Burp Suite, and Gobuster.
 
+
+---
+
+## 🎓 Completed Path: SOC Level 1
+**Platform:** TryHackMe | **Issue Date:** March 15, 2026 | **Course Duration:** 65 hours 29 minutes
+
+<p align="center">
+  <img src="./images/SOC_Level1_Certificate.png" width="80%" />
+</p>
+
+### 🛠️ المهارات العملية والموديولات المنجزة (Labs & Skills):
+* **SOC Fundamentals:** فهم آليات عمل الـ SOC، وتصنيف التنبيهات (Triage)، واستخدام أطر العمل مثل **MITRE ATT&CK** و **Pyramid of Pain**.
+* **Network & Web Monitoring:** مراقبة الشبكة باستخدام **Snort** و **Zeek**، وتحليل الترافيك بكفاءة عبر **Wireshark** و **TShark**.
+* **Endpoint Security:** مراقبة وتحليل الـ Logs لأنظمة **Windows** و **Linux** وكشف الهجمات الشائعة.
+* **Digital Forensics & Incident Response:** تحليل الذاكرة العشوائية (**Volatility 3**)، وفحص رسائل البريد الاحتيالي (**Phishing Analysis**).
+* **SIEM Triage:** العمل على منصات **Splunk** و **ELK** لربط الأحداث وبناء الـ Incident Timeline.
+* **Capstone Challenges:** إثبات الجدارة في التعامل مع التهديدات المتقدمة عبر سلسلة تحديات **Boogeyman**.
+
 ---
 
 ## 🏗️ Ongoing Work: SOC Level 1 Path
