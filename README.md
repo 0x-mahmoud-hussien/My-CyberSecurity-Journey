@@ -63,6 +63,8 @@ SIEM Triage
 Capstone Challenges
 تطبيق المهارات المكتسبة في التحقيق في تهديدات متقدمة من خلال سلسلة تحديات Boogeyman.
 
+
+
 ---
 
 ## 🦈 Network Analysis with Wireshark
