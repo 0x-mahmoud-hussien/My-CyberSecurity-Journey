@@ -1157,18 +1157,7 @@ Capstone Challenges
   <img src="./images/boogeyman3_chart.png" width="45%" />
 </p>
 
-* **التحقيق الجنائي (Full-Spectrum Investigation):**
-    * **Initial Access:** تحليل ملف ISO و LNK file لكشف الـ Stage 1 payload وتحديد الـ PID المسؤول عن التنفيذ.
-    * **Privilege Escalation:** تتبع عملية الـ **UAC Bypass** للوصول لصلاحيات الـ Administrator.
-    * **Lateral Movement:** مراقبة تحركات المهاجم داخل الشبكة (Remote Shares) وتتبع الـ **DCSync Attack** للوصول للـ Domain Controller.
-    * **Ransomware Analysis:** كشف الروابط المستخدمة لتحميل وتنفيذ الـ Ransomware في المرحلة النهائية.
-
-* **المهارات المكتسبة (Technical Deep-Dive):**
-    * **SIEM & Logs:** استخدام **ELK Stack** لربط الأحداث (Event Correlation) وبناء الجدول الزمني للهجمة.
-    * **TTPs Analysis:** تحليل تقنيات المهاجم في الـ **Persistence** من خلال الـ Scheduled Tasks.
-    * **Credential Hunting:** تتبع محاولات سحب الـ Hashes وكشف الحسابات المخترقة داخل الـ Domain.
-    * **C2 Tracking:** تحديد الـ IPs والـ Ports المستخدمة في الـ Command & Control Communication.
-
+*> 📝 **[Technical Investigation Report (Detailed Write-up)](./investigations/Boogeyman3.md)**
 
 
  ---
