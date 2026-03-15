@@ -1138,16 +1138,7 @@ Capstone Challenges
   <img src="./images/boogeyman2_tasks.png" width="45%" />
 </p>
 
-* **التحقيق الجنائي (Investigation Flow):**
-    * **Phishing Analysis:** تحليل الإيميل الاحتيالي وتحديد بيانات المهاجم والضحية واستخراج المرفق الخبيث (Resume).
-    * **Macro Analysis:** استخدام أداة `olevba` لتحليل الـ VBA Macros داخل المستند وكشف روابط تحميل الـ Stage 2 payload.
-    * **Memory Forensics (Volatility 3):** تحليل كامل لـ Memory Dump الخاص بجهاز الضحية لتتبع العمليات المشبوهة.
-* **المهارات المكتسبة (Skills Applied):**
-    * تحديد الـ **PIDs** والـ **Parent PIDs** للعمليات الخبيثة التي نفذت الـ payloads.
-    * كشف اتصالات الـ **C2 (Command & Control)** وتحديد الـ IP والـ Port المستخدمين للتواصل مع المهاجم.
-    * تتبع محاولات المهاجم لعمل **Persistence** من خلال تحليل الـ Scheduled Tasks التي تم إنشاؤها فور الاختراق.
-    * استخراج الـ MD5 Hashes والـ File Paths الكاملة للأدلة الرقمية من الذاكرة.
-
+*#### 46. Boogeyman 2 (Phishing & Memory Analysis) - [📖 View Detailed Investigation Report](./investigations/Boogeyman2.md)
 
 
 
