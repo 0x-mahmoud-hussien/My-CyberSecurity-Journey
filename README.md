@@ -45,17 +45,23 @@
 
 ### 🛠️ Skills Covered & Labs Completed
 
-* **SOC Fundamentals:** فهم آليات عمل الـ SOC، عملية **Alert Triage**، واستخدام أطر العمل مثل **MITRE ATT&CK** و **Pyramid of Pain** لتحليل سلوك المهاجمين.
-* 
-* **Network & Web Monitoring:** مراقبة وتحليل الترافيك باستخدام **Snort** و **Zeek**، وتحليل الـ packets عبر **Wireshark** و **TShark**.
+SOC Fundamentals
+فهم آليات عمل الـ SOC، عملية Alert Triage، والتعامل مع أطر العمل الأمنية مثل MITRE ATT&CK و Pyramid of Pain.
 
-* **Endpoint Security:** تحليل ومراقبة **Windows** و **Linux Logs** لاكتشاف الأنشطة المشبوهة والهجمات الشائعة.
+Network & Web Monitoring
+مراقبة وتحليل الترافيك باستخدام Snort و Zeek، وتحليل الـ packets باستخدام Wireshark و TShark.
 
-* **Digital Forensics & Incident Response:** تحليل الذاكرة باستخدام **Volatility 3**، وإجراء **Phishing Email Analysis** كجزء من سيناريوهات التحقيق.
+Endpoint Security
+تحليل ومراقبة Windows و Linux Logs لاكتشاف الأنشطة المشبوهة والهجمات الشائعة.
 
-* **SIEM Triage:** استخدام **Splunk** و **ELK Stack** لتحليل الأحداث وربطها وبناء **Incident Timeline**.
+Digital Forensics & Incident Response
+تحليل الذاكرة باستخدام Volatility 3، وإجراء Phishing Email Analysis ضمن سيناريوهات التحقيق.
 
-* **Capstone Challenges:** تطبيق المهارات في التحقيق في تهديدات متقدمة من خلال سلسلة تحديات **Boogeyman**.
+SIEM Triage
+العمل على منصات Splunk و ELK Stack لتحليل الأحداث وربطها وبناء Incident Timeline.
+
+Capstone Challenges
+تطبيق المهارات المكتسبة في التحقيق في تهديدات متقدمة من خلال سلسلة تحديات Boogeyman.
 
 ---
 
