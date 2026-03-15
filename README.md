@@ -1071,3 +1071,22 @@
     * فهم كيفية عمل الـ **Session 0** والـ **Session 1** وكيفية توزيع العمليات عليهما.
     * تعلم كيفية استخدام أدوات مثل **Process Explorer** و **Task Manager** لتحليل سلوك العمليات بشكل معمق.
     * اكتشاف تقنيات التمويه التي يستخدمها المهاجمون من خلال انتحال أسماء العمليات الأساسية (Process Mimicking).
+
+
+
+---
+
+#### 45. Volatility (Memory Forensics - Volatility 3)
+<p align="center">
+  <img src="./images/volatility_badge.png" width="30%" />
+  <img src="./images/volatility_tasks.png" width="32%" />
+  <img src="./images/volatility_scenarios.png" width="32%" />
+</p>
+
+* **التحقيق والسيناريوهات (Practical Case Studies):**
+    * **Case Study 1 (Ecmo.raw):** إجراء تحليل جنائي كامل لـ Memory Dump للكشف عن نشاط مشبوه، وتحديد العمليات التي تم حقنها (Injected Processes).
+    * **Case Study 2 (Shady.raw):** تتبع سلوك المهاجم داخل الذاكرة واستخراج الأدلة الرقمية المرتبطة بالاتصالات الشبكية والملفات التي تم التلاعب بها.
+* **المهارات المكتسبة (Skills Applied):**
+    * الاحتراف في استخدام **Volatility 3** لتحليل الذاكرة العشوائية (RAM) بسرعة ودقة عالية.
+    * استخدام الـ Plugins المتقدمة مثل `windows.pslist`, `windows.pstree`, `windows.netscan`, و `windows.malfind` لكشف التهديدات.
+    * استخراج الـ **Digital Artifacts** من الذاكرة وفهم الحالة اللحظية للنظام أثناء وقوع الهجوم.
