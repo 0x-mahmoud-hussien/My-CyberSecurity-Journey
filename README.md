@@ -43,20 +43,19 @@
   <img src="./images/SOC_Level1_Certificate.png" width="80%" />
 </p>
 
-### 🛠️ Skills Covered & Labs Completed::
-* **SOC Fundamentals:** فهم آليات عمل الـ SOC، وتصنيف التنبيهات (Triage)، واستخدام أطر العمل مثل **MITRE ATT&CK** و **Pyramid of Pain**.
-* **Network & Web Monitoring:** مراقبة الشبكة باستخدام **Snort** و **Zeek**، وتحليل الترافيك بكفاءة عبر **Wireshark** و **TShark**.
-* **Endpoint Security:** مراقبة وتحليل الـ Logs لأنظمة **Windows** و **Linux** وكشف الهجمات الشائعة.
-* **Digital Forensics & Incident Response:** تحليل الذاكرة العشوائية (**Volatility 3**)، وفحص رسائل البريد الاحتيالي (**Phishing Analysis**).
-* **SIEM Triage:** العمل على منصات **Splunk** و **ELK** لربط الأحداث وبناء الـ Incident Timeline.
-* **Capstone Challenges:** إثبات الجدارة في التعامل مع التهديدات المتقدمة عبر سلسلة تحديات **Boogeyman**.
+### 🛠️ Skills Covered & Labs Completed
 
----
+* **SOC Fundamentals:** فهم آليات عمل الـ SOC، عملية **Alert Triage**، واستخدام أطر العمل مثل **MITRE ATT&CK** و **Pyramid of Pain** لتحليل سلوك المهاجمين.
+* 
+* **Network & Web Monitoring:** مراقبة وتحليل الترافيك باستخدام **Snort** و **Zeek**، وتحليل الـ packets عبر **Wireshark** و **TShark**.
 
-## 🏗️ Ongoing Work: SOC Level 1 Path
-* **Progress:** 41%
-* **Latest Labs:** Email Analysis (Phishing), MITRE ATT&CK Framework.
+* **Endpoint Security:** تحليل ومراقبة **Windows** و **Linux Logs** لاكتشاف الأنشطة المشبوهة والهجمات الشائعة.
 
+* **Digital Forensics & Incident Response:** تحليل الذاكرة باستخدام **Volatility 3**، وإجراء **Phishing Email Analysis** كجزء من سيناريوهات التحقيق.
+
+* **SIEM Triage:** استخدام **Splunk** و **ELK Stack** لتحليل الأحداث وربطها وبناء **Incident Timeline**.
+
+* **Capstone Challenges:** تطبيق المهارات في التحقيق في تهديدات متقدمة من خلال سلسلة تحديات **Boogeyman**.
 
 ---
 
