@@ -1131,3 +1131,14 @@
     * **TTPs Analysis:** تحليل تقنيات المهاجم في الـ **Persistence** من خلال الـ Scheduled Tasks.
     * **Credential Hunting:** تتبع محاولات سحب الـ Hashes وكشف الحسابات المخترقة داخل الـ Domain.
     * **C2 Tracking:** تحديد الـ IPs والـ Ports المستخدمة في الـ Command & Control Communication.
+
+
+
+ ---
+
+### 🏆 Special Achievement: Boogeyman Slayer
+<p align="center">
+  <img src="./images/boogeyman_slayer_badge.png" width="30%" />
+</p>
+
+> **تم الحصول على هذه البادج بعد إتمام سلسلة تحديات Boogeyman الثلاثة (Capstone Challenges).
