@@ -43,7 +43,7 @@
   <img src="./images/SOC_Level1_Certificate.png" width="80%" />
 </p>
 
-### 🛠️ المهارات العملية والموديولات المنجزة (Labs & Skills):
+### 🛠️ Skills Covered & Labs Completed::
 * **SOC Fundamentals:** فهم آليات عمل الـ SOC، وتصنيف التنبيهات (Triage)، واستخدام أطر العمل مثل **MITRE ATT&CK** و **Pyramid of Pain**.
 * **Network & Web Monitoring:** مراقبة الشبكة باستخدام **Snort** و **Zeek**، وتحليل الترافيك بكفاءة عبر **Wireshark** و **TShark**.
 * **Endpoint Security:** مراقبة وتحليل الـ Logs لأنظمة **Windows** و **Linux** وكشف الهجمات الشائعة.
