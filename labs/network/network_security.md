@@ -4,9 +4,9 @@
 **Description:** Completed the Wireshark series covering basics, packet operations, and traffic analysis.
 
 <p align="center">
-  <img src="../images/wireshark-cert.png" width="32%" />
-  <img src="../images/wireshark-cert1.png" width="32%" />
-  <img src="../images/wireshark-cert2.png" width="32%" />
+  <img src="../../images/wireshark-cert.png" width="32%" />
+  <img src="../../images/wireshark-cert1.png" width="32%" />
+  <img src="../../images/wireshark-cert2.png" width="32%" />
 </p>
 
 ### 🔍 Key Learning Outcomes:
@@ -21,7 +21,7 @@
 **Description:** Hands-on experience using Snort to detect real-time threats and write custom rules.
 
 <p align="center">
-  <img src="../images/snort-cert.png" width="60%" />
+  <img src="../../images/snort-cert.png" width="60%" />
 </p>
 
 ### 🔍 Key Learning:
