@@ -1,14 +1,17 @@
-# 🛡️ My Cybersecurity Journey - Writeups
+# 🛡️ Mahmoud Hussein | SOC Analyst Portfolio
+### My Cyber Security Journey 🚀
+
+Welcome to my cybersecurity repository. This project documents my technical progress, hands-on labs, and real-world investigations in the field of Security Operations and Threat Hunting.
+
+---
 
 ## 🔧 Tools & Technologies
 
-* **SIEM:** Splunk, ELK Stack (Kibana).
-* **Network Analysis:** Wireshark, TShark, NetworkMiner.
-* **Intrusion Detection (IDS):** Snort.
-* **Digital Forensics:** Volatility 3, Autopsy.
-* **Endpoint Security:** Sysmon, Windows Event Logs analysis.
+* **SIEM/SOAR:** Splunk, ELK Stack (Kibana), Tines.
+* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort.
+* **Endpoint & Forensics:** FlareVM, EDR Solutions, Volatility 3, Autopsy, Sysmon.
+* **Frameworks:** MITRE ATT&CK, Unified Kill Chain, Pyramid of Pain.
 * **OS:** Ubuntu Linux (Primary), Windows.
-
 
 ---
 
@@ -17,112 +20,15 @@
 
 ---
 
-### 🧪 Hands-on Labs & Technical Writeups
-* [🌐 Network Analysis & IDS (Wireshark & Snort)](./labs/network/network_security.md)
+## 🧪 Hands-on Labs & Technical Writeups
+Click on any of the sections below to view detailed writeups and outcomes:
 
----
-
-* [🛡️ Malware Analysis & Endpoint Security (FlareVM)](./labs/endpoint-security/malware_analysis.md)
-
----
-
-* [Linux Fundamentals Walkthrough](./labs/os-security/linux_fundamentals.md)
----
-
-### 🧪 Hands-on Labs & Technical Writeups
-* [📊 SIEM & SOAR Operations (Splunk, ELK, SOAR)](./labs/siem-soar/siem_mastery.md)
-
----
-
-* [🛡️ Endpoint Security & EDR (FlareVM, EDR Intro)](./labs/endpoint-security/malware_analysis.md)
-
-* ---
-* 
-* [🐝 Web Application Security (OWASP Top 10)](./labs/web-security/web_vulnerabilities.md)
-
-* ---
-
-
----
-
-## 🔍 Network Intelligence: Zeek (Bro) Exploration
-**Description:** Completed extensive training on Zeek, covering core concepts and solving complex network traffic challenges.
-
-| Zeek: The Basics | Zeek: Challenges |
-| :---: | :---: |
-| <img src="images/zeek-basics-badge.png" width="200"/> | <img src="images/zeek-challenges-badge.png" width="200"/> |
-| <img src="images/zeek-basics-tasks.png" width="200"/> | <img src="images/zeek-challenges-tasks.png" width="200"/> |
-
-### 🛠️ Technical Expertise Gained:
-- **Packet Analysis:** تحليل الـ PCAP Files واستخراج الأدلة الجنائية الرقمية منها.
-- **Protocol Deep-Dive:** فهم وتحليل سجلات بروتوكولات الـ HTTP, DNS, و FTP لاكتشاف التهديدات.
-- **Advanced Threat Hunting:** حل تحديات واقعية لاكتشاف الهجمات المعقدة داخل الشبكة باستخدام Zeek.
-
-
-
----
-
-## 🔺 Threat Hunting: The Pyramid Of Pain
-**Description:** Understanding the relationship between indicators of compromise (IOCs) and the level of "pain" they cause an adversary when denied.
-
-<p align="center">
-  <img src="images/pyramid-of-pain.png" width="45%" />
-  <img src="images/pyramid-tasks.png" width="45%" />
-</p>
-
-### 🧠 Key Learning Outcomes:
-- **IOCs Hierarchy:** التمييز بين الـ Hash Values والـ IP Addresses وصولاً للـ TTPs.
-- **Detection Strategy:** كيفية بناء استراتيجيات كشف (Detection) تركز على سلوك المهاجم وليس فقط أدواته.
-- **Incident Analysis:** تعلم كيفية رفع تكلفة الهجوم على المخترق من خلال استهداف المستويات العليا في الهرم.
-
-
----
-
-## ⛓️ Strategic Defense: Unified Kill Chain
-**Description:** Mastering the end-to-end framework that describes the phases of a cyberattack, combining multiple models into a single unified chain.
-
-<p align="center">
-  <img src="images/unified-kill-chain.png" width="45%" />
-  <img src="images/ukc-tasks.png" width="45%" />
-</p>
-
-### 🛠️ Key Learning Outcomes:
-- **Framework Integration:** فهم كيفية دمج الـ Kill Chain التقليدي مع مصفوفة الـ MITRE ATT&CK.
-- **Attack Phases:** دراسة الـ 18 مرحلة للهجوم من الـ Reconnaissance وحتى الـ Objectives.
-- **Defensive Mapping:** تعلم كيفية تحديد نقاط الضعف في الشبكة ورسم خطط الدفاع بناءً على كل مرحلة من مراحل الهجوم.
-
-
-
----
-
-## 🛡️ Frameworks: MITRE ATT&CK Mastery
-**Description:** Deep understanding of the globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
-
-<p align="center">
-  <img src="images/mitre-badge.png" width="45%" />
-  <img src="images/mitre-tasks.png" width="45%" />
-</p>
-
-### 🛠️ Key Learning Outcomes:
-- **Tactics vs. Techniques:** فهم الفرق بين "ماذا" يحاول المهاجم تحقيقه و"كيف" يقوم بذلك فعلياً.
-- **Matrix Navigation:** تعلم كيفية استخدام مصفوفة MITRE لتحليل الهجمات وتحديد الفجوات الدفاعية.
-- **Detection & Mitigation:** كيفية استخدام المعارف الموجودة في الإطار لتحسين قدرات الكشف والرد على التهديدات.
-
-
----
-
-## 🛡️ Practical Investigation: MITRE ATT&CK Navigator
-**Scenario:** Adversary Mapping & Defensive Analysis (APT28 Case Study)
-
-<p align="center">
-  <img src="images/mitre-navigator-badge.png" width="45%" />
-  <img src="images/apt28-scenario-task.png" width="45%" />
-</p>
-
-### 🛠️ Hands-on Skills Applied:
-- **APT Profiling:** تحليل سلوك مجموعة **APT28** وتحديد الـ Techniques اللي بيستخدموها.
-- **Navigator Mapping:** استخدام أداة **MITRE Navigator** لعمل Visualization للفجوات الدفاعية (Defensive Gaps).
-- **Detection Engineering:** تحديد الـ TTPs اللي محتاجة مراقبة مكثفة في الـ SIEM بناءً على السيناريو العملي.
+* [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek)](./labs/network/network_security.md)
+* [🛡️ **Cyber Frameworks** (MITRE ATT&CK, Pyramid of Pain, UKC)](./labs/frameworks/cyber_frameworks.md)
+* [📊 **SIEM & SOAR Operations** (Splunk, ELK, SOAR)](./labs/siem-soar/siem_mastery.md)
+* [🖥️ **Endpoint Security & EDR** (FlareVM, EDR Intro)](./labs/endpoint-security/malware_analysis.md)
+* [🐝 **Web Application Security** (OWASP Top 10)](./labs/web-security/web_vulnerabilities.md)
+* [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
 
 
 ---
