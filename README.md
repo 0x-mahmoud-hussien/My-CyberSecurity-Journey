@@ -27,84 +27,9 @@ Click on any of the sections below to view detailed writeups and outcomes:
 * [🛡️ **Cyber Frameworks** (MITRE ATT&CK, Pyramid of Pain, UKC)](./labs/frameworks/cyber_frameworks.md)
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, SOAR)](./labs/siem-soar/siem_mastery.md)
 * [🖥️ **Endpoint Security & EDR** (FlareVM, EDR Intro)](./labs/endpoint-security/malware_analysis.md)
+* [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
 * [🐝 **Web Application Security** (OWASP Top 10)](./labs/web-security/web_vulnerabilities.md)
 * [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
-
-
----
-
-### 📧 Email Security & Phishing Analysis (Part 1)
-*Completed 3/7 rooms of the module. Focusing on header analysis and malicious lures.*
-
-#### 1. Phishing Analysis Fundamentals
-<p align="center">
-  <img src="./images/phishing_fundamentals_badge.png" width="45%" />
-  <img src="./images/phishing_fundamentals_tasks.png" width="45%" />
-</p>
-
-* **Key Learning Outcomes:**
-    * فهم مكونات الإيميل والفرق بين الـ **SMTP envelope** والـ **Email header**.
-    * تحليل الـ **IP addresses** للمرسل وتتبع مسار الإيميل.
-    * التعرف على أنواع الـ **Attachments** المشبوهة وكيفية التعامل معها.
-
-#### 2. Phishing Emails in Action
-<p align="center">
-  <img src="./images/phishing_emails_action_badge.png" width="45%" />
-  <img src="./images/phishing_emails_action_tasks.png" width="45%" />
-</p>
-
-* **Key Learning Outcomes:**
-    * تحليل سيناريوهات حقيقية لهجمات تحاكي **PayPal** و **DHL**.
-    * اكتشاف الـ **Malicious URLs** المستخبية وراء أزرار وهمية.
-    * التدريب على كشف الـ **Social Engineering** وتكتيكات إيهام الضحية.
-
-#### 3. Phishing Analysis Tools
-<p align="center">
-  <img src="./images/phishing_tools_badge.png" width="45%" />
-  <img src="./images/phishing_tools_tasks.png" width="45%" />
-</p>
-
-* **Key Learning Outcomes:**
-    * احتراف استخدام أداة **PhishTool** لتحليل الـ Headers بشكل آلي.
-    * استخدام الـ **Malware Sandboxes** لفحص الملفات والروابط بأمان.
-    * إجراء تتبع كامل (Investigation) لثلاث حالات حقيقية (Phishing Cases).
----
-
-
-
-### 📧 Email Security & Phishing Analysis (Part 1)
-*Completed 3 core rooms in the Email Security module.*
-
-#### 1. Introduction to Email Security (SPF, DKIM, DMARC)
-<p align="center">
-  <img src="./images/email_sec_badge.png" width="45%" />
-  <img src="./images/email_sec_tasks.png" width="45%" />
-</p>
-
-* **اللي اتعلمته:**
-    * فهم بروتوكولات التحقق **SPF, DKIM, DMARC** وإزاي بنستخدمهم لمنع الـ Spoofing.
-    * تحليل الـ **Email Headers** يدويًا وفهم الـ **Hop-by-hop** تتبع للمرسل.
-
-#### 2. Phishing Emails 1
-<p align="center">
-  <img src="./images/phishing1_badge.png" width="45%" />
-  <img src="./images/phishing1_tasks.png" width="45%" />
-</p>
-
-* **اللي اتعلمته:**
-    * فحص الـ **Visual Indicators** في الإيميلات المشبوهة.
-    * تحليل الـ **Embedded Links** وفهم تكتيكات الـ Social Engineering البدائية.
-
-#### 3. Phishing Emails 2
-<p align="center">
-  <img src="./images/phishing2_badge.png" width="45%" />
-  <img src="./images/phishing2_tasks.png" width="45%" />
-</p>
-
-* **اللي اتعلمته:**
-    * التعمق في تحليل الـ **Attachments** المشبوهة.
-    * التعامل مع حالات Phishing أكثر تعقيداً واستخراج الـ **IOCs** (مؤشرات الاختراق) من محتوى الإيميل.
-
 
 ---
 
