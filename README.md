@@ -1152,3 +1152,15 @@ Capstone Challenges
 </p>
 
 > **تم الحصول على هذه البادج بعد إتمام سلسلة تحديات Boogeyman الثلاثة (Capstone Challenges).
+
+ ---
+
+#### 48. Hacking with PowerShell
+<p align="center">
+  <img src="./images/powershell_hacking_badge.png" width="45%" />
+  <img src="./images/powershell_hacking_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم أساسيات الـ **PowerShell Scripting** وكيفية أتمتة مهام الفحص.
+    * ممارسة تقنيات الـ **Enumeration** لجمع معلومات النظام والشبكة.
