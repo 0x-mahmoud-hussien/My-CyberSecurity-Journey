@@ -2,9 +2,9 @@
 **Description:** Completed the full Linux Fundamentals pathway on TryHackMe, covering everything from basic terminal navigation to system administration and package management.
 
 <p align="center">
-  <img src="images/linux-part1.png" width="32%" />
-  <img src="images/linux-part2.png" width="32%" />
-  <img src="images/linux-part3.png" width="32%" />
+  <img src="../../images/linux-part1.png" width="32%" />
+  <img src="../../images/linux-part2.png" width="32%" />
+  <img src="../../images/linux-part3.png" width="32%" />
 </p>
 
 ### 🛠️ Key Skills Learned:
