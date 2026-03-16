@@ -1113,14 +1113,7 @@ Capstone Challenges
   <img src="./images/volatility_scenarios.png" width="32%" />
 </p>
 
-* **التحقيق والسيناريوهات (Practical Case Studies):**
-    * **Case Study 1 (Ecmo.raw):** إجراء تحليل جنائي كامل لـ Memory Dump للكشف عن نشاط مشبوه، وتحديد العمليات التي تم حقنها (Injected Processes).
-    * **Case Study 2 (Shady.raw):** تتبع سلوك المهاجم داخل الذاكرة واستخراج الأدلة الرقمية المرتبطة بالاتصالات الشبكية والملفات التي تم التلاعب بها.
-* **المهارات المكتسبة (Skills Applied):**
-    * الاحتراف في استخدام **Volatility 3** لتحليل الذاكرة العشوائية (RAM) بسرعة ودقة عالية.
-    * استخدام الـ Plugins المتقدمة مثل `windows.pslist`, `windows.pstree`, `windows.netscan`, و `windows.malfind` لكشف التهديدات.
-    * استخراج الـ **Digital Artifacts** من الذاكرة وفهم الحالة اللحظية للنظام أثناء وقوع الهجوم.
-
+*#### 39. Volatility - [📖 View Detailed Memory Forensics Report](./investigations/Volatility.md)
 
 
 ---
