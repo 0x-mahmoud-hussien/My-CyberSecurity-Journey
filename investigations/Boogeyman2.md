@@ -1,3 +1,11 @@
+#### 46. Boogeyman 2 (Phishing & Memory Analysis)
+<p align="center">
+  <img src="../images/boogeyman2_badge.png" width="45%" />
+  <img src="../images/boogeyman2_tasks.png" width="45%" />
+</p>
+
+---
+
 # 🕵️‍♂️ Investigation Report: Case Boogeyman 2 (Phishing & Memory Analysis)
 
 ## 📋 Scenario Overview
