@@ -19,7 +19,7 @@ Welcome to my cybersecurity repository. This project documents my technical prog
 Click on any of the sections below to view detailed writeups:
 
 * [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek, NetworkMiner)](./labs/network/network_security.md)
-* [🛡️ **Cyber Frameworks** (MITRE ATT&CK, Pyramid of Pain, UKC)](./labs/frameworks/cyber_frameworks.md)
+* [🛡️ **Cyber Frameworks & Threat Intel** (MITRE, CTI, Threat Hunting)](./labs/frameworks/cyber_frameworks.md)
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, SOAR)](./labs/siem-soar/siem_mastery.md)
 * [🖥️ **Windows Endpoint Security** (Logging, Threat Detection, Defender)](./labs/endpoint-security/windows_security.md)
 * [🐧 **Linux Endpoint Security** (Auditd, Threat Detection, Defender)](./labs/os-security/linux_security.md)
