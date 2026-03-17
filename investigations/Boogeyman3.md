@@ -1,7 +1,7 @@
 #### 45. Boogeyman 3 (The Final Chapter - ELK Stack Investigation)
 <p align="center">
   <img src="../images/boogeyman3_badge.png" width="45%" />
-  <img src="../images/boogeyman3_tasks.png" width="45%" />
+  <img src="../images/boogeyman3_chart.png" width="45%" />
 </p>
 
 ---
