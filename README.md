@@ -1,4 +1,6 @@
 # 🛡️ Mahmoud Hussein | SOC Analyst Portfolio
+
+SOC Analyst focused on threat detection, incident response, and digital forensics with hands-on experience in SIEM, network analysis, and memory forensics.
 ### My Cyber Security Journey 🚀
 
 Welcome to my cybersecurity repository. This project documents my technical progress, hands-on labs, and real-world investigations in the field of Security Operations and Threat Hunting.
