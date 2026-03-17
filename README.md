@@ -40,6 +40,8 @@ Click on any of the sections below to view detailed writeups:
 
 ## 🔍 Specialized Security Investigations (Capstone Challenges)
 
+These investigations simulate real-world attack scenarios and demonstrate practical DFIR and SOC analysis skills.
+
 هذا القسم يحتوي على تحقيقات جنائية رقمية متقدمة قمت بها لمحاكاة سيناريوهات اختراق واقعية، مع التركيز على تحليل الذاكرة، سجلات النظام، وحركة الشبكة.
 
 ---
