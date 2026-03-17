@@ -8,50 +8,47 @@
 
 # 🕵️‍♂️ Technical Investigation Report: Case Boogeyman 3 (Lurking in the Dark)
 
-## 📋 Scenario Overview
-في هذا الجزء، استهدف المهاجم المدير التنفيذي للشركة "Evan Hutchinson" مستخدماً وصوله السابق لبريد أحد الموظفين. الهجمة كانت تعتمد على خداع المستخدم لفتح ملف **ISO** يحتوي على ملفات مخفية لبدء عملية الاختراق. تم التحقيق في هذه الحادثة باستخدام سجلات نظام **Sysmon** المركزية داخل منصة **Kibana (ELK Stack)** للوقوف على كامل تفاصيل الهجمة وتوسيع نطاق المهاجم داخل الشبكة.
+## 1. Executive Summary
+تم الكشف عن هجوم معقد استهدف شركة Quick Logistics LLC، وتحديداً الحساب الخاص بالمدير التنفيذي (CEO) Evan Hutchinson. بدأ الهجوم عبر رسالة بريد إلكتروني احتيالية (Phishing) تحتوي على ملف ISO ملغوم. نجح المهاجم في تجاوز الدفاعات الأولية، وقام بعمليات تحرك جانبي (Lateral Movement) وتصعيد صلاحيات (Privilege Escalation)، وصولاً إلى سحب بيانات الاعتماد ونشر برمجية فدية (Ransomware).
 
----
+## 2. Scenario
+بعد تعرض الشركة لهجمات سابقة، استمر المهاجم المعروف بـ Boogeyman في التخفي داخل الشبكة. استغل المهاجم وصوله المبدئي لبريد أحد الموظفين لإرسال رسالة "عاجلة" للمدير التنفيذي لإغرائه بفتح ملف مالي مفترض، مما أدى إلى سلسلة من العمليات التخريبية داخل بيئة العمل.
 
-## 🛠️ Toolset & Platform
-* **ELK Stack (Elasticsearch, Logstash, Kibana):** المنصة الرئيسية لتحليل ملايين السجلات والبحث عن الأنماط المشبوهة.
-* **Sysmon Logs:** المصدر الأساسي للبيانات لرصد إنشاء العمليات (Event ID 1) والاتصالات الشبكية (Event ID 3).
-* **Kibana Discovery:** لعمل Filtering وتحديد النطاق الزمني للهجمة (29-30 أغسطس 2023).
+## 3. Investigation Steps
+* تحليل البريد الإلكتروني: فحص الرسالة القادمة من allie.sierra@quicklogistics.org.
+* تحليل المرفقات: فحص ملف ProjectFinancialSummary_Q3.pdf المكتشف في مجلد التحميلات.
+* تتبع العمليات (Process Tracking): استخدام سجلات التحقيق لتحديد الـ PID الخاص بالملفات المنفذة وتتبع الأوامر.
+* تحليل التحرك الجانبي: مراقبة استخدام بروتوكولات مثل WinRM (عبر wsmprovhost.exe) للانتقال بين الأجهزة.
+* تحليل استخراج البيانات: رصد محاولات تحميل أدوات خارجية (مثل Mimikatz) وسحب الـ Hashes.
 
----
+## 4. Tools Used
+* ELK Stack (Kibana): للبحث في السجلات وتحليل الأحداث.
+* Sysmon: لمراقبة سجلات النظام والعمليات بدقة.
 
-## 🔍 Investigation Steps & Findings
+## 5. Findings (النتائج)
+* خداع الامتداد: الملف المرفق يظهر كـ PDF ولكنه في الحقيقة ISO (Disc Image File). وبداخله ملف HTA (HTML Application) هو المسؤول عن بدء الهجوم.
+* تنفيذ المرحلة الأولى: تم تنفيذ Payload المرحلة الأولى بواسطة عملية تحمل PID رقم 6392.
+* الزرع والاستمرارية: قام المهاجم بنسخ ملف review.dat إلى مجلد Temp باستخدام أداة xcopy.exe وإنشاء مهمة مجدولة (Scheduled Task) باسم Review لضمان البقاء في النظام.
+* تجاوز صلاحيات المستخدم (UAC Bypass): تم استخدام عملية fodhelper.exe لتجاوز نظام التحكم في حساب المستخدم والحصول على صلاحيات إدارية.
+* استخراج الـ Hashes: تم استخدام أداة Mimikatz (محملة من GitHub) لسحب بيانات الاعتماد.
+* التحرك الجانبي: تم اختراق جهاز WKSTN-1327 باستخدام حساب itadmin المكتشف.
+* الهجوم النهائي: الوصول إلى الـ Domain Controller وتنفيذ هجوم DCSync لسحب بيانات حساب backupda.
 
-### 1. Initial Access (Phishing ISO)
-* **Email Source:** تم إرسال البريد من `p.mclane@quicklogisticsorg.onmicrosoft.com` (حساب مخترق سابقاً).
-* **The Payload:** ملف ISO باسم `Meeting_Notes.iso` تم تحميله في مجلد الـ Downloads الخاص بالضحية.
-* **The Bait:** داخل الـ ISO، وجد الضحية ملف اختصار (LNK) باسم `Meeting_Notes.lnk` يقوم بتشغيل ملف مخفي.
+## 6. Attack Timeline
+* 29/08/2023 - 10:51: تحميل ملف الـ ISO الملغوم ProjectFinancialSummary_Q3.pdf.
+* تنفيذ المرحلة الأولى: تشغيل ملف الـ HTA وتواصله مع C2 IP 165.232.170.151.
+* تثبيت الأقدام: إنشاء ملف review.dat وتشغيله عبر rundll32.exe مع DllRegisterServer.
+* تصعيد الصلاحيات: تنفيذ UAC Bypass عبر fodhelper.exe.
+* التحرك الجانبي: اكتشاف ملف IT_Automation.ps1 على مشاركة شبكية، مما أدى للحصول على كلمات مرور جديدة.
+* تشفير البيانات: تحميل وتشغيل برمجية الفدية ransomboogey.exe.
 
-### 2. Execution & Persistence (DLL Sideloading)
-من خلال تحليل سجلات **Sysmon**، تم اكتشاف تقنية التخفي المستخدمة:
-* **The Trick:** ملف الـ LNK يقوم بتشغيل عملية `cmd.exe` التي بدورها تُشغل `calc.exe`.
-* **Malicious DLL:** المهاجم استخدم تقنية **DLL Sideloading** حيث قام بوضع ملف `WinUpdate.dll` خبيث في نفس مسار البرنامج، مما أدى لتحميل الكود الخبيث بمجرد تشغيل الآلة الحاسبة.
-* **Persistence:** تم إنشاء مفتاح في الـ Registry تحت مسار `Run` لضمان تشغيل البرنامج الخبيث مع كل بداية تشغيل للنظام.
+## 7. Indicators of Compromise (IOCs)
 
-### 3. Lateral Movement & C2 Activity
-* **C2 Communication:** تم رصد اتصال خارجي من عملية `calc.exe` إلى IP المهاجم `167.71.199.191` عبر المنفذ `8080`.
-* **Internal Recon:** المهاجم قام بتحميل أداة `mimikatz.exe` بـ Hash محدد لاستخراج بيانات الاعتماد من الذاكرة.
-* **Targeting Servers:** تم رصد محاولة الوصول لخادم ملفات داخلي (`Fileserver.quicklogistics.local`) باستخدام بروتوكول **SMB**.
-
----
-
-## 📊 Attack Timeline
-1. **Aug 29, 09:20:** وصول بريد الـ Phishing للمدير التنفيذي.
-2. **Aug 29, 10:05:** فتح ملف الـ ISO وتشغيل ملف الـ LNK الخبيث.
-3. **Aug 29, 10:10:** تشغيل `calc.exe` وتحميل الـ DLL الخبيث (`WinUpdate.dll`).
-4. **Aug 29, 11:30:** بدء عمليات الاستطلاع الداخلي وتحميل أدوات استخراج الهويات (Mimikatz).
-5. **Aug 30, 08:45:** محاولة التحرك العرضي (Lateral Movement) تجاه الخوادم الحساسة.
-
----
-
-## 🛡️ Indicators of Compromise (IOCs)
-* **IP Address:** `167.71.199.191`.
-* **Filenames:** `Meeting_Notes.iso`, `WinUpdate.dll`, `mimikatz.exe`.
-* **Registry Key:** `HKCU\Software\Microsoft\Windows\CurrentVersion\Run\WindowsUpdate`.
-* **Hashes:** * ISO Hash: `CB3A1E6ACFB246F256FBEFDB6F494941AA30A5A7C3F5258C3E63CFA27A23DC6`.
-    * Mimikatz Hash: `CE278CA242AA2023A4FE04067B0A32FBD3CA1599746C160949868FFC7FC3D7D8`.
+| Type | Value |
+| :--- | :--- |
+| C2 IP:Port | 165.232.170.151:80 |
+| Malicious File | ProjectFinancialSummary_Q3.pdf (Actual: ISO/HTA) |
+| Persistence File | C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat |
+| Ransomware URL | http://ff.sillytechninja.io/ransomboogey.exe |
+| Mimikatz Tool | https://github.com/gentilkiwi/mimikatz/releases/download/... |
+| Scheduled Task | Review |
