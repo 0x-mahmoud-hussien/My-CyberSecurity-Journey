@@ -114,3 +114,85 @@
     * تعلم كيفية تحديد "مؤشرات الاختراق" (IoCs) المرتبطة بهجمات الرجل في المنتصف.
     * إتقان استخدام أدوات مراقبة الشبكة لرصد أنماط حركة المرور المشبوهة.
     * ممارسة إجراءات الاستجابة للحوادث (Incident Response) المخصصة لسيناريوهات الـ MITM.
+
+---
+
+#### 36. Brim
+<p align="center">
+  <img src="../../images/brim_badge.png" width="45%" />
+  <img src="../../images/brim_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * معالجة وتحليل ملفات الـ **PCAP** الكبيرة وتحويلها إلى سجلات منظمة وسهلة التصفح.
+    * إتقان لغة الاستعلام **ZQL** (Zed Query Language) لتصفية البيانات واستخراج المعلومات الأمنية.
+    * استخدام الـ **Suricata** و **Zeek** المدمجين داخل Brim لاكتشاف التنبيهات والأنشطة المشبوهة.
+    * الربط بين تحليل الشبكة وأدوات التحليل الأخرى مثل **Wireshark** للتعمق في تفاصيل الـ Packets.
+    * كشف أنماط الـ Malware Traffic واتصالات الـ C2 من خلال تحليل سجلات الـ HTTP والـ DNS.
+
+---
+
+#### 38. TShark: The Basics
+<p align="center">
+  <img src="../../images/tshark_basics_badge.png" width="45%" />
+  <img src="../../images/tshark_basics_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * تعلم كيفية تصفية وتحليل حركة مرور الشبكة (**Traffic Analysis**) باستخدام أداة سطر الأوامر **TShark**.
+    * تطبيق فلاتر الـ **Wireshark** المعروفة داخل بيئة الـ Terminal بكفاءة عالية.
+    * التوسع في عمليات تصفية الحزم (Packet Filtering) وأتمتتها (**Automation**) باستخدام الخيارات المتقدمة في TShark.
+    * استخراج حقول محددة من الـ Packets وتحويلها إلى تقارير نصية سهلة القراءة والتحليل. 
+
+---
+
+#### 39. TShark: CLI Wireshark Features
+<p align="center">
+  <img src="../../images/tshark_features_badge.png" width="45%" />
+  <img src="../../images/tshark_features_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * استكشاف واستخدام مهارات Wireshark المتقدمة مباشرة من سطر الأوامر (CLI).
+    * استخراج الإحصائيات (Statistics) وتحليل البروتوكولات والـ Endpoints باستخدام خيارات `-z`.
+    * تحليل سلاسل البيانات (**Follow Streams**) لاستعادة المحادثات والبيانات المتبادلة في البروتوكولات المختلفة (TCP/UDP/HTTP).
+    * إتقان التعامل مع الـ **Time Styles** والتحكم في عرض الحقول بدقة متناهية.
+    * دمج الـ TShark في عمليات الـ Automation لتحليل كميات ضخمة من الـ Traffic بسرعة وكفاءة.
+
+---
+
+#### 40. TShark Challenge I: Teamwork
+<p align="center">
+  <img src="../../images/tshark_challenge_badge.png" width="45%" />
+  <img src="../../images/tshark_challenge_tasks.png" width="45%" />
+</p>
+
+* **ما تم إنجازه (Accomplishments):**
+    * حل تحدي عملي يعتمد بالكامل على استخدام **TShark** في بيئة سطر الأوامر.
+    * تحليل ملف لاستخراج مؤشرات الاختراق (IOCs) وتتبع مسار الهجوم.
+    * استخدام مهارات الـ **Packet Filtering** المتقدمة للإجابة على أسئلة التحقيق.
+
+---
+
+#### 41. TShark Challenge II: Directory
+<p align="center">
+  <img src="../../images/tshark_challenge_ii_badge.png" width="45%" />
+  <img src="../../images/tshark_challenge_ii_tasks.png" width="45%" />
+</p>
+
+> **التحقيق والسيناريو (Scenario & Investigation):**
+> التحقيق في تنبيه أمني يشير لتعرض مستخدم لمشكلة بسبب "فضوله" في تصفح فهرس ملفات مشبوه. استخدام **TShark** لاستخراج الـ **Hashes** وفحصها باستخدام **VirusTotal**.
+
+* **المهارات المكتسبة (Skills Applied):**
+    * إتقان تقنيات استخراج الملفات المتبادلة عبر بروتوكول HTTP باستخدام سطر الأوامر.
+    * ربط تحليل الشبكة بذكاء التهديدات (**Threat Intelligence**) للتحقق من سلامة الملفات.
+    * تحليل الـ HTTP Objects وتحديد الملفات التي تم تحميلها وتسببت في اختراق الجهاز.
+
+---
+
+### 🏆 Special Achievement: TShark Master
+<p align="center">
+  <img src="../../images/tshark_path_badge.png" width="30%" />
+</p>
+
+> **تم الحصول على هذه البادج بعد إتمام كافة غرف وتحديات TShark بنجاح. تضمنت الرحلة إتقان تحليل البروتوكولات عبر سطر الأوامر، واستخراج الملفات المشبوهة، والربط مع أدوات الـ Threat Intel مثل VirusTotal لكشف التهديدات المتقدمة وأتمتة عمليات فحص الـ PCAPs.**
