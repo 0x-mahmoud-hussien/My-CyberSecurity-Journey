@@ -1,3 +1,12 @@
+#### 45. Volatility (Memory Forensics - Volatility 3)
+<p align="center">
+  <img src="../images/volatility_badge.png" width="30%" />
+  <img src="../images/volatility_tasks.png" width="32%" />
+  <img src="../images/volatility_scenarios.png" width="32%" />
+</p>
+
+---
+
 # 🕵️‍♂️ Memory Forensics Report: Volatility Investigations
 
 ## 📋 Overview
