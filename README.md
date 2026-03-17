@@ -26,7 +26,7 @@ Click on any of the sections below to view detailed writeups:
 * [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek, NetworkMiner, TShark, Brim)](./labs/network/network_security.md)
 * [🛡️ **Cyber Frameworks & Threat Intel** (MITRE, CTI, Threat Hunting)](./labs/frameworks/cyber_frameworks.md)
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, Alert Triage)](./labs/siem-soar/siem_mastery.md)
-* [🖥️ **Windows Endpoint Security** (Logging, Sysmon, Windows Event Logs, Threat Detection, Defender)](./labs/endpoint-security/windows_security.md)
+* [🖥️ **Windows Endpoint Security** (Logging, Sysmon, Core Processes, PowerShell)](./labs/endpoint-security/windows_security.md)
 * [🐧 **Linux Endpoint Security** (Auditd, Threat Detection, Defender)](./labs/os-security/linux_security.md)
 * [🦠 **Malware Analysis & Concepts** (Static/Dynamic, LotL, Defender)](./labs/endpoint-security/malware_analysis.md)
 * [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
@@ -59,22 +59,6 @@ Click on any of the sections below to view detailed writeups:
 </p>
 
 *#### 43. Boogeyman 1 (Case Study) - [📖 View Detailed Technical Investigation Report](./investigations/Boogeyman1.md).
-
-
----
-
-#### 44. Core Windows Processes
-<p align="center">
-  <img src="./images/core_windows_processes_badge.png" width="45%" />
-  <img src="./images/core_windows_processes_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم العمليات الأساسية لنظام التشغيل ويندوز (مثل System, Smss.exe, Csrss.exe, Wininit.exe, Services.exe).
-    * التعرف على الـ **Parent Process** والمسار الصحيح (Path) لكل عملية أساسية لتمييز أي تلاعب.
-    * فهم كيفية عمل الـ **Session 0** والـ **Session 1** وكيفية توزيع العمليات عليهما.
-    * تعلم كيفية استخدام أدوات مثل **Process Explorer** و **Task Manager** لتحليل سلوك العمليات بشكل معمق.
-    * اكتشاف تقنيات التمويه التي يستخدمها المهاجمون من خلال انتحال أسماء العمليات الأساسية (Process Mimicking).
 
 
 
@@ -119,15 +103,3 @@ Click on any of the sections below to view detailed writeups:
 </p>
 
 > **تم الحصول على هذه البادج بعد إتمام سلسلة تحديات Boogeyman الثلاثة (Capstone Challenges).
-
- ---
-
-#### 48. Hacking with PowerShell
-<p align="center">
-  <img src="./images/powershell_hacking_badge.png" width="45%" />
-  <img src="./images/powershell_hacking_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم أساسيات الـ **PowerShell Scripting** وكيفية أتمتة مهام الفحص.
-    * ممارسة تقنيات الـ **Enumeration** لجمع معلومات النظام والشبكة.
