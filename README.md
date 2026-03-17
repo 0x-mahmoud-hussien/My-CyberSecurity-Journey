@@ -33,73 +33,39 @@ Click on any of the sections below to view detailed writeups:
 * [🐝 **Web Application Security** (OWASP Top 10, Web Defender)](./labs/web-security/web_vulnerabilities.md)
 * [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
 
-
----
-
-#### 37. Tempest (Investigation Challenge)
-<p align="center">
-  <img src="./images/tempest_badge.png" width="45%" />
-  <img src="./images/tempest_tasks.png" width="45%" />
-</p>
-
-* **ما تم إنجازه (Accomplishments):**
-    * حل تحدي عملي متكامل يتطلب مهارات التحقيق الرقمي والاستجابة للحوادث (**DFIR**).
-    * تحليل الأدلة الرقمية ومطاردة التهديدات داخل بيئة مصابة لكشف جدول المهاجم الزمني.
-    * استخدام أدوات التحليل المتنوعة لفك شفرة الهجوم واستخراج الـ Flags المطلوبة.
-    * تعزيز القدرة على ربط الأحداث ببعضها للوصول إلى كيفية حدوث الاختراق (Root Cause Analysis).
-
-
 ---
 
 
-#### 43. Boogeyman 1 (Case Study)
-<p align="center">
-  <img src="./images/boogeyman1_badge.png" width="45%" />
-  <img src="./images/boogeyman1_tasks.png" width="45%" />
-</p>
+## 🔍 Specialized Security Investigations (Capstone Challenges)
 
-*#### 43. Boogeyman 1 (Case Study) - [📖 View Detailed Technical Investigation Report](./investigations/Boogeyman1.md).
-
-
+هذا القسم يحتوي على تحقيقات جنائية رقمية متقدمة قمت بها لمحاكاة سيناريوهات اختراق واقعية، مع التركيز على تحليل الذاكرة، سجلات النظام، وحركة الشبكة.
 
 ---
 
-#### 45. Volatility (Memory Forensics - Volatility 3)
-<p align="center">
-  <img src="./images/volatility_badge.png" width="30%" />
-  <img src="./images/volatility_tasks.png" width="32%" />
-  <img src="./images/volatility_scenarios.png" width="32%" />
-</p>
+#### 🛡️ Case Study: Boogeyman Series (The Trilogy)
+سلسلة تحقيقات متكاملة تتبع دورة حياة الهجوم (Attack Lifecycle) من الوصول الأولي وحتى السيطرة الكاملة.
 
-*#### 39. Volatility - [📖 View Detailed Memory Forensics Report](./investigations/Volatility.md)
+* [**Boogeyman 1: Initial Threat**](./investigations/Boogeyman1.md)
+    * **Focus:** Phishing Analysis, LNK Files, & DNS Exfiltration.
+* [**Boogeyman 2: Memory Forensics**](./investigations/Boogeyman2.md)
+    * **Focus:** Volatility 3, Macro Analysis, & Process Injection.
+* [**Boogeyman 3: Enterprise Investigation**](./investigations/Boogeyman3.md)
+    * **Focus:** ELK Stack (Kibana), Sysmon Analysis, & HTA Deception.
 
+> 🏆 **Special Achievement: Boogeyman Slayer**
+> <p align="center"><img src="./images/boogeyman_slayer_badge.png" width="200" /></p>
+> *تم الحصول على هذه البادج بعد إتمام سلسلة تحديات Boogeyman الثلاثة بنجاح.*
 
 ---
 
-#### 46. Boogeyman 2 (Phishing & Memory Analysis)
-<p align="center">
-  <img src="./images/boogeyman2_badge.png" width="45%" />
-  <img src="./images/boogeyman2_tasks.png" width="45%" />
-</p>
+#### 🌀 Case Study: Tempest (Investigation Challenge)
+* [**View Detailed Report**](./investigations/Tempest.md)
+* **Key Highlights:** * تحليل أدلة رقمية واستجابة للحوادث (**DFIR**).
+    * تتبع المهاجم باستخدام **EZTools** و **Brim**.
+    * كشف تقنيات الـ **Reverse Socks Proxy** وتصعيد الصلاحيات.
 
-*#### 46. Boogeyman 2 (Phishing & Memory Analysis) - [📖 View Detailed Investigation Report](./investigations/Boogeyman2.md)
+---
 
-
-
-#### 47. Boogeyman 3 (Full Attack Chain Analysis)
-<p align="center">
-  <img src="./images/boogeyman3_badge.png" width="45%" />
-  <img src="./images/boogeyman3_chart.png" width="45%" />
-</p>
-
-*> 📝 **[Technical Investigation Report (Detailed Write-up)](./investigations/Boogeyman3.md)**
-
-
- ---
-
-### 🏆 Special Achievement: Boogeyman Slayer
-<p align="center">
-  <img src="./images/boogeyman_slayer_badge.png" width="30%" />
-</p>
-
-> **تم الحصول على هذه البادج بعد إتمام سلسلة تحديات Boogeyman الثلاثة (Capstone Challenges).
+#### 🧠 Case Study: Volatility (Memory Forensics)
+* [**View Detailed Memory Report**](./investigations/Volatility.md)
+* **Focus:** تحليل الـ RAM Samples لاستخراج الـ Artifacts الخفية وكشف الـ Malicious Processes.
