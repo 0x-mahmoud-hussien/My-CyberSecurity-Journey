@@ -23,86 +23,11 @@ Click on any of the sections below to view detailed writeups:
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, SOAR)](./labs/siem-soar/siem_mastery.md)
 * [🖥️ **Windows Endpoint Security** (Logging, Threat Detection, Defender)](./labs/endpoint-security/windows_security.md)
 * [🐧 **Linux Endpoint Security** (Auditd, Threat Detection, Defender)](./labs/os-security/linux_security.md)
+* [🦠 **Malware Analysis & Concepts** (Static/Dynamic, LotL, Defender)](./labs/endpoint-security/malware_analysis.md)
 * [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
 * [🐝 **Web Application Security** (OWASP Top 10, Web Defender)](./labs/web-security/web_vulnerabilities.md)
 * [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
-
-
----
-
-#### 21. Malware Classification
-<p align="center">
-  <img src="./images/malware_classification_badge.png" width="45%" />
-  <img src="./images/malware_classification_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * تعلم تصنيف أنواع البرمجيات الخبيثة الشائعة بناءً على سلوكها والغرض منها.
-    * فهم كيفية عمل البرمجيات الخبيثة (Malware) في السيناريوهات الواقعية.
-    * تحديد الفروقات الجوهرية بين البرمجيات الخبيثة التنفيذية (Executable) والقائمة على السكريبتات (Script-based).
-    * الممارسة العملية على تصنيف وتحليل أنواع مختلفة من الملفات الضارة.
-
-
-
----
-
-#### 22. Intro to Malware Analysis
-<p align="center">
-  <img src="./images/intro_malware_analysis_badge.png" width="45%" />
-  <img src="./images/intro_malware_analysis_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم ماهية البرمجيات الخبيثة وتكوينها التقني بشكل عميق.
-    * استخدام الأدوات والمصادر الشائعة المساعدة في عمليات التحقيق الجنائي الرقمي.
-    * إجراء التحليل الأساسي الثابت (**Static Analysis**) والديناميكي (**Dynamic Analysis**) للملفات المشبوهة.
-    * تعلم كيفية إعداد بيئة آمنة ومعزولة (**Sandbox**) لتحليل البرمجيات الخبيثة دون تهديد النظام الأساسي.
-
-
-
----
-
-#### 23. Living Off the Land Attacks
-<p align="center">
-  <img src="./images/lotl_attacks_badge.png" width="45%" />
-  <img src="./images/lotl_attacks_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم ماهية هجمات الـ **Living Off the Land (LotL)** وكيفية استغلال الأدوات الشرعية للنظام.
-    * تحديد أدوات ويندوز الموثوقة (مثل PowerShell, Certutil, WMIC) التي يمكن للمهاجمين إساءة استخدامها.
-    * التعرف على تقنيات المهاجمين التي تندمج مع العمليات الطبيعية للنظام لتجنب الكشف.
-    * تعلم كيفية رصد سلوك الـ LoL باستخدام تحليل السجلات (Log Analysis) وتنبيهات الـ **SIEM**.
-
-
-
----
-
-#### 24. Shadow Trace
-<p align="center">
-  <img src="./images/shadow_trace_badge.png" width="45%" />
-  <img src="./images/shadow_trace_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * استخراج مؤشرات الاختراق (**IOCs**) من الملفات البرمجية المشبوهة (Binaries).
-    * ربط التنبيهات (Alerts) بالأنشطة الخبيثة لتحليل سلسلة الهجوم بالكامل.
-    * تنفيذ إجراءات الفرز الأساسية (**SOC Triage**) لتحديد مدى خطورة التهديدات وترتيب أولويات الاستجابة.
-
-
-
----
-
-### 🏆 Special Achievement: Malware Defender
-<p align="center">
-  <img src="./images/malware_defender_path_badge.png" width="30%" />
-</p>
-
-> **تم الحصول على هذه البادج بعد إتمام مسار Malware Concepts، وإتقان مهارات تصنيف البرمجيات الخبيثة، تحليلها (Static & Dynamic)، وكشف هجمات الـ Living Off the Land وربط الـ IOCs بالنشاطات التخريبية.**
-
-
-
-
+* 
 ---
 
 #### 25. Intro to Cyber Threat Intel
