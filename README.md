@@ -15,6 +15,11 @@ Welcome to my cybersecurity repository. This project documents my technical prog
 
 ---
 
+## 🏆 Certifications & Professional Path
+* [🎓 **Professional Certifications** (SOC Level 1, CS 101, Pre-Security)](./certifications/completed_paths.md)
+
+---
+
 ## 🧪 Hands-on Labs & Technical Writeups
 Click on any of the sections below to view detailed writeups:
 
