@@ -15,7 +15,7 @@
 بعد تعرض الشركة لهجمات سابقة، استمر المهاجم المعروف بـ Boogeyman في التخفي داخل الشبكة. استغل المهاجم وصوله المبدئي لبريد أحد الموظفين لإرسال رسالة "عاجلة" للمدير التنفيذي لإغرائه بفتح ملف مالي مفترض، مما أدى إلى سلسلة من العمليات التخريبية داخل بيئة العمل.
 
 ## 3. Investigation Steps
-* تحليل البريد الإلكتروني: فحص الرسالة القادمة من allie.sierra@quicklogistics.org.
+* تحليل البريد الإلكتروني: فحص الرسالة القادمة من allie.sierra[at]quicklogistics[.]org.
 * تحليل المرفقات: فحص ملف ProjectFinancialSummary_Q3.pdf المكتشف في مجلد التحميلات.
 * تتبع العمليات (Process Tracking): استخدام سجلات التحقيق لتحديد الـ PID الخاص بالملفات المنفذة وتتبع الأوامر.
 * تحليل التحرك الجانبي: مراقبة استخدام بروتوكولات مثل WinRM (عبر wsmprovhost.exe) للانتقال بين الأجهزة.
@@ -46,9 +46,9 @@
 
 | Type | Value |
 | :--- | :--- |
-| C2 IP:Port | 165.232.170.151:80 |
+| C2 IP:Port | 165[.]232[.]170[.]151:80 |
 | Malicious File | ProjectFinancialSummary_Q3.pdf (Actual: ISO/HTA) |
 | Persistence File | C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat |
-| Ransomware URL | http://ff.sillytechninja.io/ransomboogey.exe |
+| Ransomware URL | http[:]//ff[.]sillytechninja[.]io/ransomboogey[.]exe |
 | Mimikatz Tool | https://github.com/gentilkiwi/mimikatz/releases/download/... |
 | Scheduled Task | Review |
