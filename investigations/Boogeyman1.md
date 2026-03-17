@@ -1,3 +1,11 @@
+#### 43. Boogeyman 1 (Case Study)
+<p align="center">
+  <img src="../images/boogeyman1_badge.png" width="45%" />
+  <img src="../images/boogeyman1_tasks.png" width="45%" />
+</p>
+
+---
+
 # 🕵️‍♂️ Investigation Report: Case Boogeyman 1 (The Initial Threat)
 
 ## 📋 Scenario Overview
