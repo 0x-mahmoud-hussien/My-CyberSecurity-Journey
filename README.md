@@ -26,29 +26,12 @@ Click on any of the sections below to view detailed writeups:
 * [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek, NetworkMiner, TShark, Brim)](./labs/network/network_security.md)
 * [🛡️ **Cyber Frameworks & Threat Intel** (MITRE, CTI, Threat Hunting)](./labs/frameworks/cyber_frameworks.md)
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, Alert Triage)](./labs/siem-soar/siem_mastery.md)
-* [🖥️ **Windows Endpoint Security** (Logging, Sysmon, Threat Detection, Defender)](./labs/endpoint-security/windows_security.md)
+* [🖥️ **Windows Endpoint Security** (Logging, Sysmon, Windows Event Logs, Threat Detection, Defender)](./labs/endpoint-security/windows_security.md)
 * [🐧 **Linux Endpoint Security** (Auditd, Threat Detection, Defender)](./labs/os-security/linux_security.md)
 * [🦠 **Malware Analysis & Concepts** (Static/Dynamic, LotL, Defender)](./labs/endpoint-security/malware_analysis.md)
 * [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
 * [🐝 **Web Application Security** (OWASP Top 10, Web Defender)](./labs/web-security/web_vulnerabilities.md)
 * [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
-
-
----
-
-#### 42. Windows Event Logs
-<p align="center">
-  <img src="./images/windows_event_logs_badge.png" width="45%" />
-  <img src="./images/windows_event_logs_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم بنية سجلات أحداث ويندوز (System, Security, Application) وكيفية التعامل معها.
-    * استخدام أداة **Event Viewer** و **Get-WinEvent** عبر PowerShell للبحث عن الأحداث وتصفيتها.
-    * التعرف على الـ **Event IDs** الهامة للتحقيق الأمني (مثل 4624 للـ Logon و 4688 لإنشاء العمليات).
-    * تحليل سجلات الـ **XPath Queries** لكتابة فلاتر مخصصة ودقيقة لاستخراج الأدلة الرقمية.
-    * مراقبة سلوك المستخدمين وكشف محاولات الدخول غير المصرح بها أو التلاعب بالنظام.
-
 
 
 ---
