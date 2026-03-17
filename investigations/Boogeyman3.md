@@ -1,3 +1,11 @@
+#### 47. Boogeyman 3 (Full Attack Chain Analysis)
+<p align="center">
+  <img src="../images/boogeyman3_badge.png" width="45%" />
+  <img src="../images/boogeyman3_chart.png" width="45%" />
+</p>
+
+---
+
 # 🕵️‍♂️ Investigation Report: Case Boogeyman 3 (The Slayer)
 
 ## 📋 Scenario Overview
