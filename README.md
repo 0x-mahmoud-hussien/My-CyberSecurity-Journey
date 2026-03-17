@@ -26,104 +26,12 @@ Click on any of the sections below to view detailed writeups:
 * [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek, NetworkMiner)](./labs/network/network_security.md)
 * [🛡️ **Cyber Frameworks & Threat Intel** (MITRE, CTI, Threat Hunting)](./labs/frameworks/cyber_frameworks.md)
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, SOAR)](./labs/siem-soar/siem_mastery.md)
-* [🖥️ **Windows Endpoint Security** (Logging, Threat Detection, Defender)](./labs/endpoint-security/windows_security.md)
+* [🖥️ **Windows Endpoint Security** (Logging, Sysmon, Threat Detection, Defender)](./labs/endpoint-security/windows_security.md)
 * [🐧 **Linux Endpoint Security** (Auditd, Threat Detection, Defender)](./labs/os-security/linux_security.md)
 * [🦠 **Malware Analysis & Concepts** (Static/Dynamic, LotL, Defender)](./labs/endpoint-security/malware_analysis.md)
 * [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
 * [🐝 **Web Application Security** (OWASP Top 10, Web Defender)](./labs/web-security/web_vulnerabilities.md)
 * [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
-* 
----
-
-#### 25. Intro to Cyber Threat Intel
-<p align="center">
-  <img src="./images/cti_intro_badge.png" width="45%" />
-  <img src="./images/cti_intro_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم ماهية الاستخبارات المتعلقة بالتهديدات السيبرانية (CTI) وأهميتها القصوى لمحللي الـ SOC.
-    * دراسة دورة حياة استخبارات التهديدات (**Threat Intelligence Lifecycle**) والمؤشرات التي يجب البحث عنها.
-    * التعرف على كيفية مشاركة المعلومات الاستخباراتية باستخدام الـ Feeds والمنصات المتخصصة (Platforms).
-
-
-
----
-
-#### 26. File and Hash Threat Intel
-<p align="center">
-  <img src="./images/file_hash_intel_badge.png" width="45%" />
-  <img src="./images/file_hash_intel_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * تفسير مسارات وأسماء الملفات المشبوهة باستخدام القواعد الاستدلالية (**Heuristics**).
-    * إنشاء والتحقق من بصمات الملفات (**File Hashes**) لضمان سلامتها وتحديد هويتها.
-    * الاستفادة من منصات **VirusTotal** و **MalwareBazaar** لإثراء المعلومات حول الملفات المكتشفة حديثاً.
-    * استخراج وتحليل سلوك الملفات من تقارير الـ **Sandbox** وربطها بإطار عمل **MITRE ATT&CK**.
-
-
-
----
-
-#### 27. IP and Domain Threat Intel
-<p align="center">
-  <img src="./images/ip_domain_intel_badge.png" width="45%" />
-  <img src="./images/ip_domain_intel_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم أهمية استخبارات التهديدات المتعلقة بالعناوين (IPs) والنطاقات (Domains) لعمل الـ SOC.
-    * تحديد الموقع الجغرافي للـ IPs وتفسير أرقام الأنظمة المستقلة (**ASNs**) التابعة لها.
-    * اكتشاف البنية التحتية المشبوهة باستخدام محركات **Shodan** و **Censys** وتحليل الـ Service Banners.
-    * تقييم سمعة العناوين والنطاقات (Reputation Assessment) باستخدام أدوات متنوعة.
-    * إثراء بيانات النطاقات (Domain Enrichment) عبر فحص عمر الـ WHOIS، سجلات الـ DNS، وشفافية الشهادات الرقمية (Certificates).
-
-
-
----
-
-#### 28. Invite Only (Challenge Room)
-<p align="center">
-  <img src="./images/invite_only_badge.png" width="45%" />
-  <img src="./images/invite_only_tasks.png" width="45%" />
-</p>
-
-* **ما تم إنجازه (Accomplishments):**
-    * حل تحدي عملي يحاكي سيناريوهات اختراق واقعية تتطلب مهارات تحليلية متقدمة.
-    * استخدام تقنيات البحث والتقصي الرقمي للوصول إلى المعلومات المطلوبة (Flags).
-    * تطبيق أدوات الـ OSINT والتحليل الفني لفك شفرة التحدي والوصول للحل النهائي.
-    * تعزيز مهارات حل المشكلات (Problem Solving) تحت ظروف تحاكي بيئة عمل الـ SOC.
-
-
-
-
----
-
-### 🏆 Special Achievement: Threat Intel Defender
-<p align="center">
-  <img src="./images/threat_intel_defender_path_badge.png" width="30%" />
-</p>
-
-> **تم الحصول على هذه البادج بعد إتمام مسار Cyber Threat Intelligence، وإتقان مهارات تتبع التهديدات عبر الـ IPs والـ Domains، وتحليل الـ Malware Bazaar، وربط الأنشطة المشبوهة بإطار عمل MITRE ATT&CK لتوقع ومنع الهجمات قبل حدوثها.**
-
-
-
----
-
-#### 29. Sysmon
-<p align="center">
-  <img src="./images/sysmon_badge.png" width="45%" />
-  <img src="./images/sysmon_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم دور أداة **Sysmon** كجزء من مجموعة أدوات **Sysinternals** في مراقبة الأنظمة.
-    * تعلم كيفية تثبيت وإعداد الـ **Configuration Files** لتصفية الأحداث الهامة وتقليل الضجيج (Noise).
-    * تحليل أحداث النظام الهامة مثل إنشاء العمليات (**Process Creation**)، اتصالات الشبكة، وتعديل الـ Registry.
-    * اكتشاف الهجمات المتقدمة (مثل الـ الـ Process Injection) التي لا تستطيع سجلات ويندوز العادية كشفها.
-    * كتابة واستخدام الـ **Rules** (باستخدام لغة XML) لتخصيص عملية الرصد بناءً على احتياجات المؤسسة.
-
 
 ---
 
