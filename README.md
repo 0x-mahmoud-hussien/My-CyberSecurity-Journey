@@ -8,107 +8,23 @@ Welcome to my cybersecurity repository. This project documents my technical prog
 ## 🔧 Tools & Technologies
 
 * **SIEM/SOAR:** Splunk, ELK Stack (Kibana), Tines.
-* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort.
+* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort, NetworkMiner.
 * **Endpoint & Forensics:** FlareVM, EDR Solutions, Volatility 3, Autopsy, Sysmon.
 * **Frameworks:** MITRE ATT&CK, Unified Kill Chain, Pyramid of Pain.
 * **OS:** Ubuntu Linux (Primary), Windows.
 
 ---
 
-## 🎓 Professional Certifications
-* [Detailed Learning Paths & Certificates](./certifications/completed_paths.md)
-
----
-
 ## 🧪 Hands-on Labs & Technical Writeups
-Click on any of the sections below to view detailed writeups and outcomes:
+Click on any of the sections below to view detailed writeups:
 
-* [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek)](./labs/network/network_security.md)
+* [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek, NetworkMiner)](./labs/network/network_security.md)
 * [🛡️ **Cyber Frameworks** (MITRE ATT&CK, Pyramid of Pain, UKC)](./labs/frameworks/cyber_frameworks.md)
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, SOAR)](./labs/siem-soar/siem_mastery.md)
 * [🖥️ **Endpoint Security & EDR** (FlareVM, EDR Intro)](./labs/endpoint-security/malware_analysis.md)
 * [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
 * [🐝 **Web Application Security** (OWASP Top 10)](./labs/web-security/web_vulnerabilities.md)
 * [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
-
----
-
-#### 4. NetworkMiner (Network Forensics)
-<p align="center">
-  <img src="./images/networkminer_badge.png" width="45%" />
-  <img src="./images/networkminer_tasks.png" width="45%" />
-</p>
-
-* **اللي اتعلمته:**
-    * استخدام **NetworkMiner** كـ NFAT (Network Forensic Analysis Tool) لاستخراج الملفات تلقائياً من الـ Traffic.
-    * استخراج الـ **Credentials** والصور والملفات المتبادلة عبر بروتوكولات غير مشفرة مثل HTTP و FTP.
-    * تحليل الـ **OS Fingerprinting** لمعرفة أنظمة التشغيل للأجهزة الموجودة في الشبكة بدون إرسال أي حزم (Passive Sniffing).
-
-
-
----
-
-#### 5. Network Security Essentials
-<p align="center">
-  <img src="./images/net_security_essentials_badge.png" width="45%" />
-  <img src="./images/net_security_essentials_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم ماهية الشبكات وتحديد المكونات الرئيسية المكونة لها (Key Components).
-    * استكشاف مفهوم "محيط الشبكة" (Network Perimeter) وأهميته في حماية البيانات.
-    * التعرف على التهديدات الرئيسية التي تستهدف محيط الشبكة (Perimeter Threats).
-    * تحليل وفحص سجلات جدار الحماية (Firewall Logs) للتمييز بين الأنشطة الطبيعية والمشبوهة.
-
-
----
-
-#### 6. Network Discovery Detection
-<p align="center">
-  <img src="./images/net_discovery_badge.png" width="45%" />
-  <img src="./images/net_discovery_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم ماهية الـ **Network Discovery** ودورها في كشف الأجهزة والخدمات النشطة.
-    * التعرف على أسباب قيام المهاجمين بعمليات الاكتشاف (Reconnaissance) قبل الهجوم.
-    * التمييز بين أنواع الـ Network Discovery المختلفة (External vs Internal Scanning).
-    * فهم آليات عمل تقنيات الاكتشاف (Horizontal vs Vertical Scanning) وكيفية رصدها واكتشافها.
-
-
-
----
-
-#### 7. Data Exfiltration Detection
-<p align="center">
-  <img src="./images/data_exfil_badge.png" width="45%" />
-  <img src="./images/data_exfil_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم الطرق الشائعة التي يستخدمها المهاجمون لتسريب البيانات (Data Exfiltration).
-    * تعلم كيفية اكتشاف محاولات التسريب من خلال تحليل حركة مرور الشبكة (Network Traffic Analysis).
-    * تحديد علامات تسريب البيانات على الأجهزة النهائية (Endpoint Devices).
-    * ربط السجلات (Log Correlation) داخل نظام الـ **SIEM** للكشف عن قنوات التسريب المخفية.
-
-
-
-
----
-
-#### 8. Man-in-the-Middle (MITM) Detection
-<p align="center">
-  <img src="./images/mitm_detection_badge.png" width="45%" />
-  <img src="./images/mitm_detection_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم نواقل وتقنيات هجمات الـ **MITM** الشائعة وكيفية تنفيذها في الشبكات.
-    * تعلم كيفية تحديد "مؤشرات الاختراق" (IoCs) المرتبطة بهجمات الرجل في المنتصف.
-    * إتقان استخدام أدوات مراقبة الشبكة لرصد أنماط حركة المرور المشبوهة (Suspicious Traffic).
-    * ممارسة إجراءات الاستجابة للحوادث (Incident Response) المخصصة لسيناريوهات الـ MITM.
-
-
 
 
 ---
