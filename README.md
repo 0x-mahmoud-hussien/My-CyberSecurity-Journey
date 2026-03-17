@@ -29,7 +29,7 @@ Click on any of the sections below to view detailed writeups:
 * [🛡️ **Cyber Frameworks & Threat Intel** (MITRE, CTI, Threat Hunting)](./labs/frameworks/cyber_frameworks.md)
 * [📊 **SIEM & SOAR Operations** (Splunk, ELK, Alert Triage)](./labs/siem-soar/siem_mastery.md)
 * [🖥️ **Windows Endpoint Security** (Logging, Sysmon, Core Processes, PowerShell)](./labs/endpoint-security/windows_security.md)
-* [🐧 **Linux Endpoint Security & Logging** (System Logs, Auditd, & Threat Detection)](./labs/os-security/linux_security.md)
+* [🐧 **Linux Endpoint Security** (System Logs, Auditd, Threat Detection)](./labs/os-security/linux_security.md)
 * [🦠 **Malware Analysis & Concepts** (Static/Dynamic, LotL, Defender)](./labs/endpoint-security/malware_analysis.md)
 * [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
 * [🐝 **Web Application Security** (OWASP Top 10, Web Defender)](./labs/web-security/web_vulnerabilities.md)
