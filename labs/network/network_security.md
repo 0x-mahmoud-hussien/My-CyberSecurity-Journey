@@ -44,3 +44,73 @@
 * **Packet Analysis:** تحليل الـ PCAP Files واستخراج الأدلة الجنائية الرقمية.
 * **Protocol Deep-Dive:** تحليل سجلات HTTP, DNS, و FTP لاكتشاف التهديدات.
 * **Threat Hunting:** حل تحديات واقعية لاكتشاف الهجمات المعقدة باستخدام Zeek.
+
+
+---
+
+#### 4. NetworkMiner (Network Forensics)
+<p align="center">
+  <img src="../../images/networkminer_badge.png" width="45%" />
+  <img src="../../images/networkminer_tasks.png" width="45%" />
+</p>
+
+* **اللي اتعلمته:**
+    * استخدام **NetworkMiner** كـ NFAT لاستخراج الملفات تلقائياً من الـ Traffic.
+    * استخراج الـ **Credentials** والصور والملفات المتبادلة عبر بروتوكولات مثل HTTP و FTP.
+    * تحليل الـ **OS Fingerprinting** لمعرفة أنظمة التشغيل للأجهزة الموجودة في الشبكة (Passive Sniffing).
+
+---
+
+#### 5. Network Security Essentials
+<p align="center">
+  <img src="../../images/net_security_essentials_badge.png" width="45%" />
+  <img src="../../images/net_security_essentials_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * تحديد المكونات الرئيسية المكونة للشبكات (Key Components).
+    * استكشاف مفهوم "محيط الشبكة" (Network Perimeter) وأهميته في الحماية.
+    * التعرف على التهديدات الرئيسية التي تستهدف محيط الشبكة (Perimeter Threats).
+    * تحليل وفحص سجلات جدار الحماية (Firewall Logs) للتمييز بين الأنشطة الطبيعية والمشبوهة.
+
+---
+
+#### 6. Network Discovery Detection
+<p align="center">
+  <img src="../../images/net_discovery_badge.png" width="45%" />
+  <img src="../../images/net_discovery_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم ماهية الـ **Network Discovery** ودورها في كشف الأجهزة والخدمات النشطة.
+    * التعرف على أسباب قيام المهاجمين بعمليات الاكتشاف (Reconnaissance).
+    * التمييز بين أنواع الـ Network Discovery المختلفة (External vs Internal Scanning).
+    * فهم آليات عمل تقنيات الاكتشاف (Horizontal vs Vertical Scanning) وكيفية رصدها.
+
+---
+
+#### 7. Data Exfiltration Detection
+<p align="center">
+  <img src="../../images/data_exfil_badge.png" width="45%" />
+  <img src="../../images/data_exfil_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم الطرق الشائعة التي يستخدمها المهاجمون لتسريب البيانات (Data Exfiltration).
+    * تعلم كيفية اكتشاف محاولات التسريب من خلال تحليل حركة مرور الشبكة (NTA).
+    * تحديد علامات تسريب البيانات على الأجهزة النهائية (Endpoint Devices).
+    * ربط السجلات (Log Correlation) داخل الـ **SIEM** للكشف عن قنوات التسريب المخفية.
+
+---
+
+#### 8. Man-in-the-Middle (MITM) Detection
+<p align="center">
+  <img src="../../images/mitm_detection_badge.png" width="45%" />
+  <img src="../../images/mitm_detection_tasks.png" width="45%" />
+</p>
+
+* **ما تم تعلمه (Learning Objectives):**
+    * فهم نواقل وتقنيات هجمات الـ **MITM** الشائعة وكيفية تنفيذها.
+    * تعلم كيفية تحديد "مؤشرات الاختراق" (IoCs) المرتبطة بهجمات الرجل في المنتصف.
+    * إتقان استخدام أدوات مراقبة الشبكة لرصد أنماط حركة المرور المشبوهة.
+    * ممارسة إجراءات الاستجابة للحوادث (Incident Response) المخصصة لسيناريوهات الـ MITM.
