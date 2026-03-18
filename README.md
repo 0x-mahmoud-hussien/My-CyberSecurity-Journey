@@ -37,6 +37,13 @@ Click on any of the sections below to view detailed writeups:
 
 ---
 
+## 📚 Foundations & Learning
+Completed core foundational training covering system administration, networking, and security essentials:
+
+* **[📂 View Foundations & Learning Details](./labs/foundations/)**
+    * *Includes: Passive Reconnaissance (OSINT), System Fundamentals, and Intro Security Concepts.*
+
+---
 
 ## 🔍 Specialized Security Investigations (Capstone Challenges)
 
