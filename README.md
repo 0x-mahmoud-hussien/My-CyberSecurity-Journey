@@ -57,7 +57,6 @@ Explore practical labs and applied security exercises:
 * [🦠 **Malware Analysis & Concepts**](./labs/endpoint-security/malware_analysis.md)  
 * [📧 **Email Security & Phishing Analysis**](./labs/email-security/phishing_analysis.md)  
 * [🐝 **Web Application Security**](./labs/web-security/web_vulnerabilities.md)  
-* [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
 
 ---
 
