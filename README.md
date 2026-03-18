@@ -1,82 +1,97 @@
 # 🛡️ Mahmoud Hussein | SOC Analyst Portfolio
 
-SOC Analyst focused on threat detection, incident response, and digital forensics with hands-on experience in SIEM, network analysis, and memory forensics.
-### My Cyber Security Journey 🚀
+SOC Analyst passionate about threat detection, incident response, and digital forensics, with hands-on experience in SIEM, network traffic analysis, and memory forensics.
 
-Welcome to my cybersecurity repository. This project documents my technical progress, hands-on labs, and real-world investigations in the field of Security Operations and Threat Hunting.
+---
+
+## 🚀 My Cyber Security Journey
+
+Welcome to my cybersecurity portfolio.
+
+This repository showcases **real-world SOC investigations, hands-on labs, and threat detection scenarios**, demonstrating practical experience in:
+
+- 🔍 Threat Hunting & Log Analysis  
+- 🛡️ Incident Response & DFIR  
+- 🧠 Memory Forensics & Malware Analysis  
+
+---
+
+## 🔥 Featured Investigations
+
+Start here 👇 (Highlighted real-world case studies)
+
+* 🧩 [Boogeyman 1 – Initial Access Investigation](./investigations/Boogeyman1.md)  
+* 🧠 [Boogeyman 2 – Memory Forensics Analysis](./investigations/Boogeyman2.md)  
+* 🔥 [Boogeyman 3 – Enterprise SOC Investigation](./investigations/Boogeyman3.md)  
+
+* ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)  
+* 🧠 [Volatility Memory Forensics Analysis](./investigations/Volatility.md)  
 
 ---
 
 ## 🔧 Tools & Technologies
 
-* **SIEM/SOAR:** Splunk, ELK Stack (Kibana), Tines.
-* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort, NetworkMiner.
-* **Endpoint & Forensics:** FlareVM, EDR Solutions, Volatility 3, Autopsy, Sysmon.
-* **Frameworks:** MITRE ATT&CK, Unified Kill Chain, Pyramid of Pain.
-* **OS:** Ubuntu Linux (Primary), Windows.
+* **SIEM/SOAR:** Splunk, ELK Stack (Kibana), Tines  
+* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort, NetworkMiner  
+* **Endpoint & Forensics:** FlareVM, EDR Solutions, Volatility 3, Autopsy, Sysmon  
+* **Frameworks:** MITRE ATT&CK, Unified Kill Chain, Pyramid of Pain  
+* **OS:** Ubuntu Linux (Primary), Windows  
 
 ---
 
-## 🏆 Certifications & Professional Path
+## 🎓 Certifications & Professional Path
+
 * [🎓 **Professional Certifications** (SOC Level 1, CS 101, Pre-Security)](./certifications/completed_paths.md)
 
 ---
 
 ## 🧪 Hands-on Labs & Technical Writeups
-Click on any of the sections below to view detailed writeups:
 
-* [🌐 **Network Analysis & IDS** (Wireshark, Snort, Zeek, NetworkMiner, TShark, Brim)](./labs/network/network_security.md)
-* [🛡️ **Cyber Frameworks & Threat Intel** (MITRE, CTI, Threat Hunting)](./labs/frameworks/cyber_frameworks.md)
-* [📊 **SIEM & SOAR Operations** (Splunk, ELK, Alert Triage)](./labs/siem-soar/siem_mastery.md)
-* [🖥️ **Windows Endpoint Security** (Logging, Sysmon, Core Processes, PowerShell)](./labs/endpoint-security/windows_security.md)
-* [🐧 **Linux Endpoint Security & Logging** (System Logs, Auditd, & Threat Detection)](./labs/endpoint-security/linux_security.md)
-* [🦠 **Malware Analysis & Concepts** (Static/Dynamic, LotL, Defender)](./labs/endpoint-security/malware_analysis.md)
-* [📧 **Email Security & Phishing Analysis** (PhishTool, SPF/DKIM/DMARC)](./labs/email-security/phishing_analysis.md)
-* [🐝 **Web Application Security** (OWASP Top 10, Web Defender)](./labs/web-security/web_vulnerabilities.md)
+Explore practical labs and applied security exercises:
+
+* [🌐 **Network Analysis & IDS**](./labs/network/network_security.md)  
+* [🛡️ **Cyber Frameworks & Threat Intel**](./labs/frameworks/cyber_frameworks.md)  
+* [📊 **SIEM & SOAR Operations**](./labs/siem-soar/siem_mastery.md)  
+* [🖥️ **Windows Endpoint Security**](./labs/endpoint-security/windows_security.md)  
+* [🐧 **Linux Endpoint Security & Logging**](./labs/endpoint-security/linux_security.md)  
+* [🦠 **Malware Analysis & Concepts**](./labs/endpoint-security/malware_analysis.md)  
+* [📧 **Email Security & Phishing Analysis**](./labs/email-security/phishing_analysis.md)  
+* [🐝 **Web Application Security**](./labs/web-security/web_vulnerabilities.md)  
 * [🐧 **Linux Fundamentals Walkthrough**](./labs/os-security/linux_fundamentals.md)
 
 ---
 
 ## 📚 Foundations & Learning
-Completed core foundational training covering system administration, networking, and security essentials:
 
-* **[📂 View Foundations & Learning Details](./labs/foundations/)**
-    * *Includes: Passive Reconnaissance (OSINT), System Fundamentals, and Intro Security Concepts.*
+Core foundational knowledge in networking, system administration, and security:
 
----
-
-## 🔍 Specialized Security Investigations (Capstone Challenges)
-
-These investigations simulate real-world attack scenarios and demonstrate practical DFIR and SOC analysis skills.
-
-هذا القسم يحتوي على تحقيقات جنائية رقمية متقدمة قمت بها لمحاكاة سيناريوهات اختراق واقعية، مع التركيز على تحليل الذاكرة، سجلات النظام، وحركة الشبكة.
+* [📂 View Foundations & Learning](./labs/foundations/)
 
 ---
 
-#### 🛡️ Case Study: Boogeyman Series (The Trilogy)
-سلسلة تحقيقات متكاملة تتبع دورة حياة الهجوم (Attack Lifecycle) من الوصول الأولي وحتى السيطرة الكاملة.
+## 🔍 Specialized Security Investigations
 
-* [**Boogeyman 1: Initial Threat**](./investigations/Boogeyman1.md)
-    * **Focus:** Phishing Analysis, LNK Files, & DNS Exfiltration.
-* [**Boogeyman 2: Memory Forensics**](./investigations/Boogeyman2.md)
-    * **Focus:** Volatility 3, Macro Analysis, & Process Injection.
-* [**Boogeyman 3: Enterprise Investigation**](./investigations/Boogeyman3.md)
-    * **Focus:** ELK Stack (Kibana), Sysmon Analysis, & HTA Deception.
+### 🛡️ Boogeyman Series (Full Attack Chain)
 
-> 🏆 **Special Achievement: Boogeyman Slayer**
+A complete attack lifecycle investigation from initial access to persistence:
+
+* **Boogeyman 1:** Phishing & Initial Access  
+* **Boogeyman 2:** Memory Forensics & Process Injection  
+* **Boogeyman 3:** Enterprise Detection & Log Correlation  
+
+> 🏆 **Boogeyman Slayer Achievement**  
 > <p align="center"><img src="./images/boogeyman_slayer_badge.png" width="200" /></p>
-> *تم الحصول على هذه البادج بعد إتمام سلسلة تحديات Boogeyman الثلاثة بنجاح.*
 
 ---
 
-#### 🌀 Case Study: Tempest (Investigation Challenge)
-* [**View Detailed Report**](./investigations/Tempest.md)
-* **Key Highlights:** * تحليل أدلة رقمية واستجابة للحوادث (**DFIR**).
-    * تتبع المهاجم باستخدام **EZTools** و **Brim**.
-    * كشف تقنيات الـ **Reverse Socks Proxy** وتصعيد الصلاحيات.
+### 🌀 Tempest Investigation
+
+* DFIR analysis & attacker tracking  
+* Reverse proxy detection & privilege escalation  
 
 ---
 
-#### 🧠 Case Study: Volatility (Memory Forensics)
-* [**View Detailed Memory Report**](./investigations/Volatility.md)
-* **Focus:** تحليل الـ RAM Samples لاستخراج الـ Artifacts الخفية وكشف الـ Malicious Processes.
+### 🧠 Volatility Investigation
+
+* Memory dump analysis  
+* Artifact extraction & malicious process detection  
