@@ -30,8 +30,6 @@
 
 ---
 
----
-
 ## 🔍 Network Intelligence: Zeek (Bro) Exploration
 **Description:** Completed extensive training on Zeek, covering core concepts and solving complex network traffic challenges.
 
@@ -75,20 +73,6 @@
 
 ---
 
-#### 6. Network Discovery Detection
-<p align="center">
-  <img src="../../images/net_discovery_badge.png" width="45%" />
-  <img src="../../images/net_discovery_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم ماهية الـ **Network Discovery** ودورها في كشف الأجهزة والخدمات النشطة.
-    * التعرف على أسباب قيام المهاجمين بعمليات الاكتشاف (Reconnaissance).
-    * التمييز بين أنواع الـ Network Discovery المختلفة (External vs Internal Scanning).
-    * فهم آليات عمل تقنيات الاكتشاف (Horizontal vs Vertical Scanning) وكيفية رصدها.
-
----
-
 #### 7. Data Exfiltration Detection
 <p align="center">
   <img src="../../images/data_exfil_badge.png" width="45%" />
@@ -129,22 +113,6 @@
     * استخدام الـ **Suricata** و **Zeek** المدمجين داخل Brim لاكتشاف التنبيهات والأنشطة المشبوهة.
     * الربط بين تحليل الشبكة وأدوات التحليل الأخرى مثل **Wireshark** للتعمق في تفاصيل الـ Packets.
     * كشف أنماط الـ Malware Traffic واتصالات الـ C2 من خلال تحليل سجلات الـ HTTP والـ DNS.
-
----
-
-
-#### 39. TShark: CLI Wireshark Features
-<p align="center">
-  <img src="../../images/tshark_features_badge.png" width="45%" />
-  <img src="../../images/tshark_features_tasks.png" width="45%" />
-</p>
-
-* **ما تم تعلمه (Learning Objectives):**
-    * استكشاف واستخدام مهارات Wireshark المتقدمة مباشرة من سطر الأوامر (CLI).
-    * استخراج الإحصائيات (Statistics) وتحليل البروتوكولات والـ Endpoints باستخدام خيارات `-z`.
-    * تحليل سلاسل البيانات (**Follow Streams**) لاستعادة المحادثات والبيانات المتبادلة في البروتوكولات المختلفة (TCP/UDP/HTTP).
-    * إتقان التعامل مع الـ **Time Styles** والتحكم في عرض الحقول بدقة متناهية.
-    * دمج الـ TShark في عمليات الـ Automation لتحليل كميات ضخمة من الـ Traffic بسرعة وكفاءة.
 
 ---
 
