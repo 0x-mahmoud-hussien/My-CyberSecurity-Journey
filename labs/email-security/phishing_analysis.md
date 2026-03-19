@@ -1,23 +1,3 @@
-# 📧 Email Security & Phishing Analysis
-
-## 📧 Phishing Analysis (Part 1)
-*Focusing on header analysis, malicious lures, and hands-on investigation.*
-
----
-
-### 1. Phishing Analysis Fundamentals
-<p align="center">
-  <img src="../../images/phishing_fundamentals_badge.png" width="45%" />
-  <img src="../../images/phishing_fundamentals_tasks.png" width="45%" />
-</p>
-
-* **Key Learning Outcomes:**
-    * فهم مكونات الإيميل والفرق بين الـ **SMTP envelope** والـ **Email header**.
-    * تحليل الـ **IP addresses** للمرسل وتتبع مسار الإيميل.
-    * التعرف على أنواع الـ **Attachments** المشبوهة وكيفية التعامل معها.
-
----
-
 ### 2. Phishing Emails in Action
 <p align="center">
   <img src="../../images/phishing_emails_action_badge.png" width="45%" />
@@ -41,21 +21,6 @@
     * احتراف استخدام أداة **PhishTool** لتحليل الـ Headers بشكل آلي.
     * استخدام الـ **Malware Sandboxes** لفحص الملفات والروابط بأمان.
     * إجراء تتبع كامل (Investigation) لثلاث حالات حقيقية (Phishing Cases).
-
----
-
-## 📧 Email Security Deep Dive
-*Focusing on authentication protocols and advanced analysis.*
-
-### 1. Introduction to Email Security (SPF, DKIM, DMARC)
-<p align="center">
-  <img src="../../images/email_sec_badge.png" width="45%" />
-  <img src="../../images/email_sec_tasks.png" width="45%" />
-</p>
-
-* **Key Learning Outcomes:**
-    * فهم بروتوكولات التحقق **SPF, DKIM, DMARC** وإزاي بنستخدمهم لمنع الـ Spoofing.
-    * تحليل الـ **Email Headers** يدويًا وفهم الـ **Hop-by-hop** تتبع للمرسل.
 
 ---
 
