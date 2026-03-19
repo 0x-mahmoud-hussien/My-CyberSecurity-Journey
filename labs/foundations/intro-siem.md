@@ -56,3 +56,21 @@
     * الممارسة العملية على تحليل السلوكيات الخبيثة واكتشاف الأنماط المشبوهة داخل منصة الـ SIEM.
 
 ---
+
+# 📊 Splunk: Exploring SPL
+
+<p align="center">
+  <img src="../../images/splunk_spl_badge.png" width="45%" />
+  <img src="../../images/splunk_spl_tasks.png" width="45%" />
+</p>
+
+---
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **Search Processing Language (SPL):** فهم أساسيات لغة البحث الخاصة بـ Splunk وكيفية استخدامها لاستخراج البيانات وتحليلها بفعالية.
+* **Advanced Filtering:** احتراف استخدام الفلاتر (Filters) لتضييق نطاق النتائج والتركيز على الأحداث الأمنية الهامة فقط.
+* **Transformational Commands:** استخدام الأوامر التحويلية لإعادة هيكلة البيانات وتحويلها إلى تقارير وجداول مفيدة لاتخاذ القرار.
+* **Data Organization:** القدرة على تغيير ترتيب النتائج (Sorting) وتنظيمها بشكل يسهل عملية التحقيق الجنائي الرقمي.
+
+---
