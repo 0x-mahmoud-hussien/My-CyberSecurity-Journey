@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="../images/splunk_user.png" width="30%" />
-  <img src="../images/package.png" width="30%" />
-  <img src="../images/plugin.png" width="30%" />
+  <img src="../images/splunk_user.png" width="35%" />
+  <img src="../images/package.png" width="35%" />
+  <img src="../images/plugin.png" width="35%" />
 </p>
 
 # 🧠 Brains – DFIR Investigation (TeamCity Exploitation)
