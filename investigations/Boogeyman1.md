@@ -67,6 +67,7 @@ The attacker accessed and extracted sensitive data from multiple sources:
 
 #### 🔎 Evidence
 
+-
 ```powershell
 .\sq3.exe AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\plum.sqlite "SELECT * from NOTE limit 100"
 
