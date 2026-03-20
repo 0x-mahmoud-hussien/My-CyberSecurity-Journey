@@ -90,3 +90,20 @@
 * **Log Ingestion:** إعداد المسارات (Inputs) لاستقبال سجلات النظام (Linux Logs) وسجلات الويب (Web Logs) ومعالجتها داخل الـ SIEM.
 
 ---
+
+# 📊 Splunk: Dashboards and Reports
+
+<p align="center">
+  <img src="../../images/splunk_dashboards_badge.png" width="45%" />
+  <img src="../../images/splunk_dashboards_tasks.png" width="45%" />
+</p>
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **Data Organization:** فهم الأهمية القصوى لتنظيم البيانات داخل Splunk لتمكين المحللين من الوصول للمعلومات بسرعة ودقة أثناء التحقيقات.
+* **Report Generation:** القدرة على إنشاء تقارير (Reports) لعمليات البحث المتكررة، مما يوفر الوقت ويساعد في مراقبة نشاط الأنظمة بشكل دوري.
+* **Alerting & Rule Building:** احتراف بناء قواعد التنبيه (Alerts) وتحويل عمليات البحث إلى تنبيهات فورية عند اكتشاف أنشطة مشبوهة.
+* **Data Visualization:** بناء لوحات تحكم (Dashboards) تفاعلية لتحويل البيانات المعقدة إلى رسوم بيانية توضح حالة الأمن الرقمي للمؤسسة.
+* **SIEM Core Functionality:** استيعاب كامل لكيفية عمل Splunk كمنظومة **SIEM** متكاملة تجمع بين التحليل، التنبيه، والتوثيق.
+
+---
