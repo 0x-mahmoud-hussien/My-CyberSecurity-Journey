@@ -1,11 +1,3 @@
-#### 45. Boogeyman 3 (The Final Chapter - ELK Stack Investigation)
-<p align="center">
-  <img src="../images/boogeyman3_badge.png" width="45%" />
-  <img src="../images/boogeyman3_chart.png" width="45%" />
-</p>
-
----
-
 # 🕵️‍♂️ Technical Investigation Report: Case Boogeyman 3 (Lurking in the Dark)
 
 ## 1. Executive Summary
