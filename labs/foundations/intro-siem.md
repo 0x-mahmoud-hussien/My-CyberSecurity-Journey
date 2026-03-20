@@ -74,3 +74,19 @@
 * **Data Organization:** القدرة على تغيير ترتيب النتائج (Sorting) وتنظيمها بشكل يسهل عملية التحقيق الجنائي الرقمي.
 
 ---
+
+# 🏗️ Splunk: Setting up a SOC Lab
+
+<p align="center">
+  <img src="../../images/splunk_setup_badge.png" width="45%" />
+  <img src="../../images/splunk_setup_tasks.png" width="45%" />
+</p>
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **Deployment Architecture:** فهم كيفية بناء بيئة SOC مصغرة ومعرفة دور الـ **Splunk Enterprise** كـ Indexer والـ **Universal Forwarder** كأداة لجمع البيانات.
+* **Linux Administration:** القدرة على تثبيت وإعداد Splunk والـ Forwarder على أنظمة **Linux** (Ubuntu) وضبط الإعدادات لضمان تدفق البيانات بشكل صحيح.
+* **CLI Management:** احتراف إدارة Splunk من خلال **Command Line Interface**، مما يسهل عمليات الأتمتة والتحكم السريع في الخدمة.
+* **Log Ingestion:** إعداد المسارات (Inputs) لاستقبال سجلات النظام (Linux Logs) وسجلات الويب (Web Logs) ومعالجتها داخل الـ SIEM.
+
+---
