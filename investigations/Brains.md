@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../images/splunk_user.png" width="45%" />
+  
   <img src="../images/package.png" width="45%" />
   <img src="../images/plugin.png" width="45%" />
 </p>
@@ -21,11 +21,18 @@ A compromised server was identified after attackers exploited a vulnerability in
 
 ---
 
-## 🔍 Investigation (Splunk Analysis)
-
 ### 👤 Persistence Mechanism
+
 - Backdoor user created:
   - `eviluser`
+
+### 👤 Persistence Mechanism
+
+- Backdoor user created:
+  - `eviluser`
+
+![Backdoor User Detection](../images/splunk_user.png)
+
 
 ---
 
@@ -34,8 +41,12 @@ A compromised server was identified after attackers exploited a vulnerability in
 - Suspicious package installed:
   - `datacollector`
 
+![Malicious Package](../images/package.png)
+
 - Malicious plugin deployed:
   - `AyzzbuXY.zip`
+
+![Malicious Plugin](../images/plugin.png)
 
 ---
 
