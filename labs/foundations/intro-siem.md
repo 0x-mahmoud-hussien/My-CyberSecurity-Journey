@@ -96,8 +96,10 @@
 # 📊 Splunk: Dashboards and Reports
 
 <p align="center">
-  <img src="../../images/splunk_dashboards_badge.png" width="45%" />
-  <img src="../../images/splunk_dashboards_tasks.png" width="45%" />
+  <img src="../../images/splunk_dashboards1.png" width="45%" />
+  <img src="../../images/splunk_dashboards2.png" width="45%" />
+  <img src="../../images/splunk_dashboards3.png" width="45%" />
+  <img src="../../images/splunk_dashboards4.png" width="45%" />
 </p>
 
 ### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
