@@ -24,6 +24,8 @@ Start here 👇 (Highlighted real-world case studies)
 * 🧠 [Boogeyman 2 – Memory Forensics Analysis](./investigations/Boogeyman2.md)  
 * 🔥 [Boogeyman 3 – Enterprise SOC Investigation](./investigations/Boogeyman3.md)  
 
+* 🧠 [Brains – TeamCity Exploitation & DFIR Investigation](./investigations/Brains.md)  
+
 * ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)  
 * 🧠 [Volatility Memory Forensics Analysis](./investigations/Volatility.md)  
 
@@ -80,6 +82,15 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 > 🏆 **Boogeyman Slayer Achievement**  
 > <p align="center"><img src="./images/boogeyman_slayer_badge.png" width="200" /></p>
+
+---
+
+### 🧠 Brains Investigation (TeamCity Exploitation)
+
+* Initial access via TeamCity vulnerability exploitation  
+* Persistence through backdoor user creation  
+* Detection using Splunk log analysis  
+* Identification of attacker tooling and post-exploitation activity  
 
 ---
 
