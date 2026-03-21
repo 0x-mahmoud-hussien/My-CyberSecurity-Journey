@@ -66,8 +66,6 @@
   <img src="../../images/splunk_spl_4.png" width="45%" />
 </p>
 
----
-
 ### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
 
 * **Search Processing Language (SPL):** فهم أساسيات لغة البحث الخاصة بـ Splunk وكيفية استخدامها لاستخراج البيانات وتحليلها بفعالية.
@@ -80,8 +78,10 @@
 # 🏗️ Splunk: Setting up a SOC Lab
 
 <p align="center">
-  <img src="../../images/splunk_setup_badge.png" width="45%" />
-  <img src="../../images/splunk_setup_tasks.png" width="45%" />
+  <img src="../../images/splunk_setup1.png" width="45%" />
+  <img src="../../images/splunk_setup2.png" width="45%" />
+  <img src="../../images/splunk_setup3.png" width="45%" />
+  <img src="../../images/splunk_setup4.png" width="45%" />
 </p>
 
 ### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
