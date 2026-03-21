@@ -60,8 +60,10 @@
 # 📊 Splunk: Exploring SPL
 
 <p align="center">
-  <img src="../../images/splunk_spl_badge.png" width="45%" />
-  <img src="../../images/splunk_spl_tasks.png" width="45%" />
+  <img src="../../images/splunk_spl_1.png" width="45%" />
+  <img src="../../images/splunk_spl_2.png" width="45%" />
+  <img src="../../images/splunk_spl_3.png" width="45%" />
+  <img src="../../images/splunk_spl_4.png" width="45%" />
 </p>
 
 ---
