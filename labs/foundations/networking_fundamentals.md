@@ -70,3 +70,20 @@
     * التعرف على أسباب قيام المهاجمين بعمليات الاكتشاف (Reconnaissance).
     * التمييز بين أنواع الـ Network Discovery المختلفة (External vs Internal Scanning).
     * فهم آليات عمل تقنيات الاكتشاف (Horizontal vs Vertical Scanning) وكيفية رصدها.
+
+---
+
+
+# 🔍 Nmap Live Host Discovery
+
+<p align="center">
+  <img src="../../images/nmap_discovery_badge.png" width="45%" />
+  <img src="../../images/nmap_discovery_tasks.png" width="45%" />
+</p>
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **Subnet Enumeration:** فهم كيفية تحديد النطاقات الشبكية واستهدافها بدقة.
+* **Discovery Protocols:** احتراف استخدام بروتوكولات Discovery مثل ARP للمحلي، و ICMP و TCP/UDP لتجاوز الحماية.
+* **Reverse DNS Lookup:** ربط الـ IP بأسماء الـ Hostnames للحصول على سياق أفضل.
+* **Efficiency at Scale:** فحص شبكات ضخمة بسرعة وبأقل استهلاك للموارد.
