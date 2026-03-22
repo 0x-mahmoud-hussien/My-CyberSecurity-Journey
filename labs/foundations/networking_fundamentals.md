@@ -93,8 +93,8 @@
 # 🛡️ Nmap Basic Port Scans
 
 <p align="center">
-  <img src="../../../images/nmap_basic_badge.png" width="45%" />
-  <img src="../../../images/nmap_basic_tasks.png" width="45%" />
+  <img src="../../images/nmap_basic_badge.png" width="45%" />
+  <img src="../../images/nmap_basic_tasks.png" width="45%" />
 </p>
 
 
@@ -111,8 +111,8 @@
 # ⚡ Nmap Advanced Port Scans
 
 <p align="center">
-  <img src="../../../images/nmap_advanced1.png" width="45%" />
-  <img src="../../../images/nmap_advanced2.png" width="45%" />
+  <img src="../../images/nmap_advanced1.png" width="45%" />
+  <img src="../../images/nmap_advanced2.png" width="45%" />
 </p>
 
 
