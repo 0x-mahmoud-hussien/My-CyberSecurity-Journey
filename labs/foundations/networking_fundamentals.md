@@ -107,3 +107,21 @@
 * **Service Detection Basics:** البدء في تحديد الخدمات التي تعمل خلف كل منفذ بناءً على استجابة النظام.
 
 ---
+
+# ⚡ Nmap Advanced Port Scans
+
+<p align="center">
+  <img src="../../../images/nmap_advanced1.png" width="45%" />
+  <img src="../../../images/nmap_advanced2.png" width="45%" />
+</p>
+
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **TCP Null, FIN, and Xmas Scans:** احتراف استخدام الفحص المتطور الذي يعتمد على التلاعب بـ **TCP Flags** لتجاوز جدران الحماية (Firewalls) عديمة الحالة (Stateless).
+* **TCP Maimon Scan:** فهم كيفية استخدام تقنية Maimon للكشف عن المنافذ من خلال تحليل استجابات الـ FIN/ACK الفريدة في بعض الأنظمة.
+* **TCP ACK & Window Scans:** القدرة على رسم خريطة لقواعد الـ Firewall وتحديد ما إذا كانت المنافذ محمية (Filtered) أم لا، حتى دون معرفة حالتها المفتوحة.
+* **Spoofing & Decoys:** تعلم تقنيات التمويه وتزوير عناوين الـ IP (IP Spoofing) واستخدام الـ **Decoys** لإخفاء هوية الجهاز الفاحص الحقيقية وسط زحام من البيانات.
+* **Fragmented Packets:** استخدام تقنية تقسيم الحزم (Fragmentation) لتفادي أنظمة كشف الاختراق (IDS) التي تبحث عن أنماط فحص واضحة.
+
+---
