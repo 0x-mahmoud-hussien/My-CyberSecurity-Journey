@@ -87,3 +87,23 @@
 * **Discovery Protocols:** احتراف استخدام بروتوكولات Discovery مثل ARP للمحلي، و ICMP و TCP/UDP لتجاوز الحماية.
 * **Reverse DNS Lookup:** ربط الـ IP بأسماء الـ Hostnames للحصول على سياق أفضل.
 * **Efficiency at Scale:** فحص شبكات ضخمة بسرعة وبأقل استهلاك للموارد.
+
+---
+
+# 🛡️ Nmap Basic Port Scans
+
+<p align="center">
+  <img src="../../../images/nmap_basic_badge.png" width="45%" />
+  <img src="../../../images/nmap_basic_tasks.png" width="45%" />
+</p>
+
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **TCP Connect Scan (`-sT`):** فهم كيفية إتمام عملية الـ Three-Way Handshake بالكامل للتحقق من المنافذ المفتوحة بشكل موثوق.
+* **TCP SYN Scan (`-sS`):** احتراف تقنية الـ "Half-Open" scan لزيادة سرعة الفحص وتقليل احتمالية رصده بواسطة أنظمة الحماية.
+* **UDP Scan (`-sU`):** تعلم كيفية فحص الخدمات التي تعتمد على بروتوكول UDP، وهو أمر ضروري لكشف الثغرات في خدمات مثل DNS و DHCP.
+* **Port States Awareness:** القدرة على التمييز بين حالات المنافذ المختلفة (Open, Closed, Filtered) وفهم دلالة كل حالة أثناء التحقيق.
+* **Service Detection Basics:** البدء في تحديد الخدمات التي تعمل خلف كل منفذ بناءً على استجابة النظام.
+
+---
