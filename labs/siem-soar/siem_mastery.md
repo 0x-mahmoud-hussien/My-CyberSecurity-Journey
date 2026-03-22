@@ -1,5 +1,3 @@
-
-
 #### 31. Alert Triage With Splunk
 <p align="center">
   <img src="../../images/splunk_triage_badge.png" width="45%" />
@@ -60,15 +58,110 @@
 
 ---
 
-#### 35. Benign (Scenario-Based Investigation)
-<p align="center">
-  <img src="../../images/benign_badge.png" width="30%" />
-  <img src="../../images/benign_tasks.png" width="32%" />
-  <img src="../../images/benign_progress.png" width="32%" />
-</p>
+#### 35. Benign (SOC Investigation – Splunk & LOLBins)
 
-* **ما تم تعلمه (Learning Objectives):**
-    * تحليل سجلات الـ **Splunk** للتمييز بين العمليات النظامية والأنشطة المشبوهة.
-    * التحقيق في سيناريوهات واقعية تتضمن استخدام أدوات ويندوز (LOLBins) في سياق سليم وخبيث.
-    * إتقان مهارات البحث المتقدمة لتحديد الـ **Root Cause** لأي تنبيه أمني.
-    * تقليل الـ False Positives عبر فهم السلوك الطبيعي للمستخدمين والأنظمة داخل الشبكة.
+---
+
+### 📌 Scenario
+
+An IDS alert indicated suspicious process execution on a host within the HR department. Due to limited resources, only **Windows process creation logs (Event ID 4688)** were collected and ingested into Splunk (`index=win_eventlogs`) for investigation.
+
+---
+
+### 🎯 Investigation Focus
+
+* Identify compromised host
+* Detect misuse of legitimate system tools (LOLBins)
+* Trace attacker activity and payload delivery
+
+---
+
+### 🔍 Key Findings
+
+* 📊 Total logs analyzed (March 2022):
+
+  ```
+  13959
+  ```
+
+* 🕵️ Imposter account detected:
+
+  ```
+  Amel1a
+  ```
+
+* 👤 Suspicious HR user activity:
+
+  ```
+  Chris.fort (Scheduled Tasks Execution)
+  ```
+![schtasks](../../images/schtasks.png)
+
+* ⚠️ Confirmed compromised user:
+
+  ```
+  haroon
+  ```
+
+---
+
+### 🚨 Attack Details
+
+* 🛠️ LOLBin used:
+
+  ```
+  certutil.exe
+  ```
+
+* 📅 Execution date:
+
+  ```
+  2022-03-04
+  ```
+
+* 🌐 Payload source:
+
+  ```
+  controlc.com
+  ```
+
+* 🔗 Full URL:
+
+  ```
+  https://controlc.com/e4d11035
+  ```
+  ![lolbin](../../images/lolbin.png)
+
+---
+
+### 📦 Post-Exploitation
+
+* 📁 File dropped on host:
+
+  ```
+  benign.exe
+  ```
+
+* 🧬 Malicious pattern identified:
+
+  ```
+  THM{KJ&*H^B0}
+  ```
+
+---
+
+### 🧠 Skills Demonstrated
+
+* Splunk log analysis (Event ID 4688)
+* Detection of LOLBins abuse
+* Threat hunting & anomaly detection
+* Identifying compromised accounts
+* Tracing attacker activity & payload delivery
+
+---
+
+### 🏁 Conclusion
+
+The investigation revealed a compromised HR host where the attacker leveraged **certutil.exe** (a legitimate Windows binary) to download a malicious payload from an external file-sharing service. The activity highlights common attacker techniques to bypass security controls using trusted system tools.
+
+This scenario reflects real-world SOC investigations involving limited visibility and emphasizes the importance of process-level monitoring and behavioral analysis.
