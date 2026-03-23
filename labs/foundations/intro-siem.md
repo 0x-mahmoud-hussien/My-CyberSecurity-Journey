@@ -111,3 +111,22 @@
 * **SIEM Core Functionality:** استيعاب كامل لكيفية عمل Splunk كمنظومة **SIEM** متكاملة تجمع بين التحليل، التنبيه، والتوثيق.
 
 ---
+
+# 🚂 Elastic: Using Logstash
+
+<p align="center">
+  <img src="../../images/logstash1.png" width="45%" />
+  <img src="../../images/logstash2.png" width="45%" />
+</p>
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **Logstash Architecture:** فهم دور Logstash كمحرك لجمع البيانات ومعالجتها (Data Processing Pipeline) قبل إرسالها للتخزين.
+* **Input, Filter, & Output Plugins:** احتراف التعامل مع المكونات الثلاثة الأساسية:
+    * **Input:** كيفية استقبال البيانات من مصادر مختلفة.
+    * **Filter:** معالجة البيانات وتعديلها أثناء المرور.
+    * **Output:** توجيه البيانات المعالجة إلى وجهتها النهائية (مثل Elasticsearch).
+* **Grok Parsing:** استخدام الـ **Grok patterns** لتحليل البيانات غير المنظمة (Unstructured Data) وتحويلها إلى حقول منظمة (Normalized Fields) يسهل تحليلها أمنياً.
+* **Real-world Application:** تطبيق عملي لاستقبال وسحب سجلات المصادقة الخاصة بنظام لينكس (**Linux Authentication Logs**) وتنظيفها وإرسالها إلى Elastic Stack.
+
+---
