@@ -4,8 +4,8 @@
 **Description:** Learning how to centralize, search, and analyze logs using industry-standard tools like Splunk and Elastic Stack.
 
 <p align="center">
-  <img src="../../images/splunk-badge.png" width="45%" />
-  <img src="../../images/splunk-tasks.png" width="45%" />
+  <img src="../../images/splunk-Basics1.png" width="45%" />
+  <img src="../../images/splunk-Basics2.png" width="45%" />
 </p>
 
 ### 🔍 Splunk Proficiency:
@@ -17,8 +17,8 @@
 
 ## 📊 Elastic Stack (ELK)
 <p align="center">
-  <img src="../../images/elk-badge.png" width="45%" />
-  <img src="../../images/elk-tasks.png" width="45%" />
+  <img src="../../images/elk-Basics1.png" width="45%" />
+  <img src="../../images/elk-Basics2.png" width="45%" />
 </p>
 
 ### 🛠️ Elastic Stack Key Learning Outcomes:
