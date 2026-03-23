@@ -28,6 +28,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [Brains – TeamCity Exploitation & DFIR Investigation](./investigations/Brains.md)
 
+* 🔍 [Investigating with Splunk – Windows Compromise Analysis](./investigations/Investigating-with-Splunk.md)
+
 * 🔧 [Splunk Fixit – Log Parsing & Network Traffic Analysis](./investigations/Fixit-Splunk.md)
 
 * ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)
@@ -100,6 +102,16 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 ---
 
+### 🔍 Investigating with Splunk
+
+* Windows log analysis using Splunk (Event-based investigation)
+* Detection of backdoor user creation and registry persistence
+* Identification of impersonation techniques
+* Analysis of WMIC remote execution
+* Detection of malicious PowerShell activity and C2 communication
+
+---
+
 ### 🔧 Splunk Fixit Investigation
 
 * Log parsing and event boundary correction
@@ -121,4 +133,3 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 * Memory dump analysis
 * Artifact extraction & malicious process detection
-
