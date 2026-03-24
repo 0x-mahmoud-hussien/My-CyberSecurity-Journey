@@ -27,20 +27,104 @@
 
 ---
 
-#### 33. ItsyBitsy (Investigation Case Study)
-<p align="center">
-  <img src="../../images/itsybitsy_badge.png" width="45%" />
-  <img src="../../images/itsybitsy_tasks.png" width="45%" />
-</p>
+#### 33. ItsyBitsy (SOC Investigation – Network C2 Analysis with Kibana)
 
-> **السيناريو والتحقيق (Scenario & Investigation):**
-> محاكاة دور محلل SOC (Analyst John) للتحقيق في تنبيه IDS يشير لاتصال **C2** مشبوه من قسم الـ HR. تم تحليل سجلات **HTTP** لمدة أسبوع كامل داخل **Kibana** (index: connection_logs).
+---
 
-* **المهارات المكتسبة (Skills Applied):**
-    * استخدام **KQL** لتحليل آلاف الأحداث وتحديد الـ IP الخاص بالمستخدم المصاب.
-    * كشف استخدام أدوات ويندوز الشرعية (**Legit Windows Binaries**) في عمليات تحميل ملفات خبيثة.
-    * التعرف على تقنيات المهاجمين في استغلال مواقع مشاركة الملفات المشهورة كمنصات **C2 Server**.
-    * تتبع الـ **Full URL** للوصول للملف المشبوه واستخراج الـ Secret Code (Flag) من داخل محتواه.
+### 📌 Scenario
+
+During routine SOC monitoring, an IDS alert flagged a potential **C2 (Command & Control) communication** from a host within the HR department (User: Browne).
+
+Due to limited visibility, only **HTTP connection logs** were collected and ingested into Kibana (`index=connection_logs`) for investigation.
+
+---
+
+### 🎯 Investigation Focus
+
+* Identify the infected host
+* Detect abuse of legitimate Windows binaries (LOLBins)
+* Trace C2 communication and payload retrieval
+* Extract malicious content from external source
+
+---
+
+### 🔍 Key Findings
+
+* 📊 Total events analyzed (March 2022):
+
+  ```
+  1482
+  ```
+
+* 🖥️ Suspected infected host IP:
+
+  ```
+  192.166.65.54
+  ```
+
+* ⚙️ LOLBin used for file download:
+
+  ```
+  bitsadmin
+  ```
+
+* 🌐 C2 platform identified:
+
+  ```
+  pastebin.com
+  ```
+![Key Findings](../images/ItsyBitsy1.png)
+
+---
+
+### 🚨 Attack Details
+
+* 🔗 Full C2 URL:
+
+  ```
+  pastebin.com/yTg0Ah6a
+  ```
+
+* 📄 Accessed file:
+
+  ```
+  secret.txt
+  ```
+
+* 🧬 Extracted malicious pattern:
+
+  ```
+  THM{SECRET__CODE}
+  ```
+![Attack Details](../images/ItsyBitsy2.png)
+
+---
+
+### 🧠 Attack Analysis
+
+* The attacker leveraged **bitsadmin** (a legitimate Windows binary) to download malicious content → **LOLBins technique**
+* **Pastebin** was used as a C2 server to host payload/data and evade detection
+* Communication occurred over **HTTP**, blending with normal traffic
+* Limited telemetry (network logs only) required deep log correlation to uncover attacker behavior
+
+---
+
+### 🛠️ Skills Demonstrated
+
+* Network log analysis using **Kibana (KQL)**
+* Detection of **C2 communication patterns**
+* Identification of **LOLBins abuse (bitsadmin)**
+* Threat hunting using limited log sources
+* Extraction of Indicators (IP / URL / File / Pattern)
+
+---
+
+### 🏁 Conclusion
+
+The investigation confirmed that the infected host established communication with an external C2 server using a legitimate Windows utility (**bitsadmin**). The attacker utilized a public file-sharing platform (**Pastebin**) to deliver malicious content, demonstrating a common evasion technique.
+
+This scenario highlights the importance of **network-level visibility** and the ability to detect malicious behavior even when endpoint data is unavailable.
+
 
 ---
 
