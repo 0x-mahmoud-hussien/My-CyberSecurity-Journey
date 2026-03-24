@@ -130,3 +130,24 @@
 * **Real-world Application:** تطبيق عملي لاستقبال وسحب سجلات المصادقة الخاصة بنظام لينكس (**Linux Authentication Logs**) وتنظيفها وإرسالها إلى Elastic Stack.
 
 ---
+
+# 🔍 Elastic: Query Languages (KQL & Lucene)
+
+<p align="center">
+  <img src="../../images/elastic_query1.png" width="45%" />
+  <img src="../../images/elastic_query2.png" width="45%" />
+  <img src="../../images/elastic_query3.png" width="45%" />
+  <img src="../../images/elastic_query4.png" width="45%" />
+  <img src="../../images/elastic_query5.png" width="45%" />
+  <img src="../../images/elastic_query6.png" width="45%" />
+</p>
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **Kibana Query Language (KQL):** إتقان استخدام لغة الاستعلام الافتراضية في Kibana لبناء عمليات بحث سريعة وبديهية (Intuitive Searching).
+* **Advanced Operators:** احتراف استخدام الـ Operators (مثل `AND`, `OR`, `NOT`) والرموز الخاصة للتحكم الكامل في نتائج البحث وتصفية الضوضاء (Noise Filtering).
+* **Nested Data Searching:** القدرة على البحث بدقة داخل البيانات المتداخلة (Nested Data) والهياكل المعقدة للأحداث (Events).
+* **Flexible Matching:** استخدام تقنيات الـ Wildcards والـ Fuzzy Matching للوصول إلى البيانات حتى في حالة وجود تغييرات طفيفة في المصطلحات أو الأخطاء الإملائية في السجلات.
+* **Pattern-based Discovery:** تطبيق أنماط البحث (Pattern-based searches) للكشف عن الأنشطة المترابطة وتتبع سلوك المهاجمين عبر سجلات النظام المختلفة.
+
+---
