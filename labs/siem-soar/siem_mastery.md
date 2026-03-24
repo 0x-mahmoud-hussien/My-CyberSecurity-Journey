@@ -73,7 +73,7 @@ Due to limited visibility, only **HTTP connection logs** were collected and inge
   ```
   pastebin.com
   ```
-![Key Findings](../images/ItsyBitsy1.png)
+![Key Findings](../../images/ItsyBitsy1.png)
 
 ---
 
@@ -96,7 +96,7 @@ Due to limited visibility, only **HTTP connection logs** were collected and inge
   ```
   THM{SECRET__CODE}
   ```
-![Attack Details](../images/ItsyBitsy2.png)
+![Attack Details](../../images/ItsyBitsy2.png)
 
 ---
 
