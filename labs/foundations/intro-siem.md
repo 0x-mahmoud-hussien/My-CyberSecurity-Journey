@@ -28,21 +28,6 @@
 
 ---
 
-## ⚙️ Security Orchestration, Automation, and Response (SOAR)
-**Description:** Learning how to automate repetitive tasks and orchestrate incident response workflows.
-
-<p align="center">
-  <img src="../../images/soar-badge.png" width="45%" />
-  <img src="../../images/soar-tasks.png" width="45%" />
-</p>
-
-### 🛠️ Key Learning Outcomes:
-* **Automation Playbooks:** فهم كيفية بناء الـ Playbooks لأتمتة الرد على التنبيهات.
-* **Efficiency Boost:** كيفية تقليل الـ Mean Time to Respond (MTTR).
-
-
----
-
 #### 30. Log Analysis with SIEM
 <p align="center">
   <img src="../../images/siem_analysis_badge.png" width="45%" />
