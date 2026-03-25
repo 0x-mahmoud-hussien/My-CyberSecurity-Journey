@@ -34,6 +34,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)
 
+* 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
+
 * 🧠 [Volatility Memory Forensics Analysis](./investigations/Volatility.md)
 
 * 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md) 
@@ -121,6 +123,17 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Splunk configuration (props.conf)
 * Network traffic analysis and user activity tracking
 * Detection of suspicious file access
+
+---
+
+### 🌐 Slingshot Investigation
+
+* Web attack detection using Kibana (ELK Stack)
+* Reconnaissance & directory enumeration detection
+* Brute-force attack identification (Hydra)
+* Web shell upload and command execution
+* LFI exploitation and database credential access
+* Data exfiltration tracking (customer_credit_cards)
 
 ---
 
