@@ -60,24 +60,6 @@
 
 ---
 
-# 🏗️ Splunk: Setting up a SOC Lab
-
-<p align="center">
-  <img src="../../images/splunk_setup1.png" width="45%" />
-  <img src="../../images/splunk_setup2.png" width="45%" />
-  <img src="../../images/splunk_setup3.png" width="45%" />
-  <img src="../../images/splunk_setup4.png" width="45%" />
-</p>
-
-### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
-
-* **Deployment Architecture:** فهم كيفية بناء بيئة SOC مصغرة ومعرفة دور الـ **Splunk Enterprise** كـ Indexer والـ **Universal Forwarder** كأداة لجمع البيانات.
-* **Linux Administration:** القدرة على تثبيت وإعداد Splunk والـ Forwarder على أنظمة **Linux** (Ubuntu) وضبط الإعدادات لضمان تدفق البيانات بشكل صحيح.
-* **CLI Management:** احتراف إدارة Splunk من خلال **Command Line Interface**، مما يسهل عمليات الأتمتة والتحكم السريع في الخدمة.
-* **Log Ingestion:** إعداد المسارات (Inputs) لاستقبال سجلات النظام (Linux Logs) وسجلات الويب (Web Logs) ومعالجتها داخل الـ SIEM.
-
----
-
 # 📊 Splunk: Dashboards and Reports
 
 <p align="center">
@@ -94,45 +76,3 @@
 * **Alerting & Rule Building:** احتراف بناء قواعد التنبيه (Alerts) وتحويل عمليات البحث إلى تنبيهات فورية عند اكتشاف أنشطة مشبوهة.
 * **Data Visualization:** بناء لوحات تحكم (Dashboards) تفاعلية لتحويل البيانات المعقدة إلى رسوم بيانية توضح حالة الأمن الرقمي للمؤسسة.
 * **SIEM Core Functionality:** استيعاب كامل لكيفية عمل Splunk كمنظومة **SIEM** متكاملة تجمع بين التحليل، التنبيه، والتوثيق.
-
----
-
-# 🚂 Elastic: Using Logstash
-
-<p align="center">
-  <img src="../../images/logstash1.png" width="45%" />
-  <img src="../../images/logstash2.png" width="45%" />
-</p>
-
-### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
-
-* **Logstash Architecture:** فهم دور Logstash كمحرك لجمع البيانات ومعالجتها (Data Processing Pipeline) قبل إرسالها للتخزين.
-* **Input, Filter, & Output Plugins:** احتراف التعامل مع المكونات الثلاثة الأساسية:
-    * **Input:** كيفية استقبال البيانات من مصادر مختلفة.
-    * **Filter:** معالجة البيانات وتعديلها أثناء المرور.
-    * **Output:** توجيه البيانات المعالجة إلى وجهتها النهائية (مثل Elasticsearch).
-* **Grok Parsing:** استخدام الـ **Grok patterns** لتحليل البيانات غير المنظمة (Unstructured Data) وتحويلها إلى حقول منظمة (Normalized Fields) يسهل تحليلها أمنياً.
-* **Real-world Application:** تطبيق عملي لاستقبال وسحب سجلات المصادقة الخاصة بنظام لينكس (**Linux Authentication Logs**) وتنظيفها وإرسالها إلى Elastic Stack.
-
----
-
-# 🔍 Elastic: Query Languages (KQL & Lucene)
-
-<p align="center">
-  <img src="../../images/elastic_query1.png" width="45%" />
-  <img src="../../images/elastic_query2.png" width="45%" />
-  <img src="../../images/elastic_query3.png" width="45%" />
-  <img src="../../images/elastic_query4.png" width="45%" />
-  <img src="../../images/elastic_query5.png" width="45%" />
-  <img src="../../images/elastic_query6.png" width="45%" />
-</p>
-
-### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
-
-* **Kibana Query Language (KQL):** إتقان استخدام لغة الاستعلام الافتراضية في Kibana لبناء عمليات بحث سريعة وبديهية (Intuitive Searching).
-* **Advanced Operators:** احتراف استخدام الـ Operators (مثل `AND`, `OR`, `NOT`) والرموز الخاصة للتحكم الكامل في نتائج البحث وتصفية الضوضاء (Noise Filtering).
-* **Nested Data Searching:** القدرة على البحث بدقة داخل البيانات المتداخلة (Nested Data) والهياكل المعقدة للأحداث (Events).
-* **Flexible Matching:** استخدام تقنيات الـ Wildcards والـ Fuzzy Matching للوصول إلى البيانات حتى في حالة وجود تغييرات طفيفة في المصطلحات أو الأخطاء الإملائية في السجلات.
-* **Pattern-based Discovery:** تطبيق أنماط البحث (Pattern-based searches) للكشف عن الأنشطة المترابطة وتتبع سلوك المهاجمين عبر سجلات النظام المختلفة.
-
----

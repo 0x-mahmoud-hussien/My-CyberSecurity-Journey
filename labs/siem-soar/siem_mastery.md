@@ -249,3 +249,248 @@ An IDS alert indicated suspicious process execution on a host within the HR depa
 The investigation revealed a compromised HR host where the attacker leveraged **certutil.exe** (a legitimate Windows binary) to download a malicious payload from an external file-sharing service. The activity highlights common attacker techniques to bypass security controls using trusted system tools.
 
 This scenario reflects real-world SOC investigations involving limited visibility and emphasizes the importance of process-level monitoring and behavioral analysis.
+
+
+---
+
+#### Splunk SOC Lab Setup (SIEM Lab – Deployment & Log Ingestion)
+
+---
+
+### 📌 Scenario
+
+To simulate a real-world SOC environment, a lab was built using **Splunk Enterprise** and **Universal Forwarder** on a Linux-based system.
+
+The objective was to create a centralized logging solution capable of collecting, indexing, and analyzing logs from multiple sources.
+
+---
+
+### 🎯 Lab Objectives
+
+* Build a mini SOC environment using Splunk
+* Configure log collection from Linux systems
+* Understand SIEM architecture and data flow
+* Practice Splunk administration via CLI
+
+---
+
+### 🏗️ Lab Setup
+
+<p align="center">
+  <img src="../../images/splunk_setup1.png" width="45%" />
+  <img src="../../images/splunk_setup2.png" width="45%" />
+  <img src="../../images/splunk_setup3.png" width="45%" />
+  <img src="../../images/splunk_setup4.png" width="45%" />
+</p>
+
+---
+
+### ⚙️ Implementation Details
+
+* 🧠 **Architecture Design:**
+
+  ```
+  Splunk Enterprise (Indexer) ← Universal Forwarder (Client)
+  ```
+
+* 🐧 **Environment:**
+
+  ```
+  Ubuntu Linux
+  ```
+
+* 📥 **Log Sources:**
+
+  ```
+  /var/log/auth.log
+  /var/log/syslog
+  Web server logs
+  ```
+
+---
+
+### 🔍 Key Activities
+
+* Installed and configured **Splunk Enterprise**
+* Deployed **Universal Forwarder** on endpoint
+* Configured log forwarding using inputs.conf
+* Verified log ingestion and indexing in Splunk
+* Managed Splunk services using CLI
+
+---
+
+### 🧠 Skills Demonstrated
+
+* SIEM architecture design
+* Log ingestion & forwarding
+* Linux system administration
+* Splunk CLI management
+* Data onboarding & indexing
+
+---
+
+### 🏁 Conclusion
+
+This lab demonstrates the ability to build and configure a functional SIEM environment from scratch. It highlights practical skills in log ingestion, system configuration, and understanding how security data flows within a SOC environment.
+
+
+---
+
+#### Logstash Data Pipeline (Elastic Lab – Log Processing & Parsing)
+
+---
+
+### 📌 Scenario
+
+To enhance log visibility and normalization, **Logstash** was configured as a data processing pipeline within the Elastic Stack.
+
+The goal was to collect, parse, and forward Linux authentication logs into Elasticsearch for analysis.
+
+---
+
+### 🎯 Lab Objectives
+
+* Understand Logstash pipeline architecture
+* Process and normalize unstructured logs
+* Forward processed logs to Elasticsearch
+* Improve data quality for security analysis
+
+---
+
+### 🏗️ Lab Setup
+
+<p align="center">
+  <img src="../../images/logstash1.png" width="45%" />
+  <img src="../../images/logstash2.png" width="45%" />
+</p>
+
+---
+
+### ⚙️ Implementation Details
+
+* 🔄 **Pipeline Structure:**
+
+  ```
+  Input → Filter → Output
+  ```
+
+* 📥 **Input Source:**
+
+  ```
+  Linux Authentication Logs
+  ```
+
+* 🧩 **Processing Method:**
+
+  ```
+  Grok Parsing
+  ```
+
+---
+
+### 🔍 Key Activities
+
+* Configured Logstash pipeline configuration file
+* Parsed raw logs using **Grok patterns**
+* Extracted structured fields (user, IP, action)
+* Forwarded processed logs to Elasticsearch
+* Verified indexed data in Kibana
+
+---
+
+### 🧠 Skills Demonstrated
+
+* Log parsing & normalization
+* Working with unstructured data
+* Elastic Stack integration
+* Pipeline configuration & debugging
+* Data transformation for security analytics
+
+---
+
+### 🏁 Conclusion
+
+This lab demonstrates practical experience in building a log processing pipeline using Logstash. It highlights the importance of structured data in improving detection capabilities and enabling efficient threat analysis.
+
+
+---
+
+
+#### KQL & Lucene Querying (Elastic Lab – Threat Hunting & Log Analysis)
+
+---
+
+### 📌 Scenario
+
+Effective threat hunting requires the ability to query and filter large volumes of log data. This lab focuses on using **KQL (Kibana Query Language)** and **Lucene** to perform advanced searches within Elasticsearch.
+
+---
+
+### 🎯 Lab Objectives
+
+* Perform efficient log searches using KQL
+* Apply advanced filtering techniques
+* Analyze structured and nested data
+* Detect suspicious patterns in logs
+
+---
+
+### 🏗️ Lab Setup
+
+<p align="center">
+  <img src="../../images/elastic_query1.png" width="45%" />
+  <img src="../../images/elastic_query2.png" width="45%" />
+  <img src="../../images/elastic_query3.png" width="45%" />
+  <img src="../../images/elastic_query4.png" width="45%" />
+  <img src="../../images/elastic_query5.png" width="45%" />
+  <img src="../../images/elastic_query6.png" width="45%" />
+</p>
+
+---
+
+### ⚙️ Query Techniques
+
+* 🔎 **Basic Filtering:**
+
+  ```
+  status:200 AND method:GET
+  ```
+
+* ⚡ **Advanced Logic:**
+
+  ```
+  Description: /(s|m).*/ AND /user.*/
+  field_name: "search term"~slop_value
+  ```
+
+* 🧠 **Wildcard Search:**
+
+  ```
+  url:*login*
+  ```
+
+---
+
+### 🔍 Key Activities
+
+* Performed log searches using **KQL**
+* Applied logical operators (AND / OR / NOT)
+* Investigated nested and structured data
+* Used wildcard and fuzzy matching
+* Identified suspicious access patterns
+
+---
+
+### 🧠 Skills Demonstrated
+
+* Threat hunting using KQL
+* Log filtering and correlation
+* Pattern-based detection
+* Working with Elasticsearch data
+* Noise reduction in large datasets
+
+---
+
+### 🏁 Conclusion
+
+This lab highlights the importance of query languages in security operations. Mastering KQL and Lucene enables analysts to efficiently detect threats, filter noise, and extract meaningful insights from large-scale log data.
