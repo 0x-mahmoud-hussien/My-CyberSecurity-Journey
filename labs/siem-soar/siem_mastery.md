@@ -27,7 +27,7 @@
 
 ---
 
-#### 33. ItsyBitsy (SOC Investigation – Network C2 Analysis with Kibana)
+# ItsyBitsy (SOC Investigation – Network C2 Analysis with Kibana)
 
 ---
 
@@ -142,7 +142,7 @@ This scenario highlights the importance of **network-level visibility** and the 
 
 ---
 
-#### 35. Benign (SOC Investigation – Splunk & LOLBins)
+# Benign (SOC Investigation – Splunk & LOLBins)
 
 ---
 
@@ -253,7 +253,7 @@ This scenario reflects real-world SOC investigations involving limited visibilit
 
 ---
 
-#### Splunk SOC Lab Setup (SIEM Lab – Deployment & Log Ingestion)
+# Splunk SOC Lab Setup (SIEM Lab – Deployment & Log Ingestion)
 
 ---
 
@@ -294,7 +294,6 @@ The objective was to create a centralized logging solution capable of collecting
   ```
 
 * 🐧 **Environment:**
-
   ```
   Ubuntu Linux
   ```
@@ -336,7 +335,7 @@ This lab demonstrates the ability to build and configure a functional SIEM envir
 
 ---
 
-#### Logstash Data Pipeline (Elastic Lab – Log Processing & Parsing)
+# Logstash Data Pipeline (Elastic Lab – Log Processing & Parsing)
 
 ---
 
@@ -416,7 +415,7 @@ This lab demonstrates practical experience in building a log processing pipeline
 ---
 
 
-#### KQL & Lucene Querying (Elastic Lab – Threat Hunting & Log Analysis)
+# KQL & Lucene Querying (Elastic Lab – Threat Hunting & Log Analysis)
 
 ---
 
