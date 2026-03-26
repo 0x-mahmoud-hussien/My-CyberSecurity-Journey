@@ -1,74 +1,182 @@
-# 🐧 Linux Endpoint Security & Threat Detection
+# Linux Logging for SOC
 
-#### 17. Linux Logging for SOC
 <p align="center">
   <img src="../../images/linux_logging_badge.png" width="45%" />
   <img src="../../images/linux_logging_tasks.png" width="45%" />
 </p>
 
-* **ما تم تعلمه (Learning Objectives):**
-    * استكشاف أنواع السجلات المختلفة في نظام لينكس (Authentication, Runtime, System logs).
-    * تعلم الأوامر الأساسية لتحليل السجلات وتجنب الأخطاء الشائعة أثناء التعامل معها.
-    * فهم كيفية عمل أدوات مثل **auditd** في مراقبة وتسجيل الأحداث والأنشطة داخل النظام.
-    * التطبيق العملي على تحليل جميع مصادر السجلات المتعلمة داخل بيئة افتراضية (VM).
+### 🎯 Scenario
+In this lab, I acted as a SOC Analyst investigating system activities on a Linux machine by analyzing multiple log sources to identify suspicious behavior and security-relevant events.
 
 ---
 
-#### 18. Linux Threat Detection 1
+### 🛠️ Investigation Focus
+
+* Identifying critical Linux log sources and their security value  
+* Analyzing authentication attempts and user activity  
+* Monitoring system-level events and process execution  
+* Leveraging logging tools for deeper visibility  
+
+---
+
+### 🔍 Key Findings
+
+* Authentication logs revealed multiple login attempts and user activity patterns  
+* System logs provided insights into background services and potential anomalies  
+* Command-line tools enabled efficient filtering and parsing of large log files  
+* auditd demonstrated advanced event tracking for security monitoring  
+
+---
+
+### 🧠 Skills Gained
+
+* Linux Log Analysis (auth.log, syslog, etc.)  
+* Command-line investigation (grep, less, cat)  
+* Security event identification  
+* Understanding logging mechanisms in Linux  
+
+---
+
+### 🚀 SOC Relevance
+
+This lab strengthened my ability to analyze raw Linux logs and extract meaningful security insights, a critical skill for detecting unauthorized access and suspicious activity in real-world SOC environments.
+
+---
+
+# Linux Threat Detection 1
+
 <p align="center">
   <img src="../../images/linux_threat_1_badge.png" width="45%" />
   <img src="../../images/linux_threat_1_tasks.png" width="45%" />
 </p>
 
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم دور بروتوكول **SSH** والمخاطر الأمنية المرتبطة به في بيئات لينكس.
-    * تعلم كيف يمكن للخدمات المكشوفة على الإنترنت (Internet-exposed services) أن تؤدي إلى اختراقات أمنية.
-    * استخدام تحليل شجرة العمليات (**Process Tree Analysis**) لتحديد المصدر الحقيقي للهجوم.
-    * الممارسة العملية على اكتشاف تقنيات الوصول الأولي (Initial Access) في مختبرات محاكاة للواقع.
+### 🎯 Scenario
+Simulated a real-world attack scenario where an exposed Linux service was targeted. The objective was to identify how the attacker gained initial access and trace their activity within the system.
 
 ---
 
-#### 19. Linux Threat Detection 2
+### 🛠️ Investigation Focus
+
+* Analyzing SSH access logs  
+* Identifying brute-force or unauthorized login attempts  
+* Investigating process execution chains  
+* Mapping attacker entry point  
+
+---
+
+### 🔍 Key Findings
+
+* Detected suspicious SSH login attempts indicating potential brute-force attack  
+* Identified successful unauthorized access through exposed service  
+* Process tree analysis revealed how the attacker executed commands post-compromise  
+* Clear indicators of initial access were found within authentication logs  
+
+---
+
+### 🧠 Skills Gained
+
+* SSH Log Analysis  
+* Process Tree Investigation  
+* Initial Access Detection  
+* Threat Hunting Techniques  
+
+---
+
+### 🚀 SOC Relevance
+
+Understanding how attackers gain initial access is crucial in SOC operations. This lab enhanced my ability to detect early-stage attacks and respond before escalation occurs.
+
+---
+
+# Linux Threat Detection 2
+
 <p align="center">
   <img src="../../images/linux_threat_2_badge.png" width="45%" />
   <img src="../../images/linux_threat_2_tasks.png" width="45%" />
 </p>
 
-* **ما تم تعلمه (Learning Objectives):**
-    * استكشاف كيفية تحديد أوامر الاستكشاف (**Discovery Commands**) داخل السجلات.
-    * التعرف على التهديدات الشائعة التي تعرض سيرفرات لينكس للخطر.
-    * فهم الطرق والأساليب التي يستخدمها المهاجمون لرفع البرمجيات الخبيثة (**Malware**) على الضحايا.
-    * الممارسة العملية من خلال كشف وتحليل هجوم حقيقي لتعدين العملات الرقمية (**Cryptominer Attack**).
+### 🎯 Scenario
+Investigated a compromised Linux system where malicious activity was suspected, focusing on attacker behavior post-initial access.
 
 ---
 
-#### 20. Linux Threat Detection 3
+### 🛠️ Investigation Focus
+
+* Detecting discovery commands executed by attacker  
+* Identifying malicious file downloads or payload execution  
+* Analyzing system logs for abnormal activity patterns  
+
+---
+
+### 🔍 Key Findings
+
+* Identified multiple reconnaissance commands used by attacker (whoami, uname, etc.)  
+* Evidence of malware delivery and execution was found  
+* Indicators suggested a cryptomining attack on the system  
+* Logs showed abnormal resource usage patterns consistent with mining activity  
+
+---
+
+### 🧠 Skills Gained
+
+* Detection of attacker discovery techniques  
+* Malware activity identification  
+* Log-based threat hunting  
+* Understanding attacker behavior post-compromise  
+
+---
+
+### 🚀 SOC Relevance
+
+This lab improved my ability to detect mid-stage attack activities, especially reconnaissance and malware execution, which are key indicators of a compromised system.
+
+---
+
+# Linux Threat Detection 3
+
 <p align="center">
   <img src="../../images/linux_threat_3_badge.png" width="45%" />
   <img src="../../images/linux_threat_3_tasks.png" width="45%" />
 </p>
 
-* **ما تم تعلمه (Learning Objectives):**
-    * فهم كيفية استخدام الـ **Reverse Shells** في اختراقات أنظمة لينكس والسيطرة عليها.
-    * دراسة الأساليب التي يتبعها المهاجمون لرفع صلاحياتهم (**Privilege Escalation**) للوصول لدرجة الـ Root.
-    * استكشاف أكثر 5 تقنيات شائعة يستخدمها المهاجمون لضمان البقاء (**Persistence**) داخل نظام لينكس.
-    * تحليل الآثار الرقمية التي تتركها هذه العمليات في سجلات النظام لضمان سرعة الكشف عنها.
+### 🎯 Scenario
+Analyzed an advanced attack scenario involving reverse shell access, privilege escalation, and persistence techniques on a Linux system.
 
 ---
 
-### 🏆 Special Achievement: Linux Defender
-<p align="center">
-  <img src="../../images/linux_defender_path_badge.png" width="30%" />
-</p>
+### 🛠️ Investigation Focus
 
-> **تم الحصول على هذه البادج بعد إتمام سلسلة غرف Linux Security Monitoring، وإثبات القدرة على رصد التهديدات المتقدمة، وتحليل الـ Reverse Shells، وكشف محاولات رفع الصلاحيات داخل بيئات اللينكس.**
+* Detecting reverse shell connections  
+* Identifying privilege escalation techniques  
+* Investigating persistence mechanisms  
+* Correlating logs to reconstruct attacker activity  
 
+---
+
+### 🔍 Key Findings
+
+* Reverse shell activity was identified through unusual outbound connections  
+* Evidence of privilege escalation attempts leading to root access  
+* Persistence mechanisms were established to maintain attacker access  
+* Multiple log sources confirmed attacker control over the system  
 
 ---
 
-# 🐧 Linux Endpoint Security & Forensics
+### 🧠 Skills Gained
+
+* Reverse Shell Detection  
+* Privilege Escalation Analysis  
+* Persistence Identification  
+* Advanced Log Correlation  
 
 ---
+
+### 🚀 SOC Relevance
+
+This lab provided hands-on experience with advanced attack techniques, enabling me to detect and respond to high-impact threats in Linux environments.
+
+---
+
 
 ## 🧪 Linux File System Analysis & Forensics
 
