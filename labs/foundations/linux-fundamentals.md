@@ -35,7 +35,7 @@
 # 🔒 Linux System Hardening
 
 <p align="center">
-  <img src="../../../images/linux_hardening.png" width="45%" />
+  <img src="../../images/linux_hardening.png" width="45%" />
 </p>
 
 
