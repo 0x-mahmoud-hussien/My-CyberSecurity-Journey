@@ -31,3 +31,20 @@
 * **Incident Response Scenario:** تطبيق مهارات الاستجابة للحوادث في سيناريو واقعي لتحليل حركة الملفات وتحديد الثغرات التي تم استغلالها.
 
 ---
+
+# 🔒 Linux System Hardening
+
+<p align="center">
+  <img src="../../../images/linux_hardening.png" width="45%" />
+</p>
+
+
+### 🛡️ أهم ما تم تعلمه (Technical Takeaways):
+
+* **Physical & Filesystem Security:** فهم أهمية تأمين الجهاز فيزيائياً واستخدام تقنيات التشفير (Encryption) لحماية البيانات الحساسة في حالة الوصول غير المصرح به للهاردوير.
+* **Network Defense (Firewall):** احتراف إعداد الجدران النارية (Firewalls) لتقليل مساحة الهجوم (Attack Surface) ومنع الاتصالات غير الضرورية.
+* **Secure Remote Access:** تطبيق أفضل الممارسات لتأمين الوصول عن بُعد، مثل إعداد SSH بشكل آمن ومنع دخول الـ root مباشرة.
+* **Service & Software Management:** تعلم كيفية جرد البرامج والخدمات وتعطيل غير الضروري منها (Reducing Bloatware) لتقليل الثغرات المحتملة.
+* **Maintenance & Auditing:** إعداد سياسات التحديثات التلقائية (Updates & Upgrades) وضبط الـ Logs لضمان تسجيل كل نشاط مشبوه على النظام بشكل دقيق.
+
+---
