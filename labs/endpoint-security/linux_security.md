@@ -177,8 +177,8 @@ This lab provided hands-on experience with advanced attack techniques, enabling 
 
 ---
 
-
-## 🧪 Linux File System Analysis & Forensics
+# 🧪 Linux File System Analysis & Forensics
+---
 
 <p align="center">
   <img src="../../images/Linux_File_System_Analysis1.png" width="45%" />
@@ -186,26 +186,132 @@ This lab provided hands-on experience with advanced attack techniques, enabling 
   <img src="../../images/Linux_File_System_Analysis3.png" width="45%" />
 </p>
 
-### 🛡️ Technical Takeaways
-
-* Live file system analysis on Linux environments  
-* Identification of forensic artifacts (logs, configs, temp files)  
-* Log analysis (auth logs, command history, system logs)  
-* Timeline reconstruction of attacker activity  
-* Incident response simulation on Linux systems  
+### 🎯 Scenario
+Conducted a forensic investigation on a Linux system to identify attacker activity by analyzing filesystem artifacts and reconstructing the timeline of events.
 
 ---
 
-## 🔒 Linux System Hardening
+### 🛠️ Investigation Focus
 
+* Analyzing filesystem structure and suspicious files  
+* Identifying forensic artifacts (logs, configs, temp files)  
+* Correlating system logs with file activity  
+* Reconstructing attacker timeline  
+
+---
+
+### 🔍 Key Findings
+
+* Suspicious files and hidden artifacts were identified within the filesystem  
+* Log correlation revealed attacker actions and system interaction  
+* File metadata helped determine execution timeline  
+* Evidence showed clear sequence of attacker activity  
+
+---
+
+### 🧠 Skills Gained
+
+* Filesystem Forensics  
+* Artifact Analysis  
+* Timeline Reconstruction  
+* Incident Investigation  
+
+---
+
+### 🚀 SOC Relevance
+
+This lab strengthened my ability to perform forensic investigations on compromised systems and reconstruct attacker activity, a critical skill for incident response and post-breach analysis.
+
+---
+
+# 🔒 Linux System Hardening
+---
 <p align="center">
   <img src="../../images/linux_hardening.png" width="45%" />
 </p>
 
-### 🛡️ Technical Takeaways
+### 🎯 Scenario
+Focused on securing a Linux system after identifying potential threats by applying hardening techniques to reduce the attack surface and prevent future compromises.
 
-* Filesystem encryption & physical security  
-* Firewall configuration and attack surface reduction  
-* Secure SSH configuration and remote access control  
-* Service and package management (reducing attack surface)  
-* System auditing and logging best practices  
+---
+
+### 🛠️ Investigation Focus
+
+* Securing system configurations and services  
+* Hardening SSH access controls  
+* Reducing attack surface by disabling unnecessary services  
+* Implementing firewall and security best practices  
+
+---
+
+### 🔍 Key Findings
+
+* Weak configurations were identified and hardened  
+* SSH access was secured to prevent unauthorized login  
+* Unnecessary services increased attack surface and were disabled  
+* Firewall rules significantly improved system protection  
+
+---
+
+### 🧠 Skills Gained
+
+* Linux System Hardening  
+* Secure Configuration Management  
+* Network Defense  
+* Access Control Implementation  
+
+---
+
+### 🚀 SOC Relevance
+
+This lab highlights the importance of proactive defense in SOC operations, ensuring systems are hardened to prevent attacks before they occur.
+
+
+---
+
+
+# 🔍 Linux Logs Investigations
+---
+
+<p align="center">
+  <img src="../../images/Linux Logs Investigations1.png" width="45%" />
+  <img src="../../images/Linux Logs Investigations2.png" width="45%" />
+  <img src="../../images/Linux Logs Investigations3.png" width="45%" />
+  <img src="../../images/Linux Logs Investigations4.png" width="45%" />
+</p>
+
+### 🎯 Scenario
+Investigated a Linux system showing signs of compromise by analyzing logs, identifying malicious processes, and uncovering persistence mechanisms used by the attacker.
+
+---
+
+### 🛠️ Investigation Focus
+
+* Analyzing multiple log sources (auth.log, syslog, daemon logs, journalctl, Auditd)  
+* Detecting suspicious processes and background activity  
+* Identifying persistence techniques (cron jobs, services)  
+* Correlating evidence across logs  
+
+---
+
+### 🔍 Key Findings
+
+* Suspicious login activity was identified in authentication logs  
+* Malicious processes were detected running in the background  
+* Persistence mechanisms were found ensuring attacker access  
+* Log correlation revealed full attacker behavior and movement  
+
+---
+
+### 🧠 Skills Gained
+
+* Log Analysis & Correlation  
+* Threat Hunting  
+* Process Investigation  
+* Persistence Detection  
+
+---
+
+### 🚀 SOC Relevance
+
+This lab improved my ability to investigate real-world incidents by analyzing logs and detecting attacker techniques, a key responsibility in SOC environments.
