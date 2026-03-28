@@ -38,7 +38,9 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [Volatility Memory Forensics Analysis](./investigations/Volatility.md)
 
-* 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md) 
+* 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
+
+* 🐢 [Tardigrade – Linux Server Compromise Investigation](./investigations/Tardigrade.md)
 
 ---
 
