@@ -367,3 +367,61 @@ Performed a live forensics investigation on a compromised Linux server. The goal
 ### 🚀 SOC Relevance
 
 This lab simulates a critical SOC task: responding to a Linux breach. Mastering these tools (Osquery, Netstat, Crontab) allows for rapid detection of TTPs, enabling faster containment and remediation of threats in a production environment.
+
+---
+
+
+# 🛡️ Linux Live Forensics: Process, Service & Task Investigation
+---
+
+<p align="center">
+  <img src="../../images/Linux_Process_Analysis_1.png" width="45%" />
+  <img src="../../images/Linux_Process_Analysis_2.png" width="45%" />
+  <img src="../../images/Linux_Process_Analysis_3.png" width="45%" />
+  <img src="../../images/Linux_Process_Analysis_4.png" width="45%" />
+  <img src="../../images/Linux_Process_Analysis_5.png" width="45%" />
+  <img src="../../images/Linux_Process_Analysis_6.png" width="45%" />
+  <img src="../../images/Linux_Process_Analysis_7.png" width="45%" />
+  <img src="../../images/Linux_Process_Analysis_8.png" width="45%" />
+</p>
+
+
+### 📝 Executive Summary
+Performed a comprehensive live forensic analysis on a compromised Ubuntu workstation. The investigation focused on identifying unauthorized persistence mechanisms, malicious process hierarchies, and data exfiltration attempts across system services, scheduled tasks, and user-specific application artefacts.
+
+---
+
+### 🔍 Technical Investigation Breakdown
+
+#### 1. Process & Network Analysis
+* **Tools Used:** `ps -eFH`, `pstree`, `lsof`, `top`.
+* **Findings:** Identified a **Bind Shell** established using **Netcat (nc)** listening on port **4444**.
+* **Persistence:** The shell was facilitated through a **Named Pipe** (`/tmp/f`), allowing bidirectional data flow between the attacker and the system's `/bin/sh`.
+
+#### 2. Persistence via Cronjobs & Services
+* **System Level:** Discovered a malicious cronjob in `/etc/crontab` running a "backup" script from `/var/tmp/` with **Root** privileges. The script was found to be a **Cryptominer** (XMRig) downloader.
+* **User Level:** Identified a hidden persistence script (`abzkd83o4jakxld.sh`) in Janice’s crontab.
+* **Service Abuse:** Detected a suspicious systemd service named `b4ckd00rftw.service` that automatically re-creates a sudo-enabled user every 60 seconds.
+
+#### 3. Autostart & Execution Monitoring
+* **Autostart Scripts:** Found a `.desktop` file in Janice’s home directory configured to exfiltrate her **Private SSH Key** (`id_rsa`) to an external C2 server via `curl` POST requests.
+* **Real-time Monitoring:** Utilized `pspy64` to capture short-lived malicious processes and decoded Base64 flags executed by scheduled tasks.
+
+#### 4. Application & Browser Artefacts
+* **Text Editors:** Analyzed `.viminfo` to reconstruct attacker command history and search patterns.
+* **Web Forensics:** Used **Dumpzilla** to parse Eduardo’s Firefox profile, uncovering malicious bookmarks and session cookies potentially used for lateral movement.
+
+---
+
+### 🛠️ Remediation & Recommendations
+* **Eradication:** Instead of simple file deletion, a full system re-image from a "known-good" backup is recommended due to the complexity of the persistence (Services + Cron + Autostart).
+* **Hardening:** Implement **Least Privilege** by restricting access to `/var/tmp/` and monitoring for unauthorized `useradd` executions.
+* **Audit:** Regularly audit `/etc/systemd/system/` and user `.config/autostart/` directories for anomalies.
+
+---
+
+### 🎓 Key Skills Demonstrated
+* **Live Incident Response (IR)**
+* **Linux System Internals (Systemd, Cron, Syslog)**
+* **Forensic Tooling (Osquery, Pspy, Dumpzilla)**
+* **TTP Identification (MITRE ATT&CK: Persistence, Privilege Escalation)**
