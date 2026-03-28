@@ -315,3 +315,55 @@ Investigated a Linux system showing signs of compromise by analyzing logs, ident
 ### 🚀 SOC Relevance
 
 This lab improved my ability to investigate real-world incidents by analyzing logs and detecting attacker techniques, a key responsibility in SOC environments.
+
+
+---
+# 🔍 Linux Live Forensics & Persistence Investigation
+---
+
+<p align="center">
+  <img src="../../images/Linux_Forensics_1.png" width="45%" />
+  <img src="../../images/Linux_Forensics_2.png" width="45%" />
+  <img src="../../images/Linux_Forensics_3.png" width="45%" />
+  <img src="../../images/Linux_Forensics_4.png" width="45%" />
+  <img src="../../images/Linux_Forensics_5.png" width="45%" />
+</p>
+
+### 🎯 Scenario
+Performed a live forensics investigation on a compromised Linux server. The goal was to identify attacker footprints, including malicious processes, network connections, and persistence mechanisms established after a phishing-induced compromise.
+
+---
+
+### 🛠️ Investigation Focus
+
+* System Profiling (Kernel, OS, and hardware details)
+* Process Analysis using Osquery (Hunting for fileless and orphan processes)
+* Network Connection Monitoring (Identifying C2 communication and listening ports)
+* File System Investigation (Detecting hidden files and modified binaries)
+* Persistence Detection (Analyzing Systemd services and Cron jobs)
+
+---
+
+### 🔍 Key Findings
+
+* Found a suspicious process (`kworker` masquerade) running from `/tmp/` and `/var/tmp/`.
+* Identified a fileless malware execution using the `on_disk = 0` query in Osquery.
+* Detected a backdoor account (`badactor`) and an unauthorized SSH-related service.
+* Uncovered a persistence mechanism via a Cron job scheduled to run a hidden script `@reboot`.
+* Discovered a malicious package (`collector`) containing a hidden secret code in its metadata.
+
+---
+
+### 🧠 Skills Gained
+
+* Live Forensics & Artifact Acquisition
+* Osquery SQL-like Threat Hunting
+* Network Socket & Port Investigation
+* Persistence Mechanism Identification
+* Package Management Security Auditing
+
+---
+
+### 🚀 SOC Relevance
+
+This lab simulates a critical SOC task: responding to a Linux breach. Mastering these tools (Osquery, Netstat, Crontab) allows for rapid detection of TTPs, enabling faster containment and remediation of threats in a production environment.
