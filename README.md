@@ -40,6 +40,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
 
+* 🛡️ [IronShade APT – Linux Compromise Investigation](./investigations/IronShade.md)
+
 * 🐢 [Tardigrade – Linux Server Compromise Investigation](./investigations/Tardigrade.md)
 
 ---
@@ -150,3 +152,15 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 * Memory dump analysis
 * Artifact extraction & malicious process detection
+
+---
+
+### 🛡️ IronShade APT Investigation
+
+* Linux system compromise via exposed SSH service
+* Persistence through backdoor user and cronjob
+* Detection of hidden processes and malicious services
+* Identification of attacker IP and brute-force attempts
+* Malware deployment and post-exploitation activity analysis
+
+---
