@@ -178,7 +178,6 @@ This lab provided hands-on experience with advanced attack techniques, enabling 
 ---
 
 
----
 # 🛡️ Linux Incident Surface: Attack & Defense Perspective
 ---
 
