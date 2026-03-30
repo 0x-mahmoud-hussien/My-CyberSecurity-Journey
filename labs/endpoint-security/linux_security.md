@@ -177,6 +177,65 @@ This lab provided hands-on experience with advanced attack techniques, enabling 
 
 ---
 
+
+---
+# 🛡️ Linux Incident Surface: Attack & Defense Perspective
+---
+
+<p align="center">
+  <img src="../../images/Linux_Incident_Surface_1.png" width="45%" />
+  <img src="../../images/Linux_Incident_Surface_2.png" width="45%" />
+  <img src="../../images/Linux_Incident_Surface_3.png" width="45%" />
+</p>
+
+
+### 📝 Executive Summary
+This investigation explored the critical intersection between the **Linux Attack Surface** (entry points) and the **Linux Incident Surface** (post-compromise footprints). By simulating attacker activities (Red Teaming) and performing defensive analysis (Blue Teaming), we identified how malicious actions translate into detectable system artifacts.
+
+---
+
+### 🔍 Key Incident Surface Areas Analyzed
+
+#### 1. Running Processes & Network Communication
+* **Findings:** Identified the `netcom` process establishing an unauthorized outbound connection to **10.10.160.231** on port **4444**.
+* **Tools Used:** `ps aux`, `lsof -i -P -n`, and `osquery`.
+* **Indicator:** A process running from a temporary directory (`/tmp`) or with an unexpected remote IP is a high-priority incident marker.
+
+#### 2. Persistence Mechanisms (Maintaining a Foothold)
+* **Account Creation:** Detected the creation of a backdoor user named `attacker` added to the `sudo` group.
+* **Scheduled Tasks (Cron):** Investigated how attackers use `@reboot` or per-minute intervals to maintain access via `/var/spool/cron/crontabs/`.
+* **Malicious Services:** Identified `suspicious.service` pointing to a binary in `/home/activities/processes/`, configured to start automatically on boot.
+
+#### 3. Disk & Package Integrity
+* **Sensitive Files Audited:** `/etc/passwd`, `/etc/shadow`, and `/etc/sudoers` for unauthorized modifications.
+* **Malicious Packages:** Simulated the creation of a **Debian (.deb) package** containing a malicious `postinst` script. Detected the installation via `dpkg.log` (3 log entries observed).
+* **Finding:** A package named `malicious-package` was installed on **17th Sept 2024**.
+
+#### 4. Log Analysis (The Forensic Goldmine)
+* **Authentication Logs:** Analyzed `/var/log/auth.log` to identify failed SSH attempts.
+    * **Target User:** `john`
+    * **Attacker IP:** `10.10.13.10`
+    * **Date:** 11th Sept 2024.
+* **System Logs:** Utilized `syslog` and `journalctl -u suspicious` to reconstruct the timeline, showing **9 log entries** before the service was stopped.
+
+---
+
+### 🛠️ Strategic Takeaways & Remediation
+* **Surface Reduction:** Minimizing open ports and unused services is the primary defense against the "Attack Surface."
+* **Log Integrity:** Centralized logging is essential because attackers often attempt to clear local logs like `auth.log` and `syslog`.
+* **File Integrity Monitoring (FIM):** Tools should be used to alert on changes to critical files like `/etc/sudoers`.
+
+---
+
+### 🎓 Key Skills Demonstrated
+* **Attack/Defense Alignment**
+* **Advanced Log Parsing (Grep, Journalctl)**
+* **System Integrity Auditing**
+* **Osquery for Live Investigation**
+
+
+
+---
 # 🧪 Linux File System Analysis & Forensics
 ---
 
