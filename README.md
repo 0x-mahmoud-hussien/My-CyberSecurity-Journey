@@ -36,6 +36,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
 
+* 🧠 [BOTSv2 – Advanced Threat Hunting & APT Investigation](./investigations/BOTSv2.md)
+
 * 🧠 [Volatility Memory Forensics Analysis](./investigations/Volatility.md)
 
 * 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
@@ -141,6 +143,18 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 ---
 
+### 🧠 BOTSv2 Investigation (Advanced Threat Hunting)
+
+* Multi-source log analysis using Splunk (botsv2 dataset)
+* Insider threat detection (Amber Turing activity)
+* Web attack detection (SQL Injection & XSS)
+* Malware delivery via USB and ransomware execution
+* Command & Control (C2) detection using DNS analysis
+* Spear phishing and data exfiltration tracking
+* Full attack chain reconstruction across endpoints and network
+
+---
+
 ### 🌀 Tempest Investigation
 
 * DFIR analysis & attacker tracking
@@ -164,3 +178,4 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Malware deployment and post-exploitation activity analysis
 
 ---
+
