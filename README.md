@@ -76,14 +76,7 @@ Explore practical labs and applied security exercises:
 * [🦠 **Malware Analysis & Concepts**](./labs/endpoint-security/malware_analysis.md)
 * [📧 **Email Security & Phishing Analysis**](./labs/email-security/phishing_analysis.md)
 * [🐝 **Web Application Security**](./labs/web-security/web_vulnerabilities.md)
-
----
-
-## 📚 Foundations & Learning
-
-Core foundational knowledge in networking, system administration, and security:
-
-* [📂 View Foundations & Learning](./labs/foundations/)
+  
 
 ---
 
