@@ -92,7 +92,7 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 > 🏆 **Boogeyman Slayer Achievement**
 >
-> <p align="center"><img src="./images/boogeyman_slayer_badge.png" width="400" /></p>
+> <p align="center"><img src="./images/boogeyman_slayer_badge.png" width="700" /></p>
 
 ---
 
