@@ -44,6 +44,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [IronShade APT – Linux Compromise Investigation](./investigations/IronShade.md)
 
+* 🛡️ [Swiftspend – Wazuh & Sysmon Threat Detection Investigation](./investigations/Swiftspend.md)
+
 * 🐢 [Tardigrade – Linux Server Compromise Investigation](./investigations/Tardigrade.md)
 
 ---
@@ -169,6 +171,18 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Detection of hidden processes and malicious services
 * Identification of attacker IP and brute-force attempts
 * Malware deployment and post-exploitation activity analysis
+
+---
+
+### 🛡️ Swiftspend Investigation (Wazuh & Sysmon)
+
+* Endpoint monitoring using Wazuh and Sysmon logs
+* Detection of malicious macro-based initial access
+* Persistence via scheduled task creation
+* PowerShell execution with Base64 obfuscation
+* Credential dumping using custom tooling
+* Detection of account creation for persistence
+* Data exfiltration identification and analysis
 
 ---
 
