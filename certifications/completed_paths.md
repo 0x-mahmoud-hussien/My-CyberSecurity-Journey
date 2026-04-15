@@ -1,63 +1,70 @@
+# 🎓 Professional Certification Writeup — TryHackMe
 
-## 🎓 Professional Certifications
+> A structured summary of completed learning paths on TryHackMe, covering foundational cybersecurity, network analysis, and SOC-level operations.
 
-### 🏆 Pre-Security Pathway - TryHackMe
-<p align="center">
-  <img src="../images/pre_security_certificate.png" width="80%" />width="80%" />
-</p>
-
-* **المهارات المكتسبة من المسار:**
-    * **Cyber Security Introduction:** فهم أساسيات المجال والوظائف المتاحة.
-    * **Network Fundamentals:** دراسة الـ OSI Model، والـ IP addresses، وكيفية عمل الـ Routing والـ Switching.
-    * **How the Web Works:** فهم بروتوكولات الـ HTTP/HTTPS، والـ DNS، والـ Cookies.
-    * **Linux Fundamentals:** إتقان التعامل مع الـ Terminal والـ Permissions ونظام الملفات في لينكس.
-    * **Windows Fundamentals:** فهم نظام التشغيل ويندوز من منظور أمني والتعامل مع الـ Command Line.
+![Platform](https://img.shields.io/badge/Platform-TryHackMe-red?style=flat-square)
+![Track](https://img.shields.io/badge/Track-SOC%20Analyst-blue?style=flat-square)
+![Paths](https://img.shields.io/badge/Paths%20Completed-3-green?style=flat-square)
+![Labs](https://img.shields.io/badge/Lab%20Hours-65%2B-orange?style=flat-square)
 
 ---
 
+## 🏆 CERT — 01 · Pre-Security Pathway
 
-# 🛡️ My Cybersecurity Path & Certifications
-
-## 🎓 Completed Path: Cyber Security 101
-**Platform:** TryHackMe | **Issue Date:** Feb 13, 2026 | **Credential ID:** THM-SW96MFJBOJ
+**Platform:** TryHackMe
 
 <p align="center">
-  <img src="../images/CS101-Certificate.png" width="800">
+  <img src="../images/pre_security_certificate.png" width="80%" />
 </p>
 
-### 🛠️ Skills Covered & Labs Completed:
-* **Networking:** OSI Model, TCP/IP, DNS, and HTTP.
-* **Web Security:** Web Vulnerabilities & Web Exploit Basics.
-* **Operating Systems:** Windows & Linux Foundations.
-* **Security Tools:** Wireshark, Burp Suite, and Gobuster.
+### 🛠️ Skills Acquired
 
+| Area | Description |
+|------|-------------|
+| **Cyber Security Intro** | Understanding the field, career roles, and threat landscape fundamentals |
+| **Network Fundamentals** | OSI Model, IP addressing, routing and switching concepts |
+| **How the Web Works** | HTTP/HTTPS protocols, DNS resolution, cookies and sessions |
+| **Linux Fundamentals** | Terminal navigation, file permissions, and Linux filesystem structure |
+| **Windows Fundamentals** | Windows OS from a security perspective, CMD and PowerShell basics |
 
 ---
 
-## 🎓 Completed Path: SOC Level 1
-**Platform:** TryHackMe | **Issue Date:** March 15, 2026 | **Course Duration:** 65 hours 29 minutes
+## 🏆 CERT — 02 · Cyber Security 101
+
+**Platform:** TryHackMe &nbsp;|&nbsp; **Issued:** Feb 13, 2026 &nbsp;|&nbsp; **Credential ID:** `THM-SW96MFJBOJ`
+
+<p align="center">
+  <img src="../images/CS101-Certificate.png" width="80%" />
+</p>
+
+### 🛠️ Skills Acquired
+
+| Area | Description | Tools |
+|------|-------------|-------|
+| **Networking** | OSI model, TCP/IP stack, DNS and HTTP in depth | `TCP/IP` `DNS` `HTTP` |
+| **Web Security** | Common web vulnerabilities and practical exploitation basics | `Burp Suite` `Gobuster` |
+| **Operating Systems** | Security-focused foundations for both Windows and Linux | — |
+| **Security Tools** | Hands-on labs with industry-standard security tools | `Wireshark` `Burp Suite` `Gobuster` |
+
+---
+
+## 🏆 CERT — 03 · SOC Level 1
+
+**Platform:** TryHackMe &nbsp;|&nbsp; **Issued:** Mar 15, 2026 &nbsp;|&nbsp; **Duration:** 65 hrs 29 min
 
 <p align="center">
   <img src="../images/SOC_Level1_Certificate.png" width="80%" />
 </p>
 
-### 🛠️ Skills Covered & Labs Completed
+### 🛠️ Skills Acquired
 
-SOC Fundamentals
-فهم آليات عمل الـ SOC، عملية Alert Triage، والتعامل مع أطر العمل الأمنية مثل MITRE ATT&CK و Pyramid of Pain.
+| Area | Description | Tools |
+|------|-------------|-------|
+| **SOC Fundamentals** | Alert triage workflows, SOC operations, and security frameworks | `MITRE ATT&CK` `Pyramid of Pain` |
+| **Network & Web Monitoring** | Traffic capture, packet analysis, and IDS/IPS rule writing | `Snort` `Zeek` `Wireshark` `TShark` |
+| **Endpoint Security** | Log analysis for Windows and Linux to detect suspicious activity | — |
+| **DFIR** | Memory forensics and phishing investigation in real scenarios | `Volatility 3` |
+| **SIEM Triage** | Event correlation, alert analysis, and incident timeline building | `Splunk` `ELK Stack` |
+| **Capstone Challenges** | Applied threat investigation via the Boogeyman challenge series | — |
 
-Network & Web Monitoring
-مراقبة وتحليل الترافيك باستخدام Snort و Zeek، وتحليل الـ packets باستخدام Wireshark و TShark.
-
-Endpoint Security
-تحليل ومراقبة Windows و Linux Logs لاكتشاف الأنشطة المشبوهة والهجمات الشائعة.
-
-Digital Forensics & Incident Response
-تحليل الذاكرة باستخدام Volatility 3، وإجراء Phishing Email Analysis ضمن سيناريوهات التحقيق.
-
-SIEM Triage
-العمل على منصات Splunk و ELK Stack لتحليل الأحداث وربطها وبناء Incident Timeline.
-
-Capstone Challenges
-تطبيق المهارات المكتسبة في التحقيق في تهديدات متقدمة من خلال سلسلة تحديات Boogeyman.
-
+> **Note:** The SOC Level 1 path represents the most advanced credential here — combining detection engineering, forensic analysis, and SIEM operations into a full analyst workflow.
