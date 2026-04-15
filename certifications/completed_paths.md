@@ -67,4 +67,3 @@
 | **SIEM Triage** | Event correlation, alert analysis, and incident timeline building | `Splunk` `ELK Stack` |
 | **Capstone Challenges** | Applied threat investigation via the Boogeyman challenge series | — |
 
-> **Note:** The SOC Level 1 path represents the most advanced credential here — combining detection engineering, forensic analysis, and SIEM operations into a full analyst workflow.
