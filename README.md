@@ -46,6 +46,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [Swiftspend – Wazuh & Sysmon Threat Detection Investigation](./investigations/Swiftspend.md)
 
+* 🛡️ [Axios Supply Chain Attack – Dependency Injection & RAT Analysis](./investigations/Axios-Supply-Chain.md)
+
 * 🐢 [Tardigrade – Linux Server Compromise Investigation](./investigations/Tardigrade.md)
 
 ---
@@ -150,6 +152,20 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 ---
 
+### 🛡️ Axios Supply Chain Investigation
+
+* Supply chain attack via malicious npm dependency injection
+* Compromise of developer account باستخدام Social Engineering
+* Execution of malicious post-install scripts (node postinst.js)
+* Deployment of cross-platform RAT (Linux / Windows / macOS)
+* C2 communication over HTTP with hardcoded endpoints
+* Detection of malicious Python payload execution on Linux
+* Persistence via event-triggered execution (MITRE T1546.004)
+* Analysis of obfuscated JavaScript using custom encryption key
+* Identification of attacker-controlled package (typing-coreutils)
+
+---
+
 ### 🌀 Tempest Investigation
 
 * DFIR analysis & attacker tracking
@@ -185,4 +201,3 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Data exfiltration identification and analysis
 
 ---
-
