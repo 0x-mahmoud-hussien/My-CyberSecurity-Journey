@@ -67,3 +67,37 @@
 | **SIEM Triage** | Event correlation, alert analysis, and incident timeline building | `Splunk` `ELK Stack` |
 | **Capstone Challenges** | Applied threat investigation via the Boogeyman challenge series | — |
 
+---
+
+#### 🦠 Section 11 · Malware Concepts For SOC
+
+| Module | Description |
+|--------|-------------|
+| **Malware Classification** | Understanding malware families — viruses, worms, trojans, ransomware, and spyware — and how SOC analysts categorize threats |
+| **Intro to Malware Analysis** | Static and dynamic analysis fundamentals, sandbox environments, and safe handling of malicious samples |
+| **Living Off the Land Attacks** | Detecting abuse of legitimate system tools (LOLBins) such as PowerShell, WMI, and certutil used by attackers to evade detection |
+| **Shadow Trace** | Applied investigation challenge combining malware identification, log correlation, and behavioral analysis |
+
+---
+
+#### 🔍 Section 12 · Threat Analysis Tools
+
+| Module | Description | Tools |
+|--------|-------------|-------|
+| **Intro to Cyber Threat Intel** | CTI lifecycle, threat actor profiling, and applying intelligence to SOC operations | `MITRE ATT&CK` `OpenCTI` |
+| **File and Hash Threat Intel** | Identifying malicious files using hash lookups and reputation-based analysis | `VirusTotal` `MalwareBazaar` |
+| **IP and Domain Threat Intel** | Investigating suspicious IPs and domains using passive DNS and threat feeds | `Shodan` `URLScan` `AbuseIPDB` |
+
+---
+
+#### 🌐 Web Security Monitoring
+
+| Area | Description | Tools |
+|------|-------------|-------|
+| **Web Vulnerabilities** | Identifying and detecting OWASP Top 10 attacks in web traffic logs | — |
+| **HTTP Traffic Analysis** | Analyzing web requests for anomalies, injections, and exfiltration attempts | `Wireshark` `TShark` |
+| **Web Exploit Detection** | Recognizing exploit patterns such as SQLi, XSS, and directory traversal in SIEM alerts | `Burp Suite` `Splunk` |
+
+---
+
+> **Note:** The SOC Level 1 path represents the most advanced credential here — combining detection engineering, malware analysis, threat intelligence, and SIEM operations into a complete analyst workflow.
