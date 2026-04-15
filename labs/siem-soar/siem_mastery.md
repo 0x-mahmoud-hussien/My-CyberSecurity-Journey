@@ -1,4 +1,4 @@
-#### 31. Alert Triage With Splunk
+# 31. Alert Triage With Splunk
 <p align="center">
   <img src="../../images/splunk_triage_badge.png" width="45%" />
   <img src="../../images/splunk_triage_tasks.png" width="45%" />
@@ -13,7 +13,7 @@
 
 ---
 
-#### 32. Alert Triage With Elastic
+# 32. Alert Triage With Elastic
 <p align="center">
   <img src="../../images/elastic_triage_badge.png" width="45%" />
   <img src="../../images/elastic_triage_tasks.png" width="45%" />
@@ -128,7 +128,7 @@ This scenario highlights the importance of **network-level visibility** and the 
 
 ---
 
-#### 34. Incident Handling With Splunk
+# . Incident Handling With Splunk
 <p align="center">
   <img src="../../images/incident_handling_splunk_badge.png" width="45%" />
   <img src="../../images/incident_handling_splunk_tasks.png" width="45%" />
