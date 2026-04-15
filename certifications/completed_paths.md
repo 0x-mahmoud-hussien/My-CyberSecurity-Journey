@@ -68,6 +68,6 @@
 | **Capstone Challenges** | Applied threat investigation via the Boogeyman challenge series | — |
 | **Malware Analysis** | Malware classification, static/dynamic analysis, and detecting LOLBins abuse in endpoint logs | — |
 | **Threat Analysis Tools** | CTI lifecycle, file/hash and IP/domain reputation lookups, and threat feed integration | `VirusTotal` `Shodan` `URLScan` `AbuseIPDB` |
-| **Web Security Monitoring** | Proactively hunting for malicious web patterns and exploit signatures within live traffic.
-Monitoring network streams to identify and neutralize sophisticated web-based threats in real-time. | `Burp Suite` `Wireshark` |
+| **Web Security Monitoring** | Detecting OWASP Top 10 attacks and web exploit patterns in traffic and SIEM alerts | `Burp Suite` `Wireshark` |
+
 
