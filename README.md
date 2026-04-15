@@ -38,8 +38,6 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [BOTSv2 – Advanced Threat Hunting & APT Investigation](./investigations/BOTSv2.md)
 
-* 🧠 [Volatility Memory Forensics Analysis](./investigations/Volatility.md)
-
 * 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
 
 * 🛡️ [IronShade APT – Linux Compromise Investigation](./investigations/IronShade.md)
@@ -170,13 +168,6 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 * DFIR analysis & attacker tracking
 * Reverse proxy detection & privilege escalation
-
----
-
-### 🧠 Volatility Investigation
-
-* Memory dump analysis
-* Artifact extraction & malicious process detection
 
 ---
 
