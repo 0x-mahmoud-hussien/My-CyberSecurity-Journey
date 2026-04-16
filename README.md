@@ -48,6 +48,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🐢 [Tardigrade – Linux Server Compromise Investigation](./investigations/Tardigrade.md)
 
+* 🔍 [Windows Process Execution – HR Compromise Investigation](./investigations/HR-Compromise.md)
+
 ---
 
 ## 🔧 Tools & Technologies
@@ -192,3 +194,13 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Data exfiltration identification and analysis
 
 ---
+
+### 🔍 Windows Process Execution Investigation (HR Compromise)
+
+* Detection using Windows Event Logs (Event ID 4688)
+* Identification of compromised HR user and attacker activity
+* Abuse of LOLBins (certutil.exe) for payload download
+* Detection of persistence via scheduled tasks
+* Analysis of payload delivery from external hosting (controlc.com)
+* Extraction of Indicators of Compromise (IOC)
+* Reconstruction of attack timeline using process logs
