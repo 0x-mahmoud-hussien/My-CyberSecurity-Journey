@@ -63,7 +63,7 @@ With administrative access established, the attacker moved to gather system info
 The attacker executed `wmic` from IP `192.168.1.153` to enumerate logical disks on both `server01` and `server02`:
 
 ```
-wmic logicaldisk get caption,description,drivetype
+wmic /node:server01, server02 logicaldisk get caption, filesystem, freespace, size, volumename
 ```
 ![Disk Reconnaissance](../images/Volt-Typhoon4.png)
 
