@@ -26,6 +26,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Boogeyman 3 – Enterprise SOC Investigation](./investigations/Boogeyman3.md)
 
+* 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
+
 * 🧠 [Brains – TeamCity Exploitation & DFIR Investigation](./investigations/Brains.md)
 
 * 🔍 [Investigating with Splunk – Windows Compromise Analysis](./investigations/Investigating-with-Splunk.md)
@@ -94,9 +96,19 @@ A complete attack lifecycle investigation from initial access to persistence:
 * **Boogeyman 2:** Memory Forensics & Process Injection
 * **Boogeyman 3:** Enterprise Detection & Log Correlation
 
-> 🏆 **Boogeyman Slayer Achievement**
->
-> <p align="center"><img src="./images/boogeyman_slayer_badge.png" width="700" /></p>
+---
+
+### 🛡️ Volt Typhoon APT Investigation
+
+* Full attack chain analysis of a real-world APT scenario
+* Initial access via account takeover and privilege escalation
+* Persistence through web shell deployment on compromised server
+* Credential dumping using Mimikatz and registry enumeration
+* Lateral movement across internal servers
+* Data collection and staging using PowerShell
+* Command & Control (C2) via proxy configuration (netsh)
+* Defense evasion through log clearing and artifact removal
+* Multi-source log correlation using Splunk
 
 ---
 
