@@ -8,6 +8,10 @@
 
 ---
 
+# DeceptiTech – Initial Access Pot Investigation (Honeypot Compromise)
+
+---
+
 ## Scenario Overview
 
 DeceptiTech is a cybersecurity company specializing in honeypot technology. A junior IT employee, **Emily Ross**, was tasked with deploying a DeceptiPot (a WordPress-based honeypot) in the corporate DMZ over the weekend. Due to several critical misconfigurations, threat actors didn't just test the honeypot — one of them used it as a real entry point into the corporate network, ultimately leading to a ransomware attack that encrypted all critical systems and wiped the SIEM.
