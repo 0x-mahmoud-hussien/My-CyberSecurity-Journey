@@ -4,7 +4,7 @@
 **Room:** Masquerade  
 **Category:** DFIR / Malware Analysis / Network Forensics  
 **Difficulty:** Medium  
-**Analyst:** Mahmoud Hussien
+**Analyst:** Mahmoud Hussien  
 **Analysis Type:** Static Analysis Only (Real Malware — VM Required)
 
 ---
