@@ -56,33 +56,11 @@ Start here 👇 (Highlighted real-world case studies)
 
 ## 🔧 Tools & Technologies
 
-* **SIEM/SOAR:** Splunk, ELK Stack (Kibana), Tines
-* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort, NetworkMiner
-* **Endpoint & Forensics:** FlareVM, EDR Solutions, Volatility 3, Autopsy, Sysmon
+* **SIEM/SOAR:** Splunk, ELK Stack (Kibana)
+* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort
+* **Endpoint & Forensics:** EDR Solutions, Volatility 3, Autopsy, Sysmon
 * **Frameworks:** MITRE ATT&CK, Unified Kill Chain, Pyramid of Pain
 * **OS:** Ubuntu Linux (Primary), Windows
-
----
-
-## 🎓 Certifications & Professional Path
-
-* [🎓 **Professional Certifications** (SOC Level 1, CS 101, Pre-Security)](./certifications/completed_paths.md)
-
----
-
-## 🧪 Hands-on Labs & Technical Writeups
-
-Explore practical labs and applied security exercises:
-
-* [🌐 **Network Analysis & IDS**](./labs/network/network_security.md)
-* [🛡️ **Cyber Frameworks & Threat Intel**](./labs/frameworks/cyber_frameworks.md)
-* [📊 **SIEM & SOAR Operations**](./labs/siem-soar/siem_mastery.md)
-* [🖥️ **Windows Endpoint Security**](./labs/endpoint-security/windows_security.md)
-* [🐧 **Linux Endpoint Security & Logging**](./labs/endpoint-security/linux_security.md)
-* [🦠 **Malware Analysis & Concepts**](./labs/endpoint-security/malware_analysis.md)
-* [📧 **Email Security & Phishing Analysis**](./labs/email-security/phishing_analysis.md)
-* [🐝 **Web Application Security**](./labs/web-security/web_vulnerabilities.md)
-  
 
 ---
 
