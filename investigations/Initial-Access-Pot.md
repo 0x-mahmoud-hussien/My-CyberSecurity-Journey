@@ -3,7 +3,7 @@
 **Platform:** TryHackMe  
 **Room:** Initial Access Pot (DeceptiTech Series)  
 **Category:** DFIR / Web / Privilege Escalation  
-**Difficulty:** Medium  
+**Difficulty:** hard  
 **Analyst:** Mahmoud
 
 ---
