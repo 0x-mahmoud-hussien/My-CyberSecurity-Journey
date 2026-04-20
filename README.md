@@ -30,6 +30,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
 
+* 🎭 [Masquerade – Malware Analysis & C2 Communication Investigation](./investigations/Masquerade.md)
+
 * 🧠 [Brains – TeamCity Exploitation & DFIR Investigation](./investigations/Brains.md)
 
 * 🔍 [Investigating with Splunk – Windows Compromise Analysis](./investigations/Investigating-with-Splunk.md)
@@ -101,6 +103,18 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Internal network reconnaissance after root access
 * Malware persistence established on compromised host
 * Reconstruction of the initial attack vector leading to full network compromise
+
+---
+
+### 🎭 Masquerade Investigation (Malware & C2 Analysis)
+
+* Phishing-based initial access via malicious script execution
+* Detection of external C2 communication (`api-edgecloud.xyz`)
+* Analysis of staged payload delivery and decryption (RC4)
+* Extraction and hashing of second-stage malware
+* Identification of covert communication channel with remote server
+* AES-encrypted command-and-control traffic analysis
+* Decryption of attacker commands and full compromise validation
 
 ---
 
