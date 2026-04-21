@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🎭 [Masquerade – Malware Analysis & C2 Communication Investigation](./investigations/Masquerade.md)
 
+* 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
+
 * 🧠 [Brains – TeamCity Exploitation & DFIR Investigation](./investigations/Brains.md)
 
 * 🔍 [Investigating with Splunk – Windows Compromise Analysis](./investigations/Investigating-with-Splunk.md)
@@ -115,6 +117,18 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Identification of covert communication channel with remote server
 * AES-encrypted command-and-control traffic analysis
 * Decryption of attacker commands and full compromise validation
+
+---
+
+### 🌐 Directory Curiosity Investigation (PCAP & Threat Analysis)
+
+* Network traffic analysis using PCAP and TShark
+* Detection of malicious domain communication (`jx2-bavuong[.]com`)
+* DNS and HTTP traffic correlation with suspicious IP
+* Identification of file indexing exposure and attacker interaction
+* Extraction of malicious executable from network traffic
+* Malware hash analysis and verification via VirusTotal
+* Detection of trojan activity and packed .NET executable
 
 ---
 
