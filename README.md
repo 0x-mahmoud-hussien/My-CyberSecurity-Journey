@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🎭 [Masquerade – Malware Analysis & C2 Communication Investigation](./investigations/Masquerade.md)
 
+* 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🧠 [Brains – TeamCity Exploitation & DFIR Investigation](./investigations/Brains.md)
@@ -127,6 +129,19 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Extraction of malicious executable from network traffic
 * Malware hash analysis and verification via VirusTotal
 * Detection of trojan activity and packed .NET executable
+
+---
+
+### 🔍 Windows Backdoor Investigation (Splunk Log Analysis)
+
+* Log analysis using Splunk (index=main) across Windows hosts
+* Detection of backdoor user creation (`A1berto`)
+* Registry persistence identification under SAM database
+* Discovery of impersonation technique targeting legitimate user
+* Remote command execution via WMIC for user creation
+* Analysis of malicious PowerShell activity (79 events)
+* Detection of encoded PowerShell web request to external server
+* Full compromise validation on infected host
 
 ---
 
