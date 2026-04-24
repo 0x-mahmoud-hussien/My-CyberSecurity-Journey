@@ -1,11 +1,11 @@
 # Investigating with Splunk — CTF Writeup
 
-**Analyst:** Mahmoud Hussien
-**Platform:** TryHackMe  
-**Room:** Investigating with Splunk  
-**Category:** SIEM / Log Analysis / Threat Hunting  
-**Difficulty:** Medium  
-**Tool:** Splunk SIEM
+* **Analyst:** Mahmoud Hussien
+* **Platform:** TryHackMe
+* **Room:** Investigating with Splunk
+* **Category:** SIEM / Log Analysis / Threat Hunting
+* **Difficulty:** Medium
+* **Tool:** Splunk SIEM
 
 ---
 
