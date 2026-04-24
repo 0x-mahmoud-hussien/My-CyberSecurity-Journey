@@ -30,6 +30,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
 
+* 💀 [Conti Ransomware – Exchange Compromise & DFIR Investigation](./investigations/Conti.md)
+
 * 🎭 [Masquerade – Malware Analysis & C2 Communication Investigation](./investigations/Masquerade.md)
 
 * 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
@@ -101,6 +103,20 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Internal network reconnaissance after root access
 * Malware persistence established on compromised host
 * Reconstruction of the initial attack vector leading to full network compromise
+
+---
+
+### 💀 Conti Ransomware Investigation (Exchange & DFIR)
+
+* DFIR investigation of Conti ransomware attack targeting Microsoft Exchange
+* Initial access via exploitation of multiple CVEs (Proxy-like attack chain)
+* Web shell deployment for remote command execution and persistence
+* Backdoor account creation with administrative privileges
+* Process migration to `lsass.exe` for credential dumping
+* Detection of privilege escalation and lateral movement techniques
+* Identification of ransomware payload execution and file encryption
+* Mass distribution of ransom notes across user directories
+* Full attack chain reconstruction from exploitation to impact
 
 ---
 
