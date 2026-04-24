@@ -141,35 +141,6 @@ A complete attack lifecycle investigation from initial access to persistence:
 
 ---
 
-### 🧠 Brains Investigation (TeamCity Exploitation)
-
-* Initial access via TeamCity vulnerability exploitation
-* Persistence through backdoor user creation
-* Detection using Splunk log analysis
-* Identification of attacker tooling and post-exploitation activity
-
----
-
-### 🔍 Investigating with Splunk
-
-* Windows log analysis using Splunk (Event-based investigation)
-* Detection of backdoor user creation and registry persistence
-* Identification of impersonation techniques
-* Analysis of WMIC remote execution
-* Detection of malicious PowerShell activity and C2 communication
-
----
-
-### 🔧 Splunk Fixit Investigation
-
-* Log parsing and event boundary correction
-* Regex-based field extraction
-* Splunk configuration (props.conf)
-* Network traffic analysis and user activity tracking
-* Detection of suspicious file access
-
----
-
 ### 🌐 Slingshot Investigation
 
 * Web attack detection using Kibana (ELK Stack)
