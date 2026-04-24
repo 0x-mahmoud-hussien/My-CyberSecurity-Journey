@@ -1,10 +1,10 @@
 # Initial Access Pot — CTF Writeup
 
-**Analyst:** Mahmoud Hussien
-**Platform:** TryHackMe  
-**Room:** Initial Access Pot (DeceptiTech Series)  
-**Category:** DFIR / Web / Privilege Escalation  
-**Difficulty:** hard   
+* **Analyst:** Mahmoud Hussien
+* **Platform:** TryHackMe
+* **Room:** Initial Access Pot (DeceptiTech Series)
+* **Category:** DFIR / Web / Privilege Escalation
+* **Difficulty:** hard  
 
 ---
 

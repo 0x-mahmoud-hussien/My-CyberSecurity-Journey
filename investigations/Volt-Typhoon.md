@@ -1,10 +1,10 @@
 # Volt Typhoon — Incident Investigation Writeup
 
-**Analyst:** Mahmoud Hussien
-**Date:** 2025  
-**Severity:** Critical  
-**Classification:** Advanced Persistent Threat (APT) — Volt Typhoon  
-**Framework:** MITRE ATT&CK
+* **Analyst:** Mahmoud Hussien
+* **Date:** 2025
+* **Severity:** Critical
+* **Classification:** Advanced Persistent Threat (APT) – Volt Typhoon
+* **Framework:** MITRE ATT&CK
 
 ---
 

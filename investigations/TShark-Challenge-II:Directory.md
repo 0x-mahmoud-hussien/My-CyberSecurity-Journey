@@ -1,11 +1,11 @@
 # TShark Challenge II: Directory — CTF Writeup
 
-**Analyst:** Mahmoud Hussien
-**Platform:** TryHackMe
-**Room:** TShark Challenge II: Directory
-**Category:** Network Forensics / PCAP Analysis / Threat Intelligence 
-**Difficulty:** easy  
-**Tools Used:** TShark, VirusTotal, CyberChef
+* **Analyst:** Mahmoud Hussien
+* **Platform:** TryHackMe
+* **Room:** TShark Challenge II: Directory
+* **Category:** Network Forensics / PCAP Analysis / Threat Intelligence
+* **Difficulty:** easy
+* **Tools Used:** TShark, VirusTotal, CyberChef
 
 ---
 

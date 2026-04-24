@@ -318,7 +318,8 @@ index=main User="Cybertees\\James" (EventID="4688" OR EventID="1")
 | sort - _time
 
 -- Backdoor user logon attempts (Event ID 4624)
-index=main Alberto EventID="4624" | stats count
+index=main Alberto (EventID="4624" OR EventID="4625")
+| stats count
 
 -- PowerShell module logging (Event ID 4103)
 index=main EventID="4103" | stats count
