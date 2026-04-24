@@ -36,8 +36,6 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
-* 🔧 [Splunk Fixit – Log Parsing & Network Traffic Analysis](./investigations/Fixit-Splunk.md)
-
 * ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
