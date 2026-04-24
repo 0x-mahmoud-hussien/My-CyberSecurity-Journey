@@ -36,8 +36,6 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [Brains – TeamCity Exploitation & DFIR Investigation](./investigations/Brains.md)
 
-* 🔍 [Investigating with Splunk – Windows Compromise Analysis](./investigations/Investigating-with-Splunk.md)
-
 * 🔧 [Splunk Fixit – Log Parsing & Network Traffic Analysis](./investigations/Fixit-Splunk.md)
 
 * ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)
