@@ -20,12 +20,6 @@ This repository showcases **real-world SOC investigations, hands-on labs, and th
 
 Start here 👇 (Highlighted real-world case studies)
 
-* 🧩 [Boogeyman 1 – Initial Access Investigation](./investigations/Boogeyman1.md)
-
-* 🧠 [Boogeyman 2 – Memory Forensics Analysis](./investigations/Boogeyman2.md)
-
-* 🔥 [Boogeyman 3 – Enterprise SOC Investigation](./investigations/Boogeyman3.md)
-
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
 
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
@@ -71,14 +65,6 @@ Start here 👇 (Highlighted real-world case studies)
 ---
 
 ## 🔍 Specialized Security Investigations
-
-### 🛡️ Boogeyman Series (Full Attack Chain)
-
-A complete attack lifecycle investigation from initial access to persistence:
-
-* **Boogeyman 1:** Phishing & Initial Access
-* **Boogeyman 2:** Memory Forensics & Process Injection
-* **Boogeyman 3:** Enterprise Detection & Log Correlation
 
 ---
 
