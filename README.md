@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 💀 [Conti Ransomware – Exchange Compromise & DFIR Investigation](./investigations/Conti.md)
 
+* ☀️ [BlackSun Ransomware – Endpoint Compromise & Persistence Investigation](./investigations/BlackSun.md)
+
 * 🎭 [Masquerade – Malware Analysis & C2 Communication Investigation](./investigations/Masquerade.md)
 
 * 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
@@ -117,6 +119,19 @@ A complete attack lifecycle investigation from initial access to persistence:
 * Identification of ransomware payload execution and file encryption
 * Mass distribution of ransom notes across user directories
 * Full attack chain reconstruction from exploitation to impact
+
+---
+
+### ☀️ BlackSun Ransomware Investigation (Endpoint & Splunk Analysis)
+
+* Endpoint compromise investigation using Splunk log analysis
+* Detection of malicious binary download via PowerShell
+* Analysis of persistence mechanism using scheduled tasks
+* Execution of payload with SYSTEM-level privileges
+* Identification of C2 communication via ngrok tunneling
+* Detection of staged PowerShell malware (`BlackSun.ps1`)
+* Ransomware behavior analysis and note creation
+* Identification of desktop defacement via malicious wallpaper
 
 ---
 
