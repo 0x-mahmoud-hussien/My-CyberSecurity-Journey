@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
 
+* 🛡️ [IronShade APT – Linux Persistence & Honeypot Compromise Investigation](./investigations/IronShade.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)
@@ -41,8 +43,6 @@ Start here 👇 (Highlighted real-world case studies)
 * 🧠 [BOTSv2 – Advanced Threat Hunting & APT Investigation](./investigations/BOTSv2.md)
 
 * 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
-
-* 🛡️ [IronShade APT – Linux Compromise Investigation](./investigations/IronShade.md)
 
 * 🛡️ [Swiftspend – Wazuh & Sysmon Threat Detection Investigation](./investigations/Swiftspend.md)
 
@@ -133,18 +133,6 @@ Start here 👇 (Highlighted real-world case studies)
 
 ---
 
-### 🌐 Directory Curiosity Investigation (PCAP & Threat Analysis)
-
-* Network traffic analysis using PCAP and TShark
-* Detection of malicious domain communication (`jx2-bavuong[.]com`)
-* DNS and HTTP traffic correlation with suspicious IP
-* Identification of file indexing exposure and attacker interaction
-* Extraction of malicious executable from network traffic
-* Malware hash analysis and verification via VirusTotal
-* Detection of trojan activity and packed .NET executable
-
----
-
 ### 🔍 Windows Backdoor Investigation (Splunk Log Analysis)
 
 * Log analysis using Splunk (index=main) across Windows hosts
@@ -155,6 +143,30 @@ Start here 👇 (Highlighted real-world case studies)
 * Analysis of malicious PowerShell activity (79 events)
 * Detection of encoded PowerShell web request to external server
 * Full compromise validation on infected host
+
+---
+
+### 🛡️ IronShade APT Investigation
+
+* Linux compromise assessment and DFIR analysis
+* Detection of malicious SSH activity and backdoor account creation
+* Persistence via cronjobs and malicious systemd services
+* Identification of hidden processes and masqueraded binaries
+* Threat actor tracking through authentication logs and SSH sessions
+* Unauthorized package installation and metadata analysis
+* Root privilege escalation and post-exploitation activity investigation
+
+---
+
+### 🌐 Directory Curiosity Investigation (PCAP & Threat Analysis)
+
+* Network traffic analysis using PCAP and TShark
+* Detection of malicious domain communication (`jx2-bavuong[.]com`)
+* DNS and HTTP traffic correlation with suspicious IP
+* Identification of file indexing exposure and attacker interaction
+* Extraction of malicious executable from network traffic
+* Malware hash analysis and verification via VirusTotal
+* Detection of trojan activity and packed .NET executable
 
 ---
 
@@ -199,16 +211,6 @@ Start here 👇 (Highlighted real-world case studies)
 
 * DFIR analysis & attacker tracking
 * Reverse proxy detection & privilege escalation
-
----
-
-### 🛡️ IronShade APT Investigation
-
-* Linux system compromise via exposed SSH service
-* Persistence through backdoor user and cronjob
-* Detection of hidden processes and malicious services
-* Identification of attacker IP and brute-force attempts
-* Malware deployment and post-exploitation activity analysis
 
 ---
 
