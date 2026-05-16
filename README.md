@@ -34,9 +34,9 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [IronShade APT – Linux Persistence & Honeypot Compromise Investigation](./investigations/IronShade.md)
 
-* 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
+* 🧩 [Boogeyman 1 – Phishing, PowerShell & DNS Exfiltration Investigation](./investigations/Boogeyman1.md)
 
-* ⚡ [Tempest Incident Response Investigation](./investigations/Tempest.md)
+* 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
 
@@ -158,6 +158,18 @@ Start here 👇 (Highlighted real-world case studies)
 
 ---
 
+### 🧩 Boogeyman 1 Investigation
+
+* Spear-phishing analysis targeting the finance department
+* Malicious LNK shortcut and obfuscated PowerShell execution
+* Payload delivery through attacker-controlled Python HTTP server
+* Host reconnaissance using Seatbelt and SQLite tooling
+* Credential harvesting from Windows Sticky Notes database
+* KeePass database theft through DNS tunneling exfiltration
+* C2 beaconing analysis and financial data compromise investigation
+
+---
+
 ### 🌐 Directory Curiosity Investigation (PCAP & Threat Analysis)
 
 * Network traffic analysis using PCAP and TShark
@@ -204,13 +216,6 @@ Start here 👇 (Highlighted real-world case studies)
 * Persistence via event-triggered execution (MITRE T1546.004)
 * Analysis of obfuscated JavaScript using custom encryption key
 * Identification of attacker-controlled package (typing-coreutils)
-
----
-
-### 🌀 Tempest Investigation
-
-* DFIR analysis & attacker tracking
-* Reverse proxy detection & privilege escalation
 
 ---
 
