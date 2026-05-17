@@ -36,6 +36,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧩 [Boogeyman 1 – Phishing, PowerShell & DNS Exfiltration Investigation](./investigations/Boogeyman1.md)
 
+* 🧠 [Boogeyman 2 – Memory Forensics & Fileless Persistence Investigation](./investigations/Boogeyman2.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
@@ -167,6 +169,19 @@ Start here 👇 (Highlighted real-world case studies)
 * Credential harvesting from Windows Sticky Notes database
 * KeePass database theft through DNS tunneling exfiltration
 * C2 beaconing analysis and financial data compromise investigation
+
+---
+
+### 🧠 Boogeyman 2 Investigation
+
+* Spear-phishing investigation targeting the HR department
+* Malicious VBA macro and staged payload delivery analysis
+* Memory forensics investigation using Volatility 3
+* Process tree reconstruction from WINWORD.exe to updater.exe
+* JavaScript-based malware execution through wscript.exe
+* C2 communication analysis and malicious network connection tracing
+* Fileless persistence via PowerShell, registry payloads, and scheduled tasks
+* Outlook cache artifact recovery and malicious document tracking
 
 ---
 
