@@ -38,6 +38,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [Boogeyman 2 – Memory Forensics & Fileless Persistence Investigation](./investigations/Boogeyman2.md)
 
+* 🔥 [Boogeyman 3 – Enterprise SOC Investigation & Active Directory Compromise](./investigations/Boogeyman3.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
@@ -182,6 +184,21 @@ Start here 👇 (Highlighted real-world case studies)
 * C2 communication analysis and malicious network connection tracing
 * Fileless persistence via PowerShell, registry payloads, and scheduled tasks
 * Outlook cache artifact recovery and malicious document tracking
+
+---
+
+### 🔥 Boogeyman 3 Investigation
+
+* Multi-stage spear-phishing investigation targeting the company CEO
+* ISO, HTA, and DLL-based malware execution chain analysis
+* Persistence establishment through malicious scheduled tasks
+* Command & Control (C2) beaconing and network communication tracing
+* UAC bypass investigation using fodhelper.exe
+* Credential dumping and Pass-the-Hash attack analysis with Mimikatz
+* PowerView-based network share enumeration and credential harvesting
+* Lateral movement investigation via WinRM and wsmprovhost.exe
+* Active Directory compromise and DCSync attack analysis
+* LockBit ransomware staging and enterprise attack chain reconstruction
 
 ---
 
