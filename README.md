@@ -40,11 +40,11 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Boogeyman 3 – Enterprise SOC Investigation & Active Directory Compromise](./investigations/Boogeyman3.md)
 
+* 🔥 [BOTSv2 – Enterprise Threat Hunting & APT Investigation](./investigations/BOTSv2-Investigation.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
-
-* 🧠 [BOTSv2 – Advanced Threat Hunting & APT Investigation](./investigations/BOTSv2.md)
 
 * 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
 
@@ -202,6 +202,23 @@ Start here 👇 (Highlighted real-world case studies)
 
 ---
 
+### 🔥 BOTSv2 Investigation
+
+* Executive targeting and spear-phishing campaign investigation
+* Email header, attachment, and threat actor attribution analysis
+* TOR browser activity and anonymous infrastructure tracking
+* Web application attack investigation including SQL injection and XSS activity
+* Network-based threat hunting using firewall, proxy, IDS, and packet telemetry
+* Malicious account creation and web application compromise analysis
+* Ransomware impact assessment and encrypted file investigation
+* USB-delivered malware execution and persistence analysis
+* Malware attribution through dynamic DNS and C2 infrastructure tracking
+* APT campaign investigation involving PowerShell Empire and scheduled task persistence
+* SSL-encrypted command-and-control traffic analysis
+* Enterprise-wide attack chain reconstruction using Splunk, Sysmon, Suricata, and endpoint logs
+
+---
+
 ### 🌐 Directory Curiosity Investigation (PCAP & Threat Analysis)
 
 * Network traffic analysis using PCAP and TShark
@@ -222,18 +239,6 @@ Start here 👇 (Highlighted real-world case studies)
 * Web shell upload and command execution
 * LFI exploitation and database credential access
 * Data exfiltration tracking (customer_credit_cards)
-
----
-
-### 🧠 BOTSv2 Investigation (Advanced Threat Hunting)
-
-* Multi-source log analysis using Splunk (botsv2 dataset)
-* Insider threat detection (Amber Turing activity)
-* Web attack detection (SQL Injection & XSS)
-* Malware delivery via USB and ransomware execution
-* Command & Control (C2) detection using DNS analysis
-* Spear phishing and data exfiltration tracking
-* Full attack chain reconstruction across endpoints and network
 
 ---
 
