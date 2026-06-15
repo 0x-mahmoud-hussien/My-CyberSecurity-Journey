@@ -42,6 +42,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [BOTSv2 – Enterprise Threat Hunting & APT Investigation](./investigations/BOTSv2-Investigation.md)
 
+* 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
@@ -216,6 +218,20 @@ Start here 👇 (Highlighted real-world case studies)
 * APT campaign investigation involving PowerShell Empire and scheduled task persistence
 * SSL-encrypted command-and-control traffic analysis
 * Enterprise-wide attack chain reconstruction using Splunk, Sysmon, Suricata, and endpoint logs
+
+---
+
+### 🔥 Carnage Investigation
+
+* Investigated a phishing-driven malware infection through full packet capture (PCAP) analysis
+* Traced malicious ZIP payload delivery and extracted staged malware distribution infrastructure
+* Identified multiple attacker-controlled domains involved in payload hosting and malware delivery
+* Analyzed Cobalt Strike command-and-control infrastructure, beacon traffic, and callback communications
+* Investigated DNS activity, including external IP discovery requests via public API services
+* Performed SSL certificate and web server fingerprinting to profile attacker infrastructure
+* Reconstructed post-infection network activity and malware communication patterns
+* Analyzed SMTP traffic to identify malicious spam activity and email transmission artifacts
+* Extracted network-based indicators of compromise (IOCs) including domains, IP addresses, and C2 infrastructure
 
 ---
 
