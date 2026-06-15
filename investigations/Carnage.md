@@ -3,7 +3,7 @@
 * **Platform:** TryHackMe  
 * **Room:** Carnage  
 * **Category:** Network Forensics / PCAP Analysis / Malspam  
-* **Difficulty:** Hard  
+* **Difficulty:** Medium  
 * **Analyst:** Mahmoud Hussien 
 * **Tool:** Wireshark, VirusTotal  
 * **File:** carnage.pcap

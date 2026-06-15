@@ -41,7 +41,7 @@ NOT (site=*microsoft.com OR site=*bing.com OR site=*msn.com
 **Answer:**
 
 ```
-www.berkbeer.com
+www[.]berkbeer[.]com
 ```
 ![Answer](../images/BOTSv2-1.png)
 
@@ -226,7 +226,7 @@ index=botsv2 brewertalk.com
 **Answer:**
 
 ```
-52.42.208.228
+52[.]42[.]208[.]228
 ```
 ![Answer](../images/BOTSv2-9.png)
 
@@ -249,7 +249,7 @@ index=botsv2 brewertalk.com
 **Answer:**
 
 ```
-45.77.65.211
+45[.]77[.]65[.]211
 ```
 ![Answer](../images/BOTSv2-10.png)
 
