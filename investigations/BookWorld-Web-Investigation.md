@@ -207,7 +207,6 @@ username=admin&password=admin123!
 admin:admin123!
 ```
 ![Answer](../images/BookWorld-Web-10.png)
-![Answer](../images/BookWorld-Web-11.png)
 
 ---
 
