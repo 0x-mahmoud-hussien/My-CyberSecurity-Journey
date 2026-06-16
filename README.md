@@ -46,6 +46,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [BookWorld Web Server Compromise Investigation](./investigations/BookWorld-Web-Investigation.md)
 
+* 🔥 [DanaBot Malware Delivery & Network Forensics Investigation](./investigations/DanaBot.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
@@ -248,6 +250,20 @@ Start here 👇 (Highlighted real-world case studies)
 * Examined a PHP web shell containing a reverse shell payload used for persistent remote access
 * Reconstructed the complete attack timeline from initial exploitation through post-compromise persistence
 * Extracted web application Indicators of Compromise (IOCs) including attacker IPs, session artifacts, uploaded malware, and callback infrastructure
+
+---
+
+### 🔥 DanaBot Malware Investigation
+
+* Investigated a multi-stage DanaBot malware infection using PCAP analysis and threat intelligence correlation
+* Traced initial access activity to a malicious JavaScript downloader delivered from attacker-controlled infrastructure
+* Analyzed execution of the malware chain through Windows Script Host (wscript.exe) and subsequent payload deployment
+* Performed JavaScript deobfuscation to uncover malware functionality, network communications, and payload retrieval mechanisms
+* Identified secondary-stage DLL payload delivery and analyzed malware staging behavior
+* Investigated attacker-controlled domains, delivery servers, and command-and-control infrastructure involved in the infection chain
+* Reconstructed the complete attack timeline from initial compromise through payload execution
+* Extracted host and network Indicators of Compromise (IOCs), including malicious domains, IP addresses, file hashes, and execution artifacts
+* Mapped observed attacker behavior to MITRE ATT&CK techniques including obfuscated files, registry modification, DLL execution, and ingress tool transfer
 
 ---
 
