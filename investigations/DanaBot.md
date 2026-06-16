@@ -3,7 +3,7 @@
 * **Platform:** CyberDefenders  
 * **Challenge:** DanaBot Lab  
 * **Category:** Network Forensics / Malware Analysis  
-* **Difficulty:** Medium  
+* **Difficulty:** Easy  
 * **Analyst:** Mahmoud Hussien
 * **Tool:** Wireshark, VirusTotal, beautifier  
 
