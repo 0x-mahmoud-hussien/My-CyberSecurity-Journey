@@ -44,6 +44,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
 
+* 🔥 [BookWorld Web Server Compromise Investigation](./investigations/BookWorld-Web-Investigation.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 * 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
@@ -63,7 +65,7 @@ Start here 👇 (Highlighted real-world case studies)
 ## 🔧 Tools & Technologies
 
 * **SIEM/SOAR:** Splunk, ELK Stack (Kibana)
-* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort
+* **Network Analysis:** Wireshark, TShark, Zeek (Bro), Snort, Brim
 * **Endpoint & Forensics:** EDR Solutions, Volatility 3, Autopsy, Sysmon
 * **Frameworks:** MITRE ATT&CK, Unified Kill Chain, Pyramid of Pain
 * **OS:** Ubuntu Linux (Primary), Windows
@@ -232,6 +234,20 @@ Start here 👇 (Highlighted real-world case studies)
 * Reconstructed post-infection network activity and malware communication patterns
 * Analyzed SMTP traffic to identify malicious spam activity and email transmission artifacts
 * Extracted network-based indicators of compromise (IOCs) including domains, IP addresses, and C2 infrastructure
+
+---
+
+### 🔥 BookWorld Web Investigation
+
+* Investigated a web server compromise through SQL injection and administrative account abuse
+* Identified attacker infrastructure, geolocation, and malicious activity originating from an external IP address
+* Analyzed SQL injection attacks used to enumerate databases, extract schema information, and access customer records
+* Traced attacker discovery of hidden administrative functionality and unauthorized access to the web management portal
+* Investigated authentication abuse involving weak default administrative credentials
+* Analyzed malicious file upload activity resulting in remote code execution (RCE) on the web server
+* Examined a PHP web shell containing a reverse shell payload used for persistent remote access
+* Reconstructed the complete attack timeline from initial exploitation through post-compromise persistence
+* Extracted web application Indicators of Compromise (IOCs) including attacker IPs, session artifacts, uploaded malware, and callback infrastructure
 
 ---
 
