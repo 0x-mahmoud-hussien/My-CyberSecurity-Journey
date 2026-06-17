@@ -42,6 +42,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [BOTSv2 – Enterprise Threat Hunting & APT Investigation](./investigations/BOTSv2-Investigation.md)
 
+* 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
+
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
 
 * 🔥 [BookWorld Web Server Compromise Investigation](./investigations/BookWorld-Web-Investigation.md)
@@ -50,7 +52,6 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
-* 🌐 [Slingshot – Web Attack & Kill Chain Investigation](./investigations/Slingshot.md)
 
 * 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
 
@@ -225,6 +226,20 @@ Start here 👇 (Highlighted real-world case studies)
 
 ---
 
+### 🔥 Slingshot Investigation
+
+* Investigated web server compromise through Apache log analysis using Elastic Stack
+* Traced attacker reconnaissance activities including Nmap NSE scanning and Gobuster directory enumeration
+* Analyzed brute-force authentication attacks against administrative login portals using Hydra
+* Investigated unauthorized administrative access and malicious file upload activity
+* Performed web shell execution analysis and post-exploitation command tracking
+* Identified Local File Inclusion (LFI) exploitation used to access sensitive configuration files
+* Traced database access, credential exposure, and customer data compromise activities
+* Reconstructed the complete attack timeline from initial reconnaissance to database manipulation
+* Extracted web-based indicators of compromise (IOCs) including attacker IPs, tools, credentials, and malicious artifacts
+
+---
+
 ### 🔥 Carnage Investigation
 
 * Investigated a phishing-driven malware infection through full packet capture (PCAP) analysis
@@ -276,17 +291,6 @@ Start here 👇 (Highlighted real-world case studies)
 * Extraction of malicious executable from network traffic
 * Malware hash analysis and verification via VirusTotal
 * Detection of trojan activity and packed .NET executable
-
----
-
-### 🌐 Slingshot Investigation
-
-* Web attack detection using Kibana (ELK Stack)
-* Reconnaissance & directory enumeration detection
-* Brute-force attack identification (Hydra)
-* Web shell upload and command execution
-* LFI exploitation and database credential access
-* Data exfiltration tracking (customer_credit_cards)
 
 ---
 
