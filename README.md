@@ -52,6 +52,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Lockdown Lab - IIS Web Shell & AgentTesla DFIR Investigation](./investigations/Lockdown-Lab.md)
 
+* 🔥 [Ramnit - Memory Forensics & Malware IOC Investigation](./investigations/Ramnit.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -293,6 +295,19 @@ Start here 👇 (Highlighted real-world case studies)
 * Conducted static malware analysis, identifying UPX packing and AgentTesla RAT characteristics
 * Correlated network, memory, and threat intelligence artifacts to reconstruct the complete attack timeline
 * Extracted indicators of compromise (IOCs) including attacker infrastructure, malware artifacts, and C2 domains
+
+---
+
+### 🔥 Ramnit Investigation
+
+* Performed Windows memory forensics using Volatility to identify active malicious processes
+* Traced malware execution chain and extracted executable path from volatile memory
+* Analyzed network connections to identify outbound command-and-control (C2) communication
+* Correlated network indicators with threat intelligence to identify attacker infrastructure
+* Extracted malware artifacts including SHA1 hash and PE compilation timestamp
+* Investigated malicious domains and associated command-and-control infrastructure
+* Reconstructed malware activity timeline from memory artifacts and network evidence
+* Extracted memory-based indicators of compromise (IOCs) including processes, IP addresses, domains, and file hashes
 
 ---
 
