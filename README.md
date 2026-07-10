@@ -50,10 +50,10 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [DanaBot Malware Delivery & Network Forensics Investigation](./investigations/DanaBot.md)
 
+* 🔥 [Lockdown Lab - IIS Web Shell & AgentTesla DFIR Investigation](./investigations/Lockdown-Lab.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
-
-* 🧠 [Memory Forensics – Volatility Analysis](./investigations/Memory-Forensics-Volatility.md)
 
 * 🛡️ [Swiftspend – Wazuh & Sysmon Threat Detection Investigation](./investigations/Swiftspend.md)
 
@@ -279,6 +279,20 @@ Start here 👇 (Highlighted real-world case studies)
 * Reconstructed the complete attack timeline from initial compromise through payload execution
 * Extracted host and network Indicators of Compromise (IOCs), including malicious domains, IP addresses, file hashes, and execution artifacts
 * Mapped observed attacker behavior to MITRE ATT&CK techniques including obfuscated files, registry modification, DLL execution, and ingress tool transfer
+
+---
+
+### 🔥 Lockdown Lab Investigation
+
+* Investigated a multi-stage intrusion targeting a public-facing IIS web server
+* Analyzed reconnaissance activity including Nmap HTTP enumeration and SMB share discovery
+* Traced malicious ASP.NET web shell deployment and reverse shell establishment
+* Performed Windows memory forensics using Volatility to reconstruct attacker activity
+* Identified persistence through Startup folder implants and malicious process execution
+* Analyzed w3wp.exe child processes and outbound command-and-control communications
+* Conducted static malware analysis, identifying UPX packing and AgentTesla RAT characteristics
+* Correlated network, memory, and threat intelligence artifacts to reconstruct the complete attack timeline
+* Extracted indicators of compromise (IOCs) including attacker infrastructure, malware artifacts, and C2 domains
 
 ---
 
