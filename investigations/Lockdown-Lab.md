@@ -4,7 +4,7 @@
 * **Challenge:** Lockdown Lab  
 * **Category:** Network Forensics / Memory Analysis / Malware Analysis  
 * **Difficulty:** Easy  
-* **Analyst:** Mahmoud  
+* **Analyst:** Mahmoud Hussien
 * **Tools:** Wireshark, Volatility 3, VirusTotal  
 
 ---
