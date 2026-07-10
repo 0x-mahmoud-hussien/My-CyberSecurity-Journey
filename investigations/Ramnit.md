@@ -153,6 +153,7 @@ sha1sum file.0xca82b85307f0.0xca82b7e06c80.ImageSectionObject.ChromeSetup.exe.im
 ```
 
 The binary was extracted from the `ImageSectionObject` (the memory-mapped PE image) using its virtual address obtained from `windows.dumpfiles`. The SHA1 was then computed locally and cross-referenced with VirusTotal for threat intelligence confirmation.
+
 ![Answer](../images/Ramnit-5.png)
 
 **VirusTotal Results:**
