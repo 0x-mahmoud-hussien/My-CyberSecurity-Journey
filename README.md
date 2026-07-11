@@ -56,6 +56,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [PsExec Hunt - SMB Lateral Movement & PsExec Investigation](./investigations/PsExec-Hunt.md)
 
+* 🔥 [Tomcat Takeover - Apache Tomcat Compromise & Web Shell Investigation](./investigations/Tomcat-Takeover.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -323,6 +325,19 @@ Start here 👇 (Highlighted real-world case studies)
 * Tracked attacker pivoting from the initial compromised host to additional systems
 * Reconstructed lateral movement timeline using PCAP and network forensic analysis
 * Extracted indicators of compromise (IOCs) including compromised hosts, user accounts, network shares, and PsExec artifacts
+
+---
+
+### 🔥 Tomcat Takeover Investigation
+
+* Investigated Apache Tomcat server compromise through network traffic and web log analysis
+* Analyzed attacker reconnaissance including Nmap scanning and Gobuster directory enumeration
+* Identified unauthorized access to the Tomcat Manager administrative interface
+* Investigated brute-force authentication resulting in administrative account compromise
+* Traced malicious WAR file deployment for remote code execution and web shell access
+* Reconstructed post-exploitation activities including interactive reverse shell execution
+* Analyzed Linux persistence established through scheduled cron job execution
+* Extracted indicators of compromise (IOCs) including attacker infrastructure, compromised credentials, malicious payloads, and persistence mechanisms
 
 ---
 
