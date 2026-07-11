@@ -54,6 +54,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Ramnit - Memory Forensics & Malware IOC Investigation](./investigations/Ramnit.md)
 
+* 🔥 [PsExec Hunt - SMB Lateral Movement & PsExec Investigation](./investigations/PsExec-Hunt.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -308,6 +310,19 @@ Start here 👇 (Highlighted real-world case studies)
 * Investigated malicious domains and associated command-and-control infrastructure
 * Reconstructed malware activity timeline from memory artifacts and network evidence
 * Extracted memory-based indicators of compromise (IOCs) including processes, IP addresses, domains, and file hashes
+
+---
+
+### 🔥 PsExec Hunt Investigation
+
+* Investigated SMB-based lateral movement across multiple Windows workstations
+* Traced attacker authentication and credential reuse using compromised domain accounts
+* Analyzed PsExec remote service deployment and execution (PSEXESVC.exe)
+* Identified administrative share abuse through ADMIN$ and IPC$ network shares
+* Examined SMB protocol activity including NTLM authentication and Tree Connect requests
+* Tracked attacker pivoting from the initial compromised host to additional systems
+* Reconstructed lateral movement timeline using PCAP and network forensic analysis
+* Extracted indicators of compromise (IOCs) including compromised hosts, user accounts, network shares, and PsExec artifacts
 
 ---
 
