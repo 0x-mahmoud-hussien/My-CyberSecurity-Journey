@@ -58,6 +58,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Tomcat Takeover - Apache Tomcat Compromise & Web Shell Investigation](./investigations/Tomcat-Takeover.md)
 
+* 🔥 [Masterminds - Multi-Host Malware Traffic Investigation with Brim](./investigations/Masterminds.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -338,6 +340,19 @@ Start here 👇 (Highlighted real-world case studies)
 * Reconstructed post-exploitation activities including interactive reverse shell execution
 * Analyzed Linux persistence established through scheduled cron job execution
 * Extracted indicators of compromise (IOCs) including attacker infrastructure, compromised credentials, malicious payloads, and persistence mechanisms
+
+---
+
+### 🔥 Masterminds Investigation
+
+* Investigated multi-host malware infections through comprehensive PCAP analysis using Brim
+* Traced phishing-initiated compromise and malicious payload delivery across multiple endpoints
+* Analyzed DNS, HTTP, and POST traffic to reconstruct malware execution and command-and-control communications
+* Identified malware families including Emotet, RedLine Stealer, and Phorpiex through threat intelligence correlation
+* Extracted malicious domains, downloaded payloads, C2 infrastructure, and network-based indicators of compromise (IOCs)
+* Investigated Suricata IDS alerts to validate malicious network activity and endpoint compromise
+* Correlated multi-stage malware download chains and victim-to-C2 communications across infected systems
+* Performed OSINT-based threat attribution using VirusTotal and URLhaus to classify malware infrastructure
 
 ---
 
