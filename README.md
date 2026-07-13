@@ -42,6 +42,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [BOTSv2 – Enterprise Threat Hunting & APT Investigation](./investigations/BOTSv2-Investigation.md)
 
+* 🧠 [Brave Lab - Windows Memory Forensics & User Activity Investigation with Volatility](./investigations/Brave-Lab.md)
+
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
@@ -235,6 +237,21 @@ Start here 👇 (Highlighted real-world case studies)
 * APT campaign investigation involving PowerShell Empire and scheduled task persistence
 * SSL-encrypted command-and-control traffic analysis
 * Enterprise-wide attack chain reconstruction using Splunk, Sysmon, Suricata, and endpoint logs
+
+---
+
+### 🧠 Brave Lab Investigation
+
+* Performed Windows memory forensics using Volatility 3 to analyze a suspected compromised workstation
+* Verified forensic evidence integrity through SHA-256 hashing and reconstructed the system acquisition timeline
+* Investigated active process execution, including Brave Browser, PowerShell, Chrome, Notepad, and OneDrive
+* Analyzed established network connections to identify external communications with ProtonMail infrastructure
+* Correlated browser activity, process execution, and registry artifacts to reconstruct user behavior prior to acquisition
+* Extracted process artifacts, executable hashes, and memory-resident evidence for forensic validation
+* Performed low-level memory carving using hexadecimal analysis to recover hidden strings and memory artifacts
+* Traced PowerShell process lineage through parent-child process relationships and execution timestamps
+* Reconstructed recently opened documents by analyzing command-line arguments and application execution history
+* Leveraged UserAssist registry artifacts to determine application usage patterns and Brave Browser execution duration
 
 ---
 
