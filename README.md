@@ -62,6 +62,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [RedLine Lab - Memory Forensics & Malware Investigation with Volatility](./investigations/RedLine.md)
 
+* 🧠 [Reveal Lab - Memory Forensics & Multi-Stage Attack Investigation with Volatility](./investigations/Reveal-Lab.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -368,6 +370,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Extracted malware file paths, malicious URLs, attacker IP addresses, and process-based indicators of compromise (IOCs)
 * Correlated volatile memory artifacts with network activity to reconstruct the complete attack timeline
 * Documented attacker persistence, execution flow, and memory-based forensic evidence for incident response
+
+---
+
+### 🧠 Reveal Lab Investigation
+
+* Analyzed Windows memory dump using Volatility 3 to investigate a multi-stage malware attack
+* Identified malicious PowerShell execution and traced the process hierarchy to the initial compromise
+* Investigated Living-off-the-Land (LotL) techniques involving PowerShell, WebDAV, and Rundll32
+* Traced remote WebDAV share access (\\45.9.74.32@8888\davwwwroot\) used for staging the second-stage payload
+* Identified second-stage DLL execution through Rundll32 using the malicious file `3435.dll`
+* Mapped attacker behavior to MITRE ATT&CK T1218.011 (System Binary Proxy Execution: Rundll32)
+* Determined the compromised user context and reconstructed the execution workflow
+* Attributed the intrusion to the StrelaStealer malware family through threat intelligence correlation
+* Extracted memory-based indicators of compromise (IOCs) including malicious processes, remote infrastructure, and payload artifacts
+* Reconstructed the complete attack chain from initial PowerShell execution through credential-stealing malware deployment
 
 ---
 
