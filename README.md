@@ -60,6 +60,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Masterminds - Multi-Host Malware Traffic Investigation with Brim](./investigations/Masterminds.md)
 
+* 🧠 [RedLine Lab - Memory Forensics & Malware Investigation with Volatility](./investigations/RedLine.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -353,6 +355,19 @@ Start here 👇 (Highlighted real-world case studies)
 * Investigated Suricata IDS alerts to validate malicious network activity and endpoint compromise
 * Correlated multi-stage malware download chains and victim-to-C2 communications across infected systems
 * Performed OSINT-based threat attribution using VirusTotal and URLhaus to classify malware infrastructure
+
+---
+
+### 🧠 RedLine Memory Forensics Investigation
+
+* Performed Windows memory forensics using Volatility to identify malicious processes and process lineage
+* Investigated process injection through RWX memory regions and detected malicious in-memory execution techniques
+* Traced malware execution from dropped payload to child process creation using process tree analysis
+* Identified command-and-control (C2) infrastructure through network socket and memory artifact analysis
+* Analyzed VPN-related processes to uncover attacker network evasion techniques and NIDS bypass behavior
+* Extracted malware file paths, malicious URLs, attacker IP addresses, and process-based indicators of compromise (IOCs)
+* Correlated volatile memory artifacts with network activity to reconstruct the complete attack timeline
+* Documented attacker persistence, execution flow, and memory-based forensic evidence for incident response
 
 ---
 
