@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
 
+* 🧠 [BlueSky Ransomware Lab - Network Forensics & Ransomware Attack Investigation](./investigations/BlueSky-Ransomware-Lab.md)
+
 * 🛡️ [IronShade APT – Linux Persistence & Honeypot Compromise Investigation](./investigations/IronShade.md)
 
 * 🧩 [Boogeyman 1 – Phishing, PowerShell & DNS Exfiltration Investigation](./investigations/Boogeyman1.md)
@@ -168,6 +170,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Analysis of malicious PowerShell activity (79 events)
 * Detection of encoded PowerShell web request to external server
 * Full compromise validation on infected host
+
+---
+
+### 🧠 BlueSky Ransomware Investigation
+
+* Investigated a multi-stage ransomware intrusion through network traffic analysis and PowerShell script deobfuscation
+* Identified SQL Server compromise via brute-force authentication and abuse of `xp_cmdshell` for remote command execution
+* Traced privilege escalation through C2 process injection into `winlogon.exe`
+* Analyzed malicious PowerShell payloads used to disable Microsoft Defender and evade endpoint security controls
+* Investigated persistence mechanisms through scheduled task creation (`\Microsoft\Windows\MUI\LPupdate`)
+* Analyzed credential dumping activity using `Invoke-PowerDump.ps1` and identified harvested credential artifacts
+* Reconstructed lateral movement across the network using SMBExec and attacker-discovered host inventories
+* Investigated ransomware deployment workflow, including payload delivery, execution chain, and ransom note creation
+* Extracted Indicators of Compromise (IOCs) including attacker IP addresses, malicious URLs, registry modifications, scheduled tasks, and ransomware artifacts
+* Correlated attacker behavior with MITRE ATT&CK techniques covering Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access, Lateral Movement, Command and Control, and Impact
 
 ---
 
