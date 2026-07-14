@@ -3,7 +3,7 @@
 * **Platform:** CyberDefenders  
 * **Challenge:** BlueSky Ransomware Lab  
 * **Category:** Network Forensics / Ransomware Analysis  
-* **Difficulty:** Hard  
+* **Difficulty:** Medium  
 * **Analyst:** Mahmoud Hussien 
 * **Tools:** Wireshark, CyberChef, VirusTotal  
 * **Artefacts:** PCAP + PowerShell scripts + Ransomware sample
