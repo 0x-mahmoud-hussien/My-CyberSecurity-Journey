@@ -46,6 +46,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [Brave Lab - Windows Memory Forensics & User Activity Investigation with Volatility](./investigations/Brave-Lab.md)
 
+* ☕ [OpenWire Lab - Apache ActiveMQ RCE & Java Deserialization Investigation](./investigations/OpenWire-Lab.md)
+
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
@@ -269,6 +271,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Traced PowerShell process lineage through parent-child process relationships and execution timestamps
 * Reconstructed recently opened documents by analyzing command-line arguments and application execution history
 * Leveraged UserAssist registry artifacts to determine application usage patterns and Brave Browser execution duration
+
+---
+
+### ☕ OpenWire Lab Investigation
+
+* Investigated remote code execution (RCE) through Apache ActiveMQ OpenWire protocol exploitation (CVE-2023-46604)
+* Analyzed malicious Java deserialization traffic targeting the ActiveMQ service over TCP port 61616
+* Traced outbound command-and-control (C2) communications across multiple attacker-controlled servers
+* Examined malicious XML payloads leveraging Spring Framework to instantiate `java.lang.ProcessBuilder`
+* Reconstructed the complete exploitation chain from XML payload retrieval to arbitrary operating system command execution
+* Investigated secondary payload delivery and execution of a dropped reverse shell binary (`/tmp/docker`)
+* Identified attacker infrastructure including primary and secondary C2 servers, malicious payload hosting, and HTTP staging activity
+* Performed root cause analysis of the Java deserialization vulnerability and reviewed the vendor patch validating `Throwable` class instantiation
+* Extracted Indicators of Compromise (IOCs) including attacker IP addresses, dropped malware, exploited service, malicious Java classes, and network artifacts
+* Documented the full attack lifecycle covering Initial Access, Remote Code Execution, Command and Control, and post-exploitation payload deployment
 
 ---
 
