@@ -52,7 +52,7 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
 
-* 🦅 [HawkEye Lab - Network Forensics & Keylogger Data Exfiltration Investigation](./investigations/HawkEye.md)
+* 🦅 [HawkEye Lab - Network Forensics & Keylogger Data Exfiltration Investigation](./investigations/HawkEye-Lab.md)
 
 * 🔥 [BookWorld Web Server Compromise Investigation](./investigations/BookWorld-Web-Investigation.md)
 
