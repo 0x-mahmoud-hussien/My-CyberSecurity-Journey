@@ -52,6 +52,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
 
+* 🦅 [HawkEye Lab - Network Forensics & Keylogger Data Exfiltration Investigation](./investigations/HawkEye.md)
+
 * 🔥 [BookWorld Web Server Compromise Investigation](./investigations/BookWorld-Web-Investigation.md)
 
 * 🔥 [DanaBot Malware Delivery & Network Forensics Investigation](./investigations/DanaBot.md)
@@ -314,6 +316,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Reconstructed post-infection network activity and malware communication patterns
 * Analyzed SMTP traffic to identify malicious spam activity and email transmission artifacts
 * Extracted network-based indicators of compromise (IOCs) including domains, IP addresses, and C2 infrastructure
+
+---
+
+### 🦅 HawkEye Keylogger Investigation
+
+* Investigated a phishing-driven malware infection through comprehensive network traffic analysis using Wireshark
+* Traced malicious DNS resolution, HTTP payload delivery, and execution of the HawkEye Keylogger malware
+* Identified malware hosting infrastructure, delivery server technologies, and attacker-controlled domains
+* Reconstructed SMTP-based data exfiltration sessions and recovered stolen credentials through traffic decoding
+* Decoded Base64-encoded authentication data using CyberChef to recover attacker email credentials
+* Analyzed periodic exfiltration behavior and identified the malware's automated 10-minute data theft interval
+* Identified compromised browser, banking, email, and corporate account credentials extracted by the keylogger
+* Correlated malware behavior with HawkEye Reborn v9 through threat intelligence and infrastructure analysis
+* Extracted Indicators of Compromise (IOCs) including malicious domains, IP addresses, file hashes, SMTP accounts, and persistence artifacts
+* Reconstructed the complete attack lifecycle from initial phishing download through credential theft and outbound data exfiltration
 
 ---
 
