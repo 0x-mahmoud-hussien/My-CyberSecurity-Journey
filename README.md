@@ -52,6 +52,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
 
+* 🧩 [PacketMaze Lab - Multi-Protocol Network Forensics Investigation](./investigations/PacketMaze-Lab.md)
+
 * 🦅 [HawkEye Lab - Network Forensics & Keylogger Data Exfiltration Investigation](./investigations/HawkEye-Lab.md)
 
 * 🔥 [BookWorld Web Server Compromise Investigation](./investigations/BookWorld-Web-Investigation.md)
@@ -78,8 +80,6 @@ Start here 👇 (Highlighted real-world case studies)
 * 🛡️ [Swiftspend – Wazuh & Sysmon Threat Detection Investigation](./investigations/Swiftspend.md)
 
 * 🛡️ [Axios Supply Chain Attack – Dependency Injection & RAT Analysis](./investigations/Axios-Supply-Chain.md)
-
-* 🐢 [Tardigrade – Linux Server Compromise Investigation](./investigations/Tardigrade.md)
 
 * 🔍 [Windows Process Execution – HR Compromise Investigation](./investigations/HR-Compromise.md)
 
@@ -316,6 +316,20 @@ Start here 👇 (Highlighted real-world case studies)
 * Reconstructed post-infection network activity and malware communication patterns
 * Analyzed SMTP traffic to identify malicious spam activity and email transmission artifacts
 * Extracted network-based indicators of compromise (IOCs) including domains, IP addresses, and C2 infrastructure
+
+---
+
+### 🧩 PacketMaze Network Forensics Investigation
+
+* Investigated suspicious multi-protocol network activity using Wireshark to reconstruct the complete attack sequence.
+* Recovered plaintext FTP authentication credentials after analyzing protocol downgrade from encrypted to cleartext communication.
+* Identified unauthorized file transfers, FTP artifacts, and attacker access to sensitive data stored on the internal server.
+* Analyzed DNS, HTTP, UDP, FTP, and TLS traffic to uncover attacker infrastructure and external communications.
+* Investigated encrypted TLS sessions by extracting Client Random values and Ephemeral Public Keys for forensic correlation.
+* Detected periodic UDP beaconing behavior consistent with command-and-control (C2) communications.
+* Performed metadata analysis on transferred images using ExifTool to identify the originating device and supporting forensic evidence.
+* Extracted Indicators of Compromise (IOCs) including compromised credentials, malicious IP addresses, domains, cryptographic artifacts, and exfiltrated files.
+* Reconstructed the complete compromise timeline from initial authentication through data exfiltration and external communications.
 
 ---
 
