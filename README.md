@@ -48,6 +48,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * ☕ [OpenWire Lab - Apache ActiveMQ RCE & Java Deserialization Investigation](./investigations/OpenWire-Lab.md)
 
+* 🌐 [WireDive Lab - Multi-Protocol Network Forensics & Traffic Analysis](./investigations/WireDive.md)
+
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
@@ -288,6 +290,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Performed root cause analysis of the Java deserialization vulnerability and reviewed the vendor patch validating `Throwable` class instantiation
 * Extracted Indicators of Compromise (IOCs) including attacker IP addresses, dropped malware, exploited service, malicious Java classes, and network artifacts
 * Documented the full attack lifecycle covering Initial Access, Remote Code Execution, Command and Control, and post-exploitation payload deployment
+
+---
+
+### 🌐 WireDive Network Forensics Investigation
+
+* Analyzed diverse network traffic using Wireshark across DHCP, DNS, SMB, shell, HTTP/S, NTP, STP, CDP, HSRP, SNMP, and RADIUS protocols.
+* Investigated DHCP transactions to identify requested IP addresses, client MAC addresses, and DHCP release transaction identifiers.
+* Analyzed DNS traffic to extract TXT record data, identify root DNS infrastructure, and trace authoritative name servers.
+* Investigated SMB authentication failures, remote share access, file paths, and extracted sensitive data from transferred files.
+* Reconstructed reverse shell activity and identified listening ports, privilege escalation attempts, Netcat usage, and sensitive file access.
+* Analyzed attacker commands to identify the installed Netcat version, exposed `/etc/passwd` data, and the password used for sudo privilege escalation.
+* Investigated network infrastructure protocols including NTP, DHCP, STP, CDP, HSRP, ICMPv6, SNMP, and RADIUS to extract critical network configuration artifacts.
+* Decrypted and analyzed HTTPS traffic to recover credentials, authentication data, web interaction artifacts, and sensitive user information.
+* Extracted and analyzed TLS, OCSP, HTTP/2, and encrypted web traffic artifacts to identify certificate status and compromised account details.
+* Reconstructed the complete investigation across multiple packet captures to identify authentication failures, sensitive data exposure, suspicious shell activity, and network configuration artifacts.
 
 ---
 
