@@ -48,7 +48,7 @@ Start here 👇 (Highlighted real-world case studies)
 
 * ☕ [OpenWire Lab - Apache ActiveMQ RCE & Java Deserialization Investigation](./investigations/OpenWire-Lab.md)
 
-* 🌐 [WireDive Lab - Multi-Protocol Network Forensics & Traffic Analysis](./investigations/WireDive.md)
+* 🌐 [WireDive Lab - Multi-Protocol Network Forensics & Traffic Analysis](./investigations/WireDive-Lab.md)
 
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
