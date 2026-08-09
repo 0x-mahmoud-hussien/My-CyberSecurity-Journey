@@ -30,6 +30,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🎭 [Masquerade – Malware Analysis & C2 Communication Investigation](./investigations/Masquerade.md)
 
+* 🕵️ [New Hire Old Artifacts - Splunk Threat Hunting & Endpoint Investigation](./investigations/New-Hire-Old-Artifacts.md)
+
 * 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
 
 * 🧠 [BlueSky Ransomware Lab - Network Forensics & Ransomware Attack Investigation](./investigations/BlueSky-Ransomware-Lab.md)
@@ -165,6 +167,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Identification of covert communication channel with remote server
 * AES-encrypted command-and-control traffic analysis
 * Decryption of attacker commands and full compromise validation
+
+---
+
+### 🕵️ New Hire Old Artifacts Investigation
+
+* Investigated a December 2021 endpoint security incident at Widget LLC using Splunk and Windows Sysmon telemetry.
+* Identified the execution of NirSoft Web Browser Password Viewer from the user's temporary directory and confirmed browser credential access activity.
+* Detected a suspicious binary masquerading as `PalitExplorer.exe` while executing under the name `IonicLarge.exe`.
+* Traced outbound C2 communications from the malicious binary to `2[.]56[.]59[.]42` and identified two external connections.
+* Investigated registry modifications targeting Windows Defender under `HKLM\SOFTWARE\Policies\Microsoft\Windows Defender`.
+* Reconstructed attacker anti-forensics activity involving process termination and deletion of malicious binaries and dropped DLL artifacts.
+* Analyzed PowerShell and WMIC activity used to suppress four Windows Defender Threat IDs through repeated `MSFT_MpPreference` modifications.
+* Identified the four suppressed Threat IDs in execution order: `2147735503`, `2147737010`, `2147737007`, and `2147737394`.
+* Discovered the execution of `C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe` from the user's Roaming AppData directory.
+* Identified the NW.js dependencies loaded by `EasyCalc.exe`: `ffmpeg.dll`, `nw.dll`, and `nw_elf.dll`.
 
 ---
 
