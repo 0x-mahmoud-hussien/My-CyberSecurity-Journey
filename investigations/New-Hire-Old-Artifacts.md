@@ -34,6 +34,7 @@ index=*
 | main | DESKTOP-H1ATIJC | WinEventLog:Application | 1,559 |
 | main | DESKTOP-H1ATIJC | WinEventLog:System | 37 |
 | **Total** | | | **27,378** |
+
 ![Answer](../images/New-Hire-Old-Artifacts-1.png)
 
 ---
