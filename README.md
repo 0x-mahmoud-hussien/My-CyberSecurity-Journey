@@ -52,6 +52,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
+* 🕵️ [The Silent Transfer - Network Forensics & Threat Hunting](./investigations/The-Silent-Transfer.md)
+
 * 🔥 [Carnage – Malware Traffic Analysis & C2 Investigation](./investigations/Carnage.md)
 
 * 🧩 [PacketMaze Lab - Multi-Protocol Network Forensics Investigation](./investigations/PacketMaze-Lab.md)
@@ -319,6 +321,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Traced database access, credential exposure, and customer data compromise activities
 * Reconstructed the complete attack timeline from initial reconnaissance to database manipulation
 * Extracted web-based indicators of compromise (IOCs) including attacker IPs, tools, credentials, and malicious artifacts
+
+---
+
+### 🕵️ The Silent Transfer Network Investigation
+
+* Investigated suspicious encrypted outbound traffic from a compromised developer workstation using Wireshark, TShark, Zeek, and Zui.
+* Identified the compromised workstation `10.14.30.88` and confirmed repeated C2 communication with external infrastructure.
+* Traced the initial compromise to the malicious delivery domain `cdn-updates.microsoftservice.net` and identified the downloaded dropper `winservice-patch-4891.exe`.
+* Analyzed C2 TLS activity and identified the JA4 fingerprint `t13d190900_9dc949149365_97f8aa674fd9` associated with the C2 client.
+* Reconstructed attacker activity following C2 establishment, including SMB discovery across 23 unique internal destination hosts.
+* Identified lateral movement through RDP from the compromised workstation to internal server `10.14.0.12`.
+* Investigated DNS activity from the pivoted server and identified `backup.corpfiles-sync.com` as the infrastructure resolved before the outbound transfer.
+* Identified the exfiltrated archive `Q4-Finance-Backup-2025.zip` and extracted its SHA256 hash as an investigation IOC.
+* Inspected application-layer C2 traffic and decoded the Base64 command `d2hvYW1p` to recover the attacker-issued `whoami` command.
+* Reconstructed the attack lifecycle from initial payload delivery and C2 establishment through internal reconnaissance, lateral movement, and data exfiltration.
 
 ---
 
