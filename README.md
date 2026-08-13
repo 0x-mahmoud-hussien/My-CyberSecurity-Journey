@@ -52,6 +52,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🌐 [WireDive Lab - Multi-Protocol Network Forensics & Traffic Analysis](./investigations/WireDive-Lab.md)
 
+* 🕵️ [XLMRat Lab - Network Forensics & Malware Analysis Investigation](./investigations/XLMRat-Lab)
+
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
 * 🕵️ [The Silent Transfer - Network Forensics & Threat Hunting](./investigations/The-Silent-Transfer.md)
@@ -324,6 +326,20 @@ Start here 👇 (Highlighted real-world case studies)
 * Decrypted and analyzed HTTPS traffic to recover credentials, authentication data, web interaction artifacts, and sensitive user information.
 * Extracted and analyzed TLS, OCSP, HTTP/2, and encrypted web traffic artifacts to identify certificate status and compromised account details.
 * Reconstructed the complete investigation across multiple packet captures to identify authentication failures, sensitive data exposure, suspicious shell activity, and network configuration artifacts.
+
+---
+
+### 🕵️ XLMRat Lab Investigation
+
+* Investigated a multi-stage malware infection affecting host `10.1.9.101` through network traffic analysis of the provided PCAP.
+* Reconstructed the initial infection chain from the HTTP delivery of `xlm.txt` to the second-stage PowerShell payload `mdm.jpg`.
+* Identified the attacker infrastructure at `45.126.209.4` and traced malware delivery over the non-standard HTTP port `222/TCP`.
+* Analyzed the VBScript stager and reconstructed the obfuscated PowerShell execution using `-NOP`, hidden window execution, and `-ExecutionPolicy Bypass`.
+* Identified `mdm.jpg` as a disguised PowerShell script that dropped `Conted.vbs`, `Conted.bat`, and `Conted.ps1` into `C:\Users\Public\`.
+* Reconstructed the persistence mechanism through the scheduled task `Update Edge`, configured to execute every two minutes.
+* Deobfuscated the PowerShell payload and identified `RegSvcs.exe` as the legitimate .NET LOLBin targeted for Process Hollowing.
+* Extracted and analyzed the embedded AsyncRAT payload, identifying the malware family as `AsyncRAT` with SHA256 `1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798`.
+* Traced encrypted TLS C2 communication between the compromised host and the attacker infrastructure and mapped the observed activity to relevant MITRE ATT&CK techniques.
 
 ---
 
