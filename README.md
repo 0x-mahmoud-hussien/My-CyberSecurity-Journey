@@ -52,7 +52,7 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🌐 [WireDive Lab - Multi-Protocol Network Forensics & Traffic Analysis](./investigations/WireDive-Lab.md)
 
-* 🕵️ [XLMRat Lab - Network Forensics & Malware Analysis Investigation](./investigations/XLMRat-Lab)
+* 🕵️ [XLMRat Lab - Network Forensics & Malware Analysis Investigation](./investigations/XLMRat-Lab.md)
 
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
