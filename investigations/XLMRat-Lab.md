@@ -344,9 +344,9 @@ $MZ.Invoke($null, [object[]] @($AC, $NKbb))
 ```
 Conted.ps1,Conted.bat,Conted.vbs
 ```
-![Answer](../images/XLMRat-Lab-10.png)
 ![Answer](../images/XLMRat-Lab-11.png)
 ![Answer](../images/XLMRat-Lab-12.png)
+![Answer](../images/XLMRat-Lab-13.png)
 
 ---
 
