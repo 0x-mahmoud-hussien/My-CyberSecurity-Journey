@@ -72,6 +72,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Ramnit - Memory Forensics & Malware IOC Investigation](./investigations/Ramnit.md)
 
+* 🤖 [FakeGPT Lab - Malicious Chrome Extension & Credential Theft Investigation](./investigations/FakeGPT-Lab)
+
 * 🔥 [PsExec Hunt - SMB Lateral Movement & PsExec Investigation](./investigations/PsExec-Hunt.md)
 
 * 🔥 [Tomcat Takeover - Apache Tomcat Compromise & Web Shell Investigation](./investigations/Tomcat-Takeover.md)
@@ -467,6 +469,23 @@ Start here 👇 (Highlighted real-world case studies)
 * Investigated malicious domains and associated command-and-control infrastructure
 * Reconstructed malware activity timeline from memory artifacts and network evidence
 * Extracted memory-based indicators of compromise (IOCs) including processes, IP addresses, domains, and file hashes
+
+---
+
+### 🤖 FakeGPT Lab Investigation
+
+* Investigated a malicious Chrome extension masquerading as "ChatGPT" that was designed to steal credentials, session cookies, and user keystrokes.
+* Analyzed the extension structure and identified `manifest.json`, `loader.js`, `app.js`, and `crypto.js` as the key components of the malicious extension.
+* Identified excessive browser permissions including `cookies`, `webRequest`, `webRequestBlocking`, `<all_urls>`, and access to HTTP/HTTPS traffic.
+* Deobfuscated the Base64-encoded target domain and identified `www.facebook.com` as the website monitored for credential theft.
+* Analyzed anti-analysis mechanisms in `loader.js` that detect headless and virtualized browser environments using `navigator.plugins.length` and `HeadlessChrome` checks.
+* Reconstructed credential harvesting through the `submit` event, capturing usernames and passwords from login forms.
+* Identified real-time keylogging through the browser `keydown` event listener.
+* Analyzed the `exfiltrateCredentials()` function used to package and encrypt stolen credentials before transmission.
+* Identified AES encryption using the hardcoded key `SuperSecretKey123` and a randomly generated 16-byte IV.
+* Reconstructed covert data exfiltration through dynamically created `<img>` requests to `https://Mo.Elshaheedy.com/collect`.
+* Identified `Mo.Elshaheedy.com` as the attacker-controlled exfiltration server and extracted the associated URL as an IOC.
+* Mapped the observed malware behavior to MITRE ATT&CK techniques including T1027, T1497.001, T1555.003, T1539, T1056.001, T1056.004, T1041, and T1573.001.
 
 ---
 
