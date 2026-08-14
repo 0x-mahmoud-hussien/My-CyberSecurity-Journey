@@ -72,7 +72,7 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [Ramnit - Memory Forensics & Malware IOC Investigation](./investigations/Ramnit.md)
 
-* 🤖 [FakeGPT Lab - Malicious Chrome Extension & Credential Theft Investigation](./investigations/FakeGPT-Lab)
+* 🤖 [FakeGPT Lab - Malicious Chrome Extension & Credential Theft Investigation](./investigations/FakeGPT-Lab.md)
 
 * 🔥 [PsExec Hunt - SMB Lateral Movement & PsExec Investigation](./investigations/PsExec-Hunt.md)
 
