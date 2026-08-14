@@ -4,7 +4,7 @@
 * **Challenge:** FakeGPT Lab  
 * **Category:** Malware Analysis  
 * **Difficulty:** Easy  
-* **Analyst:** Mahmoud  
+* **Analyst:** Mahmoud Hussien
 * **Tools:** Static Code Analysis (cat, ls), CyberChef (Base64 decode)  
 * **Target:** Malicious Chrome Extension ("ChatGPT")
 
