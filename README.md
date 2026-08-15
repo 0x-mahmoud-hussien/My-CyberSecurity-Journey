@@ -84,6 +84,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🧠 [Reveal Lab - Memory Forensics & Multi-Stage Attack Investigation with Volatility](./investigations/Reveal-Lab.md)
 
+* 🩸 [MangoBleed — MongoDB CVE-2025-14847 Intrusion Investigation](./investigations/MangoBleed-MongoDB-CVE-2025-14847.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -553,6 +555,21 @@ Start here 👇 (Highlighted real-world case studies)
 * Attributed the intrusion to the StrelaStealer malware family through threat intelligence correlation
 * Extracted memory-based indicators of compromise (IOCs) including malicious processes, remote infrastructure, and payload artifacts
 * Reconstructed the complete attack chain from initial PowerShell execution through credential-stealing malware deployment
+
+---
+
+### 🩸 MongoBleed — MongoDB CVE-2025-14847 Intrusion Investigation
+
+* Investigated the compromise of a secondary MongoDB server (`mongodbsync`) following exploitation of the **MongoBleed vulnerability (CVE-2025-14847)**.
+* Identified the vulnerable MongoDB version as **8.0.16** and confirmed exploitation through **75,260 rapid heap-memory scraping connections**.
+* Traced the exploitation activity to the external attacker IP **65.0.76.43**, with the first malicious connection observed at **2025-12-29 05:25:52 UTC**.
+* Determined that the heap disclosure activity was used to extract credentials from MongoDB process memory, followed by successful SSH authentication as **`mongoadmin`**.
+* Reconstructed the attacker's interactive SSH session and identified post-compromise discovery commands including `whoami` and `ls -la`.
+* Analyzed attacker activity involving **LinPEAS**, executed through `curl -L ... | sh`, enabling privilege-escalation enumeration directly in memory without writing the tool to disk.
+* Identified `/var/lib/mongodb/` as the targeted staging directory containing the MongoDB database files.
+* Detected installation of the `zip` utility and subsequent use of `python3 -m http.server 6969` to establish an HTTP-based file transfer mechanism.
+* Reconstructed the intrusion chain from **CVE exploitation → credential extraction → SSH access → discovery → privilege-escalation enumeration → database staging → potential HTTP exfiltration**.
+* Mapped observed attacker techniques to **MITRE ATT&CK**, including T1190, T1021.004, T1033, T1083, T1059.004, T1005, T1560.001, and T1048.003.
 
 ---
 
