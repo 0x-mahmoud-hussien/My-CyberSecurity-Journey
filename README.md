@@ -86,6 +86,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🩸 [MangoBleed — MongoDB CVE-2025-14847 Intrusion Investigation](./investigations/MangoBleed-MongoDB-CVE-2025-14847.md)
 
+* 🕵️ [Noxious — LLMNR Poisoning & NTLMv2 Credential Capture](./investigations/Noxious.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -570,6 +572,20 @@ Start here 👇 (Highlighted real-world case studies)
 * Detected installation of the `zip` utility and subsequent use of `python3 -m http.server 6969` to establish an HTTP-based file transfer mechanism.
 * Reconstructed the intrusion chain from **CVE exploitation → credential extraction → SSH access → discovery → privilege-escalation enumeration → database staging → potential HTTP exfiltration**.
 * Mapped observed attacker techniques to **MITRE ATT&CK**, including T1190, T1021.004, T1033, T1083, T1059.004, T1005, T1560.001, and T1048.003.
+
+---
+
+### 🕵️ Noxious — LLMNR Poisoning & NTLMv2 Credential Capture
+
+* Investigated an **LLMNR poisoning attack** against the `Forela-WKstn002` workstation after a mistyped hostname (`DCC01`) triggered LLMNR fallback.
+* Identified the rogue Kali machine at `172.17.79.135`, running as hostname `kali`, which responded to the victim's LLMNR request and impersonated the requested host.
+* Reconstructed the **NTLMv2 credential capture** process and recovered the compromised account `FORELA\john.deacon`.
+* Extracted the NTLM Server Challenge and NTProofStr from the SMB authentication exchange and reconstructed the captured NetNTLMv2 material for offline analysis.
+* Cracked the captured NTLMv2 credential using **Hashcat (mode 5600)**, recovering the plaintext password `NotMyPassword0K?`.
+* Traced the victim's original intended network resource to the sensitive SMB share `\\DC01\DC-Confidential`.
+* Correlated DHCP, LLMNR, SMB2, and NTLMSSP traffic to reconstruct the complete attack chain from the initial hostname typo through credential capture.
+* Identified the rogue system's VMware MAC address `00:0c:29:36:18:82` and correlated it with the attacker IP and Kali hostname.
+* Mapped the investigation to **MITRE ATT&CK**, including LLMNR/NBT-NS Poisoning (`T1557.001`), Password Cracking (`T1110.002`), Network Sniffing (`T1040`), and Network Share Discovery (`T1135`).
 
 ---
 
