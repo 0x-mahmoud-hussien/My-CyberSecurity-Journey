@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🕵️ [New Hire Old Artifacts - Splunk Threat Hunting & Endpoint Investigation](./investigations/New-Hire-Old-Artifacts.md)
 
+* 🛡️ [Trusted By Default – Service Account Abuse & AD Compromise Investigation](./investigations/Trusted-Service-Account.md)
+
 * 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
 
 * 🧠 [BlueSky Ransomware Lab - Network Forensics & Ransomware Attack Investigation](./investigations/BlueSky-Ransomware-Lab.md)
@@ -190,6 +192,18 @@ Start here 👇 (Highlighted real-world case studies)
 * Identified the four suppressed Threat IDs in execution order: `2147735503`, `2147737010`, `2147737007`, and `2147737394`.
 * Discovered the execution of `C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe` from the user's Roaming AppData directory.
 * Identified the NW.js dependencies loaded by `EasyCalc.exe`: `ffmpeg.dll`, `nw.dll`, and `nw_elf.dll`.
+
+---
+
+### 🛡️ Trusted By Default – Service Account Abuse & AD Compromise Investigation
+
+* Full attack chain reconstruction of a compromised service account targeting Aurora Retail Group using Splunk
+* Initial access identification via suspicious HTTP POST requests (`/portal/status.aspx`) analyzed in Zeek HTTP telemetry from `10.81.73.36`
+* Correlated web traffic with Windows Security Event Logs (`EventCode 4624`), identifying a batch logon (`LogonType 4`) for `svc-webapp` on `AUR-WEB01`
+* Active Directory auditing of group membership modifications (`EventCode 4728`), discovering user `a.ng` adding `svc-webapp` to the privileged `FS-Admins` group on `AUR-DC01`
+* Lateral movement tracing via network connection correlation, isolating a sustained RDP connection (`dest_port=3389`, `181717` bytes returned) targeting `10.81.112.251`
+* Execution of Remote Interactive logon (`LogonType 10`) verification on file server `AUR-FS01`
+* Multi-source log correlation linking network telemetry (Zeek) with Windows Event Logs using SPL in Splunk
 
 ---
 
