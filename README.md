@@ -90,6 +90,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🕵️ [Noxious — LLMNR Poisoning & NTLMv2 Credential Capture](./investigations/Noxious.md)
 
+* 💀 [Reaper – NTLM Relay & Workstation Identity Spoofing](./investigations/Reaper.md)
+
 * 🌐 [Directory Curiosity – PCAP Network & Malware Investigation](./investigations/TShark-Challenge-II:Directory.md)
 
 
@@ -600,6 +602,19 @@ Start here 👇 (Highlighted real-world case studies)
 * Correlated DHCP, LLMNR, SMB2, and NTLMSSP traffic to reconstruct the complete attack chain from the initial hostname typo through credential capture.
 * Identified the rogue system's VMware MAC address `00:0c:29:36:18:82` and correlated it with the attacker IP and Kali hostname.
 * Mapped the investigation to **MITRE ATT&CK**, including LLMNR/NBT-NS Poisoning (`T1557.001`), Password Cracking (`T1110.002`), Network Sniffing (`T1040`), and Network Share Discovery (`T1135`).
+
+---
+
+### 💀 Reaper – NTLM Relay & Workstation Identity Spoofing
+
+* Reconstructed a complete **NTLM relay attack** and identity spoofing scenario targeting `FORELA-WKSTN001` (`172.17.79.129`)
+* Identified the initial trigger where victim host `FORELA-WKSTN002` attempted connection to the non-existent SMB share `\\DC01\Trip`
+* Isolated the rogue attacker IP address at `172.17.79.135` executing credential interception and NTLMSSP challenge-response extraction
+* Reconstructed compromised authentication payloads for domain account `FORELA\arthur.kyle` across network PCAP telemetry
+* Correlated Windows Security Event ID 4624 (`LogonType 3`) establishing the exact UTC logon timestamp of `2024-07-31 04:55:16 UTC`
+* Verified SIEM alert mismatch where rogue IP `172.17.79.135` falsely presented workstation identity `FORELA-WKSTN002`
+* Traced active malicious logon session context `0x64A799` and post-authentication access to share `\\*\IPC$` via Event ID 5140
+* Mapped attack techniques to **MITRE ATT&CK** matrix, including LLMNR/NBT-NS Poisoning (`T1557.001`) and NTLM Relay (`T1557.002`)
 
 ---
 
