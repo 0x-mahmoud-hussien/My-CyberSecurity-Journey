@@ -48,6 +48,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🔥 [BOTSv2 – Enterprise Threat Hunting & APT Investigation](./investigations/BOTSv2-Investigation.md)
 
+* 🛡️ [The Crown Jewel – Network Forensics & Incident Response Investigation](./investigations/The-Crown-Jewel.md)
+
 * 🧠 [Brave Lab - Windows Memory Forensics & User Activity Investigation with Volatility](./investigations/Brave-Lab.md)
 
 * ☕ [OpenWire Lab - Apache ActiveMQ RCE & Java Deserialization Investigation](./investigations/OpenWire-Lab.md)
@@ -303,6 +305,18 @@ Start here 👇 (Highlighted real-world case studies)
 * APT campaign investigation involving PowerShell Empire and scheduled task persistence
 * SSL-encrypted command-and-control traffic analysis
 * Enterprise-wide attack chain reconstruction using Splunk, Sysmon, Suricata, and endpoint logs
+
+---
+
+### 🛡️ The Crown Jewel Investigation
+
+* Full attack chain reconstruction of a multi-stage intrusion targeting Imperium Labs using Wireshark and Splunk
+* Initial access identification via web exploit traffic targeting the Jira instance using non-standard User-Agent (`CVE-202X-EXPLOIT`) analyzed in Splunk (`index=network_logs`)
+* Outbound Command and Control (C2) channel discovery isolating a reverse shell session originating from internal host `10.10.10.100` to external socket `1.1.1.1:8080`
+* Subnet ARP poisoning analysis identifying rogue interface MAC `00:0c:29:11:22:33` impersonating default gateway `10.10.10.1` and host `10.10.10.150` via **90 unsolicited ARP replies** (`arp.opcode == 2`)
+* Credential harvesting interception capturing unencrypted HTTP POST authentication traffic to `internal.login.local/login.php`, exposing plaintext credentials (`dev_user` / `SecretPassword!`)
+* Data exfiltration analysis confirming abuse of the **DNS protocol** (DNS Tunneling) using high-entropy subdomains directed to attacker-controlled domain `exfil-domain.xyz`
+* Multi-source correlation combining packet capture telemetry (`challenge.pcap`) with SIEM log analysis (`index=network_logs`) to reconstruct the complete incident timeline
 
 ---
 
