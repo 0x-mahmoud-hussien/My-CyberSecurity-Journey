@@ -20,7 +20,7 @@ This repository showcases **real-world SOC investigations, hands-on labs, and th
 
 Start here 👇 (Highlighted real-world case studies)
 
-* 🛡️ [Zero Tolerance – Multi-Stage Incident Response & Host Forensics](./writeups/tryhackme/reports/zero-tolerance-incident-response.md)
+* 🛡️ [Zero Tolerance – Multi-Stage Incident Response & Host Forensics](./investigations/Zero-Tolerance.md)
 
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
 
