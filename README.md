@@ -20,6 +20,8 @@ This repository showcases **real-world SOC investigations, hands-on labs, and th
 
 Start here 👇 (Highlighted real-world case studies)
 
+* 🛡️ [Zero Tolerance – Multi-Stage Incident Response & Host Forensics](./writeups/tryhackme/reports/zero-tolerance-incident-response.md)
+
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
 
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
@@ -116,6 +118,18 @@ Start here 👇 (Highlighted real-world case studies)
 ---
 
 ## 🔍 Specialized Security Investigations
+
+---
+
+### 🛡️ Zero Tolerance Investigation
+
+* Full attack chain reconstruction of a multi-stage enterprise intrusion targeting VaultSecure Banking involving malicious LNK execution, mshta proxy execution, and Windows Defender tampering
+* Initial access identification via a phishing lure (`TravisClart_Resume.pdf.lnk`) executing `mshta.exe` to retrieve a remote HTML Application payload (`KsWLx.hta`) from external C2 infrastructure `10.10.14.174`
+* Defense evasion analysis uncovering security control impairment via PowerShell (`Set-MpPreference`) to disable real-time monitoring (`-DisableRealtimeMonitoring`) and add root filesystem exclusions
+* Command and Control (C2) and persistence discovery isolating a masqueraded beacon binary (`RuntimeBroker.exe`) establishing user-level persistence via Registry Run keys (`HKCU\Software\Microsoft\Windows\CurrentVersion\Run\SystemMonitor`)
+* Credential access and lateral movement tracking in-memory LSASS dumping via `Invoke-Mimikatz` and remote administrative abuse using `PsExec64.exe` to modify LSA parameters (`DisableRestrictedAdmin`) and establish an RDP session to target backup server `BKUP-SRV01` (`10.10.152.240`)
+* Data collection and staging analysis dissecting a malicious harvesting script (`Setup-BackupServer.ps1`) targeting sensitive database and backup files (`.bak`, `.backup`, `.sql`, `.mdb`) for automated compression into a disguised archive (`sysbackup_20251114.dat`)
+* Multi-source correlation combining Sysmon event logs, PowerShell transcription script blocks, registry artifacts, and script code inspection to reconstruct the complete incident timeline
 
 ---
 
