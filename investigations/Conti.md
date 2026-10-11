@@ -4,7 +4,7 @@
 * **Room:** Conti  
 * **Category:** DFIR / Ransomware Analysis / SIEM  
 * **Difficulty:** Medium  
-* **Analyst:** Mahmoud  
+* **Analyst:** Mahmoud Hussien
 * **Tool:** Splunk + Sysmon Logs
 
 ---
