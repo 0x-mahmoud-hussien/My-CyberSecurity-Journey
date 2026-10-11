@@ -4,7 +4,7 @@
 * **Room:** Boogeyman 1  
 * **Category:** DFIR / Phishing Analysis / Network Forensics  
 * **Difficulty:** Medium  
-* **Analyst:** Mahmoud  
+* **Analyst:** Mahmoud Hussien
 * **Tools:** Thunderbird, LNKParse3, jq, TShark, Wireshark, base64
 
 ---
