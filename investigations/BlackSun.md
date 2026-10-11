@@ -5,7 +5,7 @@
 * **Room:** PS Eclipse  
 * **Category:** DFIR / Ransomware / PowerShell Analysis  
 * **Difficulty:** Medium  
-* **Analyst:** Mahmoud  
+* **Analyst:** Mahmoud Hussien 
 * **Tool:** Splunk SIEM  
 
 ---
