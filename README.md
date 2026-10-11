@@ -22,6 +22,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [Zero Tolerance – Multi-Stage Incident Response & Host Forensics](./investigations/Zero-Tolerance.md)
 
+* 🛡️ [Directory - Active Directory Incident Response & WinRM Forensics](./investigations/Directory.md)
+
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
 
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
@@ -132,6 +134,17 @@ Start here 👇 (Highlighted real-world case studies)
 * Credential access and lateral movement tracking in-memory LSASS dumping via `Invoke-Mimikatz` and remote administrative abuse using `PsExec64.exe` to modify LSA parameters (`DisableRestrictedAdmin`) and establish an RDP session to target backup server `BKUP-SRV01` (`10.10.152.240`)
 * Data collection and staging analysis dissecting a malicious harvesting script (`Setup-BackupServer.ps1`) targeting sensitive database and backup files (`.bak`, `.backup`, `.sql`, `.mdb`) for automated compression into a disguised archive (`sysbackup_20251114.dat`)
 * Multi-source correlation combining Sysmon event logs, PowerShell transcription script blocks, registry artifacts, and script code inspection to reconstruct the complete incident timeline
+
+---
+
+### 🛡️ Directory - Active Directory Incident Response & WinRM Forensics
+
+* **Full attack chain reconstruction** of an Active Directory intrusion starting from network reconnaissance to post-exploitation.
+* **Initial reconnaissance identification** isolating TCP port scans and discovering open domain services via Wireshark analysis (`frame.len == 58`).
+* **Credential harvesting execution** leveraging Kerberos AS-REP Roasting against target user `directory.thm\larry.doe` and cracking hashes via Hashcat mode `18200`.
+* **WinRM traffic decryption** utilizing specialized Python scripts and cryptographic libraries (`pyshark`, `pycryptodome`) with recovered plaintext password `Password1!`.
+* **Post-exploitation command tracking** exposing registry hive dumping utilities (`reg save HKLM\SYSTEM C:\SYSTEM`, `reg save HKLM\SAM C:\SAM`).
+* **Artifact and flag extraction** dissecting serialized PowerShell command blocks to retrieve the final flag `THM{Ya_G0t_R0aSt3d!}` from the Desktop.
 
 ---
 
