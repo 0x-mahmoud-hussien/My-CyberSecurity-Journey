@@ -22,6 +22,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [Zero Tolerance – Multi-Stage Incident Response & Host Forensics](./investigations/Zero-Tolerance.md)
 
+* 🛡️ [The O365 Intrusion - Cloud Incident Response & M365 Forensics](./investigations/O365-Intrusion.md)
+
 * 🛡️ [Directory - Active Directory Incident Response & WinRM Forensics](./investigations/Directory.md)
 
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
@@ -134,6 +136,16 @@ Start here 👇 (Highlighted real-world case studies)
 * Credential access and lateral movement tracking in-memory LSASS dumping via `Invoke-Mimikatz` and remote administrative abuse using `PsExec64.exe` to modify LSA parameters (`DisableRestrictedAdmin`) and establish an RDP session to target backup server `BKUP-SRV01` (`10.10.152.240`)
 * Data collection and staging analysis dissecting a malicious harvesting script (`Setup-BackupServer.ps1`) targeting sensitive database and backup files (`.bak`, `.backup`, `.sql`, `.mdb`) for automated compression into a disguised archive (`sysbackup_20251114.dat`)
 * Multi-source correlation combining Sysmon event logs, PowerShell transcription script blocks, registry artifacts, and script code inspection to reconstruct the complete incident timeline
+
+---
+
+### 🛡️ The O365 Intrusion - Corporate Cloud Incident Response & Microsoft 365 Forensics
+
+* **Full attack chain reconstruction** of a multi-stage Microsoft 365 corporate intrusion targeting Vantage Dynamics financial services infrastructure[cite: 1, 2, 6].
+* **Initial compromise analysis** tracking non-standard device and anomalous user-agent sign-in anomalies breaching user Marcus Webb[cite: 1].
+* **Persistence mechanism detection** exposing malicious inbox rules configured for defense evasion and keyword-based message suppression[cite: 3, 4].
+* **Lateral movement tracking** mapping internal Microsoft Teams exploitation and message propagation leading to secondary account compromise (David Chen)[cite: 5, 6, 7].
+* **Data exfiltration and governance auditing** analyzing unauthorized access, sensitivity labels, and external file sharing actions targeting sensitive financial assets[cite: 8, 9, 10, 11, 12].
 
 ---
 
