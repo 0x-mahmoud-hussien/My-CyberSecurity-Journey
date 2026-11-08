@@ -26,6 +26,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [Directory - Active Directory Incident Response & WinRM Forensics](./investigations/Directory.md)
 
+* 🛡️ [Lost in RAMslation - Volatility 3 Memory Forensics & Attack Chain Reconstruction](./investigations/Lost-in-RAMslation.md)
+
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
 
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
@@ -157,6 +159,17 @@ Start here 👇 (Highlighted real-world case studies)
 * **WinRM traffic decryption** utilizing specialized Python scripts and cryptographic libraries (`pyshark`, `pycryptodome`) with recovered plaintext password `Password1!`.
 * **Post-exploitation command tracking** exposing registry hive dumping utilities (`reg save HKLM\SYSTEM C:\SYSTEM`, `reg save HKLM\SAM C:\SAM`).
 * **Artifact and flag extraction** dissecting serialized PowerShell command blocks to retrieve the final flag `THM{Ya_G0t_R0aSt3d!}` from the Desktop.
+
+---
+
+### 🛡️ Lost in RAMslation - Volatility 3 Memory Forensics & Attack Chain Reconstruction
+
+* **Full attack chain reconstruction** of a critical network compromise through full-scope Volatility 3 RAM memory analysis on host `SRV-DMZ-GW`.
+* **Initial execution identification** exposing LOLBin abuse via `rundll32.exe` invoking malicious dropped DLL `C:\Windows\Tasks\MicrosoftUpdate.dll` (PID `2928`).
+* **Command line artifact extraction** verifying exact attacker invocation parameters (`rundll32.exe C:\windows\tasks\MicrosoftUpdate.dll, RunMe`).
+* **Process injection analysis** leveraging `windows.malfind` to detect hollowed/injected execution within `notepad.exe` (PID `836`) and tracking child shell processes (`cmd.exe` PID `1652` and `conhost.exe` PID `600`).
+* **Meterpreter shellcode extraction** dissecting memory region permissions (`PAGE_EXECUTE_READWRITE`) to confirm initial hex payload stub bytes (`fc4889ce48`).
+* **Network & lateral movement tracking** using `windows.netscan` to isolate outbound RDP connections (`port 3389`) from host `172.16.8.15` to internal target `172.16.2.9` via `powershell.exe` (PID `464`).
 
 ---
 
