@@ -38,7 +38,7 @@ The investigation was divided into three phases:
 ```conf
 BREAK_ONLY_BEFORE = ^\[Network-log\]:
 ```
-![props.conf](../images/props.conf.png)
+![props.conf](../imgs/props.conf.png)
 
 ### ✅ Result
 
@@ -57,7 +57,7 @@ BREAK_ONLY_BEFORE = ^\[Network-log\]:
 * URI
 * SourceIP
 * Country
-![transforms.conf](../images/transforms.conf.png)
+![transforms.conf](../imgs/transforms.conf.png)
 
 ### 🛠️ Method
 
@@ -94,7 +94,7 @@ BREAK_ONLY_BEFORE = ^\[Network-log\]:
   ```
   2
   ```
-![fixit splunk](../images/Fixit-Splunk2.png)
+![fixit splunk](../imgs/Fixit-Splunk2.png)
 
 * URI without extension:
 
@@ -113,7 +113,7 @@ BREAK_ONLY_BEFORE = ^\[Network-log\]:
   ```
   3
   ```
-![fixit splunk](../images/Fixit-Splunk1.png)
+![fixit splunk](../imgs/Fixit-Splunk1.png)
 ---
 
 ## 🚨 Suspicious Activity

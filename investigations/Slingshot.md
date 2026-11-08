@@ -50,7 +50,7 @@ Sorted by request volume per source IP — one IP dominated **84.7% of all serve
 ```
 10.0.2.15
 ```
-![Answer](../images/Slingshot-1.png)
+![Answer](../imgs/Slingshot-1.png)
 
 ---
 
@@ -73,7 +73,7 @@ This is the standard first phase of any structured attack: **passive and active 
 ```
 Nmap Scripting Engine
 ```
-![Answer](../images/Slingshot-2.png)
+![Answer](../imgs/Slingshot-2.png)
 
 ---
 
@@ -94,7 +94,7 @@ Immediately following the Nmap scan, the attacker launched a directory brute-for
 ```
 Mozilla/5.0 (Gobuster)
 ```
-![Answer](../images/Slingshot-3.png)
+![Answer](../imgs/Slingshot-3.png)
 
 ---
 
@@ -115,7 +115,7 @@ Gobuster fires requests for every entry in its wordlist — the vast majority re
 ```
 1867
 ```
-![Answer](../images/Slingshot-4.png)
+![Answer](../imgs/Slingshot-4.png)
 
 ---
 
@@ -136,7 +136,7 @@ Out of 1,867 failed requests, exactly **9 paths** returned `200 OK`. One of thes
 ```
 a76637b62ea99acda12f5859313f539a
 ```
-![Answer](../images/Slingshot-5.png)
+![Answer](../imgs/Slingshot-5.png)
 
 ---
 
@@ -157,7 +157,7 @@ Among the successful Gobuster hits, one path matching the `*login*` pattern retu
 ```
 /admin-login.php
 ```
-![Answer](../images/Slingshot-6.png)
+![Answer](../imgs/Slingshot-6.png)
 
 ---
 
@@ -178,7 +178,7 @@ This query returned **488 distinct log records** within millisecond-interval loo
 ```
 Mozilla/4.0 (Hydra)
 ```
-![Answer](../images/Slingshot-7.png)
+![Answer](../imgs/Slingshot-7.png)
 
 ---
 
@@ -197,7 +197,7 @@ At timestamp `14:29:04.732`, a POST request to `/admin-login.php` finally return
 ```
 Authorization: Basic YWRtaW46dGh4MTEzOA==
 ```
-![Answer](../images/Slingshot-8.png)
+![Answer](../imgs/Slingshot-8.png)
 
 Decoding via Base64:
 
@@ -212,7 +212,7 @@ The attacker exploited **default credentials** that were never changed after dep
 ```
 admin:thx1138
 ```
-![Answer](../images/Slingshot-9.png)
+![Answer](../imgs/Slingshot-9.png)
 
 ---
 
@@ -247,7 +247,7 @@ The server accepted the file without any MIME-type validation or extension filte
 ```
 THM{ecb012e53a58818cbd17a924769ec447}
 ```
-![Answer](../images/Slingshot-10.png)
+![Answer](../imgs/Slingshot-10.png)
 
 ---
 
@@ -283,7 +283,7 @@ GET /uploads/easy-simple-php-webshell.php?cmd=whoami
 ```
 whoami
 ```
-![Answer](../images/Slingshot-11.png)
+![Answer](../imgs/Slingshot-11.png)
 
 ---
 
@@ -310,7 +310,7 @@ This **Local File Inclusion (LFI)** vulnerability allowed reading server-side PH
 ```
 config-db.php
 ```
-![Answer](../images/Slingshot-12.png)
+![Answer](../imgs/Slingshot-12.png)
 
 ---
 
@@ -337,7 +337,7 @@ The attacker exfiltrated the complete `credit_cards` table — containing sensit
 ```
 customer_credit_cards
 ```
-![Answer](../images/Slingshot-13.png)
+![Answer](../imgs/Slingshot-13.png)
 
 ---
 
@@ -364,8 +364,8 @@ This confirmed **unauthorized write access** — the attacker planted a flag val
 ```
 c6aa3215a7d519eeb40a660f3b76e64c
 ```
-![Answer](../images/Slingshot-14.png)
-![Answer](../images/Slingshot-15.png)
+![Answer](../imgs/Slingshot-14.png)
+![Answer](../imgs/Slingshot-15.png)
 
 ---
 

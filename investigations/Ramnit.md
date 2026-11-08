@@ -48,7 +48,7 @@ The process named `ChromeSetup.exe` was flagged due to its execution context: a 
 ```
 ChromeSetup.exe
 ```
-![Answer](../images/Ramnit-1.png)
+![Answer](../imgs/Ramnit-1.png)
 
 ---
 
@@ -81,7 +81,7 @@ PID 4628: C:\Users\alex\Downloads\ChromeSetup.exe
 ```
 C:\Users\alex\Downloads\ChromeSetup.exe
 ```
-![Answer](../images/Ramnit-2.png)
+![Answer](../imgs/Ramnit-2.png)
 
 ---
 
@@ -110,7 +110,7 @@ Port `5202` is non-standard for normal web traffic — a deliberate choice to av
 ```
 58.64.204.181
 ```
-![Answer](../images/Ramnit-3.png)
+![Answer](../imgs/Ramnit-3.png)
 
 ---
 
@@ -134,7 +134,7 @@ The IP resolves to a commercial hosting provider — commonly abused by threat a
 ```
 Hong Kong
 ```
-![Answer](../images/Ramnit-4.png)
+![Answer](../imgs/Ramnit-4.png)
 
 ---
 
@@ -154,7 +154,7 @@ sha1sum file.0xca82b85307f0.0xca82b7e06c80.ImageSectionObject.ChromeSetup.exe.im
 
 The binary was extracted from the `ImageSectionObject` (the memory-mapped PE image) using its virtual address obtained from `windows.dumpfiles`. The SHA1 was then computed locally and cross-referenced with VirusTotal for threat intelligence confirmation.
 
-![Answer](../images/Ramnit-5.png)
+![Answer](../imgs/Ramnit-5.png)
 
 **VirusTotal Results:**
 - Multiple AV engines flagged the file as malicious
@@ -166,7 +166,7 @@ The binary was extracted from the `ImageSectionObject` (the memory-mapped PE ima
 ```
 280c9d36039f9432433893dee6126d72b9112ad2
 ```
-![Answer](../images/Ramnit-6.png)
+![Answer](../imgs/Ramnit-6.png)
 
 ---
 
@@ -189,7 +189,7 @@ This 4-year gap between compilation and first public submission suggests the mal
 ```
 2019-12-01 08:36
 ```
-![Answer](../images/Ramnit-7.png)
+![Answer](../imgs/Ramnit-7.png)
 
 ---
 
@@ -211,7 +211,7 @@ The domain `dnsnb8.net` was registered on **2020-08-13** via Dynadot LLC — app
 ```
 dnsnb8.net
 ```
-![Answer](../images/Ramnit-8.png)
+![Answer](../imgs/Ramnit-8.png)
 
 ---
 

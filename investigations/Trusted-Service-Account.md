@@ -72,7 +72,7 @@ URI: /portal/status.aspx
 ```
 /portal/status.aspx
 ```
-![Answer](../images/Trusted-Service-Account-1.png)
+![Answer](../imgs/Trusted-Service-Account-1.png)
 
 ---
 
@@ -93,7 +93,7 @@ This IP becomes the primary attacker pivot point for all subsequent correlation 
 ```
 10.81.73.36
 ```
-![Answer](../images/Trusted-Service-Account-2.png)
+![Answer](../imgs/Trusted-Service-Account-2.png)
 
 ---
 
@@ -127,7 +127,7 @@ Host: AUR-WEB01.aurora.local
 ```
 svc-webapp
 ```
-![Answer](../images/Trusted-Service-Account-3.png)
+![Answer](../imgs/Trusted-Service-Account-3.png)
 
 ---
 
@@ -185,7 +185,7 @@ The `FS-Admins` group name suggests file server administrative privileges — ad
 ```
 FS-Admins
 ```
-![Answer](../images/Trusted-Service-Account-4.png)
+![Answer](../imgs/Trusted-Service-Account-4.png)
 
 ---
 
@@ -219,7 +219,7 @@ This is a key escalation event that bridges the initial web shell compromise wit
 ```
 a.ng
 ```
-![Answer](../images/Trusted-Service-Account-5.png)
+![Answer](../imgs/Trusted-Service-Account-5.png)
 
 ---
 
@@ -249,7 +249,7 @@ The same account generated **both** logon types — confirming both automated ne
 ```
 svc-webapp
 ```
-![Answer](../images/Trusted-Service-Account-6.png)
+![Answer](../imgs/Trusted-Service-Account-6.png)
 
 ---
 
@@ -302,7 +302,7 @@ Destination with sustained connection: 10.81.112.251
 ```
 10.81.112.251
 ```
-![Answer](../images/Trusted-Service-Account-7.png)
+![Answer](../imgs/Trusted-Service-Account-7.png)
 
 ---
 
@@ -333,7 +333,7 @@ resp_bytes: 181717
 ```
 181717
 ```
-![Answer](../images/Trusted-Service-Account-8.png)
+![Answer](../imgs/Trusted-Service-Account-8.png)
 
 ---
 

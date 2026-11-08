@@ -1,7 +1,7 @@
 #### 37. Tempest (Investigation Challenge)
 <p align="center">
-  <img src="../images/tempest_badge.png" width="45%" />
-  <img src="../images/tempest_tasks.png" width="45%" />
+  <img src="../imgs/tempest_badge.png" width="45%" />
+  <img src="../imgs/tempest_tasks.png" width="45%" />
 </p>
 
 ---

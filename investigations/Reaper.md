@@ -65,7 +65,7 @@ NBNS Registration: FORELA-WKSTN001 → 172.17.79.129
 ```
 172.17.79.129
 ```
-![Answer](../images/Reaper-1.png)
+![Answer](../imgs/Reaper-1.png)
 
 ---
 
@@ -95,7 +95,7 @@ NBNS Registration: FORELA-WKSTN002 → 172.17.79.136
 ```
 172.17.79.136
 ```
-![Answer](../images/Reaper-2.png)
+![Answer](../imgs/Reaper-2.png)
 
 ---
 
@@ -127,7 +127,7 @@ The authentication packet exposes the username in plaintext even though the pass
 ```
 arthur.kyle
 ```
-![Answer](../images/Reaper-3.png)
+![Answer](../imgs/Reaper-3.png)
 
 ---
 
@@ -155,7 +155,7 @@ Destination IP: 172.17.79.135 (Rogue attacker device)
 ```
 172.17.79.135
 ```
-![Answer](../images/Reaper-4.png)
+![Answer](../imgs/Reaper-4.png)
 
 ---
 
@@ -185,7 +185,7 @@ When `arthur.kyle` attempted to access `\\DC01\Trip` from `Forela-Wkstn002` (`17
 ```
 \\DC01\Trip
 ```
-![Answer](../images/Reaper-5.png)
+![Answer](../imgs/Reaper-5.png)
 
 ---
 
@@ -210,7 +210,7 @@ The source port `40252` is an ephemeral high port assigned by the attacker's TCP
 ```
 40252
 ```
-![Answer](../images/Reaper-6.png)
+![Answer](../imgs/Reaper-6.png)
 
 ---
 
@@ -234,7 +234,7 @@ The Logon ID `0x64A799` can be used to pivot across Windows Security logs to fin
 ```
 0x64A799
 ```
-![Answer](../images/Reaper-7.png)
+![Answer](../imgs/Reaper-7.png)
 
 ---
 
@@ -266,7 +266,7 @@ The attacker's relay tool spoofed the workstation name `FORELA-WKSTN002` in the 
 ```
 FORELA-WKSTN002, 172.17.79.135
 ```
-![Answer](../images/Reaper-8.png)
+![Answer](../imgs/Reaper-8.png)
 
 ---
 
@@ -288,7 +288,7 @@ TargetUserName: arthur.kyle
 ```
 2024-07-31 04:55:16
 ```
-![Answer](../images/Reaper-9.png)
+![Answer](../imgs/Reaper-9.png)
 
 ---
 
@@ -325,7 +325,7 @@ TargetUserName: arthur.kyle
 ```
 \\*\IPC$
 ```
-![Answer](../images/Reaper-10.png)
+![Answer](../imgs/Reaper-10.png)
 
 ---
 

@@ -43,7 +43,7 @@ NOT (site=*microsoft.com OR site=*bing.com OR site=*msn.com
 ```
 www[.]berkbeer[.]com
 ```
-![Answer](../images/BOTSv2-1.png)
+![Answer](../imgs/BOTSv2-1.png)
 
 ---
 
@@ -66,7 +66,7 @@ index=botsv2 sourcetype="stream:http" 10.0.2.101 www.berkbeer.com
 ```
 /images/ceoberk.png
 ```
-![Answer](../images/BOTSv2-2.png)
+![Answer](../imgs/BOTSv2-2.png)
 
 ---
 
@@ -88,7 +88,7 @@ index=botsv2 sourcetype="stream:smtp" aturing@froth.ly berkbeer.com
 ```
 Martin Berk
 ```
-![Answer](../images/BOTSv2-3.png)
+![Answer](../imgs/BOTSv2-3.png)
 
 ---
 
@@ -101,7 +101,7 @@ Using the same SMTP stream query, the `To:` field and sender metadata confirmed 
 ```
 mberk@berkbeer.com
 ```
-![Answer](../images/BOTSv2-4.png)
+![Answer](../imgs/BOTSv2-4.png)
 
 ---
 
@@ -124,7 +124,7 @@ index=botsv2 sourcetype="stream:smtp" aturing@froth.ly berkbeer.com
 ```
 hbernhard@berkbeer.com
 ```
-![Answer](../images/BOTSv2-5.png)
+![Answer](../imgs/BOTSv2-5.png)
 
 ---
 
@@ -153,7 +153,7 @@ index=botsv2 sourcetype="stream:smtp" aturing@froth.ly berkbeer.com
 ```
 Saccharomyces_cerevisiae_patent.docx
 ```
-![Answer](../images/BOTSv2-6.png)
+![Answer](../imgs/BOTSv2-6.png)
 
 ---
 
@@ -169,7 +169,7 @@ Saccharomyces_cerevisiae_patent.docx
 ```
 ambersthebest@yeastiebeastie.com
 ```
-![Answer](../images/BOTSv2-7.png)
+![Answer](../imgs/BOTSv2-7.png)
 
 ---
 
@@ -199,7 +199,7 @@ C:\Users\amber.turing\Downloads\torbrowser-install-7.0.4_en-US.exe
 ```
 7.0.4
 ```
-![Answer](../images/BOTSv2-8.png)
+![Answer](../imgs/BOTSv2-8.png)
 
 ---
 
@@ -228,7 +228,7 @@ index=botsv2 brewertalk.com
 ```
 52[.]42[.]208[.]228
 ```
-![Answer](../images/BOTSv2-9.png)
+![Answer](../imgs/BOTSv2-9.png)
 
 ---
 
@@ -251,7 +251,7 @@ index=botsv2 brewertalk.com
 ```
 45[.]77[.]65[.]211
 ```
-![Answer](../images/BOTSv2-10.png)
+![Answer](../imgs/BOTSv2-10.png)
 
 ---
 
@@ -274,7 +274,7 @@ index=botsv2 brewertalk.com sourcetype="stream:http" 45.77.65.211
 ```
 /member.php
 ```
-![Answer](../images/BOTSv2-11.png)
+![Answer](../imgs/BOTSv2-11.png)
 
 ---
 
@@ -304,7 +304,7 @@ AND updatexml(NULL, concat(0x3a, (SUBSTRING((SELECT password FROM mybb_users ...
 ```
 updatexml
 ```
-![Answer](../images/BOTSv2-12.png)
+![Answer](../imgs/BOTSv2-12.png)
 
 ---
 
@@ -332,7 +332,7 @@ index=botsv2 Kevin sourcetype="stream:http" tag=error
 ```
 1502408189
 ```
-![Answer](../images/BOTSv2-13.png)
+![Answer](../imgs/BOTSv2-13.png)
 
 ---
 
@@ -362,7 +362,7 @@ index=botsv2 1bc3eab741900ab25c98eee86bf20feb brewertalk.com
 ```
 kIagerfield
 ```
-![Answer](../images/BOTSv2-14.png)
+![Answer](../imgs/BOTSv2-14.png)
 
 ---
 
@@ -393,7 +393,7 @@ index=botsv2 host="MACLORY-AIR13" (*.ppt OR *.pptx)
 ```
 Frothly_marketing_campaign_Q317.pptx.crypt
 ```
-![Answer](../images/BOTSv2-15.png)
+![Answer](../imgs/BOTSv2-15.png)
 
 ---
 
@@ -419,7 +419,7 @@ GoT.S07E02.BOTS.BOTS.BOTS.mkv.crypt
 ```
 S07E02
 ```
-![Answer](../images/BOTSv2-16.png)
+![Answer](../imgs/BOTSv2-16.png)
 
 ---
 
@@ -446,7 +446,7 @@ index=botsv2 host="kutekitten" source="/var/log/osquery/osqueryd.results.log" us
 ```
 Alcor Micro Corp
 ```
-![Answer](../images/BOTSv2-17.png)
+![Answer](../imgs/BOTSv2-17.png)
 
 ---
 
@@ -463,7 +463,7 @@ Alcor Micro Corp
 ```
 Perl
 ```
-![Answer](../images/BOTSv2-18.png)
+![Answer](../imgs/BOTSv2-18.png)
 
 ---
 
@@ -479,7 +479,7 @@ Perl
 ```
 2017-01-17
 ```
-![Answer](../images/BOTSv2-19.png)
+![Answer](../imgs/BOTSv2-19.png)
 
 ---
 
@@ -503,7 +503,7 @@ index=botsv2 host="kutekitten" sourcetype="stream:dns"
 ```
 eidk.duckdns.org
 ```
-![Answer](../images/BOTSv2-20.png)
+![Answer](../imgs/BOTSv2-20.png)
 
 ---
 
@@ -514,7 +514,7 @@ eidk.duckdns.org
 ```
 eidk.hopto.org
 ```
-![Answer](../images/BOTSv2-21.png)
+![Answer](../imgs/BOTSv2-21.png)
 
 ---
 
@@ -541,7 +541,7 @@ index=botsv2 sourcetype="stream:smtp" *.zip
 ```
 invoice.zip
 ```
-![Answer](../images/BOTSv2-22.png)
+![Answer](../imgs/BOTSv2-22.png)
 
 ---
 
@@ -563,7 +563,7 @@ index=botsv2 sourcetype="stream:smtp" "invoice.zip" "password"
 ```
 912345678
 ```
-![Answer](../images/BOTSv2-23.png)
+![Answer](../imgs/BOTSv2-23.png)
 
 ---
 
@@ -588,7 +588,7 @@ index=botsv2 sourcetype="stream:tcp" 45.77.65.211
 ```
 C = US
 ```
-![Answer](../images/BOTSv2-24.png)
+![Answer](../imgs/BOTSv2-24.png)
 
 ---
 
@@ -619,7 +619,7 @@ EventCode=1 "powershell.exe" "invoice.doc"
 ```
 Ryan Kovar
 ```
-![Answer](../images/BOTSv2-25.png)
+![Answer](../imgs/BOTSv2-25.png)
 
 ---
 

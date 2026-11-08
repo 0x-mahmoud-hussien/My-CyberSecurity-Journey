@@ -68,7 +68,7 @@ The attacker used a trusted name and a quiet, writable location so the file blen
 ```
 C:\Windows\Tasks\MicrosoftUpdate.dll
 ```
-![Answer](../images/Lost-in-RAMslation-1.png)
+![Answer](../imgs/Lost-in-RAMslation-1.png)
 
 ---
 
@@ -99,7 +99,7 @@ From the same `windows.pstree` output, the process that loaded `MicrosoftUpdate.
 ```
 2928
 ```
-![Answer](../images/Lost-in-RAMslation-2.png)
+![Answer](../imgs/Lost-in-RAMslation-2.png)
 
 ---
 
@@ -134,7 +134,7 @@ An exported function named `RunMe` is a strong sign this DLL was built purely to
 ```
 rundll32.exe C:\windows\tasks\MicrosoftUpdate.dll, RunMe
 ```
-![Answer](../images/Lost-in-RAMslation-3.png)
+![Answer](../imgs/Lost-in-RAMslation-3.png)
 
 ---
 
@@ -159,7 +159,7 @@ sudo vol -f SRV-DMZ-GW-evidence.mem windows.pstree | grep -A 2 "notepad.exe"
 
 A Notepad process has no reason to hold executable, writable memory, so the payload injected itself into a legitimate process rather than running as an obvious standalone binary.
 
-![Answer](../images/Lost-in-RAMslation-4.png)
+![Answer](../imgs/Lost-in-RAMslation-4.png)
 
 **Step 2 — Check what it spawned.** `grep -A 2` on `notepad.exe` shows its children in the process tree:
 
@@ -178,7 +178,7 @@ Notepad spawning `cmd.exe` is highly abnormal and shows the injected code was us
 ```
 notepad.exe
 ```
-![Answer](../images/Lost-in-RAMslation-5.png)
+![Answer](../imgs/Lost-in-RAMslation-5.png)
 
 ---
 
@@ -213,7 +213,7 @@ These bytes begin with `cld` and then set up registers. That is the shape of a p
 ```
 fc4889ce48
 ```
-![Answer](../images/Lost-in-RAMslation-6.png)
+![Answer](../imgs/Lost-in-RAMslation-6.png)
 
 ---
 
@@ -246,7 +246,7 @@ A DMZ gateway initiating RDP to an internal server is the pivot from the DMZ int
 ```
 172.16.2.9
 ```
-![Answer](../images/Lost-in-RAMslation-7.png)
+![Answer](../imgs/Lost-in-RAMslation-7.png)
 
 ---
 

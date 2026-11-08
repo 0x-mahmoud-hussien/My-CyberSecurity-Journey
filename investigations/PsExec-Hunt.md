@@ -48,7 +48,7 @@ Analyzing network conversations sorted by packet count revealed one internal hos
 ```
 10.0.0.130
 ```
-![Answer](../images/PsExec-Hunt-1.png)
+![Answer](../imgs/PsExec-Hunt-1.png)
 
 ---
 
@@ -73,7 +73,7 @@ Target Name: SALES-PC
 ```
 SALES-PC
 ```
-![Answer](../images/PsExec-Hunt-2.png)
+![Answer](../imgs/PsExec-Hunt-2.png)
 
 ---
 
@@ -94,7 +94,7 @@ Deep packet inspection of the NTLMSSP `SESSION_SETUP` request exposes the plaint
 ```
 ssales
 ```
-![Answer](../images/PsExec-Hunt-3.png)
+![Answer](../imgs/PsExec-Hunt-3.png)
 
 ---
 
@@ -121,7 +121,7 @@ PsExec works by copying its service component (`PSEXESVC.exe`) to the target mac
 ```
 PSEXESVC.EXE
 ```
-![Answer](../images/PsExec-Hunt-4.png)
+![Answer](../imgs/PsExec-Hunt-4.png)
 
 ---
 
@@ -149,7 +149,7 @@ The `ADMIN$` share maps directly to `C:\Windows\` on the remote host — allowin
 ```
 Admin$
 ```
-![Answer](../images/PsExec-Hunt-5.png)
+![Answer](../imgs/PsExec-Hunt-5.png)
 
 ---
 
@@ -172,7 +172,7 @@ This technique tunnels interactive command-line sessions inside legitimate SMB t
 ```
 IPC$
 ```
-![Answer](../images/PsExec-Hunt-6.png)
+![Answer](../imgs/PsExec-Hunt-6.png)
 
 ---
 
@@ -200,7 +200,7 @@ The attacker reused the exact same operational playbook — SMB negotiation → 
 ```
 MARKETING-PC
 ```
-![Answer](../images/PsExec-Hunt-7.png)
+![Answer](../imgs/PsExec-Hunt-7.png)
 
 ---
 

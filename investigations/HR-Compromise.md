@@ -43,7 +43,7 @@ The objective was to identify the compromised user, analyze attacker behavior, a
 ```
 Amel1a
 ```
-![Imposter Account Detected](../images/Benign1.png)
+![Imposter Account Detected](../imgs/Benign1.png)
 
 ➡️ Attacker used a **lookalike username** to evade detection
 
@@ -56,7 +56,7 @@ Amel1a
 ```
 Chris.fort
 ```
-![User Running Scheduled Tasks](../images/Benign2.png)
+![User Running Scheduled Tasks](../imgs/Benign2.png)
 
 ➡️ Indicates possible **persistence via scheduled tasks**
 
@@ -78,7 +78,7 @@ haroon
 ```
 certutil.exe
 ```
-![LOLBIN Used](../images/Benign3.png)
+![LOLBIN Used](../imgs/Benign3.png)
 
 ➡️ Used to download payload from the internet (Living-Off-The-Land technique)
 
@@ -99,7 +99,7 @@ certutil.exe
 ```
 controlc.com
 ```
-![Hosting Site](../images/Benign4.png)
+![Hosting Site](../imgs/Benign4.png)
 
 ---
 
@@ -108,7 +108,7 @@ controlc.com
 ```
 benign.exe
 ```
-![Downloaded File](../images/Benign5.png)
+![Downloaded File](../imgs/Benign5.png)
 
 ---
 
@@ -117,7 +117,7 @@ benign.exe
 ```
 https://controlc.com/e4d11035
 ```
-![Full URL](../images/Benign7.png)
+![Full URL](../imgs/Benign7.png)
 
 ---
 
@@ -128,7 +128,7 @@ https://controlc.com/e4d11035
 ```
 THM{KJ&*H^B0}
 ```
-![Malicious Pattern](../images/Benign6.png)
+![Malicious Pattern](../imgs/Benign6.png)
 
 ---
 

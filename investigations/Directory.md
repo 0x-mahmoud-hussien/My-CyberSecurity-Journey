@@ -89,7 +89,7 @@ The presence of **port 88 (Kerberos)**, **389 (LDAP)**, and **445 (SMB)** immedi
 ```
 53,80,88,135,139,389,445,464,593,636,3268,3269,5357
 ```
-![Answer](../images/Directory-1.png)
+![Answer](../imgs/Directory-1.png)
 
 ---
 
@@ -144,9 +144,9 @@ Username:      directory.thm\larry.doe
 Hash (last 30): 55616532b664cd0b50cda8d4ba469f
 Password:      Password1!
 ```
-![Answer](../images/Directory-2.png)
-![Answer](../images/Directory-3.png)
-![Answer](../images/Directory-4.png)
+![Answer](../imgs/Directory-2.png)
+![Answer](../imgs/Directory-3.png)
+![Answer](../imgs/Directory-4.png)
 
 ---
 
@@ -230,8 +230,8 @@ The attacker saved the `SYSTEM` and `SAM` registry hives to disk — the two fil
 ```
 reg save HKLM\SYSTEM C:\SYSTEM,reg save HKLM\SAM C:\SAM
 ```
-![Answer](../images/Directory-5.png)
-![Answer](../images/Directory-6.png)
+![Answer](../imgs/Directory-5.png)
+![Answer](../imgs/Directory-6.png)
 
 ---
 
@@ -261,7 +261,7 @@ This confirms the "random note" discovered by Larry on his Desktop was **planted
 ```
 THM{Ya_G0t_R0aSt3d!}
 ```
-![Answer](../images/Directory-7.png)
+![Answer](../imgs/Directory-7.png)
 
 ---
 

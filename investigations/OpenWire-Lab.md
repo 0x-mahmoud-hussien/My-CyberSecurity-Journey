@@ -65,7 +65,7 @@ The `User-Agent: Java/11.0.21` confirms this was an automated request made by th
 ```
 146.190.21.92
 ```
-![Answer](../images/OpenWire-1.png)
+![Answer](../imgs/OpenWire-1.png)
 
 ---
 
@@ -86,9 +86,9 @@ Filtering for traffic on port 61616 confirmed that the attacker initiated raw TC
 ```
 61616
 ```
-![Answer](../images/OpenWire-2.png)
+![Answer](../imgs/OpenWire-2.png)
 
-![Answer](../images/OpenWire-3.png)
+![Answer](../imgs/OpenWire-3.png)
 
 ---
 
@@ -107,7 +107,7 @@ The service running on port 61616 was identified by:
 ```
 Apache ActiveMQ
 ```
-![Answer](../images/OpenWire-4.png)
+![Answer](../imgs/OpenWire-4.png)
 
 
 ---
@@ -135,7 +135,7 @@ This second server hosted the actual malware binary. The PCAP confirmed outbound
 ```
 128.199.52.72
 ```
-![Answer](../images/OpenWire-5.png)
+![Answer](../imgs/OpenWire-5.png)
 
 ---
 
@@ -160,7 +160,7 @@ The binary was named `docker` — deliberately chosen to masquerade as the legit
 ```
 docker
 ```
-![Answer](../images/OpenWire-6.png)
+![Answer](../imgs/OpenWire-6.png)
 
 ---
 
@@ -203,7 +203,7 @@ Following the TCP stream of the HTTP response for `/invoice.xml` reveals the ful
 ```
 java.lang.ProcessBuilder
 ```
-![Answer](../images/OpenWire-7.png)
+![Answer](../imgs/OpenWire-7.png)
 
 ---
 
@@ -230,7 +230,7 @@ This matches the exact profile of **CVE-2023-46604** — a critical (CVSS 9.8) A
 ```
 CVE-2023-46604
 ```
-![Answer](../images/OpenWire-8.png)
+![Answer](../imgs/OpenWire-8.png)
 
 ---
 
@@ -283,9 +283,9 @@ This single check ensures only legitimate exception classes (subclasses of `Thro
 ```
 BaseDataStreamMarshaller.createThrowable
 ```
-![Answer](../images/OpenWire-9.png)
+![Answer](../imgs/OpenWire-9.png)
 
-![Answer](../images/OpenWire-10.png)
+![Answer](../imgs/OpenWire-10.png)
 
 ---
 

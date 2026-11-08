@@ -25,7 +25,7 @@ A compromised server was identified after attackers exploited a vulnerability in
 - Backdoor user created:
   - `eviluser`
 
-![Backdoor User Detection](../images/splunk_user.png)
+![Backdoor User Detection](../imgs/splunk_user.png)
 
 
 ---
@@ -35,12 +35,12 @@ A compromised server was identified after attackers exploited a vulnerability in
 - Suspicious package installed:
   - `datacollector`
 
-![Malicious Package](../images/package.png)
+![Malicious Package](../imgs/package.png)
 
 - Malicious plugin deployed:
   - `AyzzbuXY.zip`
 
-![Malicious Plugin](../images/plugin.png)
+![Malicious Plugin](../imgs/plugin.png)
 
 ---
 

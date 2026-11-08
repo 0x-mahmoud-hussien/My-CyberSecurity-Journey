@@ -45,7 +45,7 @@ The source IP behind all malicious requests was consistent throughout the attack
 ```
 111.224.250.131
 ```
-![Answer](../images/BookWorld-Web-1.png)
+![Answer](../imgs/BookWorld-Web-1.png)
 
 ---
 
@@ -60,7 +60,7 @@ Submitted the attacker IP `111.224.250.131` to a geolocation lookup service (Vir
 ```
 Shijiazhuang
 ```
-![Answer](../images/BookWorld-Web-2.png)
+![Answer](../imgs/BookWorld-Web-2.png)
 
 ---
 
@@ -81,7 +81,7 @@ The `uri` field in every malicious request targeted the same endpoint.
 ```
 search.php
 ```
-![Answer](../images/BookWorld-Web-3.png)
+![Answer](../imgs/BookWorld-Web-3.png)
 
 ---
 
@@ -95,13 +95,13 @@ Sorted HTTP traffic from the attacker IP chronologically and identified the earl
 ```
 /search.php?search=book%20and%201%3D1%3B%20--%20-
 ```
-![Answer](../images/BookWorld-Web-4.png)
+![Answer](../imgs/BookWorld-Web-4.png)
 
 **Decoded:**
 ```
 /search.php?search=book and 1=1; -- -
 ```
-![Answer](../images/BookWorld-Web-5.png)
+![Answer](../imgs/BookWorld-Web-5.png)
 
 This is a classic **Boolean-based SQLi** test — the `1=1` condition always evaluates to true, used to confirm the parameter is injectable before proceeding with more complex payloads.
 
@@ -110,7 +110,7 @@ This is a classic **Boolean-based SQLi** test — the `1=1` condition always eva
 ```
 /search.php?search=book and 1=1; -- -
 ```
-![Answer](../images/BookWorld-Web-5.png)
+![Answer](../imgs/BookWorld-Web-5.png)
 
 ---
 
@@ -143,8 +143,8 @@ CONCAT(0x7178766271, JSON_ARRAYAGG(CONCAT_WS(0x7a76676a636b, schema_name)),
 ```
 /search.php?search=book' UNION ALL SELECT NULL, CONCAT(0x7178766271, JSON_ARRAYAGG(CONCAT_WS(0x7a76676a636b, schema_name)), 0x7176706a71) FROM INFORMATION_SCHEMA.SCHEMATA-- -
 ```
-![Answer](../images/BookWorld-Web-6.png)
-![Answer](../images/BookWorld-Web-7.png)
+![Answer](../imgs/BookWorld-Web-6.png)
+![Answer](../imgs/BookWorld-Web-7.png)
 
 ---
 
@@ -159,7 +159,7 @@ After enumerating available databases, the attacker used SQLmap to automate furt
 ```
 customers
 ```
-![Answer](../images/BookWorld-Web-8.png)
+![Answer](../imgs/BookWorld-Web-8.png)
 
 ---
 
@@ -180,7 +180,7 @@ A hidden administrative panel was discovered that is not linked from the public-
 ```
 /admin/
 ```
-![Answer](../images/BookWorld-Web-9.png)
+![Answer](../imgs/BookWorld-Web-9.png)
 
 ---
 
@@ -206,7 +206,7 @@ username=admin&password=admin123!
 ```
 admin:admin123!
 ```
-![Answer](../images/BookWorld-Web-10.png)
+![Answer](../imgs/BookWorld-Web-10.png)
 
 ---
 
@@ -248,7 +248,7 @@ The obfuscated filename (`NVri2vhp.php`) was chosen to avoid detection during ca
 ```
 NVri2vhp.php
 ```
-![Answer](../images/BookWorld-Web-11.png)
+![Answer](../imgs/BookWorld-Web-11.png)
 
 ---
 

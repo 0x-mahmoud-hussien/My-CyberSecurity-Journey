@@ -43,7 +43,7 @@ This baseline query counts every event ingested into the `main` index — the st
 ```
 12,256
 ```
-![Answer](../images/Windows-Backdoor-Splunk1.png)
+![Answer](../imgs/Windows-Backdoor-Splunk1.png)
 
 ---
 
@@ -67,7 +67,7 @@ The account was created outside of normal IT provisioning processes and was not 
 ```
 Alberto
 ```
-![Answer](../images/Windows-Backdoor-Splunk2.png)
+![Answer](../imgs/Windows-Backdoor-Splunk2.png)
 
 ---
 
@@ -89,7 +89,7 @@ index=main EventID="13" Alberto
 ```
 HKLM\SAM\SAM\Domains\Account\Users\Names\Alberto
 ```
-![Answer](../images/Windows-Backdoor-Splunk3.png)
+![Answer](../imgs/Windows-Backdoor-Splunk3.png)
 
 ---
 
@@ -110,7 +110,7 @@ Cross-referencing the backdoor account name `Alberto` with legitimate Active Dir
 ```
 Alberto
 ```
-![Answer](../images/Windows-Backdoor-Splunk4.png)
+![Answer](../imgs/Windows-Backdoor-Splunk4.png)
 
 ---
 
@@ -135,7 +135,7 @@ The attacker used **WMIC** (`Windows Management Instrumentation Command-line`) t
 ```
 WMIC.exe /node:WORKSTATION6 process call create "net user /add Alberto paw0rd1"
 ```
-![Answer](../images/Windows-Backdoor-Splunk5.png)
+![Answer](../imgs/Windows-Backdoor-Splunk5.png)
 
 ---
 
@@ -157,7 +157,7 @@ index=main Alberto (EventID="4624" OR EventID="4625")
 ```
 0
 ```
-![Answer](../images/Windows-Backdoor-Splunk6.png)
+![Answer](../imgs/Windows-Backdoor-Splunk6.png)
 
 ---
 
@@ -182,7 +182,7 @@ The host was running under the PowerShell `ConsoleHost` environment, confirming 
 ```
 James.browne
 ```
-![Answer](../images/Windows-Backdoor-Splunk7.png)
+![Answer](../imgs/Windows-Backdoor-Splunk7.png)
 
 ---
 
@@ -204,7 +204,7 @@ Counting all PowerShell Module Logging events (Event ID 4103) provides the total
 ```
 79
 ```
-![Answer](../images/Windows-Backdoor-Splunk8.png)
+![Answer](../imgs/Windows-Backdoor-Splunk8.png)
 
 ---
 
@@ -217,7 +217,7 @@ index=main EventID="4103"
 | search ScriptBlockText="*FromBase64String*" OR ScriptBlockText="*-enc*"
 | table _time ScriptBlockText
 ```
-![Answer](../images/Windows-Backdoor-Splunk9.png)
+![Answer](../imgs/Windows-Backdoor-Splunk9.png)
 
 ### Investigation
 
@@ -227,7 +227,7 @@ Within the 79 PowerShell events, the script contained Base64-encoded strings. Is
 ```
 aAB0AHQAcAA6AC8ALwAxADAALgAxADAALgAxADAALgA1AA==
 ```
-![Answer](../images/Windows-Backdoor-Splunk10.png)
+![Answer](../imgs/Windows-Backdoor-Splunk10.png)
 
 **CyberChef Recipe:**
 ```
@@ -249,7 +249,7 @@ The script additionally employed the following evasion techniques:
 ```
 http://10.10.10.5/news.php
 ```
-![Answer](../images/Windows-Backdoor-Splunk11.png)
+![Answer](../imgs/Windows-Backdoor-Splunk11.png)
 
 ---
 

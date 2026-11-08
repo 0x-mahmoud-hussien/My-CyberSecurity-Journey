@@ -46,7 +46,7 @@ vol -f 20210430-Win10Home-20H2-64bit-memdump.mem windows.info
 ```
 2021-04-30 17:52
 ```
-![Answer](../images/Brave-Lab-1.png)
+![Answer](../imgs/Brave-Lab-1.png)
 
 ---
 
@@ -67,7 +67,7 @@ Cryptographic hashing of the evidence file establishes **chain-of-custody integr
 ```
 9db01b1e7b19a3b2113bfb65e860fffd7a1630bdf2b18613d206ebf2aa0ea172
 ```
-![Answer](../images/Brave-Lab-2.png)
+![Answer](../imgs/Brave-Lab-2.png)
 
 ---
 
@@ -97,7 +97,7 @@ Notably, the process had already **terminated** before the memory dump was taken
 ```
 4856
 ```
-![Answer](../images/Brave-Lab-3.png)
+![Answer](../imgs/Brave-Lab-3.png)
 
 ---
 
@@ -118,7 +118,7 @@ vol -f 20210430-Win10Home-20H2-64bit-memdump.mem windows.netscan | grep -i "esta
 ```
 10
 ```
-![Answer](../images/Brave-Lab-4.png)
+![Answer](../imgs/Brave-Lab-4.png)
 
 ---
 
@@ -145,9 +145,9 @@ The destination IP `185.70.41.130` was submitted to WHOIS / RIPE NCC lookup — 
 ```
 protonmail.ch
 ```
-![Answer](../images/Brave-Lab-5.png)
+![Answer](../imgs/Brave-Lab-5.png)
 
-![Answer](../images/Brave-Lab-6.png)
+![Answer](../imgs/Brave-Lab-6.png)
 
 ---
 
@@ -178,7 +178,7 @@ PID 6988 corresponds to `OneDrive.exe` — launched at `17:40:01 UTC`. The proce
 ```
 0b493d8e26f03ccd2060e0be85f430af
 ```
-![Answer](../images/Brave-Lab-7.png)
+![Answer](../imgs/Brave-Lab-7.png)
 
 ---
 
@@ -218,7 +218,7 @@ Decoding each byte pair as ASCII:
 ```
 hacker
 ```
-![Answer](../images/Brave-Lab-8.png)
+![Answer](../imgs/Brave-Lab-8.png)
 
 ---
 
@@ -248,7 +248,7 @@ The parent of `powershell.exe` is `explorer.exe` (PID: 4352) — the Windows use
 ```
 2021-04-30 17:39
 ```
-![Answer](../images/Brave-Lab-9.png)
+![Answer](../imgs/Brave-Lab-9.png)
 
 ---
 
@@ -284,7 +284,7 @@ A file named `accountNum` being opened directly from a 7-Zip temporary extractio
 ```
 C:\Users\JOHNDO~1\AppData\Local\Temp\7zO4FB31F24\accountNum
 ```
-![Answer](../images/Brave-Lab-10.png)
+![Answer](../imgs/Brave-Lab-10.png)
 
 ---
 
@@ -315,7 +315,7 @@ Despite Brave being closed at `17:50:56 UTC` — only 1 minute and 23 seconds be
 ```
 4
 ```
-![Answer](../images/Brave-Lab-11.png)
+![Answer](../imgs/Brave-Lab-11.png)
 
 ---
 

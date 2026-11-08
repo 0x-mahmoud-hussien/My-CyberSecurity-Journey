@@ -105,9 +105,9 @@ The second GET request fetches `mdm.jpg` — the actual second-stage PowerShell 
 ```
 http://45.126.209.4:222/mdm.jpg
 ```
-![Answer](../images/XLMRat-Lab-1.png)
+![Answer](../imgs/XLMRat-Lab-1.png)
 
-![Answer](../images/XLMRat-Lab-2.png)
+![Answer](../imgs/XLMRat-Lab-2.png)
 
 ---
 
@@ -135,7 +135,7 @@ WHOIS lookup for the attacker IP `45.126.209.4` reveals:
 ```
 reliableSite.net
 ```
-![Answer](../images/XLMRat-Lab-3.png)
+![Answer](../imgs/XLMRat-Lab-3.png)
 
 ---
 
@@ -169,7 +169,7 @@ sha256sum download.exe
 file mdm.jpg
 # Output: ASCII text (not a JPEG image — extension spoofing)
 ```
-![Answer](../images/XLMRat-Lab-4.png)
+![Answer](../imgs/XLMRat-Lab-4.png)
 
 **Step 2 — Script analysis:**
 
@@ -189,11 +189,11 @@ Find (Regex): _
 Replace: (empty)
 Global match: Enabled
 ```
-![Answer](../images/XLMRat-Lab-5.png)
+![Answer](../imgs/XLMRat-Lab-5.png)
 
 The decoded hex stream was converted to binary and exported as `download.exe`.
 
-![Answer](../images/XLMRat-Lab-6.png)
+![Answer](../imgs/XLMRat-Lab-6.png)
 
 **Step 4 — Hash computation:**
 
@@ -206,7 +206,7 @@ sha256sum download.exe
 ```
 1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798
 ```
-![Answer](../images/XLMRat-Lab-7.png)
+![Answer](../imgs/XLMRat-Lab-7.png)
 
 ---
 
@@ -235,7 +235,7 @@ Backdoor:MSIL/AsyncRat.a2786761
 ```
 asyncrat
 ```
-![Answer](../images/XLMRat-Lab-8.png)
+![Answer](../imgs/XLMRat-Lab-8.png)
 
 ---
 
@@ -254,7 +254,7 @@ PE Creation Time: 2023-10-30 15:08:44 UTC
 ```
 2023-10-30 15:08
 ```
-![Answer](../images/XLMRat-Lab-9.png)
+![Answer](../imgs/XLMRat-Lab-9.png)
 
 ---
 
@@ -296,7 +296,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegSvcs.exe
 ```
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegSvcs.exe
 ```
-![Answer](../images/XLMRat-Lab-10.png)
+![Answer](../imgs/XLMRat-Lab-10.png)
 
 ---
 
@@ -344,9 +344,9 @@ $MZ.Invoke($null, [object[]] @($AC, $NKbb))
 ```
 Conted.ps1,Conted.bat,Conted.vbs
 ```
-![Answer](../images/XLMRat-Lab-11.png)
-![Answer](../images/XLMRat-Lab-12.png)
-![Answer](../images/XLMRat-Lab-13.png)
+![Answer](../imgs/XLMRat-Lab-11.png)
+![Answer](../imgs/XLMRat-Lab-12.png)
+![Answer](../imgs/XLMRat-Lab-13.png)
 
 ---
 

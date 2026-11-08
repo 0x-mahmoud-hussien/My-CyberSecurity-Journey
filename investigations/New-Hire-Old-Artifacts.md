@@ -35,7 +35,7 @@ index=*
 | main | DESKTOP-H1ATIJC | WinEventLog:System | 37 |
 | **Total** | | | **27,378** |
 
-![Answer](../images/New-Hire-Old-Artifacts-1.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-1.png)
 
 ---
 
@@ -98,7 +98,7 @@ The binary was executed directly from `%TEMP%` using the `/stab` switch to dump 
 ```
 C:\Users\FINANC~1\AppData\Local\Temp\11111.exe
 ```
-![Answer](../images/New-Hire-Old-Artifacts-2.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-2.png)
 
 ---
 
@@ -113,7 +113,7 @@ From the same query results, the `Company` field in the PE metadata:
 ```
 NirSoft
 ```
-![Answer](../images/New-Hire-Old-Artifacts-3.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-3.png)
 
 ---
 
@@ -145,7 +145,7 @@ The attacker renamed `PalitExplorer.exe` to `IonicLarge.exe` to hinder static an
 ```
 IonicLarge.exe,PalitExplorer.exe
 ```
-![Answer](../images/New-Hire-Old-Artifacts-4.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-4.png)
 
 ---
 
@@ -180,7 +180,7 @@ Two distinct outbound C2 callbacks confirm active Command & Control functionalit
 ```
 2[.]56[.]59[.]42
 ```
-![Answer](../images/New-Hire-Old-Artifacts-5.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-5.png)
 
 ---
 
@@ -214,7 +214,7 @@ This finding directly explains the December 2021 endpoint security outage — th
 ```
 HKLM\SOFTWARE\Policies\Microsoft\Windows Defender
 ```
-![Answer](../images/New-Hire-Old-Artifacts-6.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-6.png)
 
 ---
 
@@ -265,7 +265,7 @@ The wildcard `del C:\ProgramData\*.dll` confirms active cleanup of all dropped D
 ```
 WvmIOrcfsuILdX6SNwIRmGOJ.exe,phcIAmLJMAIMSa9j9MpgJo1m.exe
 ```
-![Answer](../images/New-Hire-Old-Artifacts-7.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-7.png)
 
 ---
 
@@ -306,7 +306,7 @@ call Add ThreatIDDefaultAction_Ids=2147737394 ThreatIDDefaultAction_Actions=6 Fo
 ```
 powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147737394 ThreatIDDefaultAction_Actions=6 Force=True
 ```
-![Answer](../images/New-Hire-Old-Artifacts-8.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-8.png)
 
 ---
 
@@ -326,7 +326,7 @@ From the same query, ordered chronologically by `_time`:
 ```
 2147735503,2147737010,2147737007,2147737394
 ```
-![Answer](../images/New-Hire-Old-Artifacts-9.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-9.png)
 
 ---
 
@@ -359,7 +359,7 @@ The attacker disguised the malicious binary as a benign calculator application (
 ```
 C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe
 ```
-![Answer](../images/New-Hire-Old-Artifacts-10.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-10.png)
 
 ---
 
@@ -392,7 +392,7 @@ The presence of NW.js framework DLLs confirms that `EasyCalc.exe` is a **Node.js
 ```
 ffmpeg.dll,nw.dll,nw_elf.dll
 ```
-![Answer](../images/New-Hire-Old-Artifacts-11.png)
+![Answer](../imgs/New-Hire-Old-Artifacts-11.png)
 
 ---
 

@@ -62,9 +62,9 @@ After the client attempted to upgrade to encrypted FTP (`AUTH TLS` and `AUTH SSL
 ```
 AfricaCTF2021
 ```
-![Answer](../images/PacketMaze-1.png)
+![Answer](../imgs/PacketMaze-1.png)
 
-![Answer](../images/PacketMaze-2.png)
+![Answer](../imgs/PacketMaze-2.png)
 
 
 ---
@@ -86,7 +86,7 @@ Analyzing DNS traffic from the victim host and expanding the UDP layer on packet
 ```
 fe80::c80b:adff:feaa:1db7
 ```
-![Answer](../images/PacketMaze-3.png)
+![Answer](../imgs/PacketMaze-3.png)
 
 ---
 
@@ -101,7 +101,7 @@ Navigating directly to frame 15174 in Wireshark and expanding the DNS query laye
 ```
 www.7-zip.org
 ```
-![Answer](../images/PacketMaze-4.png)
+![Answer](../imgs/PacketMaze-4.png)
 
 ---
 
@@ -122,7 +122,7 @@ Filtering for UDP traffic between the victim host and the suspected C2 destinati
 ```
 10
 ```
-![Answer](../images/PacketMaze-5.png)
+![Answer](../imgs/PacketMaze-5.png)
 
 ---
 
@@ -143,7 +143,7 @@ Examining the Ethernet frame header of any packet originating from `192.168.1.26
 ```
 c8:09:a8:57:47:93
 ```
-![Answer](../images/PacketMaze-6.png)
+![Answer](../imgs/PacketMaze-6.png)
 
 ---
 
@@ -180,7 +180,7 @@ Camera Model Name: LM-Q725K
 ```
 LM-Q725K
 ```
-![Answer](../images/PacketMaze-7.png)
+![Answer](../imgs/PacketMaze-7.png)
 
 ---
 
@@ -201,7 +201,7 @@ Locating the TLS session by its Session ID, then expanding the `TLS → Handshak
 ```
 04edcc123af7b13e90ce101a31c2f996f471a7c8f48a1b81d765085f548059a550f3f4f62ca1f0e8f74d727053074a37bceb2cbdc7ce2a8994dcd76dd6834eefc5438c3b6da929321f3a1366bd14c877cc83e5d0731b7f80a6b80916efd4a23a4d
 ```
-![Answer](../images/PacketMaze-8.png)
+![Answer](../imgs/PacketMaze-8.png)
 
 ---
 
@@ -222,7 +222,7 @@ Filtering for TLS Client Hello packets targeting `protonmail.com` via the SNI (S
 ```
 24e92513b97a0348f733d16996929a79be21b0b1400cd7e2862a732ce7775b70
 ```
-![Answer](../images/PacketMaze-9.png)
+![Answer](../imgs/PacketMaze-9.png)
 
 ---
 
@@ -239,9 +239,9 @@ Despite being a German company, the IEEE OUI registration for this vendor is reg
 ```
 United States
 ```
-![Answer](../images/PacketMaze-10.png)
+![Answer](../imgs/PacketMaze-10.png)
 
-![Answer](../images/PacketMaze-11.png)
+![Answer](../imgs/PacketMaze-11.png)
 
 ---
 
@@ -268,7 +268,7 @@ The folder `ftp` at `17:53` on April 20th is the staging area created by the thr
 ```
 17:53
 ```
-![Answer](../images/PacketMaze-12.png)
+![Answer](../imgs/PacketMaze-12.png)
 
 ---
 
@@ -294,7 +294,7 @@ Host: dfir.science
 ```
 http://dfir.science/
 ```
-![Answer](../images/PacketMaze-13.png)
+![Answer](../imgs/PacketMaze-13.png)
 
 ---
 

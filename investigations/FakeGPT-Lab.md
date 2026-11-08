@@ -70,14 +70,14 @@ Inside `app.js`, the target domain is stored as an obfuscated string using a Bas
 // app.js — line 5
 const targets = [_0xabc1('d3d3LmZhY2Vib29rLmNvbQ==')];
 ```
-![Answer](../images/FakeGPT-Lab-1.png)
+![Answer](../imgs/FakeGPT-Lab-1.png)
 
 **Decoding in CyberChef (From Base64):**
 
 ```
 d3d3LmZhY2Vib29rLmNvbQ== → www.facebook.com
 ```
-![Answer](../images/FakeGPT-Lab-2.png)
+![Answer](../imgs/FakeGPT-Lab-2.png)
 
 The `_0xabc1` function is a pass-through identity function that returns its argument unchanged — the actual obfuscation is the Base64 encoding of the target domain string.
 
@@ -113,7 +113,7 @@ if (targets.indexOf(window.location.hostname) !== -1) {
 ```
 www.facebook.com
 ```
-![Answer](../images/FakeGPT-Lab-3.png)
+![Answer](../imgs/FakeGPT-Lab-3.png)
 
 ---
 
@@ -146,7 +146,7 @@ Using an Image object to make HTTP GET requests is a classic **covert exfiltrati
 ```
 <img>
 ```
-![Answer](../images/FakeGPT-Lab-4.png)
+![Answer](../imgs/FakeGPT-Lab-4.png)
 
 ---
 
@@ -178,7 +178,7 @@ The **first** condition in the code (left side of `||`) is the plugin count chec
 ```
 navigator.plugins.length === 0
 ```
-![Answer](../images/FakeGPT-Lab-5.png)
+![Answer](../imgs/FakeGPT-Lab-5.png)
 
 ---
 
@@ -209,7 +209,7 @@ The listener captures the form submission event, extracts `username`/`email` and
 ```
 submit
 ```
-![Answer](../images/FakeGPT-Lab-6.png)
+![Answer](../imgs/FakeGPT-Lab-6.png)
 
 ---
 
@@ -235,7 +235,7 @@ Every key pressed by the user triggers `exfiltrateData()`, which encrypts and se
 ```
 keydown
 ```
-![Answer](../images/FakeGPT-Lab-7.png)
+![Answer](../imgs/FakeGPT-Lab-7.png)
 
 ---
 
@@ -260,7 +260,7 @@ All stolen data (credentials and keystrokes) is sent to `Mo.Elshaheedy.com` via 
 ```
 Mo.Elshaheedy.com
 ```
-![Answer](../images/FakeGPT-Lab-8.png)
+![Answer](../imgs/FakeGPT-Lab-8.png)
 
 ---
 
@@ -289,7 +289,7 @@ The function packages username, password, and the source site URL into a JSON pa
 ```
 exfiltrateCredentials(username, password);
 ```
-![Answer](../images/FakeGPT-Lab-9.png)
+![Answer](../imgs/FakeGPT-Lab-9.png)
 
 ---
 
@@ -341,7 +341,7 @@ function encryptPayload(data) {
 ```
 AES
 ```
-![Answer](../images/FakeGPT-Lab-10.png)
+![Answer](../imgs/FakeGPT-Lab-10.png)
 
 ---
 
@@ -372,7 +372,7 @@ This allows the attacker to steal **active authenticated sessions** — bypassin
 ```
 cookies
 ```
-![Answer](../images/FakeGPT-Lab-11.png)
+![Answer](../imgs/FakeGPT-Lab-11.png)
 
 ---
 

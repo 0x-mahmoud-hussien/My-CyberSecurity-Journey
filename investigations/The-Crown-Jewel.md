@@ -67,7 +67,7 @@ TCP Flags: SYN (connection initiation)
 ```
 10.10.10.100
 ```
-![Answer](../images/Crown-Jewel-1.png)
+![Answer](../imgs/Crown-Jewel-1.png)
 
 ---
 
@@ -97,7 +97,7 @@ Port 8080 is a commonly used alternate HTTP port that often passes through firew
 ```
 1.1.1.1:8080
 ```
-![Answer](../images/Crown-Jewel-2.png)
+![Answer](../imgs/Crown-Jewel-2.png)
 
 ---
 
@@ -134,7 +134,7 @@ The OUI `00:0c:29` identifies this as a **VMware virtual machine** — the attac
 ```
 00:0c:29:11:22:33
 ```
-![Answer](../images/Crown-Jewel-3.png)
+![Answer](../imgs/Crown-Jewel-3.png)
 
 ---
 
@@ -164,7 +164,7 @@ Legitimate Jira traffic would show browser User-Agents (`Mozilla/5.0 ...`) or Ji
 ```
 CVE-202X-EXPLOIT
 ```
-![Answer](../images/Crown-Jewel-4.png)
+![Answer](../imgs/Crown-Jewel-4.png)
 
 ---
 
@@ -193,7 +193,7 @@ Total ARP Reply packets (opcode == 2): 90
 ```
 90
 ```
-![Answer](../images/Crown-Jewel-5.png)
+![Answer](../imgs/Crown-Jewel-5.png)
 
 ---
 
@@ -226,7 +226,7 @@ The credentials were transmitted in **plaintext** — confirming the Jira instan
 ```
 username=dev_user&password=SecretPassword!
 ```
-![Answer](../images/Crown-Jewel-6.png)
+![Answer](../imgs/Crown-Jewel-6.png)
 
 ---
 
@@ -272,7 +272,7 @@ The DNS tunneling signature is clear:
 ```
 exfil-domain.xyz
 ```
-![Answer](../images/Crown-Jewel-7.png)
+![Answer](../imgs/Crown-Jewel-7.png)
 
 ---
 

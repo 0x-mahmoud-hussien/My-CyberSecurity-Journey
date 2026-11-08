@@ -82,7 +82,7 @@ The Snort alert confirms repeated Cobalt Strike C2 beaconing originating from th
 ```
 10.14.30.88
 ```
-![Answer](../images/The-Silent-Transfer-1.png)
+![Answer](../imgs/The-Silent-Transfer-1.png)
 
 ---
 
@@ -125,7 +125,7 @@ The domain `cdn-updates.microsoftservice.net` is a **typosquatted domain** imper
 ```
 cdn-updates.microsoftservice.net
 ```
-![Answer](../images/The-Silent-Transfer-2.png)
+![Answer](../imgs/The-Silent-Transfer-2.png)
 
 ---
 
@@ -158,7 +158,7 @@ Zeek's `files.log` automatically computes cryptographic hashes for all file tran
 ```
 7f3b2e1a9c8d4f5e6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f90
 ```
-![Answer](../images/The-Silent-Transfer-3.png)
+![Answer](../imgs/The-Silent-Transfer-3.png)
 
 ---
 
@@ -187,7 +187,7 @@ The first outbound C2 connection used source port **51000** — a non-standard h
 ```
 51000
 ```
-![Answer](../images/The-Silent-Transfer-4.png)
+![Answer](../imgs/The-Silent-Transfer-4.png)
 
 ---
 
@@ -215,7 +215,7 @@ This fingerprint matches known **Cobalt Strike HTTP/S beacon** TLS profiles docu
 ```
 t13d190900_9dc949149365_97f8aa674fd9
 ```
-![Answer](../images/The-Silent-Transfer-5.png)
+![Answer](../imgs/The-Silent-Transfer-5.png)
 
 ---
 
@@ -247,7 +247,7 @@ Post-C2 establishment, the compromised workstation initiated automated SMB conne
 ```
 23
 ```
-![Answer](../images/The-Silent-Transfer-6.png)
+![Answer](../imgs/The-Silent-Transfer-6.png)
 
 ---
 
@@ -281,7 +281,7 @@ The attacker selectively targeted this server — likely identified during the S
 ```
 10.14.0.12
 ```
-![Answer](../images/The-Silent-Transfer-7.png)
+![Answer](../imgs/The-Silent-Transfer-7.png)
 
 ---
 
@@ -310,7 +310,7 @@ This domain is a **typosquatted fake backup infrastructure domain** designed to 
 ```
 backup.corpfiles-sync.com
 ```
-![Answer](../images/The-Silent-Transfer-8.png)
+![Answer](../imgs/The-Silent-Transfer-8.png)
 
 ---
 
@@ -346,7 +346,7 @@ The filename `Q4-Finance-Backup-2025.zip` strongly suggests the attacker specifi
 ```
 a3f8e2c1d4b7a9e0f2c3d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6
 ```
-![Answer](../images/The-Silent-Transfer-9.png)
+![Answer](../imgs/The-Silent-Transfer-9.png)
 
 ---
 
@@ -380,7 +380,7 @@ Inspecting the application-layer contents of the HTTP-based C2 traffic (TCP Stre
 GET /api/v2/checkHost HTTP/1.1
 Host: update.softpatch-cdn.com
 ```
-![Answer](../images/The-Silent-Transfer-10.png)
+![Answer](../imgs/The-Silent-Transfer-10.png)
 
 Decoding the Base64 command value:
 
@@ -398,7 +398,7 @@ echo "d2hvYW1p" | base64 -d
 ```
 whoami
 ```
-![Answer](../images/The-Silent-Transfer-11.png)
+![Answer](../imgs/The-Silent-Transfer-11.png)
 
 ---
 

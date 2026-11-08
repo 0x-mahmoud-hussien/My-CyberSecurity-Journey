@@ -49,7 +49,7 @@ Bootstrap Protocol → Option 50 (Requested IP Address)
 ```
 192.168.2.244
 ```
-![Answer](../images/WireDive-1.png)
+![Answer](../imgs/WireDive-1.png)
 
 ---
 
@@ -70,7 +70,7 @@ Reveals a 4-byte unique Transaction ID value of `0x9f8fa557`.
 ```
 0x9f8fa557
 ```
-![Answer](../images/WireDive-2.png)
+![Answer](../imgs/WireDive-2.png)
 
 ---
 
@@ -89,7 +89,7 @@ Dynamic Host Configuration Protocol → Client MAC address
 ```
 00:0c:29:82:f5:94
 ```
-![Answer](../images/WireDive-3.png)
+![Answer](../imgs/WireDive-3.png)
 
 ---
 
@@ -118,7 +118,7 @@ Answers → TXT Record → Text: ACOOLDNSFLAG
 ```
 ACOOLDNSFLAG
 ```
-![Answer](../images/WireDive-4.png)
+![Answer](../imgs/WireDive-4.png)
 
 ---
 
@@ -143,9 +143,9 @@ The reverse lookup confirmed the corresponding root server hostname as `e.root-s
 ```
 e.root-servers.net
 ```
-![Answer](../images/WireDive-5.png)
+![Answer](../imgs/WireDive-5.png)
 
-![Answer](../images/WireDive-6.png)
+![Answer](../imgs/WireDive-6.png)
 
 
 ---
@@ -177,7 +177,7 @@ The literal path of the target resource was verified as `HelloWorld\TradeSecrets
 ```
 HelloWorld\TradeSecrets.txt
 ```
-![Answer](../images/WireDive-7.png)
+![Answer](../imgs/WireDive-7.png)
 
 ---
 
@@ -204,7 +204,7 @@ This represents an invalid username or bad password error.
 ```
 0xc000006d
 ```
-![Answer](../images/WireDive-8.png)
+![Answer](../imgs/WireDive-8.png)
 
 ---
 
@@ -229,7 +229,7 @@ Tree Connect Request (0x03) → Tree: \\192.168.2.10\public
 ```
 \\192.168.2.10\public
 ```
-![Answer](../images/WireDive-9.png)
+![Answer](../imgs/WireDive-9.png)
 
 ---
 
@@ -256,7 +256,7 @@ Following the identification of access targeting `HelloWorld\TradeSecrets.txt`, 
 ```
 OneSuperDuperSecret
 ```
-![Answer](../images/WireDive-10.png)
+![Answer](../imgs/WireDive-10.png)
 
 ---
 
@@ -281,7 +281,7 @@ Frame 2 shows a complete handshake acknowledgment (`SYN, ACK`) from `192.168.2.2
 ```
 4444
 ```
-![Answer](../images/WireDive-11.png)
+![Answer](../imgs/WireDive-11.png)
 
 ---
 
@@ -304,7 +304,7 @@ A secondary inbound persistence listener was instantiated explicitly binding to 
 ```
 9999
 ```
-![Answer](../images/WireDive-12.png)
+![Answer](../imgs/WireDive-12.png)
 
 ---
 
@@ -333,7 +333,7 @@ This confirms the exact version compiled and written onto the victim host.
 ```
 1.10-41.1
 ```
-![Answer](../images/WireDive-13.png)
+![Answer](../imgs/WireDive-13.png)
 
 ---
 
@@ -356,7 +356,7 @@ The structural shell operator `<` redirects file stream input. This confirms tha
 ```
 /etc/passwd
 ```
-![Answer](../images/WireDive-14.png)
+![Answer](../imgs/WireDive-14.png)
 
 ---
 
@@ -379,7 +379,7 @@ The cleartext password string used to authorize administrative context commands 
 ```
 *umR@Q%4V&RC
 ```
-![Answer](../images/WireDive-15.png)
+![Answer](../imgs/WireDive-15.png)
 
 ---
 
@@ -408,7 +408,7 @@ This maps the platform to Ubuntu 18.04 LTS, confirming the operating system deve
 ```
 bionic
 ```
-![Answer](../images/WireDive-16.png)
+![Answer](../imgs/WireDive-16.png)
 
 ---
 
@@ -431,9 +431,9 @@ Inspecting the exfiltrated local system database pulled via the secondary connec
 ```
 31
 ```
-![Answer](../images/WireDive-17.png)
+![Answer](../imgs/WireDive-17.png)
 
-![Answer](../images/WireDive-18.png)
+![Answer](../imgs/WireDive-18.png)
 
 ---
 
@@ -462,7 +462,7 @@ IPv6 → Source: 2003:51:6012:110::dcf7:123
 ```
 2003:51:6012:110::dcf7:123
 ```
-![Answer](../images/WireDive-19.png)
+![Answer](../imgs/WireDive-19.png)
 
 ---
 
@@ -489,7 +489,7 @@ Confirms the first network address requested for assignment.
 ```
 192.168.20.11
 ```
-![Answer](../images/WireDive-20.png)
+![Answer](../imgs/WireDive-20.png)
 
 ---
 
@@ -514,7 +514,7 @@ Authoritative Nameservers → NS Record → ns1.hans.hosteurope.de
 ```
 ns1.hans.hosteurope.de
 ```
-![Answer](../images/WireDive-21.png)
+![Answer](../imgs/WireDive-21.png)
 
 ---
 
@@ -539,7 +539,7 @@ Spanning Tree Protocol → Originating VLAN (PVID): 20
 ```
 20
 ```
-![Answer](../images/WireDive-22.png)
+![Answer](../imgs/WireDive-22.png)
 
 ---
 
@@ -564,7 +564,7 @@ Cisco Discovery Protocol → Port ID: GigabitEthernet0/2
 ```
 GigabitEthernet0/2
 ```
-![Answer](../images/WireDive-23.png)
+![Answer](../imgs/WireDive-23.png)
 
 ---
 
@@ -589,7 +589,7 @@ Spanning Tree Protocol → Root Bridge Identifier → Root Bridge System ID: 00:
 ```
 00:21:1b:ae:31:80
 ```
-![Answer](../images/WireDive-24.png)
+![Answer](../imgs/WireDive-24.png)
 
 ---
 
@@ -614,7 +614,7 @@ Cisco Discovery Protocol → Software version: 12.1(22)EA14
 ```
 12.1(22)EA14
 ```
-![Answer](../images/WireDive-25.png)
+![Answer](../imgs/WireDive-25.png)
 
 ---
 
@@ -639,7 +639,7 @@ Cisco Hot Standby Router Protocol → Virtual IP Address: 192.168.121.1
 ```
 192.168.121.1
 ```
-![Answer](../images/WireDive-26.png)
+![Answer](../imgs/WireDive-26.png)
 
 ---
 
@@ -660,7 +660,7 @@ Applying the ICMPv6 type 133 filter (Router Solicitation) isolates the relevant 
 ```
 3
 ```
-![Answer](../images/WireDive-27.png)
+![Answer](../imgs/WireDive-27.png)
 
 ---
 
@@ -685,7 +685,7 @@ Cisco Discovery Protocol → Management Addresses: 192.168.121.20
 ```
 192.168.121.20
 ```
-![Answer](../images/WireDive-28.png)
+![Answer](../imgs/WireDive-28.png)
 
 ---
 
@@ -706,7 +706,7 @@ Filtering for SNMP traffic and isolating the initial `GetRequest` packet. Expand
 ```
 FA0/1
 ```
-![Answer](../images/WireDive-29.png)
+![Answer](../imgs/WireDive-29.png)
 
 ---
 
@@ -721,7 +721,7 @@ Using `Ctrl + F` to search for the string `nvram` within the management traffic 
 ```
 2017-03-03 21:02
 ```
-![Answer](../images/WireDive-30.png)
+![Answer](../imgs/WireDive-30.png)
 
 ---
 
@@ -736,7 +736,7 @@ Examination of the configuration data extracted from the network traffic (specif
 ```
 2001:DB8::1812
 ```
-![Answer](../images/WireDive-31.png)
+![Answer](../imgs/WireDive-31.png)
 
 ---
 
@@ -765,7 +765,7 @@ Upon analyzing the packet stream associated with `web01.fruitinc.xyz`, payload i
 ```
 y2*Lg4cHe@Ps
 ```
-![Answer](../images/WireDive-32.png)
+![Answer](../imgs/WireDive-32.png)
 
 ---
 
@@ -786,7 +786,7 @@ Using the filter with a keyword search for "slack," the HTTP GET request sent to
 ```
 get_a_new_phone_today__720.jpg
 ```
-![Answer](../images/WireDive-33.png)
+![Answer](../imgs/WireDive-33.png)
 
 ---
 
@@ -807,7 +807,7 @@ Applying the HTTP/2 filter to the network capture isolated the management sessio
 ```
 admin:Ac5R4D9iyqD5bSh
 ```
-![Answer](../images/WireDive-34.png)
+![Answer](../imgs/WireDive-34.png)
 
 ---
 
@@ -832,7 +832,7 @@ OCSP Response → certStatus: good
 ```
 good
 ```
-![Answer](../images/WireDive-35.png)
+![Answer](../imgs/WireDive-35.png)
 
 ---
 
@@ -847,7 +847,7 @@ Based on analysis of the decrypted HTTP/2 traffic (specifically Stream 39), a lo
 ```
 jim.tomato@fruitinc.xyz
 ```
-![Answer](../images/WireDive-36.png)
+![Answer](../imgs/WireDive-36.png)
 
 ---
 
@@ -868,7 +868,7 @@ Using the `ntp` filter in Wireshark, NTP synchronization packets between devices
 ```
 lan:ntp
 ```
-![Answer](../images/WireDive-37.png)
+![Answer](../imgs/WireDive-37.png)
 
 ---
 

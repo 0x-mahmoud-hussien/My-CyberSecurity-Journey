@@ -66,7 +66,7 @@ This single command performs two sequential actions:
 ```
 powershell.exe
 ```
-![Answer](../images/Reveal-Lab-1.png)
+![Answer](../imgs/Reveal-Lab-1.png)
 
 ---
 
@@ -96,7 +96,7 @@ The parent process (PID: 4120) spawned this hidden PowerShell instance — ident
 ```
 4120
 ```
-![Answer](../images/Reveal-Lab-2.png)
+![Answer](../imgs/Reveal-Lab-2.png)
 
 ---
 
@@ -125,7 +125,7 @@ Executing the payload directly from a remote UNC path (`\\IP@PORT\share\`) means
 ```
 3435.dll
 ```
-![Answer](../images/Reveal-Lab-3.png)
+![Answer](../imgs/Reveal-Lab-3.png)
 
 ---
 
@@ -160,7 +160,7 @@ Breaking down the UNC path components:
 ```
 davwwwroot
 ```
-![Answer](../images/Reveal-Lab-4.png)
+![Answer](../imgs/Reveal-Lab-4.png)
 
 ---
 
@@ -182,7 +182,7 @@ The attack used `rundll32.exe` — a legitimate Windows utility — to execute t
 ```
 T1218.011
 ```
-![Answer](../images/Reveal-Lab-5.png)
+![Answer](../imgs/Reveal-Lab-5.png)
 
 ---
 
@@ -211,7 +211,7 @@ The malware ran under the `Elon` user context — meaning it inherited that user
 ```
 Elon
 ```
-![Answer](../images/Reveal-Lab-6.png)
+![Answer](../imgs/Reveal-Lab-6.png)
 
 ---
 
@@ -240,7 +240,7 @@ All harvested credentials are exfiltrated directly back to the attacker's server
 ```
 StrelaStealer
 ```
-![Answer](../images/Reveal-Lab-7.png)
+![Answer](../imgs/Reveal-Lab-7.png)
 
 ---
 

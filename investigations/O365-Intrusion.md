@@ -92,7 +92,7 @@ A Windows device sitting in a fleet of MacBooks, in a different location, is the
 ```
 2026-08-27 12:28:31
 ```
-![Answer](../images/O365-Intrusion-1.png)
+![Answer](../imgs/O365-Intrusion-1.png)
 
 ---
 
@@ -133,7 +133,7 @@ Access to `\Sent Items` in addition to `\Inbox` suggests the attacker was readin
 ```
 22
 ```
-![Answer](../images/O365-Intrusion-2.png)
+![Answer](../imgs/O365-Intrusion-2.png)
 
 ---
 
@@ -170,7 +170,7 @@ The rule name `update` is deliberately bland so it blends in with routine mailbo
 ```
 invoice
 ```
-![Answer](../images/O365-Intrusion-3.png)
+![Answer](../imgs/O365-Intrusion-3.png)
 
 ---
 
@@ -210,7 +210,7 @@ The subject line shows the Finance team was replying to something sent from Marc
 ```
 10 minutes 59 seconds
 ```
-![Answer](../images/O365-Intrusion-4.png)
+![Answer](../imgs/O365-Intrusion-4.png)
 
 ---
 
@@ -242,7 +242,7 @@ The file name ties back to the invoice-themed lure from the mailbox phase. Marcu
 ```
 Meridian_Invoice_Batch_Aug2026.pdf
 ```
-![Answer](../images/O365-Intrusion-5.png)
+![Answer](../imgs/O365-Intrusion-5.png)
 
 ---
 
@@ -273,7 +273,7 @@ David's sign-ins were reviewed against the same baseline question: does the devi
 ```
 Linux
 ```
-![Answer](../images/O365-Intrusion-6.png)
+![Answer](../imgs/O365-Intrusion-6.png)
 
 ---
 
@@ -286,7 +286,7 @@ From the same record:
 ```
 91.219.237.88
 ```
-![Answer](../images/O365-Intrusion-7.png)
+![Answer](../imgs/O365-Intrusion-7.png)
 
 ---
 
@@ -342,7 +342,7 @@ The attacker's download came about 77 seconds after the sign-in to David's accou
 ```
 2026-08-27 08:27:03
 ```
-![Answer](../images/O365-Intrusion-8.png)
+![Answer](../imgs/O365-Intrusion-8.png)
 
 ---
 
@@ -370,7 +370,7 @@ That is the same file the attacker downloaded in Q9. The sensitivity label did n
 ```
 Q4_Board_Financial_Summary.xlsx
 ```
-![Answer](../images/O365-Intrusion-9.png)
+![Answer](../imgs/O365-Intrusion-9.png)
 
 ---
 
@@ -404,7 +404,7 @@ The attacker's IP appears as the client on this action, which confirms it was pe
 ```
 Vendor_Onboarding_Notes.docx
 ```
-![Answer](../images/O365-Intrusion-10.png)
+![Answer](../imgs/O365-Intrusion-10.png)
 
 ---
 
@@ -417,7 +417,7 @@ From the same `SharingSet` event (`TargetUserOrGroupName`):
 ```
 d.reynolds88@protonmail.com
 ```
-![Answer](../images/O365-Intrusion-11.png)
+![Answer](../imgs/O365-Intrusion-11.png)
 
 ---
 
@@ -446,7 +446,7 @@ The message trace confirms the share actually went out to the external recipient
 ```
 David Chen shared "Vendor_Onboarding_Notes.docx" with you
 ```
-![Answer](../images/O365-Intrusion-11.png)
+![Answer](../imgs/O365-Intrusion-11.png)
 
 ---
 

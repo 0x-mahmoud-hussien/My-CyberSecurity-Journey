@@ -50,7 +50,7 @@ A high-density burst of TCP SYN-only packets targeting multiple ports in rapid s
 ```
 87.96.21.84
 ```
-![Answer](../images/BlueSky-Ransomware-1.png)
+![Answer](../imgs/BlueSky-Ransomware-1.png)
 
 ---
 
@@ -71,7 +71,7 @@ Filtering for MS-SQL traffic (TDS protocol on port 1433) and following the TCP s
 ```
 sa
 ```
-![Answer](../images/BlueSky-Ransomware-2.png)
+![Answer](../imgs/BlueSky-Ransomware-2.png)
 
 ---
 
@@ -91,7 +91,7 @@ Password: cyb3rd3f3nd3r$
 ```
 cyb3rd3f3nd3r$
 ```
-![Answer](../images/BlueSky-Ransomware-3.png)
+![Answer](../imgs/BlueSky-Ransomware-3.png)
 
 ---
 
@@ -119,7 +119,7 @@ EXEC sp_configure 'xp_cmdshell', 1; RECONFIGURE;
 ```
 xp_cmdshell
 ```
-![Answer](../images/BlueSky-Ransomware-4.png)
+![Answer](../imgs/BlueSky-Ransomware-4.png)
 
 ---
 
@@ -138,7 +138,7 @@ Windows PowerShell Event ID 600 logs captured in the PCAP reveal a sub-execution
 ```
 winlogon.exe
 ```
-![Answer](../images/BlueSky-Ransomware-5.png)
+![Answer](../imgs/BlueSky-Ransomware-5.png)
 
 ---
 
@@ -166,7 +166,7 @@ Server response confirmed delivery: `HTTP/1.0 200 OK` with `Content-Length: 5024
 ```
 http://87.96.21.84/checking.ps1
 ```
-![Answer](../images/BlueSky-Ransomware-6.png)
+![Answer](../imgs/BlueSky-Ransomware-6.png)
 
 ---
 
@@ -195,7 +195,7 @@ $priv = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).group
 ```
 S-1-5-32-544
 ```
-![Answer](../images/BlueSky-Ransomware-7.png)
+![Answer](../imgs/BlueSky-Ransomware-7.png)
 
 ---
 
@@ -226,7 +226,7 @@ All keys are set under `HKLM:\SOFTWARE\Microsoft\Windows Defender`.
 ```
 DisableAntiSpyware, DisableRoutinelyTakingAction, DisableRealtimeMonitoring, SubmitSamplesConsent, SpynetReporting
 ```
-![Answer](../images/BlueSky-Ransomware-8.png)
+![Answer](../imgs/BlueSky-Ransomware-8.png)
 
 ---
 
@@ -248,7 +248,7 @@ This download was confirmed in Frame 4251 of the PCAP.
 ```
 http://87.96.21.84/del.ps1
 ```
-![Answer](../images/BlueSky-Ransomware-9.png)
+![Answer](../imgs/BlueSky-Ransomware-9.png)
 
 ---
 
@@ -271,7 +271,7 @@ The task name `\Microsoft\Windows\MUI\LPupdate` deliberately mimics a legitimate
 ```
 \Microsoft\Windows\MUI\LPupdate
 ```
-![Answer](../images/BlueSky-Ransomware-10.png)
+![Answer](../imgs/BlueSky-Ransomware-10.png)
 
 ---
 
@@ -304,7 +304,7 @@ This maps directly to **MITRE Tactic: Defense Evasion (TA0005)**.
 ```
 TA0005
 ```
-![Answer](../images/BlueSky-Ransomware-11.png)
+![Answer](../imgs/BlueSky-Ransomware-11.png)
 
 ---
 
@@ -335,7 +335,7 @@ Invoke-PowerDump | Out-File -FilePath "C:\ProgramData\hashes.txt"
 ```
 Invoke-PowerDump.ps1
 ```
-![Answer](../images/BlueSky-Ransomware-12.png)
+![Answer](../imgs/BlueSky-Ransomware-12.png)
 
 ---
 
@@ -360,7 +360,7 @@ username:RID:LM_hash:NT_hash:::
 ```
 hashes.txt
 ```
-![Answer](../images/BlueSky-Ransomware-13.png)
+![Answer](../imgs/BlueSky-Ransomware-13.png)
 
 ---
 
@@ -390,7 +390,7 @@ The script then iterates over these 4 hosts and uses `Invoke-SMBExec` with the d
 ```
 extracted_hosts.txt
 ```
-![Answer](../images/BlueSky-Ransomware-14.png)
+![Answer](../imgs/BlueSky-Ransomware-14.png)
 
 ---
 
@@ -408,14 +408,14 @@ Behavioral analysis of `javaw.exe` (retrieved from Frame 4469) via sandbox deton
 The binary was confirmed malicious: SHA-256 `3e035f2d7d30869ce53171ef5a0f761bfb9c14d94d9fe6da385e20b8d96dc2fb`
 , Sandbox Score: 100/100 (MAL).
 
-![Answer](../images/BlueSky-Ransomware-15.png)
+![Answer](../imgs/BlueSky-Ransomware-15.png)
 
 ### Answer
 
 ```
 # DECRYPT FILES BLUESKY #
 ```
-![Answer](../images/BlueSky-Ransomware-16.png)
+![Answer](../imgs/BlueSky-Ransomware-16.png)
 
 ---
 
@@ -435,7 +435,7 @@ Submitted `javaw.exe` SHA-256 hash to VirusTotal and multiple sandbox platforms:
 ```
 BlueSky
 ```
-![Answer](../images/BlueSky-Ransomware-17.png)
+![Answer](../imgs/BlueSky-Ransomware-17.png)
 
 ---
 

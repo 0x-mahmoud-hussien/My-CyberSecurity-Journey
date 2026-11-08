@@ -31,7 +31,7 @@ The objective was to determine whether the system was compromised and identify a
 ```
 1.14.1
 ```
-![Malicious Axios Version](../images/Chain-Reaction1.png)
+![Malicious Axios Version](../imgs/Chain-Reaction1.png)
 
 
 ➡️ The system was running a known compromised version of Axios distributed via npm.
@@ -45,7 +45,7 @@ The objective was to determine whether the system was compromised and identify a
 ```
 typing-coreutils@1.6.4
 ```
-![Suspicious Package](../images/Chain-Reaction2.png)
+![Suspicious Package](../imgs/Chain-Reaction2.png)
 
 ➡️ A malicious dependency was injected into Axios to deliver the payload via supply chain compromise.
 
@@ -58,7 +58,7 @@ typing-coreutils@1.6.4
 ```
 node postinst.js
 ```
-![Post-install Script](../images/Chain-Reaction3.png)
+![Post-install Script](../imgs/Chain-Reaction3.png)
 
 ➡️ A post-install hook executed automatically after package installation, triggering the attack chain.
 
@@ -71,7 +71,7 @@ node postinst.js
 ```
 OrDeR_7077
 ```
-![Encryption Key](../images/Chain-Reaction5.png)
+![Encryption Key](../imgs/Chain-Reaction5.png)
 
 ➡️ JavaScript payload strings were encrypted to evade detection and hinder analysis.
 
@@ -84,7 +84,7 @@ OrDeR_7077
 ```
 http://sfrquack.thm:8000/1502068
 ```
-![C2 Endpoint](../images/Chain-Reaction4.png)
+![C2 Endpoint](../imgs/Chain-Reaction4.png)
 
 ---
 
@@ -93,7 +93,7 @@ http://sfrquack.thm:8000/1502068
 ```
 pypi.org/latest
 ```
-![Initial Beacon](../images/Chain-Reaction6.png)
+![Initial Beacon](../imgs/Chain-Reaction6.png)
 
 ➡️ The malware communicated with a remote C2 server to initiate payload retrieval.
 
@@ -106,7 +106,7 @@ pypi.org/latest
 ```
 /tmp/.promise.py
 ```
-![Dropped File](../images/Chain-Reaction7.png)
+![Dropped File](../imgs/Chain-Reaction7.png)
 
 ➡️ A Python-based RAT was deployed on the system as a second-stage payload.
 
@@ -119,7 +119,7 @@ pypi.org/latest
 ```
 unattended-upgr /home/ubuntu/.local/apt.conf
 ```
-![Running Process](../images/Chain-Reaction8.png)
+![Running Process](../imgs/Chain-Reaction8.png)
 
 ---
 
@@ -128,7 +128,7 @@ unattended-upgr /home/ubuntu/.local/apt.conf
 ```
 T1546.004
 ```
-![MITRE ATT&CK Technique](../images/Chain-Reaction9.png)
+![MITRE ATT&CK Technique](../imgs/Chain-Reaction9.png)
 
 ➡️ The malware disguised itself as a legitimate process and achieved persistence using event-triggered execution techniques.
 
@@ -141,7 +141,7 @@ T1546.004
 ```
 THM{audit_your_deps!}
 ```
-![Decoded Flag](../images/Chain-Reaction10.png)
+![Decoded Flag](../imgs/Chain-Reaction10.png)
 
 ➡️ Data was successfully transmitted to the C2 server, confirming active compromise and exfiltration.
 

@@ -69,7 +69,7 @@ The total packet count is displayed in the file properties summary panel.
 ```
 4003
 ```
-![Answer](../images/HawkEye-1.png)
+![Answer](../imgs/HawkEye-1.png)
 
 ---
 
@@ -84,7 +84,7 @@ The total packet count is displayed in the file properties summary panel.
 ```
 2019-04-10 20:37
 ```
-![Answer](../images/HawkEye-2.png)
+![Answer](../imgs/HawkEye-2.png)
 
 ---
 
@@ -101,7 +101,7 @@ The capture ran from `22:37:07` to `23:40:48` UTC.
 ```
 01:03:41
 ```
-![Answer](../images/HawkEye-3.png)
+![Answer](../imgs/HawkEye-3.png)
 
 ---
 
@@ -118,7 +118,7 @@ Sorted by packet count — the MAC address generating the most frames:
 ```
 00:08:02:1c:47:ae
 ```
-![Answer](../images/HawkEye-4.png)
+![Answer](../imgs/HawkEye-4.png)
 
 ---
 
@@ -137,7 +137,7 @@ The OUI (first 3 bytes) of the MAC address `00:08:02` was queried against the IE
 ```
 Hewlett-Packard
 ```
-![Answer](../images/HawkEye-5.png)
+![Answer](../imgs/HawkEye-5.png)
 
 ---
 
@@ -152,7 +152,7 @@ Hewlett-Packard (HP Inc.) was founded in a garage in Palo Alto, California, and 
 ```
 Palo Alto
 ```
-![Answer](../images/HawkEye-6.png)
+![Answer](../imgs/HawkEye-6.png)
 
 ---
 
@@ -175,7 +175,7 @@ Filtering for the private address space (`10.4.10.0/24`) identified the internal
 ```
 3
 ```
-![Answer](../images/HawkEye-7.png)
+![Answer](../imgs/HawkEye-7.png)
 
 ---
 
@@ -196,7 +196,7 @@ NetBIOS Name Service (NBNS) and DHCP traffic reveal the hostname broadcasted by 
 ```
 BEIJING-5CD1-PC
 ```
-![Answer](../images/HawkEye-8.png)
+![Answer](../imgs/HawkEye-8.png)
 
 ---
 
@@ -217,7 +217,7 @@ All DNS queries from the victim workstation (`10.4.10.132`) were directed to a s
 ```
 10.4.10.4
 ```
-![Answer](../images/HawkEye-9.png)
+![Answer](../imgs/HawkEye-9.png)
 
 ---
 
@@ -232,7 +232,7 @@ Navigating directly to frame 204 in Wireshark and expanding the DNS query layer 
 ```
 proforma-invoices.com
 ```
-![Answer](../images/HawkEye-10.png)
+![Answer](../imgs/HawkEye-10.png)
 
 ---
 
@@ -251,7 +251,7 @@ proforma-invoices.com → 217.182.138.150
 ```
 217.182.138.150
 ```
-![Answer](../images/HawkEye-11.png)
+![Answer](../imgs/HawkEye-11.png)
 
 ---
 
@@ -272,7 +272,7 @@ WHOIS/geolocation lookup for `217.182.138.150`:
 ```
 France
 ```
-![Answer](../images/HawkEye-12.png)
+![Answer](../imgs/HawkEye-12.png)
 
 ---
 
@@ -299,7 +299,7 @@ User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.
 ```
 Windows NT 6.1
 ```
-![Answer](../images/HawkEye-13.png)
+![Answer](../imgs/HawkEye-13.png)
 
 ---
 
@@ -325,7 +325,7 @@ Host: proforma-invoices.com
 ```
 tkraw_Protected99.exe
 ```
-![Answer](../images/HawkEye-14.png)
+![Answer](../imgs/HawkEye-14.png)
 
 ---
 
@@ -346,7 +346,7 @@ Cross-referenced on VirusTotal — confirmed as **HawkEye Keylogger Reborn v9**,
 ```
 71826ba081e303866ce2a2534491a2f7
 ```
-![Answer](../images/HawkEye-15.png)
+![Answer](../imgs/HawkEye-15.png)
 
 ---
 
@@ -366,7 +366,7 @@ Server: LiteSpeed
 ```
 LiteSpeed
 ```
-![Answer](../images/HawkEye-16.png)
+![Answer](../imgs/HawkEye-16.png)
 
 ---
 
@@ -391,7 +391,7 @@ At `22:38:08 UTC`, the malware contacted `bot.whatismyipaddress.com` — a class
 ```
 173.66.146.112
 ```
-![Answer](../images/HawkEye-17.png)
+![Answer](../imgs/HawkEye-17.png)
 
 ---
 
@@ -418,7 +418,7 @@ The SMTP exfiltration traffic was directed to IP `23.229.162.69`. WHOIS lookup:
 ```
 United States
 ```
-![Answer](../images/HawkEye-18.png)
+![Answer](../imgs/HawkEye-18.png)
 
 ---
 
@@ -437,7 +437,7 @@ Following the first SMTP TCP stream, the server's `220` welcome banner identifie
 ```
 Exim 4.91
 ```
-![Answer](../images/HawkEye-19.png)
+![Answer](../imgs/HawkEye-19.png)
 
 ---
 
@@ -458,7 +458,7 @@ This is a **compromised third-party email account** being abused as a C2 exfiltr
 ```
 sales.del@macwinlogistics.in
 ```
-![Answer](../images/HawkEye-20.png)
+![Answer](../imgs/HawkEye-20.png)
 
 ---
 
@@ -480,7 +480,7 @@ Decoded:  Sales@23
 ```
 Sales@23
 ```
-![Answer](../images/HawkEye-21.png)
+![Answer](../imgs/HawkEye-21.png)
 
 ---
 
@@ -501,7 +501,7 @@ The MD5 hash `71826ba081e303866ce2a2534491a2f7` was submitted to VirusTotal. Mul
 ```
 Reborn v9
 ```
-![Answer](../images/HawkEye-22.png)
+![Answer](../imgs/HawkEye-22.png)
 
 ---
 
@@ -526,7 +526,7 @@ Source: Google Chrome
 ```
 roman.mcguire:P@ssw0rd$
 ```
-![Answer](../images/HawkEye-23.png)
+![Answer](../imgs/HawkEye-23.png)
 
 ---
 

@@ -65,7 +65,7 @@ Analyzing the SYN packet volume per source IP revealed one host generating a hig
 ```
 10.0.2.4
 ```
-![Answer](../images/Lockdown-1.png)
+![Answer](../imgs/Lockdown-1.png)
 
 ---
 
@@ -86,7 +86,7 @@ Filtering HTTP traffic for the attacker's IP revealed requests with a distinctiv
 ```
 nmap
 ```
-![Answer](../images/Lockdown-2.png)
+![Answer](../imgs/Lockdown-2.png)
 
 ---
 
@@ -112,7 +112,7 @@ SMB2 command code `3` corresponds to **Tree Connect** requests — the SMB opera
 ```
 \\10.0.2.15\Documents, \\10.0.2.15\IPC$
 ```
-![Answer](../images/Lockdown-3.png)
+![Answer](../imgs/Lockdown-3.png)
 
 ---
 
@@ -133,7 +133,7 @@ smb2.cmd == 5 && smb2.filename contains ".aspx"
 ```
 shell.aspx
 ```
-![Answer](../images/Lockdown-4.png)
+![Answer](../imgs/Lockdown-4.png)
 
 ---
 
@@ -154,7 +154,7 @@ The destination port `4443` was used — chosen to mimic HTTPS alternate port tr
 ```
 4443
 ```
-![Answer](../images/Lockdown-5.png)
+![Answer](../imgs/Lockdown-5.png)
 
 ---
 
@@ -175,7 +175,7 @@ The `windows.info` plugin reads the memory image header and OS metadata to estab
 ```
 0xf80079213000
 ```
-![Answer](../images/Lockdown-6.png)
+![Answer](../imgs/Lockdown-6.png)
 
 ---
 
@@ -202,7 +202,7 @@ Placing malware in the Startup folder is a simple but effective **Boot/Logon Aut
 ```
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\updatenow.exe
 ```
-![Answer](../images/Lockdown-7.png)
+![Answer](../imgs/Lockdown-7.png)
 
 ---
 
@@ -232,7 +232,7 @@ The `windows.netscan` plugin enumerates all active and recently closed network c
 ```
 w3wp.exe, 4332
 ```
-![Answer](../images/Lockdown-8.png)
+![Answer](../imgs/Lockdown-8.png)
 
 ---
 
@@ -253,7 +253,7 @@ UPX 3.x → [LZMA]
 ```
 UPX
 ```
-![Answer](../images/Lockdown-9.png)
+![Answer](../imgs/Lockdown-9.png)
 
 ---
 
@@ -280,7 +280,7 @@ The domain resolves to Ukrainian hosting infrastructure (hyperhost.ua) — a com
 ```
 cp8nl.hyperhost.ua
 ```
-![Answer](../images/Lockdown-10.png)
+![Answer](../imgs/Lockdown-10.png)
 
 ---
 
@@ -304,7 +304,7 @@ Cross-referencing the SHA-256 hash across multiple threat intelligence platforms
 ```
 AgentTesla
 ```
-![Answer](../images/Lockdown-11.png)
+![Answer](../imgs/Lockdown-11.png)
 
 ---
 

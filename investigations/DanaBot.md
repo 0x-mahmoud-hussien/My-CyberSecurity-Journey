@@ -72,8 +72,8 @@ The first HTTP GET request was directed to a single external IP — confirmed as
 ```
 62.173.142.148
 ```
-![Answer](../images/DanaBot-1.png)
-![Answer](../images/DanaBot-2.png)
+![Answer](../imgs/DanaBot-1.png)
+![Answer](../imgs/DanaBot-2.png)
 
 ---
 
@@ -101,7 +101,7 @@ The `.js` extension indicates a JavaScript file intended for execution by the Wi
 ```
 allegato_708.js
 ```
-![Answer](../images/DanaBot-3.png)
+![Answer](../imgs/DanaBot-3.png)
 
 ---
 
@@ -122,8 +122,8 @@ VirusTotal confirmed the file as a **DanaBot** stager with multiple AV detection
 ```
 847b4ad90b1daba2d9117a8e05776f3f902dda593fb1252289538acf476c4268
 ```
-![Answer](../images/DanaBot-4.png)
-![Answer](../images/DanaBot-5.png)
+![Answer](../imgs/DanaBot-4.png)
+![Answer](../imgs/DanaBot-5.png)
 
 ---
 
@@ -150,7 +150,7 @@ wscript.exe → allegato_708.js → [Registry modification + HTTP GET] → resou
 ```
 wscript.exe
 ```
-![Answer](../images/DanaBot-6.png)
+![Answer](../imgs/DanaBot-6.png)
 
 ---
 
@@ -181,7 +181,7 @@ The User-Agent string (`MSIE 7.0` / `Trident/7.0`) is characteristic of DanaBot'
 ```
 .dll
 ```
-![Answer](../images/DanaBot-7.png)
+![Answer](../imgs/DanaBot-7.png)
 
 ---
 
@@ -202,7 +202,7 @@ VirusTotal confirmed the file as the **DanaBot** core DLL component.
 ```
 e758e07113016aca55d9eda2b0ffeebe
 ```
-![Answer](../images/DanaBot-8.png)
+![Answer](../imgs/DanaBot-8.png)
 
 ---
 

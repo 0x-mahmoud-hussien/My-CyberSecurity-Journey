@@ -67,7 +67,7 @@ The process `oneetx.exe` stood out immediately:
 ```
 oneetx.exe
 ```
-![Answer](../images/RedLine-1.png)
+![Answer](../imgs/RedLine-1.png)
 
 ---
 
@@ -97,7 +97,7 @@ oneetx.exe (PID: 5896)
 ```
 rundll32.exe
 ```
-![Answer](../images/RedLine-2.png)
+![Answer](../imgs/RedLine-2.png)
 
 ---
 
@@ -132,7 +132,7 @@ For PID 5896, a suspicious memory region was identified:
 ```
 PAGE_EXECUTE_READWRITE
 ```
-![Answer](../images/RedLine-3.png)
+![Answer](../imgs/RedLine-3.png)
 
 ---
 
@@ -160,7 +160,7 @@ The attacker deliberately killed both at `23:01:24 UTC` — exactly 2 seconds af
 ```
 outline.exe
 ```
-![Answer](../images/RedLine-4.png)
+![Answer](../imgs/RedLine-4.png)
 
 ---
 
@@ -187,7 +187,7 @@ The connection was made over port **80 (HTTP)** — standard web traffic — to 
 ```
 77.91.124.20
 ```
-![Answer](../images/RedLine-5.png)
+![Answer](../imgs/RedLine-5.png)
 
 ---
 
@@ -214,7 +214,7 @@ The `/store/games/` path structure is a well-documented pattern for **RedLine St
 ```
 http://77.91.124.20/store/games/index.php
 ```
-![Answer](../images/RedLine-6.png)
+![Answer](../imgs/RedLine-6.png)
 
 ---
 
@@ -247,7 +247,7 @@ C:\Users\Tammam\AppData\Local\Temp\c3912af058\oneetx.exe
 ```
 C:\Users\Tammam\AppData\Local\Temp\c3912af058\oneetx.exe
 ```
-![Answer](../images/RedLine-7.png)
+![Answer](../imgs/RedLine-7.png)
 
 ---
 
