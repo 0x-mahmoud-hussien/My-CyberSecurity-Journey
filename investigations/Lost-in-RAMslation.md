@@ -3,7 +3,7 @@
 * **Platform:** TryHackMe  
 * **Room:** Lost in RAMslation (HoneyNet Collapse series — Stage #3)  
 * **Category:** Memory Forensics / DFIR  
-* **Difficulty:** Medium  
+* **Difficulty:** Hard  
 * **Analyst:** Mahmoud Hussien 
 * **Tool:** Volatility 3  
 * **Artefact:** `SRV-DMZ-GW-evidence.mem`  
