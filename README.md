@@ -20,6 +20,8 @@ This repository showcases **real-world SOC investigations, hands-on labs, and th
 
 Start here 👇 (Highlighted real-world case studies)
 
+* 🛡️ [The Finance Trail - Splunk DFIR & Acquisition-Review Incident Investigation](./investigations/TheFinanceTrail.md)
+
 * 🛡️ [Zero Tolerance – Multi-Stage Incident Response & Host Forensics](./investigations/Zero-Tolerance.md)
 
 * 🛡️ [The O365 Intrusion - Cloud Incident Response & M365 Forensics](./investigations/O365-Intrusion.md)
@@ -126,6 +128,17 @@ Start here 👇 (Highlighted real-world case studies)
 ---
 
 ## 🔍 Specialized Security Investigations
+
+---
+
+### 🛡️ The Finance Trail - Splunk DFIR & Acquisition-Review Incident Investigation
+
+* **Full attack chain reconstruction** tracing a sophisticated spear-phishing campaign targeting Vantara Financial Group from initial email delivery to file-server exfiltration.
+* **Initial access & phishing correlation** identifying the malicious sender domain `lawson-rowe-review.com` and correlated message-ID `20261009022902.06.1a247614eaf9@lawson-rowe-review.com`.
+* **Process lineage & browser tracing** exposing parent-child process execution from `VantaraFinancePortal.exe` to `chrome.exe` and malicious loaders (`ledgerdrop.exe` / `VantaraSync.exe`).
+* **Cryptographic artifact extraction** validating file stream and process hashes (`AAD4B231C4AFC7D02A09344545A957086FE36CD6A9CCA8F1F92E1AC3DDFFAC5C`).
+* **Persistence & C2 traffic telemetry** tracking scheduled task creation (`VantaraUpdateCheck`), WFP port correlation (`50611`), and C2 failover latency (`api-lawsoncdn.net`).
+* **Data staging & exfiltration analysis** uncovering PowerShell archiving commands (`Compress-Archive`) and subsequent SMB2 write operations (`review_notes_2026.zip`).
 
 ---
 
