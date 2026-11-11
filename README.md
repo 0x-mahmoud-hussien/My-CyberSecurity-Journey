@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
 
+* 🛡️ [HackTheBox Sherlock: Memory Forensics & Endpoint Compromise Analysis](./investigations/Memory_Analysis.md)
+
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
 
 * 💀 [Conti Ransomware – Exchange Compromise & DFIR Investigation](./investigations/Conti.md)
@@ -197,6 +199,16 @@ Start here 👇 (Highlighted real-world case studies)
 * Command & Control (C2) via proxy configuration (netsh)
 * Defense evasion through log clearing and artifact removal
 * Multi-source log correlation using Splunk
+
+---
+
+### 🛡️ HackTheBox Sherlock: Memory Forensics & Endpoint Compromise Analysis
+
+* **Full memory acquisition timeline reconstruction** extracting OS kernel and precise UTC timestamps via `windows.info`[cite: 1].
+* **Process masquerading detection** uncovering an unauthorized rogue `lsass.exe` instance running from `C:\Windows\System\` under PID `7592`[cite: 2].
+* **Process binary extraction and hashing** dumping raw memory of PID `7592` and correlating its MD5 hash (`01caf58e4a0eeeeb94d9aa4823c9f6e47`) with threat intelligence[cite: 3].
+* **Malicious tool identification** verifying post-exploitation privilege escalation activity via `winpeas.exe` with VirusTotal & YARA detections[cite: 4].
+* **Credential artifact recovery** isolating the compromised user `msedgewin10/cyberjunkie` and cracking its NTLM password hash via registry hive extraction[cite: 5, 6, 7].
 
 ---
 
