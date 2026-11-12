@@ -32,6 +32,8 @@ Start here 👇 (Highlighted real-world case studies)
 
 * 🛡️ [Volt Typhoon – APT Attack Chain Investigation](./investigations/Volt-Typhoon.md)
 
+* 🛡️ [PS Eclipse - Splunk SIEM Incident Investigation & Ransomware Chain Reconstruction](./investigations/PS-Eclipse.md)
+
 * 🛡️ [HackTheBox Sherlock: Memory Forensics & Endpoint Compromise Analysis](./investigations/Memory_Analysis.md)
 
 * 🕸️ [DeceptiTech – Honeypot Initial Access Investigation](./investigations/Initial-Access-Pot.md)
@@ -201,6 +203,17 @@ Start here 👇 (Highlighted real-world case studies)
 * Command & Control (C2) via proxy configuration (netsh)
 * Defense evasion through log clearing and artifact removal
 * Multi-source log correlation using Splunk
+
+---
+
+### 🛡️ PS Eclipse - Splunk SIEM Incident Investigation & Ransomware Chain Reconstruction
+
+* **Full attack chain reconstruction** of a critical endpoint compromise and ransomware deployment on Keegan's machine (`DESKTOP-TBV8NEF`).
+* **Initial execution identification** exposing staging via PowerShell and obfuscated Base64-encoded command lines (`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`).
+* **Defense evasion tracking** isolating real-time protection disabling parameters (`Set-MpPreference -DisableRealtimeMonitoring $true`).
+* **Privileged persistence analysis** leveraging Windows scheduled tasks (`SCHTASKS`) configured to trigger on Application Event ID 777 under `NT AUTHORITY\SYSTEM` privileges.
+* **C2 communication & IOC extraction** mapping outbound connections to Ngrok forwarding proxies (`hxxp[://]9030-181-215-214-32[.]ngrok[.]io`).
+* **Malware attribution & artifact mapping** identifying the underlying **BlackSun.ps1** ransomware script via VirusTotal hash intelligence alongside dropped ransom notes and desktop wallpaper IOCs (`C:\Users\Public\Pictures\blacksun.jpg`).
 
 ---
 
